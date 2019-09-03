@@ -14,7 +14,8 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
 
         }
         #endregion
-        #region Variables/Etc
+        #region Propiedades
+
         #endregion
         #region Metodos
         #endregion

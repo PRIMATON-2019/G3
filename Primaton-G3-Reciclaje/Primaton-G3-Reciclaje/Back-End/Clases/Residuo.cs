@@ -8,7 +8,7 @@
 
         }
         #endregion
-        #region Variables/Etc
+        #region Propiedades
         #endregion
         #region Metodos
         #endregion

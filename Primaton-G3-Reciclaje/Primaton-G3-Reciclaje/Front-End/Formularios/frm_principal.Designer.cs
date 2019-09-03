@@ -39,6 +39,9 @@
             // btn_reciclaje
             // 
             this.btn_reciclaje.BackColor = System.Drawing.Color.Transparent;
+            this.btn_reciclaje.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_reciclaje.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_reciclaje.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_reciclaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reciclaje.Location = new System.Drawing.Point(146, 226);
             this.btn_reciclaje.Name = "btn_reciclaje";
@@ -50,6 +53,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(572, 226);
             this.button2.Name = "button2";
