@@ -52,10 +52,19 @@
     <Compile Include="Front-End\Formularios\frm_principal.Designer.cs">
       <DependentUpon>frm_principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Front-End\Formularios\frm_registro_comercio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front-End\Formularios\frm_registro_comercio.Designer.cs">
+      <DependentUpon>frm_registro_comercio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Front-End\Formularios\frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front-End\Formularios\frm_registro_comercio.resx">
+      <DependentUpon>frm_registro_comercio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

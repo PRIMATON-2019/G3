@@ -16,5 +16,11 @@ namespace Primaton_G3_Reciclaje
         {
             InitializeComponent();
         }
+
+        private void Link_lbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form frm_registro_comercio = new Form();
+            frm_registro_comercio.ShowDialog();
+        }
     }
 }
