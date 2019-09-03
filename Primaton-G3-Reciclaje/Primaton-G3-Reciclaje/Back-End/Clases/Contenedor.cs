@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Primaton_G3_Reciclaje.Back_End.Clases
 {
-    class Contenedor
+    public class Contenedor
     {
+        #region Constructor
+        public Contenedor()
+        {
+
+        }
+        #endregion
+        #region Variables/Etc
+        #endregion
+        #region Metodos
+        #endregion
     }
 }
