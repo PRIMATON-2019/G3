@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Back-End\Clases\Contenedor.cs" />
+    <Compile Include="Back-End\Clases\Residuo.cs" />
     <Compile Include="Front-End\Formularios\frm_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,8 +90,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Back-End\Clases\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
