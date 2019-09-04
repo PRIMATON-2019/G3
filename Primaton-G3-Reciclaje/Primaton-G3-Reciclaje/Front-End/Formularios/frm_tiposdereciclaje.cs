@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Primaton_G3_Reciclaje.Front_End.Formularios
@@ -16,5 +9,12 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         {
             InitializeComponent();
         }
+        #region EVENTOS
+        private void Btn_plastico_Click(object sender, EventArgs e)
+        {
+            Form frm_plastico = new frm_plastico();
+            frm_plastico.ShowDialog();
+        }
+        #endregion
     }
 }

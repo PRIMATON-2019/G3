@@ -1,6 +1,6 @@
 ﻿namespace Primaton_G3_Reciclaje
 {
-    partial class Form1
+    partial class frm_principal
     {
         /// <summary>
         /// Required designer variable.
@@ -49,6 +49,7 @@
             this.btn_reciclaje.TabIndex = 0;
             this.btn_reciclaje.Text = "Reciclar";
             this.btn_reciclaje.UseVisualStyleBackColor = false;
+            this.btn_reciclaje.Click += new System.EventHandler(this.Btn_reciclaje_Click);
             // 
             // button2
             // 
@@ -67,9 +68,10 @@
             // bl_info
             // 
             this.bl_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bl_info.Location = new System.Drawing.Point(370, 143);
+            this.bl_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bl_info.Location = new System.Drawing.Point(182, 138);
             this.bl_info.Name = "bl_info";
-            this.bl_info.Size = new System.Drawing.Size(232, 55);
+            this.bl_info.Size = new System.Drawing.Size(631, 55);
             this.bl_info.TabIndex = 2;
             this.bl_info.Text = "Informacion Sobre el Programa";
             this.bl_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -77,9 +79,10 @@
             // lbl_hora
             // 
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_hora.Location = new System.Drawing.Point(841, 32);
+            this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hora.Location = new System.Drawing.Point(664, 9);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(100, 23);
+            this.lbl_hora.Size = new System.Drawing.Size(306, 52);
             this.lbl_hora.TabIndex = 3;
             this.lbl_hora.Text = "Hora/Fecha";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,14 +100,15 @@
             // 
             // lbl_bienvenida
             // 
+            this.lbl_bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_bienvenida.Location = new System.Drawing.Point(370, 62);
             this.lbl_bienvenida.Name = "lbl_bienvenida";
-            this.lbl_bienvenida.Size = new System.Drawing.Size(201, 46);
+            this.lbl_bienvenida.Size = new System.Drawing.Size(245, 53);
             this.lbl_bienvenida.TabIndex = 5;
-            this.lbl_bienvenida.Text = "Bienvenida";
+            this.lbl_bienvenida.Text = "Bienvenida/o";
             this.lbl_bienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // frm_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,8 +120,12 @@
             this.Controls.Add(this.bl_info);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_reciclaje);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frm_principal";
+            this.ShowIcon = false;
+            this.Text = "Reciclador";
             this.ResumeLayout(false);
             this.PerformLayout();
 

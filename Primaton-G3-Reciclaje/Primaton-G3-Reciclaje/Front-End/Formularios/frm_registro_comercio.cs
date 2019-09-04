@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Primaton_G3_Reciclaje.Front_End.Formularios;
 
 namespace Primaton_G3_Reciclaje.Front_End.Formularios
 {
