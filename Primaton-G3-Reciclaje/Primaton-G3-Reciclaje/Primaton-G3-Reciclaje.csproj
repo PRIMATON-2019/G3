@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Back-End\Clases\Balanza.cs" />
     <Compile Include="Back-End\Clases\Contenedor.cs" />
+    <Compile Include="Back-End\Clases\Date.cs" />
     <Compile Include="Back-End\Clases\Residuo.cs" />
     <Compile Include="Front-End\Formularios\frm_plastico.cs">
       <SubType>Form</SubType>

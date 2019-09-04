@@ -67,9 +67,10 @@
             // bl_info
             // 
             this.bl_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bl_info.Location = new System.Drawing.Point(370, 143);
+            this.bl_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bl_info.Location = new System.Drawing.Point(182, 138);
             this.bl_info.Name = "bl_info";
-            this.bl_info.Size = new System.Drawing.Size(232, 55);
+            this.bl_info.Size = new System.Drawing.Size(631, 55);
             this.bl_info.TabIndex = 2;
             this.bl_info.Text = "Informacion Sobre el Programa";
             this.bl_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -77,9 +78,10 @@
             // lbl_hora
             // 
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_hora.Location = new System.Drawing.Point(841, 32);
+            this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hora.Location = new System.Drawing.Point(664, 9);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(100, 23);
+            this.lbl_hora.Size = new System.Drawing.Size(306, 52);
             this.lbl_hora.TabIndex = 3;
             this.lbl_hora.Text = "Hora/Fecha";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,11 +99,12 @@
             // 
             // lbl_bienvenida
             // 
+            this.lbl_bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_bienvenida.Location = new System.Drawing.Point(370, 62);
             this.lbl_bienvenida.Name = "lbl_bienvenida";
-            this.lbl_bienvenida.Size = new System.Drawing.Size(201, 46);
+            this.lbl_bienvenida.Size = new System.Drawing.Size(245, 53);
             this.lbl_bienvenida.TabIndex = 5;
-            this.lbl_bienvenida.Text = "Bienvenida";
+            this.lbl_bienvenida.Text = "Bienvenida/o";
             this.lbl_bienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
