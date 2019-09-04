@@ -74,6 +74,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Front-End\Formularios\frm_plastico.resx">
+      <DependentUpon>frm_plastico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Front-End\Formularios\frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>
     </EmbeddedResource>
