@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Back-End\Clases\Balanza.cs" />
     <Compile Include="Back-End\Clases\Contenedor.cs" />
     <Compile Include="Back-End\Clases\Residuo.cs" />
     <Compile Include="Front-End\Formularios\frm_principal.cs">
