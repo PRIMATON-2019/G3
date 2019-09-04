@@ -20,6 +20,11 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         {
 
         }
+
+        internal Contenedor obtenerNumero()
+        {
+            throw new NotImplementedException();
+        }
         #endregion
         #region Metodos
         #endregion

@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_reciclaje = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.bl_info = new System.Windows.Forms.Label();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.link_lbl = new System.Windows.Forms.LinkLabel();
             this.lbl_bienvenida = new System.Windows.Forms.Label();
+            this.timer_hora = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btn_reciclaje
@@ -84,7 +86,7 @@
             this.lbl_hora.Name = "lbl_hora";
             this.lbl_hora.Size = new System.Drawing.Size(306, 52);
             this.lbl_hora.TabIndex = 3;
-            this.lbl_hora.Text = "Hora/Fecha";
+            this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // link_lbl
@@ -107,6 +109,12 @@
             this.lbl_bienvenida.TabIndex = 5;
             this.lbl_bienvenida.Text = "Bienvenida/o";
             this.lbl_bienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer_hora
+            // 
+            this.timer_hora.Enabled = true;
+            this.timer_hora.Interval = 1000;
+            this.timer_hora.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // frm_principal
             // 
@@ -139,6 +147,7 @@
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.LinkLabel link_lbl;
         private System.Windows.Forms.Label lbl_bienvenida;
+        private System.Windows.Forms.Timer timer_hora;
     }
 }
 

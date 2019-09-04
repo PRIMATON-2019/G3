@@ -47,9 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Back-End\Clases\Balanza.cs" />
+    <Compile Include="Back-End\Clases\Registros.cs" />
+    <Compile Include="Back-End\Clases\Usuarios.cs" />
     <Compile Include="Back-End\Clases\Contenedor.cs" />
     <Compile Include="Back-End\Clases\Date.cs" />
     <Compile Include="Back-End\Clases\Residuo.cs" />
+    <Compile Include="Back-End\Clases\tipoResiduos.cs" />
     <Compile Include="Front-End\Formularios\frm_plastico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +113,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Front-End\Recursos\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

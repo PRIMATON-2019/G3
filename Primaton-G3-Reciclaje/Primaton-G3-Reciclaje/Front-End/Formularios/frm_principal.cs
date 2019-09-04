@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using Primaton_G3_Reciclaje.Front_End.Formularios;
 namespace Primaton_G3_Reciclaje
 {
@@ -7,6 +8,7 @@ namespace Primaton_G3_Reciclaje
         public frm_principal()
         {
             InitializeComponent();
+            timer_hora.Start();
         }
         #region EVENTOS HERRAMIENTAS
 
@@ -23,6 +25,11 @@ namespace Primaton_G3_Reciclaje
             Form frm_tiposdereciclaje = new frm_tiposdereciclaje();
 
             frm_tiposdereciclaje.ShowDialog();
+        }
+
+        private void Timer1_Tick(object sender, System.EventArgs e)
+        {
+            //lbl_hora.Text = DateTime.Now..ToString();
         }
     }
 }

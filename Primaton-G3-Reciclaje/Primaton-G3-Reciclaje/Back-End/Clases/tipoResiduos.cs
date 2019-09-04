@@ -6,24 +6,19 @@ using System.Threading.Tasks;
 
 namespace Primaton_G3_Reciclaje.Back_End.Clases
 {
-    public class Balanza
+    public class tipoResiduos
     {
+
         #region Propiedades
         public int Id { get; set; }
-        public decimal Capacidad { get; set; }
-
-
-
+        public string Nombre { get; set; }
+        public int Tipo { get; set; }
         #endregion
+
         #region Constructor
-        public Balanza()
+        public tipoResiduos()
         {
 
-        }
-
-        internal static float obtenerCantidad()
-        {
-            throw new NotImplementedException();
         }
         #endregion
         #region Metodos
