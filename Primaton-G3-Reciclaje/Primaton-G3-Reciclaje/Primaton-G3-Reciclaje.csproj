@@ -49,6 +49,12 @@
     <Compile Include="Back-End\Clases\Balanza.cs" />
     <Compile Include="Back-End\Clases\Contenedor.cs" />
     <Compile Include="Back-End\Clases\Residuo.cs" />
+    <Compile Include="Front-End\Formularios\frm_plastico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front-End\Formularios\frm_plastico.Designer.cs">
+      <DependentUpon>frm_plastico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front-End\Formularios\frm_principal.cs">
       <SubType>Form</SubType>
     </Compile>
