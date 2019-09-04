@@ -1,6 +1,6 @@
 ﻿namespace Primaton_G3_Reciclaje
 {
-    partial class Form1
+    partial class frm_principal
     {
         /// <summary>
         /// Required designer variable.
@@ -108,7 +108,7 @@
             this.lbl_bienvenida.Text = "Bienvenida/o";
             this.lbl_bienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // frm_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -120,8 +120,12 @@
             this.Controls.Add(this.bl_info);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_reciclaje);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frm_principal";
+            this.ShowIcon = false;
+            this.Text = "Reciclador";
             this.ResumeLayout(false);
             this.PerformLayout();
 

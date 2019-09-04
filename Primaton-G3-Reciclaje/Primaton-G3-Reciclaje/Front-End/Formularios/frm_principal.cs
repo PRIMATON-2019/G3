@@ -2,9 +2,9 @@
 using Primaton_G3_Reciclaje.Front_End.Formularios;
 namespace Primaton_G3_Reciclaje
 {
-    public partial class Form1 : Form
+    public partial class frm_principal : Form
     {
-        public Form1()
+        public frm_principal()
         {
             InitializeComponent();
         }

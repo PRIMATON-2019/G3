@@ -129,6 +129,9 @@
             this.Controls.Add(this.btn_carton);
             this.Controls.Add(this.btn_plastico);
             this.Controls.Add(this.btn_vidrio);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_tiposdereciclaje";
             this.Text = "frm_tiposdereciclaje";
             this.ResumeLayout(false);
