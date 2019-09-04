@@ -62,6 +62,7 @@
             this.btn_plastico.TabIndex = 2;
             this.btn_plastico.Text = "plastico";
             this.btn_plastico.UseVisualStyleBackColor = false;
+            this.btn_plastico.Click += new System.EventHandler(this.Btn_plastico_Click);
             // 
             // btn_carton
             // 

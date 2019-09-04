@@ -16,5 +16,12 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         {
             InitializeComponent();
         }
+        #region EVENTOS
+        private void Btn_plastico_Click(object sender, EventArgs e)
+        {
+            Form frm_plastico = new Form();
+            frm_plastico.ShowDialog();
+        }
+        #endregion
     }
 }
