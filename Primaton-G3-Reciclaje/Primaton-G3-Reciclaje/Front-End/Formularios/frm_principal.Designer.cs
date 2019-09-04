@@ -49,6 +49,7 @@
             this.btn_reciclaje.TabIndex = 0;
             this.btn_reciclaje.Text = "Reciclar";
             this.btn_reciclaje.UseVisualStyleBackColor = false;
+            this.btn_reciclaje.Click += new System.EventHandler(this.Btn_reciclaje_Click);
             // 
             // button2
             // 
