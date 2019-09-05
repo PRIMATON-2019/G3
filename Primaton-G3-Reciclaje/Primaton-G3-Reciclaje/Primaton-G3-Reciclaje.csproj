@@ -78,6 +78,12 @@
     <Compile Include="Front-End\Formularios\frm_tiposdereciclaje.Designer.cs">
       <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>
     </Compile>
+    <Compile Include="Front-End\Formularios\frm_vidrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front-End\Formularios\frm_vidrio.Designer.cs">
+      <DependentUpon>frm_vidrio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Front-End\Formularios\frm_plastico.resx">
