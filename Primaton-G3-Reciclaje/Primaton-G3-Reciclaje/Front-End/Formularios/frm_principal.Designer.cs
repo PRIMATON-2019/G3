@@ -36,6 +36,7 @@
             this.link_lbl = new System.Windows.Forms.LinkLabel();
             this.lbl_bienvenida = new System.Windows.Forms.Label();
             this.timer_hora = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_reciclaje
@@ -45,9 +46,9 @@
             this.btn_reciclaje.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_reciclaje.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_reciclaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_reciclaje.Location = new System.Drawing.Point(146, 226);
+            this.btn_reciclaje.Location = new System.Drawing.Point(293, 308);
             this.btn_reciclaje.Name = "btn_reciclaje";
-            this.btn_reciclaje.Size = new System.Drawing.Size(282, 206);
+            this.btn_reciclaje.Size = new System.Drawing.Size(358, 250);
             this.btn_reciclaje.TabIndex = 0;
             this.btn_reciclaje.Text = "Reciclar";
             this.btn_reciclaje.UseVisualStyleBackColor = false;
@@ -60,22 +61,22 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(572, 226);
+            this.button2.Location = new System.Drawing.Point(63, 223);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 206);
+            this.button2.Size = new System.Drawing.Size(215, 37);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "Scan";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // bl_info
             // 
             this.bl_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bl_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bl_info.Location = new System.Drawing.Point(182, 138);
+            this.bl_info.Location = new System.Drawing.Point(167, 84);
             this.bl_info.Name = "bl_info";
             this.bl_info.Size = new System.Drawing.Size(631, 55);
             this.bl_info.TabIndex = 2;
-            this.bl_info.Text = "Informacion Sobre el Programa";
+            this.bl_info.Text = "Acerca tu DNI por favor";
             this.bl_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_hora
@@ -103,7 +104,7 @@
             // lbl_bienvenida
             // 
             this.lbl_bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_bienvenida.Location = new System.Drawing.Point(370, 62);
+            this.lbl_bienvenida.Location = new System.Drawing.Point(354, 11);
             this.lbl_bienvenida.Name = "lbl_bienvenida";
             this.lbl_bienvenida.Size = new System.Drawing.Size(245, 53);
             this.lbl_bienvenida.TabIndex = 5;
@@ -116,12 +117,22 @@
             this.timer_hora.Interval = 1000;
             this.timer_hora.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(358, 233);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(296, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Informacion de la persona en base al dni  aca";
+            // 
             // frm_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(982, 570);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_bienvenida);
             this.Controls.Add(this.link_lbl);
             this.Controls.Add(this.lbl_hora);
@@ -148,6 +159,7 @@
         private System.Windows.Forms.LinkLabel link_lbl;
         private System.Windows.Forms.Label lbl_bienvenida;
         private System.Windows.Forms.Timer timer_hora;
+        private System.Windows.Forms.Label label1;
     }
 }
 
