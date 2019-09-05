@@ -16,5 +16,20 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         {
             InitializeComponent();
         }
+
+        private void Frm_vidrio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtGramos1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtPeso2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
