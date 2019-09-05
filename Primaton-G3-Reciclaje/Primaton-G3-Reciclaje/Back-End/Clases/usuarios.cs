@@ -15,8 +15,8 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public int Genero { get; set; }
-        public int Domicilio { get; set; } //hacer clase domicilio y hacer la ref
-        public int FechadeNacimiento { get; set; }// hacer clase datatime y hacer la ref
+        public Domicilio Domicilio { get; set; } //listo
+        public DateTime FechadeNacimiento { get; set; }// listo
         #endregion
 
         #region Constructor

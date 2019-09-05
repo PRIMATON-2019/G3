@@ -12,7 +12,7 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         public int Id { get; set; }
         public DateTime Fecha { get; set; }
         public Usuarios Usuario { get; set; }
-        public tipoResiduos Tipo { get; set; }
+        public TipoResiduo Tipo { get; set; }
         public float Cantidad { get; set; }
         public Contenedor Contenedor { get; set; }// Crear clase y hacer la referencia
         public string Ticket { get; set; }
@@ -23,7 +23,7 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         public Object[] registro = new Object[1];
         #region METODOS
 
-        public string GrabarRegistro(Usuarios usuario, tipoResiduos tipo)
+        public string GrabarRegistro(Usuarios usuario, TipoResiduo tipo)
         {
             if (usuario==null)
             {
@@ -33,7 +33,7 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
             {
                 //Usuarios usuario = new Usuarios();
                 nuevoregistro.Usuario = usuario;
-                nuevoregistro.Fecha = DateTime.Now;
+                //nuevoregistro.Fecha = System.DateTime.Now; REVISAR ESTO.
                 nuevoregistro.Tipo = tipo;
                 nuevoregistro.Cantidad = Balanza.obtenerCantidad();
                 nuevoregistro.Contenedor = Contenedor.obtenerNumero();

@@ -7,7 +7,7 @@
         public int Id { get; set; }
         public bool Reciclable { get; set; }
         public bool Reutilizable { get; set; }
-        public tipoResiduos Tipo { get; set; }
+        public TipoResiduo Tipo { get; set; }
         public Usuarios Usuario { get; set; }
 
         #endregion

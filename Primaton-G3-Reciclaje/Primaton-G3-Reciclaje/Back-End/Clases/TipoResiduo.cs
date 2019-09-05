@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace Primaton_G3_Reciclaje.Back_End.Clases
 {
-    public class Date
+    public class TipoResiduo
     {
+
+        #region Propiedades
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public int Tipo { get; set; }
+        #endregion
+
         #region Constructor
-        public Date()
+        public TipoResiduo()
         {
 
         }
-        #endregion
-        #region Propiedades
         #endregion
         #region Metodos
         #endregion
