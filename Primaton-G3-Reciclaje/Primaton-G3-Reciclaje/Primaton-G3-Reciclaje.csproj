@@ -122,6 +122,9 @@
     <EmbeddedResource Include="Front-End\Formularios\frm_tiposdereciclaje.resx">
       <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Front-End\Formularios\frm_vidrio.resx">
+      <DependentUpon>frm_vidrio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
