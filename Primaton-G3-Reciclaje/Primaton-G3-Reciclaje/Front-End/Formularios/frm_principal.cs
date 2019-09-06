@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Primaton_G3_Reciclaje.Front_End.Formularios;
+using System;
 using System.Windows.Forms;
-using Primaton_G3_Reciclaje.Front_End.Formularios;
 namespace Primaton_G3_Reciclaje
 {
     public partial class frm_principal : Form
@@ -30,6 +30,13 @@ namespace Primaton_G3_Reciclaje
         private void Timer1_Tick(object sender, System.EventArgs e)
         {
             //lbl_hora.Text = DateTime.Now..ToString();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Form frm_scan = new frm_scan();
+            frm_scan.ShowDialog();
+            
         }
     }
 }
