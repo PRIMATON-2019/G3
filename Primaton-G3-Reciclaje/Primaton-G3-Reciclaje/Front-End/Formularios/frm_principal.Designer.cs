@@ -37,6 +37,7 @@
             this.lbl_bienvenida = new System.Windows.Forms.Label();
             this.timer_hora = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.roundButton1 = new WindowsFormsApplication1.RoundButton();
             this.SuspendLayout();
             // 
             // btn_reciclaje
@@ -46,9 +47,9 @@
             this.btn_reciclaje.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_reciclaje.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_reciclaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_reciclaje.Location = new System.Drawing.Point(293, 308);
+            this.btn_reciclaje.Location = new System.Drawing.Point(544, 233);
             this.btn_reciclaje.Name = "btn_reciclaje";
-            this.btn_reciclaje.Size = new System.Drawing.Size(358, 250);
+            this.btn_reciclaje.Size = new System.Drawing.Size(426, 325);
             this.btn_reciclaje.TabIndex = 0;
             this.btn_reciclaje.Text = "Reciclar";
             this.btn_reciclaje.UseVisualStyleBackColor = false;
@@ -61,9 +62,9 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(63, 223);
+            this.button2.Location = new System.Drawing.Point(104, 160);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(215, 37);
+            this.button2.Size = new System.Drawing.Size(180, 97);
             this.button2.TabIndex = 1;
             this.button2.Text = "Scan";
             this.button2.UseVisualStyleBackColor = false;
@@ -94,7 +95,7 @@
             // link_lbl
             // 
             this.link_lbl.AutoSize = true;
-            this.link_lbl.Location = new System.Drawing.Point(767, 497);
+            this.link_lbl.Location = new System.Drawing.Point(44, 501);
             this.link_lbl.Name = "link_lbl";
             this.link_lbl.Size = new System.Drawing.Size(132, 17);
             this.link_lbl.TabIndex = 4;
@@ -121,11 +122,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(358, 233);
+            this.label1.Location = new System.Drawing.Point(303, 200);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(296, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "Informacion de la persona en base al dni  aca";
+            // 
+            // roundButton1
+            // 
+            this.roundButton1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.roundButton1.Location = new System.Drawing.Point(236, 295);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(236, 174);
+            this.roundButton1.TabIndex = 7;
+            this.roundButton1.Text = "roundButton1";
+            this.roundButton1.UseVisualStyleBackColor = false;
             // 
             // frm_principal
             // 
@@ -133,6 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(982, 570);
+            this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_bienvenida);
             this.Controls.Add(this.link_lbl);
@@ -161,6 +173,7 @@
         private System.Windows.Forms.Label lbl_bienvenida;
         private System.Windows.Forms.Timer timer_hora;
         private System.Windows.Forms.Label label1;
+        private WindowsFormsApplication1.RoundButton roundButton1;
     }
 }
 
