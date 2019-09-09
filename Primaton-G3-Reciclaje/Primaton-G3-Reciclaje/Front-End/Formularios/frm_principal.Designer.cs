@@ -36,29 +36,29 @@
             this.timer_hora = new System.Windows.Forms.Timer(this.components);
             this.btn_reciclar = new System.Windows.Forms.Button();
             this.lbl_scanner = new System.Windows.Forms.Label();
-            this.paneldoc = new System.Windows.Forms.Panel();
-            this.BTNN0 = new System.Windows.Forms.Button();
-            this.BTNN9 = new System.Windows.Forms.Button();
-            this.BTNN8 = new System.Windows.Forms.Button();
-            this.BTNN7 = new System.Windows.Forms.Button();
-            this.BTNN3 = new System.Windows.Forms.Button();
-            this.BTNN6 = new System.Windows.Forms.Button();
-            this.BTNN2 = new System.Windows.Forms.Button();
-            this.BTNN5 = new System.Windows.Forms.Button();
-            this.BTNN4 = new System.Windows.Forms.Button();
-            this.BTNN1 = new System.Windows.Forms.Button();
-            this.txtDOC = new System.Windows.Forms.TextBox();
-            this.txtmanual = new System.Windows.Forms.Label();
+            this.pn_dni = new System.Windows.Forms.Panel();
+            this.btn_0 = new System.Windows.Forms.Button();
+            this.btn_9 = new System.Windows.Forms.Button();
+            this.btn_8 = new System.Windows.Forms.Button();
+            this.btn_7 = new System.Windows.Forms.Button();
+            this.btn_3 = new System.Windows.Forms.Button();
+            this.btn_6 = new System.Windows.Forms.Button();
+            this.btn_2 = new System.Windows.Forms.Button();
+            this.btn_5 = new System.Windows.Forms.Button();
+            this.btn_4 = new System.Windows.Forms.Button();
+            this.btn_1 = new System.Windows.Forms.Button();
+            this.txt_documento = new System.Windows.Forms.TextBox();
+            this.lbl_infomanual = new System.Windows.Forms.Label();
             this.btn_sig = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pn_scanner = new System.Windows.Forms.Panel();
             this.picbox_camara = new System.Windows.Forms.PictureBox();
             this.lbl_info = new System.Windows.Forms.Label();
             this.combobox_camara = new System.Windows.Forms.ComboBox();
             this.btn_inicio = new System.Windows.Forms.Button();
             this.btn_show = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.paneldoc.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pn_dni.SuspendLayout();
+            this.pn_scanner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_camara)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,168 +135,169 @@
             this.lbl_scanner.TabIndex = 9;
             this.lbl_scanner.Text = "Escanear";
             // 
-            // paneldoc
+            // pn_dni
             // 
-            this.paneldoc.Controls.Add(this.BTNN0);
-            this.paneldoc.Controls.Add(this.BTNN9);
-            this.paneldoc.Controls.Add(this.txtmanual);
-            this.paneldoc.Controls.Add(this.BTNN8);
-            this.paneldoc.Controls.Add(this.BTNN7);
-            this.paneldoc.Controls.Add(this.txtDOC);
-            this.paneldoc.Controls.Add(this.BTNN3);
-            this.paneldoc.Controls.Add(this.BTNN6);
-            this.paneldoc.Controls.Add(this.BTNN2);
-            this.paneldoc.Controls.Add(this.BTNN5);
-            this.paneldoc.Controls.Add(this.BTNN4);
-            this.paneldoc.Controls.Add(this.BTNN1);
-            this.paneldoc.Location = new System.Drawing.Point(717, 155);
-            this.paneldoc.Margin = new System.Windows.Forms.Padding(4);
-            this.paneldoc.Name = "paneldoc";
-            this.paneldoc.Size = new System.Drawing.Size(251, 324);
-            this.paneldoc.TabIndex = 10;
+            this.pn_dni.Controls.Add(this.btn_0);
+            this.pn_dni.Controls.Add(this.btn_9);
+            this.pn_dni.Controls.Add(this.lbl_infomanual);
+            this.pn_dni.Controls.Add(this.btn_8);
+            this.pn_dni.Controls.Add(this.btn_7);
+            this.pn_dni.Controls.Add(this.txt_documento);
+            this.pn_dni.Controls.Add(this.btn_3);
+            this.pn_dni.Controls.Add(this.btn_6);
+            this.pn_dni.Controls.Add(this.btn_2);
+            this.pn_dni.Controls.Add(this.btn_5);
+            this.pn_dni.Controls.Add(this.btn_4);
+            this.pn_dni.Controls.Add(this.btn_1);
+            this.pn_dni.Location = new System.Drawing.Point(717, 155);
+            this.pn_dni.Margin = new System.Windows.Forms.Padding(4);
+            this.pn_dni.Name = "pn_dni";
+            this.pn_dni.Size = new System.Drawing.Size(251, 324);
+            this.pn_dni.TabIndex = 10;
             // 
-            // BTNN0
+            // btn_0
             // 
-            this.BTNN0.BackColor = System.Drawing.Color.Olive;
-            this.BTNN0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN0.Location = new System.Drawing.Point(88, 275);
-            this.BTNN0.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN0.Name = "BTNN0";
-            this.BTNN0.Size = new System.Drawing.Size(85, 54);
-            this.BTNN0.TabIndex = 9;
-            this.BTNN0.Text = "0";
-            this.BTNN0.UseVisualStyleBackColor = false;
+            this.btn_0.BackColor = System.Drawing.Color.Olive;
+            this.btn_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_0.Location = new System.Drawing.Point(88, 275);
+            this.btn_0.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_0.Name = "btn_0";
+            this.btn_0.Size = new System.Drawing.Size(85, 54);
+            this.btn_0.TabIndex = 9;
+            this.btn_0.Text = "0";
+            this.btn_0.UseVisualStyleBackColor = false;
             // 
-            // BTNN9
+            // btn_9
             // 
-            this.BTNN9.BackColor = System.Drawing.Color.Olive;
-            this.BTNN9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN9.Location = new System.Drawing.Point(164, 229);
-            this.BTNN9.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN9.Name = "BTNN9";
-            this.BTNN9.Size = new System.Drawing.Size(48, 43);
-            this.BTNN9.TabIndex = 8;
-            this.BTNN9.Text = "9";
-            this.BTNN9.UseVisualStyleBackColor = false;
+            this.btn_9.BackColor = System.Drawing.Color.Olive;
+            this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_9.Location = new System.Drawing.Point(164, 229);
+            this.btn_9.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_9.Name = "btn_9";
+            this.btn_9.Size = new System.Drawing.Size(48, 43);
+            this.btn_9.TabIndex = 8;
+            this.btn_9.Text = "9";
+            this.btn_9.UseVisualStyleBackColor = false;
             // 
-            // BTNN8
+            // btn_8
             // 
-            this.BTNN8.BackColor = System.Drawing.Color.Olive;
-            this.BTNN8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN8.Location = new System.Drawing.Point(105, 229);
-            this.BTNN8.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN8.Name = "BTNN8";
-            this.BTNN8.Size = new System.Drawing.Size(48, 43);
-            this.BTNN8.TabIndex = 7;
-            this.BTNN8.Text = "8";
-            this.BTNN8.UseVisualStyleBackColor = false;
+            this.btn_8.BackColor = System.Drawing.Color.Olive;
+            this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_8.Location = new System.Drawing.Point(105, 229);
+            this.btn_8.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_8.Name = "btn_8";
+            this.btn_8.Size = new System.Drawing.Size(48, 43);
+            this.btn_8.TabIndex = 7;
+            this.btn_8.Text = "8";
+            this.btn_8.UseVisualStyleBackColor = false;
             // 
-            // BTNN7
+            // btn_7
             // 
-            this.BTNN7.BackColor = System.Drawing.Color.Olive;
-            this.BTNN7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN7.Location = new System.Drawing.Point(42, 229);
-            this.BTNN7.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN7.Name = "BTNN7";
-            this.BTNN7.Size = new System.Drawing.Size(48, 43);
-            this.BTNN7.TabIndex = 6;
-            this.BTNN7.Text = "7";
-            this.BTNN7.UseVisualStyleBackColor = false;
+            this.btn_7.BackColor = System.Drawing.Color.Olive;
+            this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_7.Location = new System.Drawing.Point(42, 229);
+            this.btn_7.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_7.Name = "btn_7";
+            this.btn_7.Size = new System.Drawing.Size(48, 43);
+            this.btn_7.TabIndex = 6;
+            this.btn_7.Text = "7";
+            this.btn_7.UseVisualStyleBackColor = false;
             // 
-            // BTNN3
+            // btn_3
             // 
-            this.BTNN3.BackColor = System.Drawing.Color.Olive;
-            this.BTNN3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN3.Location = new System.Drawing.Point(164, 127);
-            this.BTNN3.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN3.Name = "BTNN3";
-            this.BTNN3.Size = new System.Drawing.Size(48, 43);
-            this.BTNN3.TabIndex = 5;
-            this.BTNN3.Text = "3";
-            this.BTNN3.UseVisualStyleBackColor = false;
+            this.btn_3.BackColor = System.Drawing.Color.Olive;
+            this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_3.Location = new System.Drawing.Point(164, 127);
+            this.btn_3.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_3.Name = "btn_3";
+            this.btn_3.Size = new System.Drawing.Size(48, 43);
+            this.btn_3.TabIndex = 5;
+            this.btn_3.Text = "3";
+            this.btn_3.UseVisualStyleBackColor = false;
             // 
-            // BTNN6
+            // btn_6
             // 
-            this.BTNN6.BackColor = System.Drawing.Color.Olive;
-            this.BTNN6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN6.Location = new System.Drawing.Point(164, 178);
-            this.BTNN6.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN6.Name = "BTNN6";
-            this.BTNN6.Size = new System.Drawing.Size(48, 43);
-            this.BTNN6.TabIndex = 4;
-            this.BTNN6.Text = "6";
-            this.BTNN6.UseVisualStyleBackColor = false;
+            this.btn_6.BackColor = System.Drawing.Color.Olive;
+            this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_6.Location = new System.Drawing.Point(164, 178);
+            this.btn_6.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_6.Name = "btn_6";
+            this.btn_6.Size = new System.Drawing.Size(48, 43);
+            this.btn_6.TabIndex = 4;
+            this.btn_6.Text = "6";
+            this.btn_6.UseVisualStyleBackColor = false;
             // 
-            // BTNN2
+            // btn_2
             // 
-            this.BTNN2.BackColor = System.Drawing.Color.Olive;
-            this.BTNN2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN2.Location = new System.Drawing.Point(105, 127);
-            this.BTNN2.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN2.Name = "BTNN2";
-            this.BTNN2.Size = new System.Drawing.Size(48, 43);
-            this.BTNN2.TabIndex = 3;
-            this.BTNN2.Text = "2";
-            this.BTNN2.UseVisualStyleBackColor = false;
+            this.btn_2.BackColor = System.Drawing.Color.Olive;
+            this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_2.Location = new System.Drawing.Point(105, 127);
+            this.btn_2.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_2.Name = "btn_2";
+            this.btn_2.Size = new System.Drawing.Size(48, 43);
+            this.btn_2.TabIndex = 3;
+            this.btn_2.Text = "2";
+            this.btn_2.UseVisualStyleBackColor = false;
             // 
-            // BTNN5
+            // btn_5
             // 
-            this.BTNN5.BackColor = System.Drawing.Color.Olive;
-            this.BTNN5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN5.Location = new System.Drawing.Point(105, 178);
-            this.BTNN5.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN5.Name = "BTNN5";
-            this.BTNN5.Size = new System.Drawing.Size(48, 43);
-            this.BTNN5.TabIndex = 2;
-            this.BTNN5.Text = "5";
-            this.BTNN5.UseVisualStyleBackColor = false;
+            this.btn_5.BackColor = System.Drawing.Color.Olive;
+            this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_5.Location = new System.Drawing.Point(105, 178);
+            this.btn_5.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_5.Name = "btn_5";
+            this.btn_5.Size = new System.Drawing.Size(48, 43);
+            this.btn_5.TabIndex = 2;
+            this.btn_5.Text = "5";
+            this.btn_5.UseVisualStyleBackColor = false;
             // 
-            // BTNN4
+            // btn_4
             // 
-            this.BTNN4.BackColor = System.Drawing.Color.Olive;
-            this.BTNN4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN4.Location = new System.Drawing.Point(42, 178);
-            this.BTNN4.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN4.Name = "BTNN4";
-            this.BTNN4.Size = new System.Drawing.Size(48, 43);
-            this.BTNN4.TabIndex = 1;
-            this.BTNN4.Text = "4";
-            this.BTNN4.UseVisualStyleBackColor = false;
+            this.btn_4.BackColor = System.Drawing.Color.Olive;
+            this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_4.Location = new System.Drawing.Point(42, 178);
+            this.btn_4.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_4.Name = "btn_4";
+            this.btn_4.Size = new System.Drawing.Size(48, 43);
+            this.btn_4.TabIndex = 1;
+            this.btn_4.Text = "4";
+            this.btn_4.UseVisualStyleBackColor = false;
             // 
-            // BTNN1
+            // btn_1
             // 
-            this.BTNN1.BackColor = System.Drawing.Color.Olive;
-            this.BTNN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNN1.Location = new System.Drawing.Point(42, 127);
-            this.BTNN1.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNN1.Name = "BTNN1";
-            this.BTNN1.Size = new System.Drawing.Size(48, 43);
-            this.BTNN1.TabIndex = 0;
-            this.BTNN1.Text = "1";
-            this.BTNN1.UseVisualStyleBackColor = false;
+            this.btn_1.BackColor = System.Drawing.Color.Olive;
+            this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_1.Location = new System.Drawing.Point(42, 127);
+            this.btn_1.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_1.Name = "btn_1";
+            this.btn_1.Size = new System.Drawing.Size(48, 43);
+            this.btn_1.TabIndex = 0;
+            this.btn_1.Text = "1";
+            this.btn_1.UseVisualStyleBackColor = false;
             // 
-            // txtDOC
+            // txt_documento
             // 
-            this.txtDOC.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.txtDOC.Location = new System.Drawing.Point(25, 97);
-            this.txtDOC.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDOC.Name = "txtDOC";
-            this.txtDOC.Size = new System.Drawing.Size(220, 22);
-            this.txtDOC.TabIndex = 11;
+            this.txt_documento.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.txt_documento.Location = new System.Drawing.Point(25, 97);
+            this.txt_documento.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_documento.Name = "txt_documento";
+            this.txt_documento.Size = new System.Drawing.Size(220, 22);
+            this.txt_documento.TabIndex = 11;
             // 
-            // txtmanual
+            // lbl_infomanual
             // 
-            this.txtmanual.Font = new System.Drawing.Font("Verdana", 10.25F);
-            this.txtmanual.Location = new System.Drawing.Point(63, 10);
-            this.txtmanual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.txtmanual.Name = "txtmanual";
-            this.txtmanual.Size = new System.Drawing.Size(139, 23);
-            this.txtmanual.TabIndex = 12;
-            this.txtmanual.Text = "Manualmente";
+            this.lbl_infomanual.Font = new System.Drawing.Font("Verdana", 10.25F);
+            this.lbl_infomanual.Location = new System.Drawing.Point(63, 10);
+            this.lbl_infomanual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_infomanual.Name = "lbl_infomanual";
+            this.lbl_infomanual.Size = new System.Drawing.Size(139, 23);
+            this.lbl_infomanual.TabIndex = 12;
+            this.lbl_infomanual.Text = "Manualmente";
             // 
             // btn_sig
             // 
             this.btn_sig.BackColor = System.Drawing.Color.Olive;
+            this.btn_sig.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_sig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sig.Location = new System.Drawing.Point(505, 316);
             this.btn_sig.Margin = new System.Windows.Forms.Padding(4);
@@ -306,23 +307,23 @@
             this.btn_sig.Text = "Siguiente";
             this.btn_sig.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // pn_scanner
             // 
-            this.panel1.Controls.Add(this.btn_show);
-            this.panel1.Controls.Add(this.btn_inicio);
-            this.panel1.Controls.Add(this.combobox_camara);
-            this.panel1.Controls.Add(this.lbl_info);
-            this.panel1.Controls.Add(this.picbox_camara);
-            this.panel1.Location = new System.Drawing.Point(12, 143);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 349);
-            this.panel1.TabIndex = 15;
+            this.pn_scanner.Controls.Add(this.btn_show);
+            this.pn_scanner.Controls.Add(this.btn_inicio);
+            this.pn_scanner.Controls.Add(this.combobox_camara);
+            this.pn_scanner.Controls.Add(this.lbl_info);
+            this.pn_scanner.Controls.Add(this.picbox_camara);
+            this.pn_scanner.Location = new System.Drawing.Point(12, 143);
+            this.pn_scanner.Name = "pn_scanner";
+            this.pn_scanner.Size = new System.Drawing.Size(484, 349);
+            this.pn_scanner.TabIndex = 15;
             // 
             // picbox_camara
             // 
             this.picbox_camara.Location = new System.Drawing.Point(19, 44);
             this.picbox_camara.Name = "picbox_camara";
-            this.picbox_camara.Size = new System.Drawing.Size(250, 241);
+            this.picbox_camara.Size = new System.Drawing.Size(454, 240);
             this.picbox_camara.TabIndex = 3;
             this.picbox_camara.TabStop = false;
             // 
@@ -339,6 +340,7 @@
             // combobox_camara
             // 
             this.combobox_camara.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.combobox_camara.Cursor = System.Windows.Forms.Cursors.No;
             this.combobox_camara.FormattingEnabled = true;
             this.combobox_camara.Location = new System.Drawing.Point(194, 12);
             this.combobox_camara.Name = "combobox_camara";
@@ -348,6 +350,7 @@
             // btn_inicio
             // 
             this.btn_inicio.BackColor = System.Drawing.Color.Olive;
+            this.btn_inicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_inicio.Location = new System.Drawing.Point(74, 291);
             this.btn_inicio.Name = "btn_inicio";
@@ -360,6 +363,7 @@
             // btn_show
             // 
             this.btn_show.BackColor = System.Drawing.Color.Olive;
+            this.btn_show.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_show.Location = new System.Drawing.Point(275, 291);
             this.btn_show.Name = "btn_show";
@@ -379,9 +383,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkKhaki;
             this.ClientSize = new System.Drawing.Size(981, 570);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pn_scanner);
             this.Controls.Add(this.btn_sig);
-            this.Controls.Add(this.paneldoc);
+            this.Controls.Add(this.pn_dni);
             this.Controls.Add(this.lbl_scanner);
             this.Controls.Add(this.btn_reciclar);
             this.Controls.Add(this.lbl_bienvenida);
@@ -396,10 +400,10 @@
             this.ShowIcon = false;
             this.Text = "Reciclador";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_principal_FormClosing);
-            this.paneldoc.ResumeLayout(false);
-            this.paneldoc.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pn_dni.ResumeLayout(false);
+            this.pn_dni.PerformLayout();
+            this.pn_scanner.ResumeLayout(false);
+            this.pn_scanner.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_camara)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -414,21 +418,21 @@
         private System.Windows.Forms.Timer timer_hora;
         private System.Windows.Forms.Button btn_reciclar;
         private System.Windows.Forms.Label lbl_scanner;
-        private System.Windows.Forms.Panel paneldoc;
-        private System.Windows.Forms.Button BTNN0;
-        private System.Windows.Forms.Button BTNN9;
-        private System.Windows.Forms.Button BTNN8;
-        private System.Windows.Forms.Button BTNN7;
-        private System.Windows.Forms.Button BTNN3;
-        private System.Windows.Forms.Button BTNN6;
-        private System.Windows.Forms.Button BTNN2;
-        private System.Windows.Forms.Button BTNN5;
-        private System.Windows.Forms.Button BTNN4;
-        private System.Windows.Forms.Button BTNN1;
-        private System.Windows.Forms.TextBox txtDOC;
-        private System.Windows.Forms.Label txtmanual;
+        private System.Windows.Forms.Panel pn_dni;
+        private System.Windows.Forms.Button btn_0;
+        private System.Windows.Forms.Button btn_9;
+        private System.Windows.Forms.Button btn_8;
+        private System.Windows.Forms.Button btn_7;
+        private System.Windows.Forms.Button btn_3;
+        private System.Windows.Forms.Button btn_6;
+        private System.Windows.Forms.Button btn_2;
+        private System.Windows.Forms.Button btn_5;
+        private System.Windows.Forms.Button btn_4;
+        private System.Windows.Forms.Button btn_1;
+        private System.Windows.Forms.TextBox txt_documento;
+        private System.Windows.Forms.Label lbl_infomanual;
         private System.Windows.Forms.Button btn_sig;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pn_scanner;
         private System.Windows.Forms.PictureBox picbox_camara;
         private System.Windows.Forms.Label lbl_info;
         private System.Windows.Forms.ComboBox combobox_camara;

@@ -42,12 +42,7 @@ namespace Primaton_G3_Reciclaje
             lbl_hora.Text = DateTime.Now.ToString();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            Form frm_scan = new frm_scan();
-            frm_scan.ShowDialog();
 
-        }
 
         private void Button1_Click(object sender, EventArgs e)
         {

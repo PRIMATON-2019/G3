@@ -99,12 +99,6 @@
     <Compile Include="Front-End\Formularios\frm_saludofinal.Designer.cs">
       <DependentUpon>frm_saludofinal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_scan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front-End\Formularios\frm_scan.Designer.cs">
-      <DependentUpon>frm_scan.cs</DependentUpon>
-    </Compile>
     <Compile Include="Front-End\Formularios\frm_sumadepuntos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,9 +133,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Front-End\Formularios\frm_saludofinal.resx">
       <DependentUpon>frm_saludofinal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_scan.resx">
-      <DependentUpon>frm_scan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front-End\Formularios\frm_sumadepuntos.resx">
       <DependentUpon>frm_sumadepuntos.cs</DependentUpon>
