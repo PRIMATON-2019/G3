@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Primaton_G3_Reciclaje.Front_End.Formularios;
+using System;
 using System.Windows.Forms;
-using Primaton_G3_Reciclaje.Front_End.Formularios;
 namespace Primaton_G3_Reciclaje
 {
     public partial class frm_principal : Form
@@ -19,17 +19,52 @@ namespace Primaton_G3_Reciclaje
         }
         #endregion
 
-        private void Btn_reciclaje_Click(object sender, System.EventArgs e)
+        private void Timer1_Tick(object sender, System.EventArgs e)
         {
+            //lbl_hora.Text = DateTime.Now..ToString();
+        }
 
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Form frm_scan = new frm_scan();
+            frm_scan.ShowDialog();
+            
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
             Form frm_tiposdereciclaje = new frm_tiposdereciclaje();
+            // Para seguir, bandera 1 (Si el usuario ingresó el dni o escaneó) sino, no permitir seguir.
+            // by:fabri
+
+
 
             frm_tiposdereciclaje.ShowDialog();
         }
 
-        private void Timer1_Tick(object sender, System.EventArgs e)
+        private void Button11_Click(object sender, EventArgs e)
         {
-            //lbl_hora.Text = DateTime.Now..ToString();
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtEscanear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Bl_info_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
