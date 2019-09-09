@@ -125,6 +125,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Front-End\Formularios\frm_nuevoingreso.resx">
+      <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Front-End\Formularios\frm_plastico.resx">
       <DependentUpon>frm_plastico.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,8 +137,14 @@
     <EmbeddedResource Include="Front-End\Formularios\frm_registro_comercio.resx">
       <DependentUpon>frm_registro_comercio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Front-End\Formularios\frm_saludofinal.resx">
+      <DependentUpon>frm_saludofinal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Front-End\Formularios\frm_scan.resx">
       <DependentUpon>frm_scan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front-End\Formularios\frm_sumadepuntos.resx">
+      <DependentUpon>frm_sumadepuntos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front-End\Formularios\frm_tiposdereciclaje.resx">
       <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>

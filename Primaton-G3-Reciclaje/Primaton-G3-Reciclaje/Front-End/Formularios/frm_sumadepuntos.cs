@@ -16,5 +16,15 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         {
             InitializeComponent();
         }
+
+        private void Frm_sumadepuntos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtSumaste_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
