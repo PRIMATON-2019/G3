@@ -34,8 +34,37 @@ namespace Primaton_G3_Reciclaje
         private void Button1_Click(object sender, EventArgs e)
         {
             Form frm_tiposdereciclaje = new frm_tiposdereciclaje();
+            // Para seguir, bandera 1 (Si el usuario ingresó el dni o escaneó) sino, no permitir seguir.
+            // by:fabri
+
+
 
             frm_tiposdereciclaje.ShowDialog();
+        }
+
+        private void Button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtEscanear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Bl_info_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
