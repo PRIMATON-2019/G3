@@ -69,6 +69,12 @@
     <Compile Include="Back-End\Clases\DateTime.cs" />
     <Compile Include="Back-End\Clases\Residuo.cs" />
     <Compile Include="Back-End\Clases\TipoResiduo.cs" />
+    <Compile Include="Front-End\Formularios\frm_nuevoingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front-End\Formularios\frm_nuevoingreso.Designer.cs">
+      <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front-End\Formularios\frm_plastico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,11 +93,23 @@
     <Compile Include="Front-End\Formularios\frm_registro_comercio.Designer.cs">
       <DependentUpon>frm_registro_comercio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Front-End\Formularios\frm_saludofinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front-End\Formularios\frm_saludofinal.Designer.cs">
+      <DependentUpon>frm_saludofinal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front-End\Formularios\frm_scan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Front-End\Formularios\frm_scan.Designer.cs">
       <DependentUpon>frm_scan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front-End\Formularios\frm_sumadepuntos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front-End\Formularios\frm_sumadepuntos.Designer.cs">
+      <DependentUpon>frm_sumadepuntos.cs</DependentUpon>
     </Compile>
     <Compile Include="Front-End\Formularios\frm_tiposdereciclaje.cs">
       <SubType>Form</SubType>
