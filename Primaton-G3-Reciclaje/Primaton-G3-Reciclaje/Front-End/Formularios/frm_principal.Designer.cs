@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btnscann = new System.Windows.Forms.Button();
-            this.bl_info = new System.Windows.Forms.Label();
+            this.lbl_informacionDNI = new System.Windows.Forms.Label();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.link_lbl = new System.Windows.Forms.LinkLabel();
             this.lbl_bienvenida = new System.Windows.Forms.Label();
             this.timer_hora = new System.Windows.Forms.Timer(this.components);
             this.btn_reciclar = new System.Windows.Forms.Button();
-            this.txtEscanear = new System.Windows.Forms.Label();
+            this.lbl_scanner = new System.Windows.Forms.Label();
             this.paneldoc = new System.Windows.Forms.Panel();
             this.BTNN0 = new System.Windows.Forms.Button();
             this.BTNN9 = new System.Windows.Forms.Button();
@@ -51,44 +50,37 @@
             this.txtDOC = new System.Windows.Forms.TextBox();
             this.txtmanual = new System.Windows.Forms.Label();
             this.btn_sig = new System.Windows.Forms.Button();
-            this.btn_salir = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.picbox_camara = new System.Windows.Forms.PictureBox();
+            this.lbl_info = new System.Windows.Forms.Label();
+            this.combobox_camara = new System.Windows.Forms.ComboBox();
+            this.btn_inicio = new System.Windows.Forms.Button();
+            this.btn_show = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.paneldoc.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_camara)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnscann
+            // lbl_informacionDNI
             // 
-            this.btnscann.BackColor = System.Drawing.Color.Transparent;
-            this.btnscann.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnscann.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnscann.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnscann.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnscann.Location = new System.Drawing.Point(115, 279);
-            this.btnscann.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnscann.Name = "btnscann";
-            this.btnscann.Size = new System.Drawing.Size(176, 139);
-            this.btnscann.TabIndex = 1;
-            this.btnscann.Text = "Scan";
-            this.btnscann.UseVisualStyleBackColor = false;
-            this.btnscann.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // bl_info
-            // 
-            this.bl_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bl_info.Font = new System.Drawing.Font("Verdana", 24F);
-            this.bl_info.Location = new System.Drawing.Point(105, 106);
-            this.bl_info.Name = "bl_info";
-            this.bl_info.Size = new System.Drawing.Size(631, 55);
-            this.bl_info.TabIndex = 2;
-            this.bl_info.Text = "INGRESE SU DNI";
-            this.bl_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_informacionDNI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_informacionDNI.Font = new System.Drawing.Font("Verdana", 24F);
+            this.lbl_informacionDNI.Location = new System.Drawing.Point(318, 77);
+            this.lbl_informacionDNI.Name = "lbl_informacionDNI";
+            this.lbl_informacionDNI.Size = new System.Drawing.Size(372, 63);
+            this.lbl_informacionDNI.TabIndex = 2;
+            this.lbl_informacionDNI.Text = "INGRESE SU DNI";
+            this.lbl_informacionDNI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_hora
             // 
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hora.Location = new System.Drawing.Point(664, 9);
+            this.lbl_hora.Location = new System.Drawing.Point(676, 7);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(307, 52);
+            this.lbl_hora.Size = new System.Drawing.Size(301, 121);
             this.lbl_hora.TabIndex = 3;
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,7 +100,7 @@
             // lbl_bienvenida
             // 
             this.lbl_bienvenida.Font = new System.Drawing.Font("Verdana", 19.8F);
-            this.lbl_bienvenida.Location = new System.Drawing.Point(320, 11);
+            this.lbl_bienvenida.Location = new System.Drawing.Point(387, 8);
             this.lbl_bienvenida.Name = "lbl_bienvenida";
             this.lbl_bienvenida.Size = new System.Drawing.Size(303, 53);
             this.lbl_bienvenida.TabIndex = 5;
@@ -123,7 +115,7 @@
             // 
             // btn_reciclar
             // 
-            this.btn_reciclar.Location = new System.Drawing.Point(155, 457);
+            this.btn_reciclar.Location = new System.Drawing.Point(206, 541);
             this.btn_reciclar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_reciclar.Name = "btn_reciclar";
             this.btn_reciclar.Size = new System.Drawing.Size(103, 23);
@@ -132,148 +124,170 @@
             this.btn_reciclar.UseVisualStyleBackColor = true;
             this.btn_reciclar.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // txtEscanear
+            // lbl_scanner
             // 
-            this.txtEscanear.AutoSize = true;
-            this.txtEscanear.Font = new System.Drawing.Font("Verdana", 10.25F);
-            this.txtEscanear.Location = new System.Drawing.Point(151, 228);
-            this.txtEscanear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.txtEscanear.Name = "txtEscanear";
-            this.txtEscanear.Size = new System.Drawing.Size(91, 22);
-            this.txtEscanear.TabIndex = 9;
-            this.txtEscanear.Text = "Escanear";
+            this.lbl_scanner.AutoSize = true;
+            this.lbl_scanner.Font = new System.Drawing.Font("Verdana", 10.25F);
+            this.lbl_scanner.Location = new System.Drawing.Point(59, 107);
+            this.lbl_scanner.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_scanner.Name = "lbl_scanner";
+            this.lbl_scanner.Size = new System.Drawing.Size(91, 22);
+            this.lbl_scanner.TabIndex = 9;
+            this.lbl_scanner.Text = "Escanear";
             // 
             // paneldoc
             // 
             this.paneldoc.Controls.Add(this.BTNN0);
             this.paneldoc.Controls.Add(this.BTNN9);
+            this.paneldoc.Controls.Add(this.txtmanual);
             this.paneldoc.Controls.Add(this.BTNN8);
             this.paneldoc.Controls.Add(this.BTNN7);
+            this.paneldoc.Controls.Add(this.txtDOC);
             this.paneldoc.Controls.Add(this.BTNN3);
             this.paneldoc.Controls.Add(this.BTNN6);
             this.paneldoc.Controls.Add(this.BTNN2);
             this.paneldoc.Controls.Add(this.BTNN5);
             this.paneldoc.Controls.Add(this.BTNN4);
             this.paneldoc.Controls.Add(this.BTNN1);
-            this.paneldoc.Location = new System.Drawing.Point(644, 279);
-            this.paneldoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.paneldoc.Location = new System.Drawing.Point(717, 155);
+            this.paneldoc.Margin = new System.Windows.Forms.Padding(4);
             this.paneldoc.Name = "paneldoc";
-            this.paneldoc.Size = new System.Drawing.Size(271, 183);
+            this.paneldoc.Size = new System.Drawing.Size(251, 324);
             this.paneldoc.TabIndex = 10;
             // 
             // BTNN0
             // 
-            this.BTNN0.Location = new System.Drawing.Point(192, 117);
-            this.BTNN0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN0.BackColor = System.Drawing.Color.Olive;
+            this.BTNN0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN0.Location = new System.Drawing.Point(88, 275);
+            this.BTNN0.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN0.Name = "BTNN0";
-            this.BTNN0.Size = new System.Drawing.Size(48, 43);
+            this.BTNN0.Size = new System.Drawing.Size(85, 54);
             this.BTNN0.TabIndex = 9;
             this.BTNN0.Text = "0";
-            this.BTNN0.UseVisualStyleBackColor = true;
+            this.BTNN0.UseVisualStyleBackColor = false;
             // 
             // BTNN9
             // 
-            this.BTNN9.Location = new System.Drawing.Point(136, 117);
-            this.BTNN9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN9.BackColor = System.Drawing.Color.Olive;
+            this.BTNN9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN9.Location = new System.Drawing.Point(164, 229);
+            this.BTNN9.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN9.Name = "BTNN9";
             this.BTNN9.Size = new System.Drawing.Size(48, 43);
             this.BTNN9.TabIndex = 8;
             this.BTNN9.Text = "9";
-            this.BTNN9.UseVisualStyleBackColor = true;
+            this.BTNN9.UseVisualStyleBackColor = false;
             // 
             // BTNN8
             // 
-            this.BTNN8.Location = new System.Drawing.Point(80, 117);
-            this.BTNN8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN8.BackColor = System.Drawing.Color.Olive;
+            this.BTNN8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN8.Location = new System.Drawing.Point(105, 229);
+            this.BTNN8.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN8.Name = "BTNN8";
             this.BTNN8.Size = new System.Drawing.Size(48, 43);
             this.BTNN8.TabIndex = 7;
             this.BTNN8.Text = "8";
-            this.BTNN8.UseVisualStyleBackColor = true;
+            this.BTNN8.UseVisualStyleBackColor = false;
             // 
             // BTNN7
             // 
-            this.BTNN7.Location = new System.Drawing.Point(24, 117);
-            this.BTNN7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN7.BackColor = System.Drawing.Color.Olive;
+            this.BTNN7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN7.Location = new System.Drawing.Point(42, 229);
+            this.BTNN7.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN7.Name = "BTNN7";
             this.BTNN7.Size = new System.Drawing.Size(48, 43);
             this.BTNN7.TabIndex = 6;
             this.BTNN7.Text = "7";
-            this.BTNN7.UseVisualStyleBackColor = true;
+            this.BTNN7.UseVisualStyleBackColor = false;
             // 
             // BTNN3
             // 
-            this.BTNN3.Location = new System.Drawing.Point(136, 16);
-            this.BTNN3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN3.BackColor = System.Drawing.Color.Olive;
+            this.BTNN3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN3.Location = new System.Drawing.Point(164, 127);
+            this.BTNN3.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN3.Name = "BTNN3";
             this.BTNN3.Size = new System.Drawing.Size(48, 43);
             this.BTNN3.TabIndex = 5;
             this.BTNN3.Text = "3";
-            this.BTNN3.UseVisualStyleBackColor = true;
+            this.BTNN3.UseVisualStyleBackColor = false;
             // 
             // BTNN6
             // 
-            this.BTNN6.Location = new System.Drawing.Point(136, 66);
-            this.BTNN6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN6.BackColor = System.Drawing.Color.Olive;
+            this.BTNN6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN6.Location = new System.Drawing.Point(164, 178);
+            this.BTNN6.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN6.Name = "BTNN6";
             this.BTNN6.Size = new System.Drawing.Size(48, 43);
             this.BTNN6.TabIndex = 4;
             this.BTNN6.Text = "6";
-            this.BTNN6.UseVisualStyleBackColor = true;
+            this.BTNN6.UseVisualStyleBackColor = false;
             // 
             // BTNN2
             // 
-            this.BTNN2.Location = new System.Drawing.Point(80, 16);
-            this.BTNN2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN2.BackColor = System.Drawing.Color.Olive;
+            this.BTNN2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN2.Location = new System.Drawing.Point(105, 127);
+            this.BTNN2.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN2.Name = "BTNN2";
             this.BTNN2.Size = new System.Drawing.Size(48, 43);
             this.BTNN2.TabIndex = 3;
             this.BTNN2.Text = "2";
-            this.BTNN2.UseVisualStyleBackColor = true;
+            this.BTNN2.UseVisualStyleBackColor = false;
             // 
             // BTNN5
             // 
-            this.BTNN5.Location = new System.Drawing.Point(80, 66);
-            this.BTNN5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN5.BackColor = System.Drawing.Color.Olive;
+            this.BTNN5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN5.Location = new System.Drawing.Point(105, 178);
+            this.BTNN5.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN5.Name = "BTNN5";
             this.BTNN5.Size = new System.Drawing.Size(48, 43);
             this.BTNN5.TabIndex = 2;
             this.BTNN5.Text = "5";
-            this.BTNN5.UseVisualStyleBackColor = true;
+            this.BTNN5.UseVisualStyleBackColor = false;
             // 
             // BTNN4
             // 
-            this.BTNN4.Location = new System.Drawing.Point(24, 66);
-            this.BTNN4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN4.BackColor = System.Drawing.Color.Olive;
+            this.BTNN4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN4.Location = new System.Drawing.Point(42, 178);
+            this.BTNN4.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN4.Name = "BTNN4";
             this.BTNN4.Size = new System.Drawing.Size(48, 43);
             this.BTNN4.TabIndex = 1;
             this.BTNN4.Text = "4";
-            this.BTNN4.UseVisualStyleBackColor = true;
+            this.BTNN4.UseVisualStyleBackColor = false;
             // 
             // BTNN1
             // 
-            this.BTNN1.Location = new System.Drawing.Point(24, 16);
-            this.BTNN1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNN1.BackColor = System.Drawing.Color.Olive;
+            this.BTNN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNN1.Location = new System.Drawing.Point(42, 127);
+            this.BTNN1.Margin = new System.Windows.Forms.Padding(4);
             this.BTNN1.Name = "BTNN1";
             this.BTNN1.Size = new System.Drawing.Size(48, 43);
             this.BTNN1.TabIndex = 0;
             this.BTNN1.Text = "1";
-            this.BTNN1.UseVisualStyleBackColor = true;
+            this.BTNN1.UseVisualStyleBackColor = false;
             // 
             // txtDOC
             // 
-            this.txtDOC.Location = new System.Drawing.Point(644, 241);
-            this.txtDOC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDOC.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.txtDOC.Location = new System.Drawing.Point(25, 97);
+            this.txtDOC.Margin = new System.Windows.Forms.Padding(4);
             this.txtDOC.Name = "txtDOC";
-            this.txtDOC.Size = new System.Drawing.Size(269, 22);
+            this.txtDOC.Size = new System.Drawing.Size(220, 22);
             this.txtDOC.TabIndex = 11;
-            this.txtDOC.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // txtmanual
             // 
             this.txtmanual.Font = new System.Drawing.Font("Verdana", 10.25F);
-            this.txtmanual.Location = new System.Drawing.Point(704, 214);
+            this.txtmanual.Location = new System.Drawing.Point(63, 10);
             this.txtmanual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtmanual.Name = "txtmanual";
             this.txtmanual.Size = new System.Drawing.Size(139, 23);
@@ -282,42 +296,98 @@
             // 
             // btn_sig
             // 
-            this.btn_sig.Location = new System.Drawing.Point(360, 508);
-            this.btn_sig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_sig.BackColor = System.Drawing.Color.Olive;
+            this.btn_sig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sig.Location = new System.Drawing.Point(505, 316);
+            this.btn_sig.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sig.Name = "btn_sig";
-            this.btn_sig.Size = new System.Drawing.Size(100, 28);
+            this.btn_sig.Size = new System.Drawing.Size(204, 163);
             this.btn_sig.TabIndex = 13;
             this.btn_sig.Text = "Siguiente";
-            this.btn_sig.UseVisualStyleBackColor = true;
+            this.btn_sig.UseVisualStyleBackColor = false;
             // 
-            // btn_salir
+            // panel1
             // 
-            this.btn_salir.Location = new System.Drawing.Point(488, 508);
-            this.btn_salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(100, 28);
-            this.btn_salir.TabIndex = 14;
-            this.btn_salir.Text = "Salir";
-            this.btn_salir.UseVisualStyleBackColor = true;
+            this.panel1.Controls.Add(this.btn_show);
+            this.panel1.Controls.Add(this.btn_inicio);
+            this.panel1.Controls.Add(this.combobox_camara);
+            this.panel1.Controls.Add(this.lbl_info);
+            this.panel1.Controls.Add(this.picbox_camara);
+            this.panel1.Location = new System.Drawing.Point(12, 143);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(484, 349);
+            this.panel1.TabIndex = 15;
+            // 
+            // picbox_camara
+            // 
+            this.picbox_camara.Location = new System.Drawing.Point(19, 44);
+            this.picbox_camara.Name = "picbox_camara";
+            this.picbox_camara.Size = new System.Drawing.Size(250, 241);
+            this.picbox_camara.TabIndex = 3;
+            this.picbox_camara.TabStop = false;
+            // 
+            // lbl_info
+            // 
+            this.lbl_info.AutoSize = true;
+            this.lbl_info.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_info.Location = new System.Drawing.Point(16, 12);
+            this.lbl_info.Name = "lbl_info";
+            this.lbl_info.Size = new System.Drawing.Size(164, 17);
+            this.lbl_info.TabIndex = 4;
+            this.lbl_info.Text = "Camara de el Dispositivo";
+            // 
+            // combobox_camara
+            // 
+            this.combobox_camara.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.combobox_camara.FormattingEnabled = true;
+            this.combobox_camara.Location = new System.Drawing.Point(194, 12);
+            this.combobox_camara.Name = "combobox_camara";
+            this.combobox_camara.Size = new System.Drawing.Size(254, 24);
+            this.combobox_camara.TabIndex = 5;
+            // 
+            // btn_inicio
+            // 
+            this.btn_inicio.BackColor = System.Drawing.Color.Olive;
+            this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_inicio.Location = new System.Drawing.Point(74, 291);
+            this.btn_inicio.Name = "btn_inicio";
+            this.btn_inicio.Size = new System.Drawing.Size(127, 45);
+            this.btn_inicio.TabIndex = 6;
+            this.btn_inicio.Text = "Iniciar";
+            this.btn_inicio.UseVisualStyleBackColor = false;
+            this.btn_inicio.Click += new System.EventHandler(this.Btn_inicio_Click);
+            // 
+            // btn_show
+            // 
+            this.btn_show.BackColor = System.Drawing.Color.Olive;
+            this.btn_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_show.Location = new System.Drawing.Point(275, 291);
+            this.btn_show.Name = "btn_show";
+            this.btn_show.Size = new System.Drawing.Size(198, 45);
+            this.btn_show.TabIndex = 7;
+            this.btn_show.Text = "Mostrar Codigo";
+            this.btn_show.UseVisualStyleBackColor = false;
+            this.btn_show.Click += new System.EventHandler(this.Btn_show_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick_1);
             // 
             // frm_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.Color.DarkKhaki;
             this.ClientSize = new System.Drawing.Size(981, 570);
-            this.Controls.Add(this.btn_salir);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_sig);
-            this.Controls.Add(this.txtmanual);
-            this.Controls.Add(this.txtDOC);
             this.Controls.Add(this.paneldoc);
-            this.Controls.Add(this.txtEscanear);
+            this.Controls.Add(this.lbl_scanner);
             this.Controls.Add(this.btn_reciclar);
             this.Controls.Add(this.lbl_bienvenida);
             this.Controls.Add(this.link_lbl);
             this.Controls.Add(this.lbl_hora);
-            this.Controls.Add(this.bl_info);
-            this.Controls.Add(this.btnscann);
+            this.Controls.Add(this.lbl_informacionDNI);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
@@ -325,21 +395,25 @@
             this.Name = "frm_principal";
             this.ShowIcon = false;
             this.Text = "Reciclador";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_principal_FormClosing);
             this.paneldoc.ResumeLayout(false);
+            this.paneldoc.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_camara)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnscann;
-        private System.Windows.Forms.Label bl_info;
+        private System.Windows.Forms.Label lbl_informacionDNI;
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.LinkLabel link_lbl;
         private System.Windows.Forms.Label lbl_bienvenida;
         private System.Windows.Forms.Timer timer_hora;
         private System.Windows.Forms.Button btn_reciclar;
-        private System.Windows.Forms.Label txtEscanear;
+        private System.Windows.Forms.Label lbl_scanner;
         private System.Windows.Forms.Panel paneldoc;
         private System.Windows.Forms.Button BTNN0;
         private System.Windows.Forms.Button BTNN9;
@@ -354,7 +428,13 @@
         private System.Windows.Forms.TextBox txtDOC;
         private System.Windows.Forms.Label txtmanual;
         private System.Windows.Forms.Button btn_sig;
-        private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox picbox_camara;
+        private System.Windows.Forms.Label lbl_info;
+        private System.Windows.Forms.ComboBox combobox_camara;
+        private System.Windows.Forms.Button btn_inicio;
+        private System.Windows.Forms.Button btn_show;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
