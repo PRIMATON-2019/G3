@@ -107,9 +107,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Nuevas-Herramientas\RoundButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <EmbeddedResource Include="Front-End\Formularios\frm_plastico.resx">
       <DependentUpon>frm_plastico.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +148,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Nuevas-Herramientas\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

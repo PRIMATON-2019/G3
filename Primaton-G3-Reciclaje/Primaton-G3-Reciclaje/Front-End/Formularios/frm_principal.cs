@@ -31,7 +31,7 @@ namespace Primaton_G3_Reciclaje
             
         }
 
-        private void RoundButton1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             Form frm_tiposdereciclaje = new frm_tiposdereciclaje();
 

@@ -36,7 +36,7 @@
             this.lbl_bienvenida = new System.Windows.Forms.Label();
             this.timer_hora = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_redondo = new WindowsFormsApplication1.RoundButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -112,16 +112,15 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Informacion de la persona en base al dni  aca";
             // 
-            // btn_redondo
+            // button1
             // 
-            this.btn_redondo.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_redondo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_redondo.Location = new System.Drawing.Point(433, 242);
-            this.btn_redondo.Name = "btn_redondo";
-            this.btn_redondo.Size = new System.Drawing.Size(325, 276);
-            this.btn_redondo.TabIndex = 7;
-            this.btn_redondo.Text = "Reciclar";
-            this.btn_redondo.Click += new System.EventHandler(this.RoundButton1_Click);
+            this.button1.Location = new System.Drawing.Point(551, 290);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // frm_principal
             // 
@@ -129,7 +128,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(982, 570);
-            this.Controls.Add(this.btn_redondo);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_bienvenida);
             this.Controls.Add(this.link_lbl);
@@ -155,7 +154,7 @@
         private System.Windows.Forms.Label lbl_bienvenida;
         private System.Windows.Forms.Timer timer_hora;
         private System.Windows.Forms.Label label1;
-        private WindowsFormsApplication1.RoundButton btn_redondo;
+        private System.Windows.Forms.Button button1;
     }
 }
 
