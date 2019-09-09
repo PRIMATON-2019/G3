@@ -104,6 +104,13 @@ namespace Primaton_G3_Reciclaje
         {
             picbox_camara.Image = (Bitmap)eventArgs.Frame.Clone();
         }
+
+        private void Btn_detenercamara_Click(object sender, EventArgs e)
+        {
+            FinalFrame.Stop(); //Detenemos la camara
+            //trabajar para cerrar la camara al apretar el boton, que desaparezca la imagen.
+            
+        }
     }
     #endregion
 

@@ -11,9 +11,10 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         #region Propiedades
         public int Id { get; set; }
         public decimal Capacidad { get; set; }
-        
-        
-        
+        public int tamanio { get; set; }
+
+
+
         #endregion
         #region Constructor
         public Contenedor()

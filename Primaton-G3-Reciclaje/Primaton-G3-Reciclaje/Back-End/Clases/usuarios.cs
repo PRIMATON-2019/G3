@@ -29,7 +29,7 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         public string IdentificarUsuario(string Documento)
         {
 //en este metodo identifico al usiario que ha mostrado su dni a la camara con la lectora de qr
-
+//conectar la camara aqui.
             return "";
         }
         #endregion

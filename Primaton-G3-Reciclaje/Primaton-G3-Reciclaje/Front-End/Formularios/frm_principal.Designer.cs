@@ -39,24 +39,25 @@
             this.pn_dni = new System.Windows.Forms.Panel();
             this.btn_0 = new System.Windows.Forms.Button();
             this.btn_9 = new System.Windows.Forms.Button();
+            this.lbl_infomanual = new System.Windows.Forms.Label();
             this.btn_8 = new System.Windows.Forms.Button();
             this.btn_7 = new System.Windows.Forms.Button();
+            this.txt_documento = new System.Windows.Forms.TextBox();
             this.btn_3 = new System.Windows.Forms.Button();
             this.btn_6 = new System.Windows.Forms.Button();
             this.btn_2 = new System.Windows.Forms.Button();
             this.btn_5 = new System.Windows.Forms.Button();
             this.btn_4 = new System.Windows.Forms.Button();
             this.btn_1 = new System.Windows.Forms.Button();
-            this.txt_documento = new System.Windows.Forms.TextBox();
-            this.lbl_infomanual = new System.Windows.Forms.Label();
             this.btn_sig = new System.Windows.Forms.Button();
             this.pn_scanner = new System.Windows.Forms.Panel();
-            this.picbox_camara = new System.Windows.Forms.PictureBox();
-            this.lbl_info = new System.Windows.Forms.Label();
-            this.combobox_camara = new System.Windows.Forms.ComboBox();
-            this.btn_inicio = new System.Windows.Forms.Button();
             this.btn_show = new System.Windows.Forms.Button();
+            this.btn_inicio = new System.Windows.Forms.Button();
+            this.combobox_camara = new System.Windows.Forms.ComboBox();
+            this.lbl_info = new System.Windows.Forms.Label();
+            this.picbox_camara = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btn_detenercamara = new System.Windows.Forms.Button();
             this.pn_dni.SuspendLayout();
             this.pn_scanner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_camara)).BeginInit();
@@ -179,6 +180,16 @@
             this.btn_9.Text = "9";
             this.btn_9.UseVisualStyleBackColor = false;
             // 
+            // lbl_infomanual
+            // 
+            this.lbl_infomanual.Font = new System.Drawing.Font("Verdana", 10.25F);
+            this.lbl_infomanual.Location = new System.Drawing.Point(63, 10);
+            this.lbl_infomanual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_infomanual.Name = "lbl_infomanual";
+            this.lbl_infomanual.Size = new System.Drawing.Size(139, 23);
+            this.lbl_infomanual.TabIndex = 12;
+            this.lbl_infomanual.Text = "Manualmente";
+            // 
             // btn_8
             // 
             this.btn_8.BackColor = System.Drawing.Color.Olive;
@@ -202,6 +213,16 @@
             this.btn_7.TabIndex = 6;
             this.btn_7.Text = "7";
             this.btn_7.UseVisualStyleBackColor = false;
+            // 
+            // txt_documento
+            // 
+            this.txt_documento.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.txt_documento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_documento.Location = new System.Drawing.Point(16, 97);
+            this.txt_documento.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_documento.Name = "txt_documento";
+            this.txt_documento.Size = new System.Drawing.Size(225, 22);
+            this.txt_documento.TabIndex = 11;
             // 
             // btn_3
             // 
@@ -275,25 +296,6 @@
             this.btn_1.Text = "1";
             this.btn_1.UseVisualStyleBackColor = false;
             // 
-            // txt_documento
-            // 
-            this.txt_documento.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.txt_documento.Location = new System.Drawing.Point(25, 97);
-            this.txt_documento.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_documento.Name = "txt_documento";
-            this.txt_documento.Size = new System.Drawing.Size(220, 22);
-            this.txt_documento.TabIndex = 11;
-            // 
-            // lbl_infomanual
-            // 
-            this.lbl_infomanual.Font = new System.Drawing.Font("Verdana", 10.25F);
-            this.lbl_infomanual.Location = new System.Drawing.Point(63, 10);
-            this.lbl_infomanual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_infomanual.Name = "lbl_infomanual";
-            this.lbl_infomanual.Size = new System.Drawing.Size(139, 23);
-            this.lbl_infomanual.TabIndex = 12;
-            this.lbl_infomanual.Text = "Manualmente";
-            // 
             // btn_sig
             // 
             this.btn_sig.BackColor = System.Drawing.Color.Olive;
@@ -309,6 +311,7 @@
             // 
             // pn_scanner
             // 
+            this.pn_scanner.Controls.Add(this.btn_detenercamara);
             this.pn_scanner.Controls.Add(this.btn_show);
             this.pn_scanner.Controls.Add(this.btn_inicio);
             this.pn_scanner.Controls.Add(this.combobox_camara);
@@ -316,49 +319,8 @@
             this.pn_scanner.Controls.Add(this.picbox_camara);
             this.pn_scanner.Location = new System.Drawing.Point(12, 143);
             this.pn_scanner.Name = "pn_scanner";
-            this.pn_scanner.Size = new System.Drawing.Size(484, 349);
+            this.pn_scanner.Size = new System.Drawing.Size(486, 341);
             this.pn_scanner.TabIndex = 15;
-            // 
-            // picbox_camara
-            // 
-            this.picbox_camara.Location = new System.Drawing.Point(19, 44);
-            this.picbox_camara.Name = "picbox_camara";
-            this.picbox_camara.Size = new System.Drawing.Size(454, 240);
-            this.picbox_camara.TabIndex = 3;
-            this.picbox_camara.TabStop = false;
-            // 
-            // lbl_info
-            // 
-            this.lbl_info.AutoSize = true;
-            this.lbl_info.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_info.Location = new System.Drawing.Point(16, 12);
-            this.lbl_info.Name = "lbl_info";
-            this.lbl_info.Size = new System.Drawing.Size(164, 17);
-            this.lbl_info.TabIndex = 4;
-            this.lbl_info.Text = "Camara de el Dispositivo";
-            // 
-            // combobox_camara
-            // 
-            this.combobox_camara.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.combobox_camara.Cursor = System.Windows.Forms.Cursors.No;
-            this.combobox_camara.FormattingEnabled = true;
-            this.combobox_camara.Location = new System.Drawing.Point(194, 12);
-            this.combobox_camara.Name = "combobox_camara";
-            this.combobox_camara.Size = new System.Drawing.Size(254, 24);
-            this.combobox_camara.TabIndex = 5;
-            // 
-            // btn_inicio
-            // 
-            this.btn_inicio.BackColor = System.Drawing.Color.Olive;
-            this.btn_inicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_inicio.Location = new System.Drawing.Point(74, 291);
-            this.btn_inicio.Name = "btn_inicio";
-            this.btn_inicio.Size = new System.Drawing.Size(127, 45);
-            this.btn_inicio.TabIndex = 6;
-            this.btn_inicio.Text = "Iniciar";
-            this.btn_inicio.UseVisualStyleBackColor = false;
-            this.btn_inicio.Click += new System.EventHandler(this.Btn_inicio_Click);
             // 
             // btn_show
             // 
@@ -373,9 +335,65 @@
             this.btn_show.UseVisualStyleBackColor = false;
             this.btn_show.Click += new System.EventHandler(this.Btn_show_Click);
             // 
+            // btn_inicio
+            // 
+            this.btn_inicio.BackColor = System.Drawing.Color.Olive;
+            this.btn_inicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_inicio.Location = new System.Drawing.Point(11, 291);
+            this.btn_inicio.Name = "btn_inicio";
+            this.btn_inicio.Size = new System.Drawing.Size(127, 45);
+            this.btn_inicio.TabIndex = 6;
+            this.btn_inicio.Text = "Iniciar";
+            this.btn_inicio.UseVisualStyleBackColor = false;
+            this.btn_inicio.Click += new System.EventHandler(this.Btn_inicio_Click);
+            // 
+            // combobox_camara
+            // 
+            this.combobox_camara.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.combobox_camara.Cursor = System.Windows.Forms.Cursors.No;
+            this.combobox_camara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combobox_camara.FormattingEnabled = true;
+            this.combobox_camara.Location = new System.Drawing.Point(194, 12);
+            this.combobox_camara.Name = "combobox_camara";
+            this.combobox_camara.Size = new System.Drawing.Size(254, 24);
+            this.combobox_camara.TabIndex = 5;
+            // 
+            // lbl_info
+            // 
+            this.lbl_info.AutoSize = true;
+            this.lbl_info.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_info.Location = new System.Drawing.Point(16, 12);
+            this.lbl_info.Name = "lbl_info";
+            this.lbl_info.Size = new System.Drawing.Size(164, 17);
+            this.lbl_info.TabIndex = 4;
+            this.lbl_info.Text = "Camara de el Dispositivo";
+            // 
+            // picbox_camara
+            // 
+            this.picbox_camara.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picbox_camara.Location = new System.Drawing.Point(19, 44);
+            this.picbox_camara.Name = "picbox_camara";
+            this.picbox_camara.Size = new System.Drawing.Size(454, 240);
+            this.picbox_camara.TabIndex = 3;
+            this.picbox_camara.TabStop = false;
+            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick_1);
+            // 
+            // btn_detenercamara
+            // 
+            this.btn_detenercamara.BackColor = System.Drawing.Color.Olive;
+            this.btn_detenercamara.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_detenercamara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_detenercamara.Location = new System.Drawing.Point(154, 286);
+            this.btn_detenercamara.Name = "btn_detenercamara";
+            this.btn_detenercamara.Size = new System.Drawing.Size(103, 50);
+            this.btn_detenercamara.TabIndex = 8;
+            this.btn_detenercamara.Text = "Detener Camara";
+            this.btn_detenercamara.UseVisualStyleBackColor = false;
+            this.btn_detenercamara.Click += new System.EventHandler(this.Btn_detenercamara_Click);
             // 
             // frm_principal
             // 
@@ -439,6 +457,7 @@
         private System.Windows.Forms.Button btn_inicio;
         private System.Windows.Forms.Button btn_show;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btn_detenercamara;
     }
 }
 
