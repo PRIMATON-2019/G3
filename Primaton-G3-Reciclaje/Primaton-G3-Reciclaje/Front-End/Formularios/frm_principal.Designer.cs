@@ -136,7 +136,7 @@
             this.roundButton1.Size = new System.Drawing.Size(236, 174);
             this.roundButton1.TabIndex = 7;
             this.roundButton1.Text = "roundButton1";
-            this.roundButton1.UseVisualStyleBackColor = false;
+            
             // 
             // frm_principal
             // 
