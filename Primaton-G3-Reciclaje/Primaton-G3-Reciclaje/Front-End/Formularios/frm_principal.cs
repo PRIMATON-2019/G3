@@ -46,13 +46,13 @@ namespace Primaton_G3_Reciclaje
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Form frm_tiposdereciclaje = new frm_tiposdereciclaje();
+            Form frm_ticketqr = new frm_ticketqr();
             // Para seguir, bandera 1 (Si el usuario ingresó el dni o escaneó) sino, no permitir seguir.
             // by:fabri
 
 
 
-            frm_tiposdereciclaje.ShowDialog();
+            frm_ticketqr.ShowDialog();
         }
         #endregion
 
