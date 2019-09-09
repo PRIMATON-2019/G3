@@ -42,27 +42,7 @@ namespace Primaton_G3_Reciclaje
             frm_tiposdereciclaje.ShowDialog();
         }
 
-        private void Button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtEscanear_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Bl_info_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click_1(object sender, EventArgs e)
         {
 
         }
