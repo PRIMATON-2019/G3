@@ -19,14 +19,6 @@ namespace Primaton_G3_Reciclaje
         }
         #endregion
 
-        private void Btn_reciclaje_Click(object sender, System.EventArgs e)
-        {
-
-            Form frm_tiposdereciclaje = new frm_tiposdereciclaje();
-
-            frm_tiposdereciclaje.ShowDialog();
-        }
-
         private void Timer1_Tick(object sender, System.EventArgs e)
         {
             //lbl_hora.Text = DateTime.Now..ToString();
@@ -37,6 +29,13 @@ namespace Primaton_G3_Reciclaje
             Form frm_scan = new frm_scan();
             frm_scan.ShowDialog();
             
+        }
+
+        private void RoundButton1_Click(object sender, EventArgs e)
+        {
+            Form frm_tiposdereciclaje = new frm_tiposdereciclaje();
+
+            frm_tiposdereciclaje.ShowDialog();
         }
     }
 }

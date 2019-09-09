@@ -29,61 +29,61 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lbl_info = new System.Windows.Forms.Label();
+            this.combobox_camara = new System.Windows.Forms.ComboBox();
+            this.picbox_camara = new System.Windows.Forms.PictureBox();
+            this.btn_inicio = new System.Windows.Forms.Button();
+            this.btn_show = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_camara)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_info
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(83, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Camara de el Dispositivo";
+            this.lbl_info.AutoSize = true;
+            this.lbl_info.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_info.Location = new System.Drawing.Point(83, 55);
+            this.lbl_info.Name = "lbl_info";
+            this.lbl_info.Size = new System.Drawing.Size(164, 17);
+            this.lbl_info.TabIndex = 0;
+            this.lbl_info.Text = "Camara de el Dispositivo";
             // 
-            // comboBox1
+            // combobox_camara
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.SlateGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(287, 52);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(254, 24);
-            this.comboBox1.TabIndex = 1;
+            this.combobox_camara.BackColor = System.Drawing.Color.SlateGray;
+            this.combobox_camara.FormattingEnabled = true;
+            this.combobox_camara.Location = new System.Drawing.Point(287, 52);
+            this.combobox_camara.Name = "combobox_camara";
+            this.combobox_camara.Size = new System.Drawing.Size(254, 24);
+            this.combobox_camara.TabIndex = 1;
             // 
-            // pictureBox1
+            // picbox_camara
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(67, 135);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(444, 301);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.picbox_camara.Location = new System.Drawing.Point(67, 135);
+            this.picbox_camara.Name = "picbox_camara";
+            this.picbox_camara.Size = new System.Drawing.Size(444, 301);
+            this.picbox_camara.TabIndex = 2;
+            this.picbox_camara.TabStop = false;
             // 
-            // button1
+            // btn_inicio
             // 
-            this.button1.Location = new System.Drawing.Point(120, 475);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 45);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Iniciar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            this.btn_inicio.Location = new System.Drawing.Point(120, 475);
+            this.btn_inicio.Name = "btn_inicio";
+            this.btn_inicio.Size = new System.Drawing.Size(127, 45);
+            this.btn_inicio.TabIndex = 3;
+            this.btn_inicio.Text = "Iniciar";
+            this.btn_inicio.UseVisualStyleBackColor = true;
+            this.btn_inicio.Click += new System.EventHandler(this.Button1_Click_1);
             // 
-            // button2
+            // btn_show
             // 
-            this.button2.Location = new System.Drawing.Point(388, 475);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 45);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Mostrar Codigo";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.btn_show.Location = new System.Drawing.Point(388, 475);
+            this.btn_show.Name = "btn_show";
+            this.btn_show.Size = new System.Drawing.Size(198, 45);
+            this.btn_show.TabIndex = 4;
+            this.btn_show.Text = "Mostrar Codigo";
+            this.btn_show.UseVisualStyleBackColor = true;
+            this.btn_show.Click += new System.EventHandler(this.Button2_Click);
             // 
             // timer1
             // 
@@ -95,11 +95,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(650, 596);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_show);
+            this.Controls.Add(this.btn_inicio);
+            this.Controls.Add(this.picbox_camara);
+            this.Controls.Add(this.combobox_camara);
+            this.Controls.Add(this.lbl_info);
             this.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -107,7 +107,7 @@
             this.Text = "frm_scan";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_scan_FormClosing);
             this.Load += new System.EventHandler(this.Frm_scan_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_camara)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,11 +115,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbl_info;
+        private System.Windows.Forms.ComboBox combobox_camara;
+        private System.Windows.Forms.PictureBox picbox_camara;
+        private System.Windows.Forms.Button btn_inicio;
+        private System.Windows.Forms.Button btn_show;
         private System.Windows.Forms.Timer timer1;
     }
 }

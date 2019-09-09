@@ -21,17 +21,17 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
             CaptureDevice = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo Device in CaptureDevice)
             {
-                comboBox1.Items.Add(Device.Name);
+                combobox_camara.Items.Add(Device.Name);
             }
 
-            comboBox1.SelectedIndex = 0;
+            combobox_camara.SelectedIndex = 0;
             FinalFrame = new VideoCaptureDevice();
         }
 
 
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            pictureBox1.Image = (Bitmap)eventArgs.Frame.Clone();
+            picbox_camara.Image = (Bitmap)eventArgs.Frame.Clone();
         }
 
 
@@ -42,7 +42,7 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
-            FinalFrame = new VideoCaptureDevice(CaptureDevice[comboBox1.SelectedIndex].MonikerString);
+            FinalFrame = new VideoCaptureDevice(CaptureDevice[combobox_camara.SelectedIndex].MonikerString);
             FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);
             FinalFrame.Start();
         }
@@ -50,7 +50,7 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         private void Timer1_Tick(object sender, EventArgs e)
         {
             BarcodeReader Reader = new BarcodeReader();
-            Result result = Reader.Decode((Bitmap)pictureBox1.Image);
+            Result result = Reader.Decode((Bitmap)picbox_camara.Image);
             try
             {
                 string decoded = result.ToString().Trim();
