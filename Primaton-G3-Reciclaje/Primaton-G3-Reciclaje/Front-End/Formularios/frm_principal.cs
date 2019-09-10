@@ -30,6 +30,9 @@ namespace Primaton_G3_Reciclaje
             FinalFrame = new VideoCaptureDevice();
             #endregion
         }
+
+        #region EVENTOS 
+
         #region EVENTOS HERRAMIENTAS
 
         private void Link_lbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -55,9 +58,7 @@ namespace Primaton_G3_Reciclaje
             frm_ticketqr.ShowDialog();
         }
         #endregion
-
-        #region EVENTOS SCANNER
-
+        #region Eventos Panel con Scanner
         private void Btn_inicio_Click(object sender, EventArgs e)
         {
             FinalFrame = new VideoCaptureDevice(CaptureDevice[combobox_camara.SelectedIndex].MonikerString);
@@ -111,7 +112,61 @@ namespace Primaton_G3_Reciclaje
             //trabajar para cerrar la camara al apretar el boton, que desaparezca la imagen.
             
         }
+        #endregion
+        #region EVENTOS PANEL MANUAL
+        private void Btn_1_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+
+        private void Btn_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_0_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
-    #endregion
+        #endregion
+
 
 }
