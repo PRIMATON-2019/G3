@@ -28,6 +28,7 @@ namespace Primaton_G3_Reciclaje
 
             combobox_camara.SelectedIndex = 0;
             FinalFrame = new VideoCaptureDevice();
+
             #endregion
         }
 
