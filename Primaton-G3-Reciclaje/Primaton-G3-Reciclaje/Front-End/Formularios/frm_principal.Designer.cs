@@ -318,6 +318,7 @@
             this.btn_sig.TabIndex = 13;
             this.btn_sig.Text = "Siguiente";
             this.btn_sig.UseVisualStyleBackColor = false;
+            this.btn_sig.Click += new System.EventHandler(this.Btn_sig_Click);
             // 
             // pn_scanner
             // 

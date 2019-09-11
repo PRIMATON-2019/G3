@@ -110,8 +110,8 @@ namespace Primaton_G3_Reciclaje
         private void Btn_detenercamara_Click(object sender, EventArgs e)
         {
             FinalFrame.Stop(); //Detenemos la camara
-            //trabajar para cerrar la camara al apretar el boton, que desaparezca la imagen.
-            
+                               //trabajar para cerrar la camara al apretar el boton, que desaparezca la imagen.
+
         }
         #endregion
         #region EVENTOS PANEL MANUAL
@@ -119,7 +119,7 @@ namespace Primaton_G3_Reciclaje
         {
 
         }
-        
+
 
         private void Btn_2_Click(object sender, EventArgs e)
         {
@@ -166,8 +166,13 @@ namespace Primaton_G3_Reciclaje
 
         }
         #endregion
-    }
+
         #endregion
 
-
+        private void Btn_sig_Click(object sender, EventArgs e)
+        {
+            Form frm_persistenciadedatos = new frm_persistenciadedatos();
+            frm_persistenciadedatos.ShowDialog();
+        }
+    }
 }
