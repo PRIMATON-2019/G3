@@ -74,6 +74,12 @@
     <Compile Include="Back-End\Clases\DateTime.cs" />
     <Compile Include="Back-End\Clases\Residuo.cs" />
     <Compile Include="Back-End\Clases\TipoResiduo.cs" />
+    <Compile Include="Front-End\Formularios\frm_inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front-End\Formularios\frm_inicio.Designer.cs">
+      <DependentUpon>frm_inicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front-End\Formularios\frm_nuevoingreso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_Escaneo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Escaneo.Designer.cs">
+      <DependentUpon>UC_Escaneo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Front-End\Formularios\frm_inicio.resx">
+      <DependentUpon>frm_inicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Front-End\Formularios\frm_nuevoingreso.resx">
       <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +190,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC_Escaneo.resx">
+      <DependentUpon>UC_Escaneo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
