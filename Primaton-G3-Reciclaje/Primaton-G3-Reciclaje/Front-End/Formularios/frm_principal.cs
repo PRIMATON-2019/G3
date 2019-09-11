@@ -120,6 +120,8 @@ namespace Primaton_G3_Reciclaje
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             picbox_camara.Image = (Bitmap)eventArgs.Frame.Clone();
+            //todo: generar el metodo de decodificacion de qr, y recien alli con esos dato generar usuario
+            //  Usuarios usuario = new Usuarios();
         }
 
         private void Btn_detenercamara_Click(object sender, EventArgs e)

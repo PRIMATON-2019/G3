@@ -35,10 +35,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtDomicilio = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.tipo = new System.Windows.Forms.Label();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.lblcantidad = new System.Windows.Forms.Label();
+            this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,47 +115,55 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "DNI";
             // 
-            // txtDomicilio
+            // txtTipo
             // 
-            this.txtDomicilio.Location = new System.Drawing.Point(294, 72);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(425, 22);
-            this.txtDomicilio.TabIndex = 14;
+            this.txtTipo.Location = new System.Drawing.Point(294, 72);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(425, 22);
+            this.txtTipo.TabIndex = 14;
             // 
-            // label2
+            // tipo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(282, 29);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 17);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Domicilio";
+            this.tipo.AutoSize = true;
+            this.tipo.Location = new System.Drawing.Point(282, 29);
+            this.tipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tipo.Name = "tipo";
+            this.tipo.Size = new System.Drawing.Size(31, 17);
+            this.tipo.TabIndex = 13;
+            this.tipo.Text = "tipo";
             // 
-            // txtNombre
+            // txtCantidad
             // 
-            this.txtNombre.Location = new System.Drawing.Point(13, 72);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(273, 22);
-            this.txtNombre.TabIndex = 12;
+            this.txtCantidad.Location = new System.Drawing.Point(-1, 72);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(273, 22);
+            this.txtCantidad.TabIndex = 12;
             // 
-            // label1
+            // lblcantidad
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Nombre";
+            this.lblcantidad.AutoSize = true;
+            this.lblcantidad.Location = new System.Drawing.Point(45, 41);
+            this.lblcantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblcantidad.Name = "lblcantidad";
+            this.lblcantidad.Size = new System.Drawing.Size(62, 17);
+            this.lblcantidad.TabIndex = 11;
+            this.lblcantidad.Text = "cantidad";
+            // 
+            // dtp_fecha
+            // 
+            this.dtp_fecha.Location = new System.Drawing.Point(181, 112);
+            this.dtp_fecha.Name = "dtp_fecha";
+            this.dtp_fecha.Size = new System.Drawing.Size(200, 22);
+            this.dtp_fecha.TabIndex = 22;
             // 
             // frm_persistenciadedatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(976, 656);
+            this.Controls.Add(this.dtp_fecha);
             this.Controls.Add(this.btGrabar);
             this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.dgvPersonas);
@@ -162,10 +171,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDNI);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDomicilio);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtTipo);
+            this.Controls.Add(this.tipo);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.lblcantidad);
             this.Name = "frm_persistenciadedatos";
             this.Text = "frm_persistenciadedatos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).EndInit();
@@ -183,9 +192,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDomicilio;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTipo;
+        private System.Windows.Forms.Label tipo;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Label lblcantidad;
+        private System.Windows.Forms.DateTimePicker dtp_fecha;
     }
 }

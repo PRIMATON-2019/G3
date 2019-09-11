@@ -13,12 +13,12 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         /// <summary>
         /// Path y nombre del archivo
         /// </summary>
-        private const string NombreArchivo = @"personas.xml";
+        public const string NombreArchivo = @"personas.xml";
 
         /// <summary>
         /// Tabla en memoria con la lista de personas
         /// </summary>
-        private System.Data.DataTable TablaPersona = new DataTable("TablaPersonas");
+        public System.Data.DataTable TablaPersona = new DataTable("TablaPersonas");
         public Registros RegistroBasura { get; set; }
         #endregion
         #region Constructor
@@ -36,11 +36,15 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         /// </summary>
         private void ConfiguracionInicial()
         {
-            // diseño de la TablaPersona
-            TablaPersona.Columns.Add("Nombre");
-            TablaPersona.Columns.Add("Domicilio");
-            TablaPersona.Columns.Add("DNI");
-            TablaPersona.Columns.Add("Edad");
+            // diseño de la TablaRegistro
+            TablaPersona.Columns.Add("Id");
+            TablaPersona.Columns.Add("Fecha");
+            TablaPersona.Columns.Add("Usuario");
+            TablaPersona.Columns.Add("Tipo");
+            TablaPersona.Columns.Add("Cantidad");
+            TablaPersona.Columns.Add("Contenedor");
+            TablaPersona.Columns.Add("Ticket");
+            TablaPersona.Columns.Add("TipoRegistro");
 
             // busca si el archivo ya existe para precargar sus datos
             if (System.IO.File.Exists(NombreArchivo))
@@ -54,6 +58,11 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
             //dgvPersonas.AllowUserToAddRows = false;
             //// elimina el encabezado de las filas
             //dgvPersonas.RowHeadersVisible = false;
+        }
+
+        public void GrabarArchivo()
+        {
+            TablaPersona.WriteXml(NombreArchivo);
         }
 
         // Llena con string vacio los texbox
@@ -71,10 +80,14 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         public void LlenaRegistroTabla(Registros registro)// pasamos un objeto " registro "
         {
             TablaPersona.Rows.Add();
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Nombre"] = registro.Usuario.Apellido; //despues lo utilizamos aca
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Domicilio"] = txtDomicilio.Text;
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["DNI"] = txtDNI.Text;
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Edad"] = txtEdad.Text;
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["ID"] = registro.Id; //despues lo utilizamos aca
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Fecha"] = registro.Fecha;
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Usuario"] = registro.Usuario;
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Tipo"] = registro.Tipo;
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Cantidad"] = registro.Cantidad; //despues lo utilizamos aca
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Contenedor"] = registro.Contenedor;
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Ticket"] = registro.Ticket;
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["TipoRegistro"] = registro.TipodeRegistro;
         }
         #endregion
     }
