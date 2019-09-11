@@ -9,7 +9,7 @@ namespace Primaton_G3_Reciclaje
 {
     public partial class frm_principal : Form
     {
-        //´variables de el scanner
+        //variables de el scanner
         private FilterInfoCollection CaptureDevice;
         private VideoCaptureDevice FinalFrame;
         public frm_principal()
