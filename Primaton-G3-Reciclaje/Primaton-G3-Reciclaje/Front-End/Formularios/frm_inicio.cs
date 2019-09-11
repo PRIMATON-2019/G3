@@ -16,5 +16,10 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         {
             InitializeComponent();
         }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
