@@ -160,6 +160,12 @@
     <Compile Include="UC_IngManualDNI.Designer.cs">
       <DependentUpon>UC_IngManualDNI.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_OpcDesc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_OpcDesc.Designer.cs">
+      <DependentUpon>UC_OpcDesc.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Front-End\Formularios\frm_inicio.resx">
       <DependentUpon>frm_inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_IngManualDNI.resx">
       <DependentUpon>UC_IngManualDNI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_OpcDesc.resx">
+      <DependentUpon>UC_OpcDesc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
