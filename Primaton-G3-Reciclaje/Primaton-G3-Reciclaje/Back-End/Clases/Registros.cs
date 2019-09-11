@@ -11,7 +11,7 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         #region PROPIEDADES
         public int Id { get; set; }
         public DateTime Fecha { get; set; }
-        public Usuarios Usuario { get; set; }
+        public Usuarios Usuario { get; set; }// pensar bien la idea antes de seguir con usuarios
         public TipoResiduo Tipo { get; set; }
         public float Cantidad { get; set; }
         public Contenedor Contenedor { get; set; }// Crear clase y hacer la referencia
