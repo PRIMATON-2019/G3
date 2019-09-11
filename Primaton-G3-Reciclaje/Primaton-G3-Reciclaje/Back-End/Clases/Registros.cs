@@ -37,6 +37,7 @@
                                       //registro[1] = nuevoregistro;
 
             pd.LlenaRegistroTabla(nuevoregistro); //paso argumento
+            pd.GrabarArchivo();
             //}
             return "";
         }
