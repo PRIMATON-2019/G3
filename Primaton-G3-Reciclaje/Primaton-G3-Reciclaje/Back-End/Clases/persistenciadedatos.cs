@@ -19,6 +19,7 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         /// Tabla en memoria con la lista de personas
         /// </summary>
         private System.Data.DataTable TablaPersona = new DataTable("TablaPersonas");
+        public Registros RegistroBasura { get; set; }
         #endregion
         #region Constructor
         public Persistenciadedatos()
