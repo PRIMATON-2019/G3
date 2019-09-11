@@ -79,6 +79,12 @@
     <Compile Include="Front-End\Formularios\frm_nuevoingreso.Designer.cs">
       <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Front-End\Formularios\frm_persistenciadedatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front-End\Formularios\frm_persistenciadedatos.Designer.cs">
+      <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front-End\Formularios\frm_plastico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <EmbeddedResource Include="Front-End\Formularios\frm_nuevoingreso.resx">
       <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Front-End\Formularios\frm_persistenciadedatos.resx">
+      <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Front-End\Formularios\frm_plastico.resx">
       <DependentUpon>frm_plastico.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,8 +189,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Front-End\Recursos\" />
     <Folder Include="Nuevas-Herramientas\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
