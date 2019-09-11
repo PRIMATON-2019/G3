@@ -1,54 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace Primaton_G3_Reciclaje.Front_End.Formularios
+namespace Primaton_G3_Reciclaje.Back_End.Clases
 {
-    public partial class frm_persistenciadedatos : Form
+    public class Persistenciadedatos
     {
-        #region PROPIEDADES PRIVADAS
-        /// <summary>
-        /// Path y nombre del archivo
-        /// </summary>
-        private const string NombreArchivo = @"personas.xml";
-
-        /// <summary>
-        /// Tabla en memoria con la lista de personas
-        /// </summary>
-        private System.Data.DataTable TablaPersona = new DataTable("TablaPersonas");
-        #endregion
-        #region CONSTRUCTOR
-        public frm_persistenciadedatos()
-        {
-            InitializeComponent();
-            ConfiguracionInicial();
-        }
-        #endregion 
-        #region EVENTOS
-
-        private void BtAceptar_Click(object sender, EventArgs e)
-        {
-            // Agrega registro nuevo a la tabla
-            TablaPersona.Rows.Add();
-
-            LlenaRegistroTabla();
-
-            LimpiarCampos();
-
-            txtNombre.Focus();
-        }
-
-        private void BtGrabar_Click_1(object sender, EventArgs e)
-        {
-            TablaPersona.WriteXml(NombreArchivo);
-        }
-
+        #region PROPIEDADES
         #endregion
         #region METODOS
 
@@ -99,6 +59,5 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Edad"] = txtEdad.Text;
         }
         #endregion
-
     }
 }
