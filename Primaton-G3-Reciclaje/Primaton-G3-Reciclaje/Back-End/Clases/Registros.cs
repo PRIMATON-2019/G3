@@ -15,7 +15,7 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         public TipoResiduo Tipo { get; set; }
         public float Cantidad { get; set; }
         public Contenedor Contenedor { get; set; }// Crear clase y hacer la referencia
-        public string Ticket { get; set; }
+        public int Ticket { get; set; }
         public int TipodeRegistro { get; set; }//si es 1 entrada, si es 2 salida (camion)
         #endregion
         Registros nuevoregistro = new Registros();
