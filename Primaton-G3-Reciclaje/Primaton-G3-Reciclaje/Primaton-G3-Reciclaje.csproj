@@ -67,7 +67,6 @@
     <Compile Include="Back-End\Clases\Balanza.cs" />
     <Compile Include="Back-End\Clases\Ciudad.cs" />
     <Compile Include="Back-End\Clases\Domicilio.cs" />
-    <Compile Include="Back-End\Clases\Persistenciadedatos.cs" />
     <Compile Include="Back-End\Clases\Registros.cs" />
     <Compile Include="Back-End\Clases\Usuarios.cs" />
     <Compile Include="Back-End\Clases\Contenedor.cs" />
