@@ -25,9 +25,15 @@ namespace Primaton_G3_Reciclaje
             {
                 combobox_camara.Items.Add(Device.Name);
             }
-
-            combobox_camara.SelectedIndex = 0;
-            FinalFrame = new VideoCaptureDevice();
+            try
+            {
+                combobox_camara.SelectedIndex = 0;
+                FinalFrame = new VideoCaptureDevice();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("No se encontro la camara");
+            }
 
             #endregion
         }
@@ -74,9 +80,18 @@ namespace Primaton_G3_Reciclaje
 
         private void Frm_principal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (FinalFrame.IsRunning == true)
+            try
             {
-                FinalFrame.Stop();
+
+                if (FinalFrame.IsRunning == true)
+                {
+                    FinalFrame.Stop();
+                }
+            }
+            catch (Exception)
+            {
+                //TODO: Controlar excepcion
+
             }
         }
 

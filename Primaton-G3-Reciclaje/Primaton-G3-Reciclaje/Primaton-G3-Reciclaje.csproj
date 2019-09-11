@@ -166,7 +166,7 @@
     <Compile Include="UC_OpcDesc.Designer.cs">
       <DependentUpon>UC_OpcDesc.cs</DependentUpon>
     </Compile>
-      <Compile Include="UC_inicio.cs">
+    <Compile Include="UC_inicio.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_inicio.Designer.cs">
