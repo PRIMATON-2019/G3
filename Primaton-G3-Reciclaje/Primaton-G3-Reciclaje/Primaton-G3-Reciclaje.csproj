@@ -160,14 +160,13 @@
     <Compile Include="UC_IngManualDNI.Designer.cs">
       <DependentUpon>UC_IngManualDNI.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="UC_OpcDesc.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_OpcDesc.Designer.cs">
       <DependentUpon>UC_OpcDesc.cs</DependentUpon>
-=======
-    <Compile Include="UC_inicio.cs">
+    </Compile>
+      <Compile Include="UC_inicio.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_inicio.Designer.cs">
@@ -208,7 +207,6 @@
     </Compile>
     <Compile Include="UC_Vidrio.Designer.cs">
       <DependentUpon>UC_Vidrio.cs</DependentUpon>
->>>>>>> 81d6e9fae8a516824ff062646dfb5bebe80f30e5
     </Compile>
     <EmbeddedResource Include="Front-End\Formularios\frm_inicio.resx">
       <DependentUpon>frm_inicio.cs</DependentUpon>
@@ -261,10 +259,9 @@
     <EmbeddedResource Include="UC_IngManualDNI.resx">
       <DependentUpon>UC_IngManualDNI.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="UC_OpcDesc.resx">
       <DependentUpon>UC_OpcDesc.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_inicio.resx">
       <DependentUpon>UC_inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -285,7 +282,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Vidrio.resx">
       <DependentUpon>UC_Vidrio.cs</DependentUpon>
->>>>>>> 81d6e9fae8a516824ff062646dfb5bebe80f30e5
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
