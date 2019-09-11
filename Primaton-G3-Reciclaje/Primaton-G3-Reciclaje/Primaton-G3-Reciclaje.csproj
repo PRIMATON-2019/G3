@@ -160,6 +160,56 @@
     <Compile Include="UC_IngManualDNI.Designer.cs">
       <DependentUpon>UC_IngManualDNI.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="UC_OpcDesc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_OpcDesc.Designer.cs">
+      <DependentUpon>UC_OpcDesc.cs</DependentUpon>
+=======
+    <Compile Include="UC_inicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_inicio.Designer.cs">
+      <DependentUpon>UC_inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_NewIngress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NewIngress.Designer.cs">
+      <DependentUpon>UC_NewIngress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Plastico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Plastico.Designer.cs">
+      <DependentUpon>UC_Plastico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SaludoFinal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SaludoFinal.Designer.cs">
+      <DependentUpon>UC_SaludoFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SumaDePuntos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SumaDePuntos.Designer.cs">
+      <DependentUpon>UC_SumaDePuntos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_TiposDeReciclaje.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_TiposDeReciclaje.Designer.cs">
+      <DependentUpon>UC_TiposDeReciclaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Vidrio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Vidrio.Designer.cs">
+      <DependentUpon>UC_Vidrio.cs</DependentUpon>
+>>>>>>> 81d6e9fae8a516824ff062646dfb5bebe80f30e5
+    </Compile>
     <EmbeddedResource Include="Front-End\Formularios\frm_inicio.resx">
       <DependentUpon>frm_inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +260,32 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_IngManualDNI.resx">
       <DependentUpon>UC_IngManualDNI.cs</DependentUpon>
+    </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="UC_OpcDesc.resx">
+      <DependentUpon>UC_OpcDesc.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="UC_inicio.resx">
+      <DependentUpon>UC_inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NewIngress.resx">
+      <DependentUpon>UC_NewIngress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Plastico.resx">
+      <DependentUpon>UC_Plastico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SaludoFinal.resx">
+      <DependentUpon>UC_SaludoFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SumaDePuntos.resx">
+      <DependentUpon>UC_SumaDePuntos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_TiposDeReciclaje.resx">
+      <DependentUpon>UC_TiposDeReciclaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Vidrio.resx">
+      <DependentUpon>UC_Vidrio.cs</DependentUpon>
+>>>>>>> 81d6e9fae8a516824ff062646dfb5bebe80f30e5
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
