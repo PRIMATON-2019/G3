@@ -45,10 +45,9 @@
             // btGrabar
             // 
             this.btGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGrabar.Location = new System.Drawing.Point(518, 112);
-            this.btGrabar.Margin = new System.Windows.Forms.Padding(4);
+            this.btGrabar.Location = new System.Drawing.Point(388, 91);
             this.btGrabar.Name = "btGrabar";
-            this.btGrabar.Size = new System.Drawing.Size(189, 41);
+            this.btGrabar.Size = new System.Drawing.Size(142, 33);
             this.btGrabar.TabIndex = 21;
             this.btGrabar.Text = "&Grabar";
             this.btGrabar.UseVisualStyleBackColor = true;
@@ -57,10 +56,9 @@
             // btAceptar
             // 
             this.btAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAceptar.Location = new System.Drawing.Point(727, 112);
-            this.btAceptar.Margin = new System.Windows.Forms.Padding(4);
+            this.btAceptar.Location = new System.Drawing.Point(545, 91);
             this.btAceptar.Name = "btAceptar";
-            this.btAceptar.Size = new System.Drawing.Size(189, 41);
+            this.btAceptar.Size = new System.Drawing.Size(142, 33);
             this.btAceptar.TabIndex = 20;
             this.btAceptar.Text = "Aceptar";
             this.btAceptar.UseVisualStyleBackColor = true;
@@ -69,92 +67,83 @@
             // dgvPersonas
             // 
             this.dgvPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersonas.Location = new System.Drawing.Point(34, 178);
-            this.dgvPersonas.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvPersonas.Location = new System.Drawing.Point(26, 145);
             this.dgvPersonas.Name = "dgvPersonas";
             this.dgvPersonas.RowHeadersWidth = 51;
-            this.dgvPersonas.Size = new System.Drawing.Size(909, 327);
+            this.dgvPersonas.Size = new System.Drawing.Size(682, 266);
             this.dgvPersonas.TabIndex = 19;
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(875, 72);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEdad.Location = new System.Drawing.Point(656, 58);
             this.txtEdad.MaxLength = 3;
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(45, 22);
+            this.txtEdad.Size = new System.Drawing.Size(35, 20);
             this.txtEdad.TabIndex = 18;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(859, 31);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(644, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 17);
+            this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 17;
             this.label4.Text = "Edad";
             // 
             // txtDNI
             // 
-            this.txtDNI.Location = new System.Drawing.Point(727, 72);
-            this.txtDNI.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDNI.Location = new System.Drawing.Point(545, 58);
             this.txtDNI.MaxLength = 8;
             this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(133, 22);
+            this.txtDNI.Size = new System.Drawing.Size(101, 20);
             this.txtDNI.TabIndex = 16;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(726, 31);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(544, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 17);
+            this.label3.Size = new System.Drawing.Size(26, 13);
             this.label3.TabIndex = 15;
             this.label3.Text = "DNI";
             // 
             // txtDomicilio
             // 
-            this.txtDomicilio.Location = new System.Drawing.Point(294, 72);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDomicilio.Location = new System.Drawing.Point(220, 58);
             this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(425, 22);
+            this.txtDomicilio.Size = new System.Drawing.Size(320, 20);
             this.txtDomicilio.TabIndex = 14;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(282, 29);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(212, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 13;
             this.label2.Text = "Domicilio";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(13, 72);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Location = new System.Drawing.Point(10, 58);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(273, 22);
+            this.txtNombre.Size = new System.Drawing.Size(206, 20);
             this.txtNombre.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(34, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Nombre";
+            this.label1.Text = "Fecha";
             // 
             // frm_persistenciadedatos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 656);
+            this.ClientSize = new System.Drawing.Size(732, 533);
             this.Controls.Add(this.btGrabar);
             this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.dgvPersonas);
@@ -166,6 +155,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frm_persistenciadedatos";
             this.Text = "frm_persistenciadedatos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).EndInit();

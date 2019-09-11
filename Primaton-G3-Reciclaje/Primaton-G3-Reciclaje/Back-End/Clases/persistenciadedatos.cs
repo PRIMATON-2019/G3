@@ -35,19 +35,20 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         /// </summary>
         private void ConfiguracionInicial()
         {
-            //// diseño de la TablaPersona
-            //TablaPersona.Columns.Add("Nombre");
-            //TablaPersona.Columns.Add("Domicilio");
-            //TablaPersona.Columns.Add("DNI");
-            //TablaPersona.Columns.Add("Edad");
 
-            //// busca si el archivo ya existe para precargar sus datos
-            //if (System.IO.File.Exists(NombreArchivo))
-            //{
-            //    TablaPersona.ReadXml(NombreArchivo);
-            //}
+            // diseño de la TablaPersona
+            TablaPersona.Columns.Add("Nombre");
+            TablaPersona.Columns.Add("Domicilio");
+            TablaPersona.Columns.Add("DNI");
+            TablaPersona.Columns.Add("Edad");
 
-            //// asigna TablaPersona a dgvPersonas
+            // busca si el archivo ya existe para precargar sus datos
+            if (System.IO.File.Exists(NombreArchivo))
+            {
+                TablaPersona.ReadXml(NombreArchivo);
+            }
+
+            // asigna TablaPersona a dgvPersonas
             //dgvPersonas.DataSource = TablaPersona;
             //// elimina la posibilidad de ingresar datos en el datagridview
             //dgvPersonas.AllowUserToAddRows = false;
@@ -67,9 +68,10 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         /// <summary>
         /// Rellena las columnas del último registro agregado con los valores del textbox correspondiente
         /// </summary>
-        private void LlenaRegistroTabla()
+        public void LlenaRegistroTabla(Registros registro)
         {
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Nombre"] = txtNombre.Text;
+            TablaPersona.Rows.Add();
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Nombre"] = registro.Usuario.Apellido;
             //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Domicilio"] = txtDomicilio.Text;
             //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["DNI"] = txtDNI.Text;
             //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Edad"] = txtEdad.Text;

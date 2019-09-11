@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Primaton_G3_Reciclaje.Back_End.Clases;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Primaton_G3_Reciclaje.Front_End.Formularios
@@ -36,8 +31,11 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         {
             // Agrega registro nuevo a la tabla
             TablaPersona.Rows.Add();
+            Registros registro = new Registros();
+            registro.Id = Convert.ToInt32(txtNombre.Text);
+            registro.GrabarRegistro(registro);
 
-            LlenaRegistroTabla();
+            //LlenaRegistroTabla();
 
             LimpiarCampos();
 

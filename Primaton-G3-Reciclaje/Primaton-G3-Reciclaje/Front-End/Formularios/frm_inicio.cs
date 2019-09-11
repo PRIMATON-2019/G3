@@ -27,13 +27,13 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
+
 
         private void Label1_Click(object sender, EventArgs e)
         {
 
         }
-=======
+
         #region METODOS
 
         /// <summary>
@@ -55,21 +55,21 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
                 TablaRegistros.ReadXml(NombreArchivo);
             }
 
-            // asigna TablaPersona a dgvPersonas
-            dgvPersonas.DataSource = TablaRegistros;
-            // elimina la posibilidad de ingresar datos en el datagridview
-            dgvPersonas.AllowUserToAddRows = false;
-            // elimina el encabezado de las filas
-            dgvPersonas.RowHeadersVisible = false;
+            //// asigna TablaPersona a dgvPersonas
+            ////dgvPersonas.DataSource = TablaRegistros;
+            //// elimina la posibilidad de ingresar datos en el datagridview
+            //dgvPersonas.AllowUserToAddRows = false;
+            //// elimina el encabezado de las filas
+            //dgvPersonas.RowHeadersVisible = false;
         }
 
         // Llena con string vacio los texbox
         private void LimpiarCampos()
         {
-            txtNombre.Text = "";
-            txtDomicilio.Text = "";
-            txtEdad.Text = "";
-            txtDNI.Text = "";
+            //txtNombre.Text = "";
+            //txtDomicilio.Text = "";
+            //txtEdad.Text = "";
+            //txtDNI.Text = "";
         }
 
         /// <summary>
@@ -77,12 +77,11 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         /// </summary>
         private void LlenaRegistroTabla()
         {
-            TablaRegistros.Rows[TablaRegistros.Rows.Count - 1]["Nombre"] = txtNombre.Text;
-            TablaRegistros.Rows[TablaRegistros.Rows.Count - 1]["Domicilio"] = txtDomicilio.Text;
-            TablaRegistros.Rows[TablaRegistros.Rows.Count - 1]["DNI"] = txtDNI.Text;
-            TablaRegistros.Rows[TablaRegistros.Rows.Count - 1]["Edad"] = txtEdad.Text;
+            //TablaRegistros.Rows[TablaRegistros.Rows.Count - 1]["Nombre"] = txtNombre.Text;
+            //TablaRegistros.Rows[TablaRegistros.Rows.Count - 1]["Domicilio"] = txtDomicilio.Text;
+            //TablaRegistros.Rows[TablaRegistros.Rows.Count - 1]["DNI"] = txtDNI.Text;
+            //TablaRegistros.Rows[TablaRegistros.Rows.Count - 1]["Edad"] = txtEdad.Text;
         }
         #endregion
->>>>>>> 481618d2aa57e3123b5d9fd9ae4367ce51e8e1ed
     }
 }
