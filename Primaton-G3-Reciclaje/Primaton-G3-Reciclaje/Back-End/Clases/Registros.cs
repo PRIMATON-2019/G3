@@ -15,16 +15,18 @@
 
 
         #region METODOS
-
+        /// <summary>
+        /// Este metodo, lo que hace es recibir, un argumento de la clase Registros, 
+        /// llamado nuevoregistro
+        /// lo que hacemos aca es instanciar un nuevo objeto "pd" de la clase Persistenciadedatos
+        /// el objeto pd, llama al metodo Llenarregistrotabla, y le pasamos el argumento.
+        /// pd llama al metodo GrabarArchivo [ nuestro xml]
+        /// </summary>
+        /// <param name="nuevoregistro"></param>
+        /// <returns>Argumento de el metodo</returns>
+        /// 
         public string GrabarRegistro(Registros nuevoregistro)
         {
-            //if (usuario==null)
-            //{
-            //    Console.WriteLine("El usuario no esta registrado");
-            //}
-            //else
-            ////{
-
             Persistenciadedatos pd = new Persistenciadedatos();  //creo un pd que me permite acceder de base de datos
             //Usuarios usuario = new Usuarios();
             //usuario.Apellido = "manzanas";

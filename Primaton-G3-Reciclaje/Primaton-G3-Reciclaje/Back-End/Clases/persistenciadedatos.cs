@@ -13,13 +13,13 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         /// <summary>
         /// Path y nombre del archivo
         /// </summary>
-        public const string NombreArchivo = @"personas.xml";
+        public const string NombreArchivo = @"RegistroBasura.xml"; //por defecto se guarda en la carpeta bin.
 
         /// <summary>
-        /// Tabla en memoria con la lista de personas
+        /// Tabla en memoria con la lista de registros
         /// </summary>
-        public System.Data.DataTable TablaPersona = new DataTable("TablaPersonas");
-        public Registros RegistroBasura { get; set; }
+        public System.Data.DataTable TablaRegistro = new DataTable("TablaRegistro");
+        
         #endregion
         #region Constructor
         public Persistenciadedatos()
@@ -30,26 +30,27 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         #endregion
         #region Metodos
         /// <summary>
-        /// Diseña columnas del datatable, 
+        /// el metodo [configuracioninicial]
+        /// Diseña columnas del datatable y 
         /// verifica si el archivo existe previamente
-        /// asigna tabla al DataGridView
+        /// 
         /// </summary>
         private void ConfiguracionInicial()
         {
             // diseño de la TablaRegistro
-            TablaPersona.Columns.Add("Id");
-            TablaPersona.Columns.Add("Fecha");
-            TablaPersona.Columns.Add("Usuario");
-            TablaPersona.Columns.Add("Tipo");
-            TablaPersona.Columns.Add("Cantidad");
-            TablaPersona.Columns.Add("Contenedor");
-            TablaPersona.Columns.Add("Ticket");
-            TablaPersona.Columns.Add("TipoRegistro");
+            TablaRegistro.Columns.Add("Id");
+            TablaRegistro.Columns.Add("Fecha");
+            TablaRegistro.Columns.Add("Usuario");
+            TablaRegistro.Columns.Add("Tipo");
+            TablaRegistro.Columns.Add("Cantidad");
+            TablaRegistro.Columns.Add("Contenedor");
+            TablaRegistro.Columns.Add("Ticket");
+            TablaRegistro.Columns.Add("TipoRegistro");
 
             // busca si el archivo ya existe para precargar sus datos
             if (System.IO.File.Exists(NombreArchivo))
             {
-                TablaPersona.ReadXml(NombreArchivo);
+                TablaRegistro.ReadXml(NombreArchivo);
             }
 
             //// asigna TablaPersona a dgvPersonas
@@ -59,10 +60,12 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
             //// elimina el encabezado de las filas
             //dgvPersonas.RowHeadersVisible = false;
         }
-
+        /// <summary>
+        /// Graba el Archivo XML que creeamos previamente en las propiedades.
+        /// </summary>
         public void GrabarArchivo()
         {
-            TablaPersona.WriteXml(NombreArchivo);
+            TablaRegistro.WriteXml(NombreArchivo);
         }
 
         // Llena con string vacio los texbox
@@ -75,19 +78,21 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         }
 
         /// <summary>
-        /// Rellena las columnas del último registro agregado con los valores del textbox correspondiente
+        /// Agregamos una nueva Fila, y a cada fila le damos un nombre, el metodo
+        /// pide un argumento, en este caso pide el Objeto Registro, y Enlazamos cada propiedad
+        /// correspondiente con cada fila
         /// </summary>
         public void LlenaRegistroTabla(Registros registro)// pasamos un objeto " registro "
         {
-            TablaPersona.Rows.Add();
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["ID"] = registro.Id; //despues lo utilizamos aca
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Fecha"] = registro.Fecha;
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Usuario"] = registro.Usuario;
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Tipo"] = registro.Tipo;
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Cantidad"] = registro.Cantidad; //despues lo utilizamos aca
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Contenedor"] = registro.Contenedor;
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Ticket"] = registro.Ticket;
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["TipoRegistro"] = registro.TipodeRegistro;
+            TablaRegistro.Rows.Add();
+            TablaRegistro.Rows[TablaRegistro.Rows.Count - 1]["ID"] = registro.Id; //despues lo utilizamos aca
+            TablaRegistro.Rows[TablaRegistro.Rows.Count - 1]["Fecha"] = registro.Fecha;
+            TablaRegistro.Rows[TablaRegistro.Rows.Count - 1]["Usuario"] = registro.Usuario;
+            TablaRegistro.Rows[TablaRegistro.Rows.Count - 1]["Tipo"] = registro.Tipo;
+            TablaRegistro.Rows[TablaRegistro.Rows.Count - 1]["Cantidad"] = registro.Cantidad; //despues lo utilizamos aca
+            TablaRegistro.Rows[TablaRegistro.Rows.Count - 1]["Contenedor"] = registro.Contenedor;
+            TablaRegistro.Rows[TablaRegistro.Rows.Count - 1]["Ticket"] = registro.Ticket;
+            TablaRegistro.Rows[TablaRegistro.Rows.Count - 1]["TipoRegistro"] = registro.TipodeRegistro;
         }
         #endregion
     }

@@ -14,15 +14,7 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
     public partial class frm_persistenciadedatos : Form
     {
         #region PROPIEDADES PRIVADAS
-        /// <summary>
-        /// Path y nombre del archivo
-        /// </summary>
-        //private const string NombreArchivo = @"personas.xml";
 
-        /// <summary>
-        /// Tabla en memoria con la lista de personas
-        /// </summary>
-        //private System.Data.DataTable TablaPersona = new DataTable("TablaPersonas");
         #endregion
         #region CONSTRUCTOR
         public frm_persistenciadedatos()
@@ -35,29 +27,37 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
 
         private void BtAceptar_Click(object sender, EventArgs e)
         {
-            // Agrega registro nuevo a la tabla
-            //TablaPersona.Rows.Add();
+            // en este caso, este boton Agrega registro nuevo a la tabla
+            //Instanciamos los objetos que creamos que sean necesitarios
+            //con sus respectivos constructores
             Usuarios usuario = new Usuarios();
             TipoResiduo tipo = new TipoResiduo();
             Registros RG = new Registros();
+            //trabajamos sus propiedades, en este caso, vamos a decir que las propiedades
+            //son iguales a lo que estan en los txt.box de el formulario en el que estamos
+
             RG.Cantidad = Convert.ToInt32(txtCantidad.Text);
             usuario.DNI = txtDNI.Text;
             tipo.Id = 1;
             RG.Id = 1;
             RG.Tipo = tipo;
+            //instanciamos un objeto clase registros, y con ese objetos 
+            //llamamos al metodo grabarregistro, y le pasamos como argumento RG
             RG.GrabarRegistro(RG);
 
-            //LlenaRegistroTabla();
-
+            //despues llamamos al metodo que limpia los campos, que en este caso yo no lo uso
             LimpiarCampos();
 
-            txtCantidad.Focus();
+            
         }
 
         private void BtGrabar_Click_1(object sender, EventArgs e)
         {
-            Persistenciadedatos pd = new Persistenciadedatos();
-            pd.GrabarArchivo();
+            //el evento click de el boton grabar, instancia un nuevo objeto pdd de la clase
+            //persistenciadedatos, y utilizamos el mismo para llamar al metodo grabararchivo
+
+            Persistenciadedatos pdd = new Persistenciadedatos();
+            pdd.GrabarArchivo();
            
         }
 
@@ -69,8 +69,8 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         /// verifica si el archivo existe previamente
         /// asigna tabla al DataGridView
         /// </summary>
-        private void ConfiguracionInicial()
-        {
+        //private void ConfiguracionInicial()
+        //{
             // diseño de la TablaPersona
             
 
@@ -86,7 +86,7 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
             //dgvPersonas.AllowUserToAddRows = false;
             //// elimina el encabezado de las filas
             //dgvPersonas.RowHeadersVisible = false;
-        }
+        //}
 
         // Llena con string vacio los texbox
         private void LimpiarCampos()
@@ -97,9 +97,6 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
             txtDNI.Text = "";
         }
 
-        /// <summary>
-        /// Rellena las columnas del último registro agregado con los valores del textbox correspondiente
-        /// </summary>
         
         #endregion
 
