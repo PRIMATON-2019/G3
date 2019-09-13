@@ -20,7 +20,7 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         public frm_persistenciadedatos()
         {
             InitializeComponent();
-            ConfiguracionInicial();
+            //ConfiguracionInicial();
         }
         #endregion 
         #region EVENTOS

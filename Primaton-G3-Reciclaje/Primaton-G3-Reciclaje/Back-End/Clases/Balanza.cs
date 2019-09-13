@@ -10,7 +10,7 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
     {
         #region Propiedades
         public int Id { get; set; }
-        public decimal Capacidad { get; set; }
+
 
 
 
@@ -20,12 +20,13 @@ namespace Primaton_G3_Reciclaje.Back_End.Clases
         {
 
         }
-
-        internal static float obtenerCantidad()
-        {
-            throw new NotImplementedException();
-        }
         #endregion
+
+        public int obtenerCantidad()
+        {
+            Random peso = new Random();
+            return peso.Next();
+        }
         #region Metodos
         #endregion
     }
