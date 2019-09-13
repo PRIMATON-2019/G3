@@ -1,6 +1,6 @@
 ﻿namespace Primaton_G3_Reciclaje
 {
-    partial class UC_SaludoFinal
+    partial class UC_ImagenInicio
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,30 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSaludo = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_ImagenInicio));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtSaludo
+            // pictureBox1
             // 
-            this.txtSaludo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
-            this.txtSaludo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSaludo.Font = new System.Drawing.Font("Verdana", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSaludo.Location = new System.Drawing.Point(3, 15);
-            this.txtSaludo.Multiline = true;
-            this.txtSaludo.Name = "txtSaludo";
-            this.txtSaludo.Size = new System.Drawing.Size(394, 322);
-            this.txtSaludo.TabIndex = 5;
-            this.txtSaludo.Text = "¡Muchas gracias por tu ayuda!";
-            this.txtSaludo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(400, 360);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // UC_SaludoFinal
+            // UC_ImagenInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
-            this.Controls.Add(this.txtSaludo);
-            this.Name = "UC_SaludoFinal";
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "UC_ImagenInicio";
             this.Size = new System.Drawing.Size(400, 360);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +58,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtSaludo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

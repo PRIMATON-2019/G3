@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Primaton_G3_Reciclaje
 {
-    public partial class UC_Plastico : UserControl
+    public partial class UC_ReciclajeElegido : UserControl
     {
-        public UC_Plastico()
+        public UC_ReciclajeElegido()
         {
             InitializeComponent();
         }

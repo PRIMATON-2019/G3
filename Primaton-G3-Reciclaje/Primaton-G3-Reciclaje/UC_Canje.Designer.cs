@@ -1,6 +1,6 @@
 ﻿namespace Primaton_G3_Reciclaje
 {
-    partial class UC_SaludoFinal
+    partial class UC_Canje
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,30 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSaludo = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtSaludo
+            // label1
             // 
-            this.txtSaludo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
-            this.txtSaludo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSaludo.Font = new System.Drawing.Font("Verdana", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSaludo.Location = new System.Drawing.Point(3, 15);
-            this.txtSaludo.Multiline = true;
-            this.txtSaludo.Name = "txtSaludo";
-            this.txtSaludo.Size = new System.Drawing.Size(394, 322);
-            this.txtSaludo.TabIndex = 5;
-            this.txtSaludo.Text = "¡Muchas gracias por tu ayuda!";
-            this.txtSaludo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(140, 174);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "QR DEL PREMIO CANJEADO";
             // 
-            // UC_SaludoFinal
+            // UC_Canje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
-            this.Controls.Add(this.txtSaludo);
-            this.Name = "UC_SaludoFinal";
-            this.Size = new System.Drawing.Size(400, 360);
+            this.Controls.Add(this.label1);
+            this.Name = "UC_Canje";
+            this.Size = new System.Drawing.Size(444, 368);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +54,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtSaludo;
+        private System.Windows.Forms.Label label1;
     }
 }
