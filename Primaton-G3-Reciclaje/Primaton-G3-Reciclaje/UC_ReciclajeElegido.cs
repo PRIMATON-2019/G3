@@ -16,5 +16,12 @@ namespace Primaton_G3_Reciclaje
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Random rdm = new Random();
+            int ingreso = rdm.Next(1, 5000);
+            txt_peso.Text = ingreso.ToString();
+        }
     }
 }

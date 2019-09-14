@@ -31,13 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_ReciclajeElegido));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtPesar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.txt_peso = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,15 +63,16 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Estás reciclando: XXXX";
             // 
-            // button1
+            // BtPesar
             // 
-            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(9, 126);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 79);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Pesar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtPesar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtPesar.Location = new System.Drawing.Point(9, 126);
+            this.BtPesar.Name = "BtPesar";
+            this.BtPesar.Size = new System.Drawing.Size(113, 79);
+            this.BtPesar.TabIndex = 4;
+            this.BtPesar.Text = "Pesar";
+            this.BtPesar.UseVisualStyleBackColor = false;
+            this.BtPesar.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label3
             // 
@@ -126,11 +128,20 @@
             this.button3.Text = "Atrás";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // txt_peso
+            // 
+            this.txt_peso.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_peso.Location = new System.Drawing.Point(151, 151);
+            this.txt_peso.Name = "txt_peso";
+            this.txt_peso.Size = new System.Drawing.Size(121, 29);
+            this.txt_peso.TabIndex = 18;
+            // 
             // UC_ReciclajeElegido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
+            this.Controls.Add(this.txt_peso);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -139,7 +150,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtPesar);
             this.Name = "UC_ReciclajeElegido";
             this.Size = new System.Drawing.Size(400, 360);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -151,12 +162,13 @@
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtPesar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txt_peso;
     }
 }
