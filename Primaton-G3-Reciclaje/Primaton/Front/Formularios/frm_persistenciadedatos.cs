@@ -1,15 +1,8 @@
-﻿using Primaton_G3_Reciclaje.Back_End.Clases;
+﻿using entidades;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Primaton_G3_Reciclaje.Front_End.Formularios
+namespace Primaton_G3_Reciclaje.Front.Formularios
 {
     public partial class frm_persistenciadedatos : Form
     {
@@ -48,7 +41,7 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
             //despues llamamos al metodo que limpia los campos, que en este caso yo no lo uso
             LimpiarCampos();
 
-            
+
         }
 
         private void BtGrabar_Click_1(object sender, EventArgs e)
@@ -58,7 +51,7 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
 
             Persistenciadedatos pdd = new Persistenciadedatos();
             pdd.GrabarArchivo();
-           
+
         }
 
         #endregion
@@ -71,21 +64,21 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
         /// </summary>
         //private void ConfiguracionInicial()
         //{
-            // diseño de la TablaPersona
-            
+        // diseño de la TablaPersona
 
-            // busca si el archivo ya existe para precargar sus datos
-            //if (System.IO.File.Exists(NombreArchivo))
-            //{
-            //    TablaPersona.ReadXml(NombreArchivo);
-            //}
 
-            //// asigna TablaPersona a dgvPersonas
-            //dgvPersonas.DataSource = TablaPersona;
-            //// elimina la posibilidad de ingresar datos en el datagridview
-            //dgvPersonas.AllowUserToAddRows = false;
-            //// elimina el encabezado de las filas
-            //dgvPersonas.RowHeadersVisible = false;
+        // busca si el archivo ya existe para precargar sus datos
+        //if (System.IO.File.Exists(NombreArchivo))
+        //{
+        //    TablaPersona.ReadXml(NombreArchivo);
+        //}
+
+        //// asigna TablaPersona a dgvPersonas
+        //dgvPersonas.DataSource = TablaPersona;
+        //// elimina la posibilidad de ingresar datos en el datagridview
+        //dgvPersonas.AllowUserToAddRows = false;
+        //// elimina el encabezado de las filas
+        //dgvPersonas.RowHeadersVisible = false;
         //}
 
         // Llena con string vacio los texbox
@@ -97,7 +90,7 @@ namespace Primaton_G3_Reciclaje.Front_End.Formularios
             txtDNI.Text = "";
         }
 
-        
+
         #endregion
 
     }

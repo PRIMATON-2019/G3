@@ -1,4 +1,4 @@
-﻿namespace Primaton_G3_Reciclaje.Front_End.Formularios
+﻿namespace Primaton_G3_Reciclaje.Front.Formularios
 {
     partial class frm_persistenciadedatos
     {
@@ -135,10 +135,10 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(-1, 72);
+            this.txtCantidad.Location = new System.Drawing.Point(34, 72);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(273, 22);
+            this.txtCantidad.Size = new System.Drawing.Size(238, 22);
             this.txtCantidad.TabIndex = 12;
             // 
             // lblcantidad

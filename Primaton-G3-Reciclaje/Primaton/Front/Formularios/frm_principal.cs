@@ -1,5 +1,6 @@
 ﻿using AForge.Video;
 using AForge.Video.DirectShow;
+using Primaton_G3_Reciclaje.Front.Formularios;
 using Primaton_G3_Reciclaje.Front_End.Formularios;
 using System;
 using System.Drawing;
@@ -188,8 +189,8 @@ namespace Primaton_G3_Reciclaje
 
         private void Btn_sig_Click(object sender, EventArgs e)
         {
-            Form frm_persistenciadedatos = new frm_persistenciadedatos();
-            frm_persistenciadedatos.ShowDialog();
+            frm_persistenciadedatos  pd= new frm_persistenciadedatos();
+            pd.ShowDialog();
         }
     }
 }

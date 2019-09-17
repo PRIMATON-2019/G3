@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Primaton_G3_Reciclaje
+namespace Primaton
 {
-    public partial class UC_Escaneo : UserControl
+    public partial class formularioinicial : Form
     {
-        public UC_Escaneo()
+        public formularioinicial()
         {
             InitializeComponent();
         }
