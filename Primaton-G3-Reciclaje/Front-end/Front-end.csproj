@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4DB76AC3-4FFB-4450-88E8-003FC2E355B2}</ProjectGuid>
+    <ProjectGuid>{A7948671-FC73-48E6-8276-EDC716ECC3DE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Primaton_G3_Reciclaje</RootNamespace>
-    <AssemblyName>Primaton-G3-Reciclaje</AssemblyName>
+    <RootNamespace>Front_end</RootNamespace>
+    <AssemblyName>Front-end</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,18 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
-      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
-    </Reference>
-    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
-      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
-    </Reference>
-    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
-      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
-    </Reference>
-    <Reference Include="Primaton-G3-Reciclaje">
-      <HintPath>obj\Debug\Primaton-G3-Reciclaje.exe</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,81 +44,72 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
-      <HintPath>..\packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="zxing, Version=0.16.4.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
-      <HintPath>..\packages\ZXing.Net.0.16.4\lib\net47\zxing.dll</HintPath>
-    </Reference>
-    <Reference Include="zxing.presentation, Version=0.16.4.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
-      <HintPath>..\packages\ZXing.Net.0.16.4\lib\net47\zxing.presentation.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Front-End\Formularios\frm_inicio.cs">
+    <Compile Include="Formularios\frm_inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_inicio.Designer.cs">
+    <Compile Include="Formularios\frm_inicio.Designer.cs">
       <DependentUpon>frm_inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_nuevoingreso.cs">
+    <Compile Include="Formularios\frm_nuevoingreso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_nuevoingreso.Designer.cs">
+    <Compile Include="Formularios\frm_nuevoingreso.Designer.cs">
       <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_persistenciadedatos.cs">
+    <Compile Include="Formularios\frm_persistenciadedatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_persistenciadedatos.Designer.cs">
+    <Compile Include="Formularios\frm_persistenciadedatos.Designer.cs">
       <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_plastico.cs">
+    <Compile Include="Formularios\frm_plastico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_plastico.Designer.cs">
+    <Compile Include="Formularios\frm_plastico.Designer.cs">
       <DependentUpon>frm_plastico.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_principal.cs">
+    <Compile Include="Formularios\frm_principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_principal.Designer.cs">
+    <Compile Include="Formularios\frm_principal.Designer.cs">
       <DependentUpon>frm_principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_registro_comercio.cs">
+    <Compile Include="Formularios\frm_registro_comercio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_registro_comercio.Designer.cs">
+    <Compile Include="Formularios\frm_registro_comercio.Designer.cs">
       <DependentUpon>frm_registro_comercio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_saludofinal.cs">
+    <Compile Include="Formularios\frm_saludofinal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_saludofinal.Designer.cs">
+    <Compile Include="Formularios\frm_saludofinal.Designer.cs">
       <DependentUpon>frm_saludofinal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_sumadepuntos.cs">
+    <Compile Include="Formularios\frm_sumadepuntos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_sumadepuntos.Designer.cs">
+    <Compile Include="Formularios\frm_sumadepuntos.Designer.cs">
       <DependentUpon>frm_sumadepuntos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_ticketqr.cs">
+    <Compile Include="Formularios\frm_ticketqr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_ticketqr.Designer.cs">
+    <Compile Include="Formularios\frm_ticketqr.Designer.cs">
       <DependentUpon>frm_ticketqr.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_tiposdereciclaje.cs">
+    <Compile Include="Formularios\frm_tiposdereciclaje.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_tiposdereciclaje.Designer.cs">
+    <Compile Include="Formularios\frm_tiposdereciclaje.Designer.cs">
       <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_vidrio.cs">
+    <Compile Include="Formularios\frm_vidrio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front-End\Formularios\frm_vidrio.Designer.cs">
+    <Compile Include="Formularios\frm_vidrio.Designer.cs">
       <DependentUpon>frm_vidrio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -165,12 +144,6 @@
     <Compile Include="UC_IngManualDNI.Designer.cs">
       <DependentUpon>UC_IngManualDNI.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_OpcDesc.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_OpcDesc.Designer.cs">
-      <DependentUpon>UC_OpcDesc.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_inicio.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -182,6 +155,12 @@
     </Compile>
     <Compile Include="UC_NewIngress.Designer.cs">
       <DependentUpon>UC_NewIngress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_OpcDesc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_OpcDesc.Designer.cs">
+      <DependentUpon>UC_OpcDesc.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_ReciclajeElegido.cs">
       <SubType>UserControl</SubType>
@@ -207,37 +186,37 @@
     <Compile Include="UC_TiposDeReciclaje.Designer.cs">
       <DependentUpon>UC_TiposDeReciclaje.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Front-End\Formularios\frm_inicio.resx">
+    <EmbeddedResource Include="Formularios\frm_inicio.resx">
       <DependentUpon>frm_inicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_nuevoingreso.resx">
+    <EmbeddedResource Include="Formularios\frm_nuevoingreso.resx">
       <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_persistenciadedatos.resx">
+    <EmbeddedResource Include="Formularios\frm_persistenciadedatos.resx">
       <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_plastico.resx">
+    <EmbeddedResource Include="Formularios\frm_plastico.resx">
       <DependentUpon>frm_plastico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_principal.resx">
+    <EmbeddedResource Include="Formularios\frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_registro_comercio.resx">
+    <EmbeddedResource Include="Formularios\frm_registro_comercio.resx">
       <DependentUpon>frm_registro_comercio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_saludofinal.resx">
+    <EmbeddedResource Include="Formularios\frm_saludofinal.resx">
       <DependentUpon>frm_saludofinal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_sumadepuntos.resx">
+    <EmbeddedResource Include="Formularios\frm_sumadepuntos.resx">
       <DependentUpon>frm_sumadepuntos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_ticketqr.resx">
+    <EmbeddedResource Include="Formularios\frm_ticketqr.resx">
       <DependentUpon>frm_ticketqr.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_tiposdereciclaje.resx">
+    <EmbeddedResource Include="Formularios\frm_tiposdereciclaje.resx">
       <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front-End\Formularios\frm_vidrio.resx">
+    <EmbeddedResource Include="Formularios\frm_vidrio.resx">
       <DependentUpon>frm_vidrio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -264,14 +243,14 @@
     <EmbeddedResource Include="UC_IngManualDNI.resx">
       <DependentUpon>UC_IngManualDNI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_OpcDesc.resx">
-      <DependentUpon>UC_OpcDesc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UC_inicio.resx">
       <DependentUpon>UC_inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_NewIngress.resx">
       <DependentUpon>UC_NewIngress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_OpcDesc.resx">
+      <DependentUpon>UC_OpcDesc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_ReciclajeElegido.resx">
       <DependentUpon>UC_ReciclajeElegido.cs</DependentUpon>
@@ -285,7 +264,6 @@
     <EmbeddedResource Include="UC_TiposDeReciclaje.resx">
       <DependentUpon>UC_TiposDeReciclaje.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -298,10 +276,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Back-End\Clases\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
