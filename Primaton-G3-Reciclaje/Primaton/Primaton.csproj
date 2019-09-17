@@ -64,12 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="formularioinicial.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formularioinicial.Designer.cs">
-      <DependentUpon>formularioinicial.cs</DependentUpon>
-    </Compile>
     <Compile Include="Front\Formularios\frm_nuevoingreso.cs">
       <SubType>Form</SubType>
     </Compile>
