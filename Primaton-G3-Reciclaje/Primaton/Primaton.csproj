@@ -64,6 +64,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Front\Formularios\frm_Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_Inicial.Designer.cs">
+      <DependentUpon>frm_Inicial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front\Formularios\frm_nuevoingreso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Front\Formularios\frm_Inicial.resx">
+      <DependentUpon>frm_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_nuevoingreso.resx">
       <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
     </EmbeddedResource>
