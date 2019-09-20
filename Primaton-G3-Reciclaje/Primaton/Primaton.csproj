@@ -94,12 +94,6 @@
     <Compile Include="Front\Formularios\frm_plastico.Designer.cs">
       <DependentUpon>frm_plastico.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_principal.Designer.cs">
-      <DependentUpon>frm_principal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Front\Formularios\frm_quienessomos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,9 +158,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_plastico.resx">
       <DependentUpon>frm_plastico.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_principal.resx">
-      <DependentUpon>frm_principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_quienessomos.resx">
       <DependentUpon>frm_quienessomos.cs</DependentUpon>

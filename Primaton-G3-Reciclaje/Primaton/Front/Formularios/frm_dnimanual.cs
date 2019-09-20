@@ -16,5 +16,56 @@ namespace Primaton.Front.Formularios
         {
             InitializeComponent();
         }
+        #region eventos
+        private void Btn_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_0_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -39,6 +40,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lbl_hora);
             this.panel1.Location = new System.Drawing.Point(2, -3);
@@ -71,6 +73,15 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(135, 285);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(212, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "informacion acerca de el grupoo";
+            // 
             // frm_quienessomos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -82,6 +93,7 @@
             this.Name = "frm_quienessomos";
             this.Text = "frm_quienessomos";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -92,5 +104,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

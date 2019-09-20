@@ -35,9 +35,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.timer_hora = new System.Windows.Forms.Timer(this.components);
-            this.pic_btn = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_btn)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -55,7 +54,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightBlue;
+            this.button1.BackColor = System.Drawing.Color.LightGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(25, 248);
             this.button1.Name = "button1";
@@ -66,7 +65,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LightBlue;
+            this.button2.BackColor = System.Drawing.Color.LightGray;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(512, 248);
             this.button2.Name = "button2";
@@ -80,9 +79,10 @@
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
             this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.Location = new System.Drawing.Point(662, 9);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(222, 84);
+            this.lbl_hora.Size = new System.Drawing.Size(222, 140);
             this.lbl_hora.TabIndex = 3;
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,16 +92,16 @@
             this.timer_hora.Interval = 1000;
             this.timer_hora.Tick += new System.EventHandler(this.Timer_hora_Tick);
             // 
-            // pic_btn
+            // linkLabel1
             // 
-            this.pic_btn.Image = ((System.Drawing.Image)(resources.GetObject("pic_btn.Image")));
-            this.pic_btn.Location = new System.Drawing.Point(784, 523);
-            this.pic_btn.Name = "pic_btn";
-            this.pic_btn.Size = new System.Drawing.Size(100, 68);
-            this.pic_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_btn.TabIndex = 4;
-            this.pic_btn.TabStop = false;
-            this.pic_btn.Click += new System.EventHandler(this.Pic_btn_Click);
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(613, 539);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(262, 44);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Quienes Somos ?";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frm_Inicial
             // 
@@ -109,7 +109,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(887, 592);
-            this.Controls.Add(this.pic_btn);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lbl_hora);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -119,7 +119,6 @@
             this.Name = "frm_Inicial";
             this.Text = "frm_Inicial";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_btn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -131,6 +130,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.Timer timer_hora;
-        private System.Windows.Forms.PictureBox pic_btn;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

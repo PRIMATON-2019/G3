@@ -15,6 +15,7 @@ namespace Primaton.Front.Formularios
         public frm_Inicial()
         {
             InitializeComponent();
+            timer_hora.Start();
         }
 
         private void Timer_hora_Tick(object sender, EventArgs e)

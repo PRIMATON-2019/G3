@@ -1,4 +1,5 @@
-﻿using Primaton_G3_Reciclaje;
+﻿using Primaton.Front.Formularios;
+using Primaton_G3_Reciclaje;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Primaton
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_principal());
+            Application.Run(new frm_Inicial());
         }
     }
 }

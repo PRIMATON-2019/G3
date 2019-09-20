@@ -42,12 +42,14 @@
             this.btn_4 = new System.Windows.Forms.Button();
             this.btn_1 = new System.Windows.Forms.Button();
             this.lbl_hora = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.pn_dni.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_dni
             // 
             this.pn_dni.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.pn_dni.Controls.Add(this.button1);
             this.pn_dni.Controls.Add(this.lbl_hora);
             this.pn_dni.Controls.Add(this.btn_0);
             this.pn_dni.Controls.Add(this.btn_9);
@@ -79,6 +81,7 @@
             this.btn_0.TabIndex = 9;
             this.btn_0.Text = "0";
             this.btn_0.UseVisualStyleBackColor = false;
+            this.btn_0.Click += new System.EventHandler(this.Btn_0_Click);
             // 
             // btn_9
             // 
@@ -91,6 +94,7 @@
             this.btn_9.TabIndex = 8;
             this.btn_9.Text = "9";
             this.btn_9.UseVisualStyleBackColor = false;
+            this.btn_9.Click += new System.EventHandler(this.Btn_9_Click);
             // 
             // lbl_infomanual
             // 
@@ -114,6 +118,7 @@
             this.btn_8.TabIndex = 7;
             this.btn_8.Text = "8";
             this.btn_8.UseVisualStyleBackColor = false;
+            this.btn_8.Click += new System.EventHandler(this.Btn_8_Click);
             // 
             // btn_7
             // 
@@ -126,6 +131,7 @@
             this.btn_7.TabIndex = 6;
             this.btn_7.Text = "7";
             this.btn_7.UseVisualStyleBackColor = false;
+            this.btn_7.Click += new System.EventHandler(this.Btn_7_Click);
             // 
             // txt_documento
             // 
@@ -148,6 +154,7 @@
             this.btn_3.TabIndex = 5;
             this.btn_3.Text = "3";
             this.btn_3.UseVisualStyleBackColor = false;
+            this.btn_3.Click += new System.EventHandler(this.Btn_3_Click);
             // 
             // btn_6
             // 
@@ -160,6 +167,7 @@
             this.btn_6.TabIndex = 4;
             this.btn_6.Text = "6";
             this.btn_6.UseVisualStyleBackColor = false;
+            this.btn_6.Click += new System.EventHandler(this.Btn_6_Click);
             // 
             // btn_2
             // 
@@ -172,6 +180,7 @@
             this.btn_2.TabIndex = 3;
             this.btn_2.Text = "2";
             this.btn_2.UseVisualStyleBackColor = false;
+            this.btn_2.Click += new System.EventHandler(this.Btn_2_Click);
             // 
             // btn_5
             // 
@@ -184,6 +193,7 @@
             this.btn_5.TabIndex = 2;
             this.btn_5.Text = "5";
             this.btn_5.UseVisualStyleBackColor = false;
+            this.btn_5.Click += new System.EventHandler(this.Btn_5_Click);
             // 
             // btn_4
             // 
@@ -196,6 +206,7 @@
             this.btn_4.TabIndex = 1;
             this.btn_4.Text = "4";
             this.btn_4.UseVisualStyleBackColor = false;
+            this.btn_4.Click += new System.EventHandler(this.Btn_4_Click);
             // 
             // btn_1
             // 
@@ -208,18 +219,29 @@
             this.btn_1.TabIndex = 0;
             this.btn_1.Text = "1";
             this.btn_1.UseVisualStyleBackColor = false;
+            this.btn_1.Click += new System.EventHandler(this.Btn_1_Click);
             // 
             // lbl_hora
             // 
             this.lbl_hora.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_hora.Location = new System.Drawing.Point(326, -1);
+            this.lbl_hora.Location = new System.Drawing.Point(344, 0);
             this.lbl_hora.Name = "lbl_hora";
             this.lbl_hora.Size = new System.Drawing.Size(212, 108);
             this.lbl_hora.TabIndex = 13;
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(424, 284);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 75);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Siguiente";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frm_dnimanual
             // 
@@ -253,5 +275,6 @@
         private System.Windows.Forms.Button btn_4;
         private System.Windows.Forms.Button btn_1;
         private System.Windows.Forms.Label lbl_hora;
+        private System.Windows.Forms.Button button1;
     }
 }
