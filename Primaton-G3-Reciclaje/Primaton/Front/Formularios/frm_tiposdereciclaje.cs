@@ -16,7 +16,7 @@ namespace Primaton.Front.Formularios
 
         private void Btn_vidrio_Click(object sender, EventArgs e)
         {
-            frm_pesajevidrio vidrio = new frm_pesajevidrio();
+            Form vidrio = new frm_pesajevidrio();
             vidrio.Show();
         }
 
