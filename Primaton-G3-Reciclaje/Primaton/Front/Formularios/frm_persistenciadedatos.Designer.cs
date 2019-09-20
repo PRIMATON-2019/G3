@@ -70,11 +70,11 @@
             // dgvPersonas
             // 
             this.dgvPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersonas.Location = new System.Drawing.Point(34, 178);
+            this.dgvPersonas.Location = new System.Drawing.Point(13, 173);
             this.dgvPersonas.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPersonas.Name = "dgvPersonas";
             this.dgvPersonas.RowHeadersWidth = 51;
-            this.dgvPersonas.Size = new System.Drawing.Size(909, 327);
+            this.dgvPersonas.Size = new System.Drawing.Size(950, 470);
             this.dgvPersonas.TabIndex = 19;
             // 
             // txtEdad

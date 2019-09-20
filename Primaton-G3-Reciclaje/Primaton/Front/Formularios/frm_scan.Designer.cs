@@ -56,7 +56,7 @@
             // 
             // pn_scanner
             // 
-            this.pn_scanner.BackColor = System.Drawing.Color.OliveDrab;
+            this.pn_scanner.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.pn_scanner.Controls.Add(this.lbl_hora);
             this.pn_scanner.Controls.Add(this.btn_detenercamara);
             this.pn_scanner.Controls.Add(this.btn_show);

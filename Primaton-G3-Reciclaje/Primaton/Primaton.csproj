@@ -88,23 +88,11 @@
     <Compile Include="Front\Formularios\frm_persistenciadedatos.Designer.cs">
       <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_plastico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_plastico.Designer.cs">
-      <DependentUpon>frm_plastico.cs</DependentUpon>
-    </Compile>
     <Compile Include="Front\Formularios\frm_quienessomos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Front\Formularios\frm_quienessomos.Designer.cs">
       <DependentUpon>frm_quienessomos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_registro_comercio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_registro_comercio.Designer.cs">
-      <DependentUpon>frm_registro_comercio.cs</DependentUpon>
     </Compile>
     <Compile Include="Front\Formularios\frm_saludofinal.cs">
       <SubType>Form</SubType>
@@ -156,14 +144,8 @@
     <EmbeddedResource Include="Front\Formularios\frm_persistenciadedatos.resx">
       <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_plastico.resx">
-      <DependentUpon>frm_plastico.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_quienessomos.resx">
       <DependentUpon>frm_quienessomos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_registro_comercio.resx">
-      <DependentUpon>frm_registro_comercio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_saludofinal.resx">
       <DependentUpon>frm_saludofinal.cs</DependentUpon>
