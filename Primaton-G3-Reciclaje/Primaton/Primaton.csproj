@@ -82,6 +82,12 @@
     <Compile Include="Front\Formularios\frm_persistenciadedatos.Designer.cs">
       <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Front\Formularios\frm_pesaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_pesaje.Designer.cs">
+      <DependentUpon>frm_pesaje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front\Formularios\frm_quienessomos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_persistenciadedatos.resx">
       <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\Formularios\frm_pesaje.resx">
+      <DependentUpon>frm_pesaje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_quienessomos.resx">
       <DependentUpon>frm_quienessomos.cs</DependentUpon>
@@ -166,6 +175,12 @@
       <Project>{908032d2-5558-4e05-8a1c-9c3bff7c8b1b}</Project>
       <Name>entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Front\Recursps\eco-sistema-fondo-blanco-recuadro.png" />
+    <Content Include="Front\Recursps\eco-sistema-fondo-blanco-sinrecuadro.png" />
+    <Content Include="Front\Recursps\eco-sistema-fondo-transparente-recuadro.png" />
+    <Content Include="Front\Recursps\eco-sistema-fondo-transparente-sinrecuadro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
