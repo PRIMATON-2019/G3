@@ -115,7 +115,7 @@
             this.panel1.Controls.Add(this.lbl_decode);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(491, 419);
+            this.panel1.Size = new System.Drawing.Size(494, 427);
             this.panel1.TabIndex = 7;
             // 
             // label1
@@ -132,7 +132,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(510, 443);
+            this.ClientSize = new System.Drawing.Size(518, 451);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Primaton.Front.Formularios
 {
-    public partial class frm_Inicial : Form
+    public partial class frm_dnimanual : Form
     {
-        public frm_Inicial()
+        public frm_dnimanual()
         {
             InitializeComponent();
-        }
-
-        private void Timer_hora_Tick(object sender, EventArgs e)
-        {
-            lbl_hora.Text = DateTime.Now.ToString();
-        }
-
-        private void Pic_btn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -150,7 +150,7 @@
             this.pn_dni.Controls.Add(this.btn_5);
             this.pn_dni.Controls.Add(this.btn_4);
             this.pn_dni.Controls.Add(this.btn_1);
-            this.pn_dni.Location = new System.Drawing.Point(717, 155);
+            this.pn_dni.Location = new System.Drawing.Point(717, 160);
             this.pn_dni.Margin = new System.Windows.Forms.Padding(4);
             this.pn_dni.Name = "pn_dni";
             this.pn_dni.Size = new System.Drawing.Size(251, 324);

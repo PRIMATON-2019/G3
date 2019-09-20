@@ -5,7 +5,7 @@
     {
         #region PROPIEDADES
         public int Id { get; set; }
-        public DateTime Fecha { get; set; }
+        public System.DateTime Fecha { get; set; }
         public Usuarios Usuario { get; set; }//todo: pensar bien la idea antes de seguir con usuarios
         public TipoResiduo Tipo { get; set; }
         public int Cantidad { get; set; }
