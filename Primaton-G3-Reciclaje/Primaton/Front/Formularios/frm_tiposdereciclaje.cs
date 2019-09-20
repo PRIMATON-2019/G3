@@ -1,4 +1,4 @@
-﻿using Primaton.Front.Formularios;
+﻿
 using System;
 using System.Windows.Forms;
 
@@ -11,10 +11,7 @@ namespace Primaton.Front.Formularios
             InitializeComponent();
         }
         #region EVENTOS
-        private void Btn_plastico_Click(object sender, EventArgs e)
-        {
-           
-        }
+
         #endregion
 
         private void Btn_vidrio_Click(object sender, EventArgs e)

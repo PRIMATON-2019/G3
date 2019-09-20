@@ -76,11 +76,11 @@
     <Compile Include="Front\Formularios\frm_Inicial.Designer.cs">
       <DependentUpon>frm_Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_persistenciadedatos.cs">
+    <Compile Include="Front\Formularios\frm_persistenciad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front\Formularios\frm_persistenciadedatos.Designer.cs">
-      <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
+    <Compile Include="Front\Formularios\frm_persistenciad.Designer.cs">
+      <DependentUpon>frm_persistenciad.cs</DependentUpon>
     </Compile>
     <Compile Include="Front\Formularios\frm_pesajeplastico.cs">
       <SubType>Form</SubType>
@@ -112,12 +112,6 @@
     <Compile Include="Front\Formularios\frm_quienessomos.Designer.cs">
       <DependentUpon>frm_quienessomos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_saludofinal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_saludofinal.Designer.cs">
-      <DependentUpon>frm_saludofinal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Front\Formularios\frm_scan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,8 +138,8 @@
     <EmbeddedResource Include="Front\Formularios\frm_Inicial.resx">
       <DependentUpon>frm_Inicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_persistenciadedatos.resx">
-      <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
+    <EmbeddedResource Include="Front\Formularios\frm_persistenciad.resx">
+      <DependentUpon>frm_persistenciad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_pesajeplastico.resx">
       <DependentUpon>frm_pesajeplastico.cs</DependentUpon>
@@ -161,9 +155,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_quienessomos.resx">
       <DependentUpon>frm_quienessomos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_saludofinal.resx">
-      <DependentUpon>frm_saludofinal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_scan.resx">
       <DependentUpon>frm_scan.cs</DependentUpon>

@@ -1,4 +1,4 @@
-﻿namespace Primaton_G3_Reciclaje.Front_End.Formularios
+﻿namespace Primaton.Front.Formularios
 {
     partial class frm_tiposdereciclaje
     {

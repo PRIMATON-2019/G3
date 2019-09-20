@@ -1,22 +1,22 @@
-﻿using entidades;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace Primaton_G3_Reciclaje.Front.Formularios
+using entidades;
+namespace Primaton.Front.Formularios
 {
-    public partial class frm_persistenciadedatos : Form
+    public partial class frm_persistenciad : Form
     {
-        #region PROPIEDADES PRIVADAS
-
-        #endregion
-        #region CONSTRUCTOR
-        public frm_persistenciadedatos()
+        public frm_persistenciad()
         {
             InitializeComponent();
-            //ConfiguracionInicial();
         }
-        #endregion 
-        #region EVENTOS
+        #region eventos
 
         private void BtAceptar_Click(object sender, EventArgs e)
         {
@@ -40,21 +40,17 @@ namespace Primaton_G3_Reciclaje.Front.Formularios
 
             //despues llamamos al metodo que limpia los campos, que en este caso yo no lo uso
             LimpiarCampos();
-
-
         }
 
-        private void BtGrabar_Click_1(object sender, EventArgs e)
+        private void BtGrabar_Click(object sender, EventArgs e)
         {
             //el evento click de el boton grabar, instancia un nuevo objeto pdd de la clase
             //persistenciadedatos, y utilizamos el mismo para llamar al metodo grabararchivo
 
             Persistenciadedatos pdd = new Persistenciadedatos();
             pdd.GrabarArchivo();
-
         }
-
-        #endregion
+#endregion
         #region METODOS
 
         /// <summary>
@@ -92,6 +88,5 @@ namespace Primaton_G3_Reciclaje.Front.Formularios
 
 
         #endregion
-
     }
 }
