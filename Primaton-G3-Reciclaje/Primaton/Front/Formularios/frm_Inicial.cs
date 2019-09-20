@@ -22,10 +22,5 @@ namespace Primaton.Front.Formularios
         {
             lbl_hora.Text = DateTime.Now.ToString();
         }
-
-        private void Pic_btn_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

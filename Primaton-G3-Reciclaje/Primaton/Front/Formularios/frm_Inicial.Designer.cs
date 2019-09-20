@@ -36,6 +36,8 @@
             this.lbl_hora = new System.Windows.Forms.Label();
             this.timer_hora = new System.Windows.Forms.Timer(this.components);
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,29 +49,29 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(890, 173);
+            this.pictureBox1.Size = new System.Drawing.Size(881, 173);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(25, 248);
+            this.button1.Location = new System.Drawing.Point(3, 278);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(327, 244);
+            this.button1.Size = new System.Drawing.Size(334, 244);
             this.button1.TabIndex = 1;
             this.button1.Text = "Scan";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LightGray;
+            this.button2.BackColor = System.Drawing.Color.MediumAquamarine;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(512, 248);
+            this.button2.Location = new System.Drawing.Point(536, 278);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(316, 244);
+            this.button2.Size = new System.Drawing.Size(339, 244);
             this.button2.TabIndex = 2;
             this.button2.Text = "Manual";
             this.button2.UseVisualStyleBackColor = false;
@@ -77,7 +79,6 @@
             // lbl_hora
             // 
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.Location = new System.Drawing.Point(662, 9);
@@ -103,12 +104,32 @@
             this.linkLabel1.Text = "Quienes Somos ?";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.PowderBlue;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Location = new System.Drawing.Point(0, 278);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(27, 244);
+            this.label1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.PowderBlue;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Location = new System.Drawing.Point(848, 278);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 244);
+            this.label2.TabIndex = 6;
+            // 
             // frm_Inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(887, 592);
+            this.ClientSize = new System.Drawing.Size(880, 582);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lbl_hora);
             this.Controls.Add(this.button2);
@@ -131,5 +152,7 @@
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.Timer timer_hora;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

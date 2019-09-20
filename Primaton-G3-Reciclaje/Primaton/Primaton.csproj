@@ -76,12 +76,6 @@
     <Compile Include="Front\Formularios\frm_Inicial.Designer.cs">
       <DependentUpon>frm_Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_nuevoingreso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_nuevoingreso.Designer.cs">
-      <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
-    </Compile>
     <Compile Include="Front\Formularios\frm_persistenciadedatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,12 +100,6 @@
     <Compile Include="Front\Formularios\frm_scan.Designer.cs">
       <DependentUpon>frm_scan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_sumadepuntos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_sumadepuntos.Designer.cs">
-      <DependentUpon>frm_sumadepuntos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Front\Formularios\frm_ticketqr.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,12 +112,6 @@
     <Compile Include="Front\Formularios\frm_tiposdereciclaje.Designer.cs">
       <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_vidrio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_vidrio.Designer.cs">
-      <DependentUpon>frm_vidrio.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Front\Formularios\frm_dnimanual.resx">
@@ -137,9 +119,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_Inicial.resx">
       <DependentUpon>frm_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_nuevoingreso.resx">
-      <DependentUpon>frm_nuevoingreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_persistenciadedatos.resx">
       <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
@@ -153,17 +132,11 @@
     <EmbeddedResource Include="Front\Formularios\frm_scan.resx">
       <DependentUpon>frm_scan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_sumadepuntos.resx">
-      <DependentUpon>frm_sumadepuntos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_ticketqr.resx">
       <DependentUpon>frm_ticketqr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_tiposdereciclaje.resx">
       <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_vidrio.resx">
-      <DependentUpon>frm_vidrio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
