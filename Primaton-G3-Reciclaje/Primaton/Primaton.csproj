@@ -177,6 +177,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Front\Recursps\Contenedor .png" />
     <Content Include="Front\Recursps\eco-sistema-fondo-blanco-recuadro.png" />
     <Content Include="Front\Recursps\eco-sistema-fondo-blanco-sinrecuadro.png" />
     <Content Include="Front\Recursps\eco-sistema-fondo-transparente-recuadro.png" />
