@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Primaton.Front.Formularios
 {
-    public partial class frm_pesaje : Form
+    public partial class frm_pesajevidrio : Form
     {
-        public frm_pesaje()
+        public frm_pesajevidrio()
         {
             InitializeComponent();
         }

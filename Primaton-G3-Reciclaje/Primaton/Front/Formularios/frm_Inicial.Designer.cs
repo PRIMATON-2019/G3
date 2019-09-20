@@ -47,9 +47,10 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(881, 173);
+            this.pictureBox1.Size = new System.Drawing.Size(661, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -58,9 +59,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 278);
+            this.button1.Location = new System.Drawing.Point(2, 226);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(334, 244);
+            this.button1.Size = new System.Drawing.Size(250, 198);
             this.button1.TabIndex = 1;
             this.button1.Text = "Scan";
             this.button1.UseVisualStyleBackColor = false;
@@ -69,9 +71,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.MediumAquamarine;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(536, 278);
+            this.button2.Location = new System.Drawing.Point(402, 226);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(339, 244);
+            this.button2.Size = new System.Drawing.Size(254, 198);
             this.button2.TabIndex = 2;
             this.button2.Text = "Manual";
             this.button2.UseVisualStyleBackColor = false;
@@ -81,9 +84,10 @@
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hora.Location = new System.Drawing.Point(662, 9);
+            this.lbl_hora.Location = new System.Drawing.Point(496, 7);
+            this.lbl_hora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(222, 140);
+            this.lbl_hora.Size = new System.Drawing.Size(166, 114);
             this.lbl_hora.TabIndex = 3;
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,9 +100,10 @@
             // linkLabel1
             // 
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(613, 539);
+            this.linkLabel1.Location = new System.Drawing.Point(460, 438);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(262, 44);
+            this.linkLabel1.Size = new System.Drawing.Size(196, 36);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Quienes Somos ?";
@@ -108,26 +113,28 @@
             // 
             this.label1.BackColor = System.Drawing.Color.PowderBlue;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(0, 278);
+            this.label1.Location = new System.Drawing.Point(0, 226);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 244);
+            this.label1.Size = new System.Drawing.Size(20, 198);
             this.label1.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.PowderBlue;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(848, 278);
+            this.label2.Location = new System.Drawing.Point(636, 226);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 244);
+            this.label2.Size = new System.Drawing.Size(27, 198);
             this.label2.TabIndex = 6;
             // 
             // frm_Inicial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(880, 582);
+            this.ClientSize = new System.Drawing.Size(691, 473);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
@@ -135,6 +142,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Inicial";

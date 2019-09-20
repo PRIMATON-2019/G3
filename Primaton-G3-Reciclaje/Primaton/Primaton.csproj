@@ -82,11 +82,29 @@
     <Compile Include="Front\Formularios\frm_persistenciadedatos.Designer.cs">
       <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_pesaje.cs">
+    <Compile Include="Front\Formularios\frm_pesajeplastico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front\Formularios\frm_pesaje.Designer.cs">
-      <DependentUpon>frm_pesaje.cs</DependentUpon>
+    <Compile Include="Front\Formularios\frm_pesajeplastico.Designer.cs">
+      <DependentUpon>frm_pesajeplastico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_pesajebiod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_pesajebiod.Designer.cs">
+      <DependentUpon>frm_pesajebiod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_pesajepapel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_pesajepapel.Designer.cs">
+      <DependentUpon>frm_pesajepapel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_pesajevidrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_pesajevidrio.Designer.cs">
+      <DependentUpon>frm_pesajevidrio.cs</DependentUpon>
     </Compile>
     <Compile Include="Front\Formularios\frm_quienessomos.cs">
       <SubType>Form</SubType>
@@ -129,8 +147,17 @@
     <EmbeddedResource Include="Front\Formularios\frm_persistenciadedatos.resx">
       <DependentUpon>frm_persistenciadedatos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_pesaje.resx">
-      <DependentUpon>frm_pesaje.cs</DependentUpon>
+    <EmbeddedResource Include="Front\Formularios\frm_pesajeplastico.resx">
+      <DependentUpon>frm_pesajeplastico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\Formularios\frm_pesajebiod.resx">
+      <DependentUpon>frm_pesajebiod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\Formularios\frm_pesajepapel.resx">
+      <DependentUpon>frm_pesajepapel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\Formularios\frm_pesajevidrio.resx">
+      <DependentUpon>frm_pesajevidrio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_quienessomos.resx">
       <DependentUpon>frm_quienessomos.cs</DependentUpon>
