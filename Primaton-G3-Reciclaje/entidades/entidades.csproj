@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="beneficiario.cs" />
     <Compile Include="Clases-Modelos\Balanza.cs" />
     <Compile Include="Clases-Modelos\Ciudad.cs" />
     <Compile Include="Clases-Modelos\Contenedor.cs" />
@@ -69,7 +70,9 @@
     <Compile Include="Clases-Modelos\Residuo.cs" />
     <Compile Include="Clases-Modelos\TipoResiduo.cs" />
     <Compile Include="Clases-Modelos\usuarios.cs" />
+    <Compile Include="Persistencia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
