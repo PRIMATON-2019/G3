@@ -22,5 +22,24 @@ namespace Primaton.Front.Formularios
         {
             lbl_hora.Text = DateTime.Now.ToString();
         }
+        #region eventos
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            frm_scan scaneo = new frm_scan();
+            scaneo.ShowDialog();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            frm_dnimanual dnimanual = new frm_dnimanual();
+            dnimanual.ShowDialog();
+        }
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            frm_QR QR = new frm_QR();
+            QR.ShowDialog();
+        }
+        #endregion
+
     }
 }

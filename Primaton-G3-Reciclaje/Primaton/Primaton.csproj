@@ -112,6 +112,12 @@
     <Compile Include="Front\Formularios\frm_pesajevidrio.Designer.cs">
       <DependentUpon>frm_pesajevidrio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Front\Formularios\frm_QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_QR.Designer.cs">
+      <DependentUpon>frm_QR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front\Formularios\frm_quienessomos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,12 +129,6 @@
     </Compile>
     <Compile Include="Front\Formularios\frm_scan.Designer.cs">
       <DependentUpon>frm_scan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_ticketqr.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_ticketqr.Designer.cs">
-      <DependentUpon>frm_ticketqr.cs</DependentUpon>
     </Compile>
     <Compile Include="Front\Formularios\frm_tiposdereciclaje.cs">
       <SubType>Form</SubType>
@@ -162,14 +162,14 @@
     <EmbeddedResource Include="Front\Formularios\frm_pesajevidrio.resx">
       <DependentUpon>frm_pesajevidrio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Front\Formularios\frm_QR.resx">
+      <DependentUpon>frm_QR.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_quienessomos.resx">
       <DependentUpon>frm_quienessomos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_scan.resx">
       <DependentUpon>frm_scan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_ticketqr.resx">
-      <DependentUpon>frm_ticketqr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_tiposdereciclaje.resx">
       <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>

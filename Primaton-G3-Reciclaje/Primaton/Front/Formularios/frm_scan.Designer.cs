@@ -31,15 +31,16 @@
             this.components = new System.ComponentModel.Container();
             this.lbl_info = new System.Windows.Forms.Label();
             this.pn_scanner = new System.Windows.Forms.Panel();
+            this.lbl_hora = new System.Windows.Forms.Label();
             this.btn_detenercamara = new System.Windows.Forms.Button();
             this.btn_show = new System.Windows.Forms.Button();
             this.btn_inicio = new System.Windows.Forms.Button();
             this.combobox_camara = new System.Windows.Forms.ComboBox();
             this.picbox_camara = new System.Windows.Forms.PictureBox();
             this.lbl_scanner = new System.Windows.Forms.Label();
-            this.lbl_hora = new System.Windows.Forms.Label();
             this.timer_scan = new System.Windows.Forms.Timer(this.components);
             this.timer_hora = new System.Windows.Forms.Timer(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.pn_scanner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_camara)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +58,7 @@
             // pn_scanner
             // 
             this.pn_scanner.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.pn_scanner.Controls.Add(this.listBox1);
             this.pn_scanner.Controls.Add(this.lbl_hora);
             this.pn_scanner.Controls.Add(this.btn_detenercamara);
             this.pn_scanner.Controls.Add(this.btn_show);
@@ -69,6 +71,17 @@
             this.pn_scanner.Name = "pn_scanner";
             this.pn_scanner.Size = new System.Drawing.Size(951, 577);
             this.pn_scanner.TabIndex = 17;
+            // 
+            // lbl_hora
+            // 
+            this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_hora.Location = new System.Drawing.Point(717, 9);
+            this.lbl_hora.Name = "lbl_hora";
+            this.lbl_hora.Size = new System.Drawing.Size(222, 84);
+            this.lbl_hora.TabIndex = 9;
+            this.lbl_hora.Text = "12:32:25";
+            this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_detenercamara
             // 
@@ -141,17 +154,6 @@
             this.lbl_scanner.TabIndex = 16;
             this.lbl_scanner.Text = "Escanear";
             // 
-            // lbl_hora
-            // 
-            this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_hora.Location = new System.Drawing.Point(717, 9);
-            this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(222, 84);
-            this.lbl_hora.TabIndex = 9;
-            this.lbl_hora.Text = "12:32:25";
-            this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // timer_scan
             // 
             this.timer_scan.Tick += new System.EventHandler(this.Timer_scan_Tick);
@@ -160,6 +162,15 @@
             // 
             this.timer_hora.Interval = 1000;
             this.timer_hora.Tick += new System.EventHandler(this.Timer_hora_Tick);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(730, 197);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(142, 164);
+            this.listBox1.TabIndex = 10;
             // 
             // frm_scan
             // 
@@ -194,5 +205,6 @@
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.Timer timer_scan;
         private System.Windows.Forms.Timer timer_hora;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

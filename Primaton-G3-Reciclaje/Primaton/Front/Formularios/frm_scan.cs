@@ -45,6 +45,7 @@ namespace Primaton.Front.Formularios
             FinalFrame = new VideoCaptureDevice(CaptureDevice[combobox_camara.SelectedIndex].MonikerString);
             FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);
             FinalFrame.Start();
+            
         }
 
         private void Frm_scan_FormClosing(object sender, FormClosingEventArgs e)
@@ -66,6 +67,7 @@ namespace Primaton.Front.Formularios
 
         private void Timer_scan_Tick(object sender, EventArgs e)
         {
+            
             BarcodeReader Reader = new BarcodeReader();
             Result result = Reader.Decode((Bitmap)picbox_camara.Image);
             try
@@ -74,12 +76,17 @@ namespace Primaton.Front.Formularios
                 if (decoded != "")
                 {
                     timer_scan.Stop();
+                    if (!listBox1.Items.Contains(decoded))
+                    {
+                        listBox1.Items.Insert(0, decoded);
+                    }
                     MessageBox.Show(decoded);
                     //Form2 form = new Form2();
                     //form.Show();
                     //this.Hide();
 
                 }
+                
             }
             catch (Exception ex)
             {

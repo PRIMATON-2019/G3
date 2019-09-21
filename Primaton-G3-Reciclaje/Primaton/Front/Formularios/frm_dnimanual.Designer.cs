@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.pn_dni = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lbl_hora = new System.Windows.Forms.Label();
             this.btn_0 = new System.Windows.Forms.Button();
             this.btn_9 = new System.Windows.Forms.Button();
             this.lbl_infomanual = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.btn_5 = new System.Windows.Forms.Button();
             this.btn_4 = new System.Windows.Forms.Button();
             this.btn_1 = new System.Windows.Forms.Button();
-            this.lbl_hora = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.pn_dni.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,8 +67,30 @@
             this.pn_dni.Location = new System.Drawing.Point(0, 0);
             this.pn_dni.Margin = new System.Windows.Forms.Padding(4);
             this.pn_dni.Name = "pn_dni";
-            this.pn_dni.Size = new System.Drawing.Size(559, 541);
+            this.pn_dni.Size = new System.Drawing.Size(592, 525);
             this.pn_dni.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(424, 284);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 75);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Siguiente";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // lbl_hora
+            // 
+            this.lbl_hora.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_hora.Location = new System.Drawing.Point(344, 0);
+            this.lbl_hora.Name = "lbl_hora";
+            this.lbl_hora.Size = new System.Drawing.Size(212, 108);
+            this.lbl_hora.TabIndex = 13;
+            this.lbl_hora.Text = "12:32:25";
+            this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_0
             // 
@@ -221,33 +243,11 @@
             this.btn_1.UseVisualStyleBackColor = false;
             this.btn_1.Click += new System.EventHandler(this.Btn_1_Click);
             // 
-            // lbl_hora
-            // 
-            this.lbl_hora.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_hora.Location = new System.Drawing.Point(344, 0);
-            this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(212, 108);
-            this.lbl_hora.TabIndex = 13;
-            this.lbl_hora.Text = "12:32:25";
-            this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(424, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 75);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Siguiente";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // frm_dnimanual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 541);
+            this.ClientSize = new System.Drawing.Size(592, 525);
             this.Controls.Add(this.pn_dni);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
