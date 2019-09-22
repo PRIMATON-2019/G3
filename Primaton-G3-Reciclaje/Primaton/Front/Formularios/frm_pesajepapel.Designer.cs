@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_pesajepapel));
             this.label2 = new System.Windows.Forms.Label();
             this.btCancelar = new System.Windows.Forms.Button();
-            this.btModificar = new System.Windows.Forms.Button();
+            this.btVolver = new System.Windows.Forms.Button();
             this.btAceptar = new System.Windows.Forms.Button();
             this.lblTotaldePuntos = new System.Windows.Forms.Label();
             this.lblPuntosGanados = new System.Windows.Forms.Label();
@@ -40,6 +40,7 @@
             this.btPesar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btSiguiente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,30 +56,32 @@
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(301, 402);
+            this.btCancelar.Location = new System.Drawing.Point(489, 402);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(89, 29);
             this.btCancelar.TabIndex = 20;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
             // 
-            // btModificar
+            // btVolver
             // 
-            this.btModificar.Location = new System.Drawing.Point(443, 402);
-            this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(89, 29);
-            this.btModificar.TabIndex = 19;
-            this.btModificar.Text = "Modificar";
-            this.btModificar.UseVisualStyleBackColor = true;
+            this.btVolver.Location = new System.Drawing.Point(347, 402);
+            this.btVolver.Name = "btVolver";
+            this.btVolver.Size = new System.Drawing.Size(89, 29);
+            this.btVolver.TabIndex = 19;
+            this.btVolver.Text = "Volver";
+            this.btVolver.UseVisualStyleBackColor = true;
+            this.btVolver.Click += new System.EventHandler(this.BtVolver_Click);
             // 
             // btAceptar
             // 
-            this.btAceptar.Location = new System.Drawing.Point(584, 402);
+            this.btAceptar.Location = new System.Drawing.Point(699, 232);
             this.btAceptar.Name = "btAceptar";
             this.btAceptar.Size = new System.Drawing.Size(89, 29);
             this.btAceptar.TabIndex = 18;
             this.btAceptar.Text = "Aceptar";
             this.btAceptar.UseVisualStyleBackColor = true;
+            this.btAceptar.Click += new System.EventHandler(this.BtAceptar_Click);
             // 
             // lblTotaldePuntos
             // 
@@ -89,6 +92,7 @@
             this.lblTotaldePuntos.Size = new System.Drawing.Size(213, 20);
             this.lblTotaldePuntos.TabIndex = 17;
             this.lblTotaldePuntos.Text = "Total de puntos acumulados:";
+            this.lblTotaldePuntos.Visible = false;
             // 
             // lblPuntosGanados
             // 
@@ -99,6 +103,7 @@
             this.lblPuntosGanados.Size = new System.Drawing.Size(129, 20);
             this.lblPuntosGanados.TabIndex = 16;
             this.lblPuntosGanados.Text = "Puntos ganados:";
+            this.lblPuntosGanados.Visible = false;
             // 
             // lblPuntosAcumulados
             // 
@@ -149,14 +154,25 @@
             this.label1.Text = "Deposita los residuos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btSiguiente
+            // 
+            this.btSiguiente.Location = new System.Drawing.Point(623, 402);
+            this.btSiguiente.Name = "btSiguiente";
+            this.btSiguiente.Size = new System.Drawing.Size(89, 29);
+            this.btSiguiente.TabIndex = 22;
+            this.btSiguiente.Text = "Siguiente";
+            this.btSiguiente.UseVisualStyleBackColor = true;
+            this.btSiguiente.Click += new System.EventHandler(this.BtSiguiente_Click);
+            // 
             // frm_pesajepapel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btSiguiente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btCancelar);
-            this.Controls.Add(this.btModificar);
+            this.Controls.Add(this.btVolver);
             this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.lblTotaldePuntos);
             this.Controls.Add(this.lblPuntosGanados);
@@ -177,7 +193,7 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btCancelar;
-        private System.Windows.Forms.Button btModificar;
+        private System.Windows.Forms.Button btVolver;
         private System.Windows.Forms.Button btAceptar;
         private System.Windows.Forms.Label lblTotaldePuntos;
         private System.Windows.Forms.Label lblPuntosGanados;
@@ -186,5 +202,6 @@
         private System.Windows.Forms.Button btPesar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btSiguiente;
     }
 }

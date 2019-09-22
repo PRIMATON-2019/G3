@@ -82,6 +82,12 @@
     <Compile Include="Front\Formularios\frm_Inicial.Designer.cs">
       <DependentUpon>frm_Inicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Front\Formularios\frm_SelectBenefit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\Formularios\frm_SelectBenefit.Designer.cs">
+      <DependentUpon>frm_SelectBenefit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front\frm_nuevobeneficiario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_Inicial.resx">
       <DependentUpon>frm_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\Formularios\frm_SelectBenefit.resx">
+      <DependentUpon>frm_SelectBenefit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\frm_nuevobeneficiario.resx">
       <DependentUpon>frm_nuevobeneficiario.cs</DependentUpon>
