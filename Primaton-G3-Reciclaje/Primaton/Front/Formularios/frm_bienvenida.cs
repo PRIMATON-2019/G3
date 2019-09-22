@@ -20,7 +20,13 @@ namespace Primaton.Front.Formularios
         private void Button1_Click(object sender, EventArgs e)
         {
             Form DatosBienvenida = new frm_tiposdereciclaje();
-            DatosBienvenida.Show();
+            DatosBienvenida.ShowDialog();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Form Cancel = new frm_Inicial();
+            Cancel.ShowDialog();
         }
     }
 }

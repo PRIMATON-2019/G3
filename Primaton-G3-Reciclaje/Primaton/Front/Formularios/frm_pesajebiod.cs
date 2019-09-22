@@ -19,7 +19,9 @@ namespace Primaton.Front.Formularios
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            Random rdm = new Random();
+            int ingreso = rdm.Next(1, 10000);
+            txtPeso.Text = "El peso ingresado es: " + ingreso.ToString();
         }
     }
 }

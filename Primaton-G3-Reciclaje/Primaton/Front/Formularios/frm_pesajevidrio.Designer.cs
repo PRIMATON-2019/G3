@@ -37,7 +37,7 @@
             this.lblPuntosGanados = new System.Windows.Forms.Label();
             this.lblPuntosAcumulados = new System.Windows.Forms.Label();
             this.txtPeso = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btPesar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -117,14 +117,15 @@
             this.txtPeso.Size = new System.Drawing.Size(221, 20);
             this.txtPeso.TabIndex = 14;
             // 
-            // button1
+            // btPesar
             // 
-            this.button1.Location = new System.Drawing.Point(454, 140);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 48);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Pesar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btPesar.Location = new System.Drawing.Point(454, 140);
+            this.btPesar.Name = "btPesar";
+            this.btPesar.Size = new System.Drawing.Size(136, 48);
+            this.btPesar.TabIndex = 13;
+            this.btPesar.Text = "Pesar";
+            this.btPesar.UseVisualStyleBackColor = true;
+            this.btPesar.Click += new System.EventHandler(this.Button1_Click);
             // 
             // pictureBox1
             // 
@@ -161,7 +162,7 @@
             this.Controls.Add(this.lblPuntosGanados);
             this.Controls.Add(this.lblPuntosAcumulados);
             this.Controls.Add(this.txtPeso);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btPesar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "frm_pesajevidrio";
@@ -182,7 +183,7 @@
         private System.Windows.Forms.Label lblPuntosGanados;
         private System.Windows.Forms.Label lblPuntosAcumulados;
         private System.Windows.Forms.TextBox txtPeso;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btPesar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
     }

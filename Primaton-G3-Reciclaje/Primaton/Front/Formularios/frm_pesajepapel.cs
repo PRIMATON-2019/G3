@@ -42,14 +42,14 @@ namespace Primaton.Front.Formularios
         {
             //regresa al usuario al formulario de seleccion de tipos de reciclaje
             Form Volver = new frm_tiposdereciclaje();
-            Volver.Show();
+            Volver.ShowDialog();
         }
 
         private void BtSiguiente_Click(object sender, EventArgs e)
         {
             //Redirige al usuario a la seleccion de beneficios para el canje de puntos
             Form siguiente = new frm_SelectBenefit();
-            siguiente.Show();
+            siguiente.ShowDialog();
         }
     }
 }

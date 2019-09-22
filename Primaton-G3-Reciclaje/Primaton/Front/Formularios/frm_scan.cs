@@ -114,5 +114,16 @@ namespace Primaton.Front.Formularios
         }
         #endregion
 
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Form InicioScan = new frm_bienvenida();
+            InicioScan.Show();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Form DigDNI = new frm_Inicial();
+            DigDNI.Show();
+        }
     }
 }
