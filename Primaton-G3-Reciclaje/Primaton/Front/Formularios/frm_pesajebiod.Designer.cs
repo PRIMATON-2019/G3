@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_pesajebiod));
             this.label2 = new System.Windows.Forms.Label();
             this.btCancelar = new System.Windows.Forms.Button();
-            this.btModificar = new System.Windows.Forms.Button();
-            this.btAceptar = new System.Windows.Forms.Button();
+            this.btVolver = new System.Windows.Forms.Button();
+            this.btSiguiente = new System.Windows.Forms.Button();
             this.lblTotaldePuntos = new System.Windows.Forms.Label();
             this.lblPuntosGanados = new System.Windows.Forms.Label();
             this.lblPuntosAcumulados = new System.Windows.Forms.Label();
@@ -64,23 +64,25 @@
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
             // 
-            // btModificar
+            // btVolver
             // 
-            this.btModificar.Location = new System.Drawing.Point(443, 402);
-            this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(89, 29);
-            this.btModificar.TabIndex = 19;
-            this.btModificar.Text = "Modificar";
-            this.btModificar.UseVisualStyleBackColor = true;
+            this.btVolver.Location = new System.Drawing.Point(443, 402);
+            this.btVolver.Name = "btVolver";
+            this.btVolver.Size = new System.Drawing.Size(89, 29);
+            this.btVolver.TabIndex = 19;
+            this.btVolver.Text = "Volver";
+            this.btVolver.UseVisualStyleBackColor = true;
+            this.btVolver.Click += new System.EventHandler(this.BtVolver_Click);
             // 
-            // btAceptar
+            // btSiguiente
             // 
-            this.btAceptar.Location = new System.Drawing.Point(584, 402);
-            this.btAceptar.Name = "btAceptar";
-            this.btAceptar.Size = new System.Drawing.Size(89, 29);
-            this.btAceptar.TabIndex = 18;
-            this.btAceptar.Text = "Aceptar";
-            this.btAceptar.UseVisualStyleBackColor = true;
+            this.btSiguiente.Location = new System.Drawing.Point(584, 402);
+            this.btSiguiente.Name = "btSiguiente";
+            this.btSiguiente.Size = new System.Drawing.Size(89, 29);
+            this.btSiguiente.TabIndex = 18;
+            this.btSiguiente.Text = "Siguiente";
+            this.btSiguiente.UseVisualStyleBackColor = true;
+            this.btSiguiente.Click += new System.EventHandler(this.BtAceptar_Click);
             // 
             // lblTotaldePuntos
             // 
@@ -182,8 +184,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btCancelar);
-            this.Controls.Add(this.btModificar);
-            this.Controls.Add(this.btAceptar);
+            this.Controls.Add(this.btVolver);
+            this.Controls.Add(this.btSiguiente);
             this.Controls.Add(this.lblTotaldePuntos);
             this.Controls.Add(this.lblPuntosGanados);
             this.Controls.Add(this.lblPuntosAcumulados);
@@ -202,8 +204,8 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btCancelar;
-        private System.Windows.Forms.Button btModificar;
-        private System.Windows.Forms.Button btAceptar;
+        private System.Windows.Forms.Button btVolver;
+        private System.Windows.Forms.Button btSiguiente;
         private System.Windows.Forms.Label lblTotaldePuntos;
         private System.Windows.Forms.Label lblPuntosGanados;
         private System.Windows.Forms.Label lblPuntosAcumulados;

@@ -29,8 +29,20 @@ namespace Primaton.Front.Formularios
             lblPuntosGanados.Visible = true;
             lblPuntosAcumulados.Visible = true;
             double peso = Convert.ToDouble(lblPeso.Text);
-            peso = peso * 0.5;
+            peso = peso * 0.35;
             lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+        }
+
+        private void BtAceptar_Click(object sender, EventArgs e)
+        {
+            Form siguiente = new frm_SelectBenefit();
+            siguiente.ShowDialog();
+        }
+
+        private void BtVolver_Click(object sender, EventArgs e)
+        {
+            Form Volver = new frm_tiposdereciclaje();
+            Volver.ShowDialog();
         }
     }
 }

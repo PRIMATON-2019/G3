@@ -32,5 +32,17 @@ namespace Primaton.Front.Formularios
             peso = peso * 0.5;
             lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
         }
+
+        private void BtVolver_Click(object sender, EventArgs e)
+        {
+            Form Volver = new frm_tiposdereciclaje();
+            Volver.ShowDialog();
+        }
+
+        private void BtSiguiente_Click(object sender, EventArgs e)
+        {
+            Form siguiente = new frm_SelectBenefit();
+            siguiente.ShowDialog();
+        }
     }
 }
