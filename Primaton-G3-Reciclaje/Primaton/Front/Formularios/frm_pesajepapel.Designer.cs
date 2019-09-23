@@ -36,11 +36,12 @@
             this.lblTotaldePuntos = new System.Windows.Forms.Label();
             this.lblPuntosGanados = new System.Windows.Forms.Label();
             this.lblPuntosAcumulados = new System.Windows.Forms.Label();
-            this.txtPeso = new System.Windows.Forms.TextBox();
             this.btPesar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btSiguiente = new System.Windows.Forms.Button();
+            this.lblPeso = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,13 +116,6 @@
             this.lblPuntosAcumulados.TabIndex = 15;
             this.lblPuntosAcumulados.Text = "Puntos acumulados a la fecha: ";
             // 
-            // txtPeso
-            // 
-            this.txtPeso.Location = new System.Drawing.Point(454, 237);
-            this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(221, 20);
-            this.txtPeso.TabIndex = 14;
-            // 
             // btPesar
             // 
             this.btPesar.Location = new System.Drawing.Point(454, 140);
@@ -164,11 +158,31 @@
             this.btSiguiente.UseVisualStyleBackColor = true;
             this.btSiguiente.Click += new System.EventHandler(this.BtSiguiente_Click);
             // 
+            // lblPeso
+            // 
+            this.lblPeso.AutoSize = true;
+            this.lblPeso.Location = new System.Drawing.Point(598, 240);
+            this.lblPeso.Name = "lblPeso";
+            this.lblPeso.Size = new System.Drawing.Size(42, 13);
+            this.lblPeso.TabIndex = 25;
+            this.lblPeso.Text = "asbdak";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(458, 240);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 13);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "El peso ingresado es: ";
+            // 
             // frm_pesajepapel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPeso);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btSiguiente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btCancelar);
@@ -177,12 +191,12 @@
             this.Controls.Add(this.lblTotaldePuntos);
             this.Controls.Add(this.lblPuntosGanados);
             this.Controls.Add(this.lblPuntosAcumulados);
-            this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.btPesar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "frm_pesajepapel";
             this.Text = "frm_pesajepapel";
+            this.Load += new System.EventHandler(this.Frm_pesajepapel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -198,10 +212,11 @@
         private System.Windows.Forms.Label lblTotaldePuntos;
         private System.Windows.Forms.Label lblPuntosGanados;
         private System.Windows.Forms.Label lblPuntosAcumulados;
-        private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.Button btPesar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btSiguiente;
+        private System.Windows.Forms.Label lblPeso;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -36,10 +36,12 @@
             this.lblTotaldePuntos = new System.Windows.Forms.Label();
             this.lblPuntosGanados = new System.Windows.Forms.Label();
             this.lblPuntosAcumulados = new System.Windows.Forms.Label();
-            this.txtPeso = new System.Windows.Forms.TextBox();
             this.btPesar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblPeso = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,13 +112,6 @@
             this.lblPuntosAcumulados.TabIndex = 15;
             this.lblPuntosAcumulados.Text = "Puntos acumulados a la fecha: ";
             // 
-            // txtPeso
-            // 
-            this.txtPeso.Location = new System.Drawing.Point(454, 237);
-            this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(221, 20);
-            this.txtPeso.TabIndex = 14;
-            // 
             // btPesar
             // 
             this.btPesar.Location = new System.Drawing.Point(454, 140);
@@ -149,11 +144,42 @@
             this.label1.Text = "Deposita los residuos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblPeso
+            // 
+            this.lblPeso.AutoSize = true;
+            this.lblPeso.Location = new System.Drawing.Point(589, 236);
+            this.lblPeso.Name = "lblPeso";
+            this.lblPeso.Size = new System.Drawing.Size(42, 13);
+            this.lblPeso.TabIndex = 28;
+            this.lblPeso.Text = "asbdak";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(449, 236);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 13);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "El peso ingresado es: ";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(690, 228);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 29);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Aceptar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            // 
             // frm_pesajebiod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPeso);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btModificar);
@@ -161,7 +187,6 @@
             this.Controls.Add(this.lblTotaldePuntos);
             this.Controls.Add(this.lblPuntosGanados);
             this.Controls.Add(this.lblPuntosAcumulados);
-            this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.btPesar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -182,9 +207,11 @@
         private System.Windows.Forms.Label lblTotaldePuntos;
         private System.Windows.Forms.Label lblPuntosGanados;
         private System.Windows.Forms.Label lblPuntosAcumulados;
-        private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.Button btPesar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblPeso;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }
