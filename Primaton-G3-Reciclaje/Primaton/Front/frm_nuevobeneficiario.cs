@@ -30,6 +30,7 @@ namespace Primaton.Front.Formularios
                 Usuario.Clave = txtClave.Text;
                 Beneficiario.Apellido = txtApellido.Text;
                 Beneficiario.Nombre = TxtNombre.Text;
+                Beneficiario.Dni = Convert.ToInt32(txt_dni.Text);
                 if (rbFemenino.Checked)
                 {
                     genero = 1;
@@ -44,7 +45,7 @@ namespace Primaton.Front.Formularios
                 }
                 Beneficiario.Genero = genero;
                 Usuario.Beneficiario = Beneficiario;
-                string[] columnas = { "usuario", "apellido", "nombre", "genero", "clave" };
+                string[] columnas = { "usuario", "apellido", "nombre", "genero", "clave", "dni" };
 
                 Persistencia db = new Persistencia(5, columnas, "Usuarios");
                 string[] datos = {
@@ -52,11 +53,12 @@ namespace Primaton.Front.Formularios
                     Usuario.Beneficiario.Apellido,
                     Usuario.Beneficiario.Nombre,
                     Usuario.Beneficiario.Genero.ToString(),
-                    Usuario.Clave
+                    Usuario.Clave,
+                    Usuario.Beneficiario.Dni.ToString(),
                 };
-                db.CargaDatos(datos, 5, columnas);
+                db.CargaDatos(datos, 6, columnas);
 
-                MessageBox.Show("El usuario fue dado de alta correctamente.");
+                MessageBox.Show("Usuario Creado.");
 
 
 
