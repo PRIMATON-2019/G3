@@ -67,5 +67,11 @@ namespace Primaton.Front.Formularios
 
         }
         #endregion
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Form DniManual = new frm_bienvenida();
+            DniManual.ShowDialog();
+        }
     }
 }
