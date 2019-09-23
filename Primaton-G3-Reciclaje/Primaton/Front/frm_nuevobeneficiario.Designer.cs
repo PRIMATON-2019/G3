@@ -48,14 +48,24 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txt_dni = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.pnIzquierda = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(526, 249);
+            this.btnCancelar.Location = new System.Drawing.Point(736, 361);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 28);
@@ -69,7 +79,7 @@
             this.groupBox1.Controls.Add(this.rbMasculino);
             this.groupBox1.Controls.Add(this.rbNoBinario);
             this.groupBox1.Controls.Add(this.rbFemenino);
-            this.groupBox1.Location = new System.Drawing.Point(17, 231);
+            this.groupBox1.Location = new System.Drawing.Point(227, 343);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -117,7 +127,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(201, 124);
+            this.label11.Location = new System.Drawing.Point(411, 236);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(125, 17);
@@ -127,7 +137,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 180);
+            this.label10.Location = new System.Drawing.Point(224, 292);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 17);
@@ -136,7 +146,7 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(339, 98);
+            this.txtApellido.Location = new System.Drawing.Point(549, 210);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(273, 22);
@@ -144,7 +154,7 @@
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(204, 144);
+            this.txtCorreo.Location = new System.Drawing.Point(414, 256);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(408, 22);
@@ -152,7 +162,7 @@
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(17, 201);
+            this.txtClave.Location = new System.Drawing.Point(227, 313);
             this.txtClave.Margin = new System.Windows.Forms.Padding(4);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(261, 22);
@@ -160,7 +170,7 @@
             // 
             // txtClaveConfirmacion
             // 
-            this.txtClaveConfirmacion.Location = new System.Drawing.Point(318, 201);
+            this.txtClaveConfirmacion.Location = new System.Drawing.Point(528, 313);
             this.txtClaveConfirmacion.Margin = new System.Windows.Forms.Padding(4);
             this.txtClaveConfirmacion.Name = "txtClaveConfirmacion";
             this.txtClaveConfirmacion.Size = new System.Drawing.Size(287, 22);
@@ -169,7 +179,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(315, 180);
+            this.label3.Location = new System.Drawing.Point(525, 292);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 17);
@@ -179,7 +189,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(336, 77);
+            this.label2.Location = new System.Drawing.Point(546, 189);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
@@ -189,7 +199,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 77);
+            this.label1.Location = new System.Drawing.Point(230, 189);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 17);
@@ -198,7 +208,7 @@
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(17, 98);
+            this.TxtNombre.Location = new System.Drawing.Point(227, 210);
             this.TxtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(275, 22);
@@ -206,7 +216,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(388, 249);
+            this.btnConfirmar.Location = new System.Drawing.Point(598, 361);
             this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(100, 28);
@@ -217,6 +227,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txt_dni);
             this.panel1.Controls.Add(this.label4);
@@ -233,15 +244,16 @@
             this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.txtClaveConfirmacion);
             this.panel1.Controls.Add(this.txtClave);
-            this.panel1.Location = new System.Drawing.Point(34, 235);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(672, 312);
+            this.panel1.Size = new System.Drawing.Size(951, 640);
             this.panel1.TabIndex = 43;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(257, 36);
+            this.label4.Location = new System.Drawing.Point(467, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 17);
             this.label4.TabIndex = 43;
@@ -249,7 +261,7 @@
             // 
             // txt_dni
             // 
-            this.txt_dni.Location = new System.Drawing.Point(23, 144);
+            this.txt_dni.Location = new System.Drawing.Point(233, 256);
             this.txt_dni.Name = "txt_dni";
             this.txt_dni.Size = new System.Drawing.Size(100, 22);
             this.txt_dni.TabIndex = 44;
@@ -257,34 +269,97 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 124);
+            this.label5.Location = new System.Drawing.Point(230, 236);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 17);
             this.label5.TabIndex = 45;
             this.label5.Text = "DNI";
             // 
-            // panel2
+            // pnTop
             // 
-            this.panel2.Location = new System.Drawing.Point(34, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(655, 120);
-            this.panel2.TabIndex = 44;
+            this.pnTop.BackColor = System.Drawing.Color.Silver;
+            this.pnTop.Controls.Add(this.pictureBox4);
+            this.pnTop.Controls.Add(this.pictureBox3);
+            this.pnTop.Controls.Add(this.pictureBox2);
+            this.pnTop.Controls.Add(this.pictureBox1);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTop.Location = new System.Drawing.Point(0, 0);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(951, 74);
+            this.pnTop.TabIndex = 44;
+            // 
+            // pnIzquierda
+            // 
+            this.pnIzquierda.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pnIzquierda.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnIzquierda.Location = new System.Drawing.Point(0, 74);
+            this.pnIzquierda.Name = "pnIzquierda";
+            this.pnIzquierda.Size = new System.Drawing.Size(200, 566);
+            this.pnIzquierda.TabIndex = 45;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Primaton.Properties.Resources.Close_Window__2_48px;
+            this.pictureBox4.Location = new System.Drawing.Point(889, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 46;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Primaton.Properties.Resources.Maximize_Window_2_48px;
+            this.pictureBox3.Location = new System.Drawing.Point(835, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Primaton.Properties.Resources.Minimize_Window_2_48px;
+            this.pictureBox2.Location = new System.Drawing.Point(781, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Primaton.Properties.Resources.Menu_48px;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // frm_nuevobeneficiario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 576);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(951, 640);
+            this.Controls.Add(this.pnIzquierda);
+            this.Controls.Add(this.pnTop);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_nuevobeneficiario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_nuevousuario";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.pnTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -311,6 +386,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_dni;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnTop;
+        private System.Windows.Forms.Panel pnIzquierda;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

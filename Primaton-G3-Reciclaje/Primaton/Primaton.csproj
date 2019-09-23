@@ -200,6 +200,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -222,11 +223,24 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Front\Recursps\Businessman_48px.png" />
+    <Content Include="Front\Recursps\Close Window_ 2 48px.png" />
+    <Content Include="Front\Recursps\Combo Chart_64px.png" />
+    <Content Include="Front\Recursps\compras_48px.png" />
     <Content Include="Front\Recursps\Contenedor .png" />
     <Content Include="Front\Recursps\eco-sistema-fondo-blanco-recuadro.png" />
     <Content Include="Front\Recursps\eco-sistema-fondo-blanco-sinrecuadro.png" />
     <Content Include="Front\Recursps\eco-sistema-fondo-transparente-recuadro.png" />
     <Content Include="Front\Recursps\eco-sistema-fondo-transparente-sinrecuadro.png" />
+    <Content Include="Front\Recursps\Ganancias_48px.png" />
+    <Content Include="Front\Recursps\Maximize Window_2 48px.png" />
+    <Content Include="Front\Recursps\Menu_48px.png" />
+    <Content Include="Front\Recursps\Minimize Window_2 48px.png" />
+    <Content Include="Front\Recursps\Producto_48px.png" />
+    <Content Include="Front\Recursps\Restore Window 2_48px.png" />
+    <Content Include="Front\Recursps\RhaegarlogoBR.png" />
+    <Content Include="Front\Recursps\User Groups_48px.png" />
+    <Content Include="Front\Recursps\Ventas_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
