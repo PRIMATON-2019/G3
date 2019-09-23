@@ -12,6 +12,7 @@ namespace entidades
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Correo { get; set; }
+        public int Dni { get; set; }
         public int Genero { get; set; }
     }
 }
