@@ -32,14 +32,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btPesar = new System.Windows.Forms.Button();
-            this.txtPeso = new System.Windows.Forms.TextBox();
             this.lblPuntosAcumulados = new System.Windows.Forms.Label();
             this.lblPuntosGanados = new System.Windows.Forms.Label();
             this.lblTotaldePuntos = new System.Windows.Forms.Label();
-            this.btAceptar = new System.Windows.Forms.Button();
-            this.btModificar = new System.Windows.Forms.Button();
+            this.btSiguiente = new System.Windows.Forms.Button();
+            this.btVolver = new System.Windows.Forms.Button();
             this.btCancelar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblPeso = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,13 +77,6 @@
             this.btPesar.UseVisualStyleBackColor = true;
             this.btPesar.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // txtPeso
-            // 
-            this.txtPeso.Location = new System.Drawing.Point(365, 239);
-            this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(221, 20);
-            this.txtPeso.TabIndex = 3;
-            // 
             // lblPuntosAcumulados
             // 
             this.lblPuntosAcumulados.AutoSize = true;
@@ -112,23 +107,25 @@
             this.lblTotaldePuntos.TabIndex = 6;
             this.lblTotaldePuntos.Text = "Total de puntos acumulados:";
             // 
-            // btAceptar
+            // btSiguiente
             // 
-            this.btAceptar.Location = new System.Drawing.Point(495, 404);
-            this.btAceptar.Name = "btAceptar";
-            this.btAceptar.Size = new System.Drawing.Size(89, 29);
-            this.btAceptar.TabIndex = 7;
-            this.btAceptar.Text = "Aceptar";
-            this.btAceptar.UseVisualStyleBackColor = true;
+            this.btSiguiente.Location = new System.Drawing.Point(495, 404);
+            this.btSiguiente.Name = "btSiguiente";
+            this.btSiguiente.Size = new System.Drawing.Size(89, 29);
+            this.btSiguiente.TabIndex = 7;
+            this.btSiguiente.Text = "Siguiente";
+            this.btSiguiente.UseVisualStyleBackColor = true;
+            this.btSiguiente.Click += new System.EventHandler(this.BtSiguiente_Click);
             // 
-            // btModificar
+            // btVolver
             // 
-            this.btModificar.Location = new System.Drawing.Point(354, 404);
-            this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(89, 29);
-            this.btModificar.TabIndex = 8;
-            this.btModificar.Text = "Modificar";
-            this.btModificar.UseVisualStyleBackColor = true;
+            this.btVolver.Location = new System.Drawing.Point(354, 404);
+            this.btVolver.Name = "btVolver";
+            this.btVolver.Size = new System.Drawing.Size(89, 29);
+            this.btVolver.TabIndex = 8;
+            this.btVolver.Text = "Volver";
+            this.btVolver.UseVisualStyleBackColor = true;
+            this.btVolver.Click += new System.EventHandler(this.BtVolver_Click);
             // 
             // btCancelar
             // 
@@ -149,20 +146,50 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Estás pesando: ";
             // 
+            // lblPeso
+            // 
+            this.lblPeso.AutoSize = true;
+            this.lblPeso.Location = new System.Drawing.Point(506, 249);
+            this.lblPeso.Name = "lblPeso";
+            this.lblPeso.Size = new System.Drawing.Size(42, 13);
+            this.lblPeso.TabIndex = 28;
+            this.lblPeso.Text = "asbdak";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(366, 249);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 13);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "El peso ingresado es: ";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(607, 241);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 29);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Aceptar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            // 
             // frm_pesajeplastico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(648, 445);
+            this.ClientSize = new System.Drawing.Size(756, 445);
+            this.Controls.Add(this.lblPeso);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btCancelar);
-            this.Controls.Add(this.btModificar);
-            this.Controls.Add(this.btAceptar);
+            this.Controls.Add(this.btVolver);
+            this.Controls.Add(this.btSiguiente);
             this.Controls.Add(this.lblTotaldePuntos);
             this.Controls.Add(this.lblPuntosGanados);
             this.Controls.Add(this.lblPuntosAcumulados);
-            this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.btPesar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -180,13 +207,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btPesar;
-        private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.Label lblPuntosAcumulados;
         private System.Windows.Forms.Label lblPuntosGanados;
         private System.Windows.Forms.Label lblTotaldePuntos;
-        private System.Windows.Forms.Button btAceptar;
-        private System.Windows.Forms.Button btModificar;
+        private System.Windows.Forms.Button btSiguiente;
+        private System.Windows.Forms.Button btVolver;
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPeso;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

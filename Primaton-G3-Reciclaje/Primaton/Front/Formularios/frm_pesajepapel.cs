@@ -24,7 +24,7 @@ namespace Primaton.Front.Formularios
             Random rdm = new Random();
             int ingreso = rdm.Next(1, 10000);
             //En el cuadro de texto se va a mostrar el peso del material reciclado
-            txtPeso.Text = "El peso ingresado es: " + ingreso.ToString();
+            lblPeso.Text = ingreso.ToString();
 
         }
 
@@ -33,9 +33,9 @@ namespace Primaton.Front.Formularios
             //Cuando se hace clic en acepatar se va a mostrar la cantidad de puntos que se estarían sumando
             lblPuntosGanados.Visible = true;
             lblPuntosAcumulados.Visible = true;
-            double peso = Convert.ToDouble(txtPeso.Text);
+            double peso = Convert.ToDouble(lblPeso.Text);
             peso = peso * 0.5;
-            lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString (peso);
+            lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
         }
 
         private void BtVolver_Click(object sender, EventArgs e)
@@ -50,6 +50,11 @@ namespace Primaton.Front.Formularios
             //Redirige al usuario a la seleccion de beneficios para el canje de puntos
             Form siguiente = new frm_SelectBenefit();
             siguiente.ShowDialog();
+        }
+
+        private void Frm_pesajepapel_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
