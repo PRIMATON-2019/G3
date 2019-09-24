@@ -13,11 +13,14 @@ namespace Primaton.Front.Formularios
 {
     public partial class frm_nuevobeneficiario : Form
     {
+        #region Propiedades
         public int genero { get; set; }
+        #endregion
         public frm_nuevobeneficiario()
         {
             InitializeComponent();
         }
+        #region Registro-Usuario
 
         private void BtnConfirmar_Click(object sender, EventArgs e)
         {
@@ -69,5 +72,47 @@ namespace Primaton.Front.Formularios
         {
             this.Dispose();
         }
+        #endregion
+        #region LOGIN
+
+        private void BtnEntrar_Click(object sender, EventArgs e)
+        {
+            //Verificar usuario ingresado.
+            if (txtDNI.Text != "" && txtClave.Text != "")
+            {
+                Persistencia pd = new Persistencia();
+                DataSet ds = pd.BuscarDatos("dni");
+                for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
+                {
+                    string dni = ds.Tables[0].Rows[j][0].ToString();
+                    string pass = ds.Tables[0].Rows[j][4].ToString();
+                    if (txtDNI.Text.Equals(dni)
+                        && txtClave.Text.Equals(pass))
+                    {
+                        //MenuInicial mi = new MenuInicial();
+                        //mi.Show();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar los datos");
+            }
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            txtDNI.Text = "";
+            txtPass.Text = "";
+            txtDNI.SelectAll();
+        }
+
+        private void LinklblRegistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           
+            pnLogin.Visible = false;
+            pnRegistro.Visible = true;
+        }
+        #endregion
     }
 }
