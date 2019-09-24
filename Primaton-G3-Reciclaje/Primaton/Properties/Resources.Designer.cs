@@ -73,6 +73,26 @@ namespace Primaton.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Combo_Chart_64px {
+            get {
+                object obj = ResourceManager.GetObject("Combo Chart_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ganancias_48px {
+            get {
+                object obj = ResourceManager.GetObject("Ganancias_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Maximize_Window_2_48px {
             get {
                 object obj = ResourceManager.GetObject("Maximize Window_2 48px", resourceCulture);
@@ -96,6 +116,16 @@ namespace Primaton.Properties {
         internal static System.Drawing.Bitmap Minimize_Window_2_48px {
             get {
                 object obj = ResourceManager.GetObject("Minimize Window_2 48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ventas_48px {
+            get {
+                object obj = ResourceManager.GetObject("Ventas_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
