@@ -2,6 +2,7 @@
 using AForge.Video.DirectShow;
 using entidades;
 using System;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using ZXing;
@@ -46,7 +47,10 @@ namespace Primaton.Front.Formularios
             FinalFrame = new VideoCaptureDevice(CaptureDevice[combobox_camara.SelectedIndex].MonikerString);
             FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);
             FinalFrame.Start();
-            
+            timer_scan.Enabled = true;
+            timer_scan.Interval = 1000;
+            timer_scan.Start();
+
         }
 
         private void Frm_scan_FormClosing(object sender, FormClosingEventArgs e)
@@ -69,10 +73,10 @@ namespace Primaton.Front.Formularios
         private void Timer_scan_Tick(object sender, EventArgs e)
         {
             
-            BarcodeReader Reader = new BarcodeReader();
-            Result result = Reader.Decode((Bitmap)picbox_camara.Image);
             try
             {
+            BarcodeReader Reader = new BarcodeReader();
+            Result result = Reader.Decode((Bitmap)picbox_camara.Image);
                 string decoded = result.ToString().Trim();
                 if (decoded != "")
                 {
@@ -117,9 +121,12 @@ namespace Primaton.Front.Formularios
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Usuarios user = new Usuarios();
-
-            Form InicioScan = new frm_bienvenida(user);
+            Registros registro = new Registros();
+            registro.Usuario.DNI = "aca va el textbox o label con el dato del usuaario";
+            Persistencia pd = new Persistencia();
+            DataSet ds = pd.BuscarDatos("Usuarios");
+           
+            frm_bienvenida InicioScan = new frm_bienvenida(registro);
             InicioScan.Show();
         }
 

@@ -10,10 +10,10 @@ namespace Primaton.Front.Formularios
         #region Propiedades
         public int genero { get; set; }
         #endregion
-        public frm_nuevobeneficiario(DataTable pepe)
+        public frm_nuevobeneficiario()
         {
             InitializeComponent();
-            this.pepe = pepe;
+          
         }
         #region Registro-Usuario
 
@@ -69,17 +69,18 @@ namespace Primaton.Front.Formularios
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
             //Verificar usuario ingresado.
-            if (txtDNI.Text != "" && txtClave.Text != "")
+            if (txtDNI.Text != "" && txtPass.Text != "")
             {
                 Persistencia pd = new Persistencia();
-                DataSet ds = pd.BuscarDatos("dni");
+                DataSet ds = pd.BuscarDatos("Usuarios");
                 for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
                 {
-                    string dni = ds.Tables[0].Rows[j][0].ToString();
+                    string dni = ds.Tables[0].Rows[j][5].ToString();
                     string pass = ds.Tables[0].Rows[j][4].ToString();
                     if (txtDNI.Text.Equals(dni)
-                        && txtClave.Text.Equals(pass))
+                        && txtPass.Text.Equals(pass))
                     {
+                        MessageBox.Show("Encontrado");
                         //MenuInicial mi = new MenuInicial();
                         //mi.Show();
                     }

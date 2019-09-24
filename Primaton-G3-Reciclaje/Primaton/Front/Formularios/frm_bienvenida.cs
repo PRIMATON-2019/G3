@@ -13,17 +13,17 @@ namespace Primaton.Front.Formularios
 {
     public partial class frm_bienvenida : Form
     {
-        Usuarios user;
-        public frm_bienvenida(Usuarios user)
+        Registros registro;
+        public frm_bienvenida(Registros registro)
         {
             InitializeComponent();
-            this.user = user;
+            this.registro=registro;
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Form DatosBienvenida = new frm_tiposdereciclaje();
-            DatosBienvenida.ShowDialog();
+            frm_tiposdereciclaje reciclaje = new frm_tiposdereciclaje();
+            reciclaje.ShowDialog();
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -34,11 +34,8 @@ namespace Primaton.Front.Formularios
 
         private void Frm_bienvenida_Load(object sender, EventArgs e)
         {
-            if (user.Genero== 1)
-            {
-            lblBienvenida.Text = "Bienvenida " + user.Nombre + " a Ecosistema, la nueva forma de reciclar.";
+            lblBienvenida.Text = "Bienvenido " + registro.Usuario.DNI + " a Ecosistema, la nueva forma de reciclar.";
 
-            }
-        }
+         }
     }
 }

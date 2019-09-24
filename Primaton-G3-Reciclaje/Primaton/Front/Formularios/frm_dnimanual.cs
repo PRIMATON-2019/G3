@@ -71,9 +71,12 @@ namespace Primaton.Front.Formularios
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Usuarios user = new Usuarios();
-            Form DniManual = new frm_bienvenida(user);
-            DniManual.ShowDialog();
+            Usuarios usuario = new Usuarios();
+            usuario.DNI = txt_documento.Text;
+            Registros registro = new Registros();
+            registro.Usuario = usuario;
+            frm_bienvenida dnimanual = new frm_bienvenida(registro);
+            dnimanual.ShowDialog();
         }
     }
 }

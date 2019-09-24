@@ -43,5 +43,10 @@ namespace Primaton.Front.Formularios
         }
         #endregion
 
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_nuevobeneficiario nb = new frm_nuevobeneficiario();
+            nb.Show();
+        }
     }
 }

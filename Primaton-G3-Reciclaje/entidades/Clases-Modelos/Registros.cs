@@ -1,4 +1,6 @@
-﻿namespace entidades
+﻿using System;
+
+namespace entidades
 
 {
     public class Registros
@@ -12,8 +14,14 @@
         public Contenedor Contenedor { get; set; }// Crear clase y hacer la referencia
         public int Ticket { get; set; }
         public int TipodeRegistro { get; set; }//si es 1 entrada, si es 2 salida (camion)
+        public int Creditos { get; set; }
         #endregion
 
+            Registros registro ;
+        public Registros()
+        {
+            //registro = new Registros();
+        }
 
         #region METODOS
         /// <summary>
@@ -26,9 +34,27 @@
         /// <param name="nuevoregistro"></param>
         /// <returns>Argumento de el metodo</returns>
         /// 
-        public string GrabarRegistro(Registros nuevoregistro)
+        public string GrabarRegistro()
         {
-            Persistenciadedatos pd = new Persistenciadedatos();  //creo un pd que me permite acceder de base de datos
+
+            Persistencia pd = new Persistencia();
+
+
+
+            string[] datos = {
+                registro.Id.ToString(),
+                registro.Fecha.ToString(),
+                registro.Usuario.DNI,
+                registro.Tipo.ToString(),
+                registro.Cantidad.ToString(),
+                registro.Creditos.ToString() };
+            string[] columnas = { "Id", "Fecha", "Usuario", "Tipo", "Cantidad", "Creditos" };
+
+            pd.CargaDatos(datos, 6, columnas);
+
+
+
+            //creo un pd que me permite acceder de base de datos
             //Usuarios usuario = new Usuarios();
             //usuario.Apellido = "manzanas";
             //nuevoregistro.Usuario = usuario;
@@ -37,10 +63,10 @@
             //nuevoregistro.Cantidad = Balanza.obtenerCantidad();
             //nuevoregistro.Contenedor = Contenedor.obtenerNumero();
             //nuevoregistro.Ticket = 1; // Generer un metodo que incremente el nro de ticket
-                                      //registro[1] = nuevoregistro;
+            //registro[1] = nuevoregistro;
 
-            pd.LlenaRegistroTabla(nuevoregistro); //paso argumento
-            pd.GrabarArchivo();
+            //pd.LlenaRegistroTabla(nuevoregistro); //paso argumento
+            //pd.GrabarArchivo();
             //}
             return "";
         }

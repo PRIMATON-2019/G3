@@ -37,6 +37,8 @@ namespace Primaton.Front.Formularios
         {
             Form siguiente = new frm_SelectBenefit();
             siguiente.ShowDialog();
+
+            //Aca guardo el registro
         }
 
         private void BtVolver_Click(object sender, EventArgs e)

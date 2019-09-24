@@ -1,4 +1,5 @@
-﻿using System;
+﻿using entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,9 +42,11 @@ namespace Primaton.Front.Formularios
 
         private void BtSiguiente_Click(object sender, EventArgs e)
         {
-            Form siguiente = new frm_SelectBenefit();
-            siguiente.ShowDialog();
-            //Llamar metodo para grabar registro
+            //Form siguiente = new frm_SelectBenefit();
+            //siguiente.ShowDialog();
+            ////Llamar metodo para grabar registro
+         
+
             //usuario
             //peso
             //tipo

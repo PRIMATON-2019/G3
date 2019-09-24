@@ -110,6 +110,7 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Quienes Somos ?";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
             // label1
             // 

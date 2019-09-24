@@ -36,7 +36,7 @@ namespace Primaton.Front.Formularios
             RG.Tipo = tipo;
             //instanciamos un objeto clase registros, y con ese objetos 
             //llamamos al metodo grabarregistro, y le pasamos como argumento RG
-            RG.GrabarRegistro(RG);
+            //RG.GrabarRegistro(RG);
 
             //despues llamamos al metodo que limpia los campos, que en este caso yo no lo uso
             LimpiarCampos();
