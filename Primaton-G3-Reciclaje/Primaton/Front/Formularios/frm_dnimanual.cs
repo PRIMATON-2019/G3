@@ -17,7 +17,8 @@ namespace Primaton.Front.Formularios
         {
             InitializeComponent();
         }
-        #region eventos
+        #region eventos Botones
+
         private void Btn_1_Click(object sender, EventArgs e)
         {
 
@@ -69,12 +70,15 @@ namespace Primaton.Front.Formularios
         }
         #endregion
 
-        private void Button1_Click(object sender, EventArgs e)
+
+        private void BtnSiguiente_Click(object sender, EventArgs e)
         {
             Usuarios usuario = new Usuarios();
             usuario.DNI = txt_documento.Text;
             Registros registro = new Registros();
             registro.Usuario = usuario;
+
+
             frm_bienvenida dnimanual = new frm_bienvenida(registro);
             dnimanual.ShowDialog();
         }

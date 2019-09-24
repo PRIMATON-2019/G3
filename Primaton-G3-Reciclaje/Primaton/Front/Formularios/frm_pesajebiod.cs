@@ -35,13 +35,14 @@ namespace Primaton.Front.Formularios
 
         private void BtAceptar_Click(object sender, EventArgs e)
         {
-            Form siguiente = new frm_SelectBenefit();
+            frm_SelectBenefit siguiente = new frm_SelectBenefit();
             siguiente.ShowDialog();
         }
 
         private void BtVolver_Click(object sender, EventArgs e)
         {
-            Form Volver = new frm_tiposdereciclaje();
+            frm_tiposdereciclaje Volver = new frm_tiposdereciclaje();
+            this.Dispose();
             Volver.ShowDialog();
         }
     }

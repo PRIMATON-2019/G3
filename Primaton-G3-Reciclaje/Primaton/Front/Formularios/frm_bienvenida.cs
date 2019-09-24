@@ -13,11 +13,13 @@ namespace Primaton.Front.Formularios
 {
     public partial class frm_bienvenida : Form
     {
+        #region Propiedades
         Registros registro;
+        #endregion
         public frm_bienvenida(Registros registro)
         {
             InitializeComponent();
-            this.registro=registro;
+            this.registro=registro; 
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace Primaton.Front.Formularios
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            Form Cancel = new frm_Inicial();
+            frm_Inicial Cancel = new frm_Inicial();
             Cancel.ShowDialog();
         }
 

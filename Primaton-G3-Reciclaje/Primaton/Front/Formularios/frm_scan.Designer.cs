@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.lbl_info = new System.Windows.Forms.Label();
             this.pn_scanner = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.btn_detenercamara = new System.Windows.Forms.Button();
@@ -41,8 +43,7 @@
             this.lbl_scanner = new System.Windows.Forms.Label();
             this.timer_scan = new System.Windows.Forms.Timer(this.components);
             this.timer_hora = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblDato = new System.Windows.Forms.Label();
             this.pn_scanner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_camara)).BeginInit();
             this.SuspendLayout();
@@ -51,16 +52,16 @@
             // 
             this.lbl_info.AutoSize = true;
             this.lbl_info.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_info.Location = new System.Drawing.Point(38, 34);
-            this.lbl_info.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_info.Location = new System.Drawing.Point(51, 42);
             this.lbl_info.Name = "lbl_info";
-            this.lbl_info.Size = new System.Drawing.Size(123, 13);
+            this.lbl_info.Size = new System.Drawing.Size(164, 17);
             this.lbl_info.TabIndex = 4;
             this.lbl_info.Text = "Camara de el Dispositivo";
             // 
             // pn_scanner
             // 
             this.pn_scanner.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.pn_scanner.Controls.Add(this.lblDato);
             this.pn_scanner.Controls.Add(this.button2);
             this.pn_scanner.Controls.Add(this.button1);
             this.pn_scanner.Controls.Add(this.listBox1);
@@ -73,28 +74,50 @@
             this.pn_scanner.Controls.Add(this.picbox_camara);
             this.pn_scanner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_scanner.Location = new System.Drawing.Point(0, 0);
-            this.pn_scanner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_scanner.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn_scanner.Name = "pn_scanner";
-            this.pn_scanner.Size = new System.Drawing.Size(713, 469);
+            this.pn_scanner.Size = new System.Drawing.Size(951, 577);
             this.pn_scanner.TabIndex = 17;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(743, 506);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Regresar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(743, 436);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Siguiente";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(548, 160);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(731, 197);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(108, 134);
+            this.listBox1.Size = new System.Drawing.Size(143, 164);
             this.listBox1.TabIndex = 10;
             // 
             // lbl_hora
             // 
             this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_hora.Location = new System.Drawing.Point(538, 7);
-            this.lbl_hora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_hora.Location = new System.Drawing.Point(717, 9);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(166, 68);
+            this.lbl_hora.Size = new System.Drawing.Size(221, 84);
             this.lbl_hora.TabIndex = 9;
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,10 +127,10 @@
             this.btn_detenercamara.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btn_detenercamara.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_detenercamara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_detenercamara.Location = new System.Drawing.Point(166, 381);
-            this.btn_detenercamara.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_detenercamara.Location = new System.Drawing.Point(221, 469);
+            this.btn_detenercamara.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_detenercamara.Name = "btn_detenercamara";
-            this.btn_detenercamara.Size = new System.Drawing.Size(117, 83);
+            this.btn_detenercamara.Size = new System.Drawing.Size(156, 102);
             this.btn_detenercamara.TabIndex = 8;
             this.btn_detenercamara.Text = "Detener Camara";
             this.btn_detenercamara.UseVisualStyleBackColor = false;
@@ -118,10 +141,10 @@
             this.btn_show.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btn_show.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_show.Location = new System.Drawing.Point(316, 381);
-            this.btn_show.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_show.Location = new System.Drawing.Point(421, 469);
+            this.btn_show.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_show.Name = "btn_show";
-            this.btn_show.Size = new System.Drawing.Size(164, 83);
+            this.btn_show.Size = new System.Drawing.Size(219, 102);
             this.btn_show.TabIndex = 7;
             this.btn_show.Text = "Mostrar Codigo";
             this.btn_show.UseVisualStyleBackColor = false;
@@ -132,10 +155,10 @@
             this.btn_inicio.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btn_inicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_inicio.Location = new System.Drawing.Point(12, 381);
-            this.btn_inicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_inicio.Location = new System.Drawing.Point(16, 469);
+            this.btn_inicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_inicio.Name = "btn_inicio";
-            this.btn_inicio.Size = new System.Drawing.Size(130, 83);
+            this.btn_inicio.Size = new System.Drawing.Size(173, 102);
             this.btn_inicio.TabIndex = 6;
             this.btn_inicio.Text = "Iniciar";
             this.btn_inicio.UseVisualStyleBackColor = false;
@@ -147,20 +170,20 @@
             this.combobox_camara.Cursor = System.Windows.Forms.Cursors.No;
             this.combobox_camara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.combobox_camara.FormattingEnabled = true;
-            this.combobox_camara.Location = new System.Drawing.Point(298, 32);
-            this.combobox_camara.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combobox_camara.Location = new System.Drawing.Point(397, 39);
+            this.combobox_camara.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.combobox_camara.Name = "combobox_camara";
-            this.combobox_camara.Size = new System.Drawing.Size(192, 21);
+            this.combobox_camara.Size = new System.Drawing.Size(255, 24);
             this.combobox_camara.TabIndex = 5;
             // 
             // picbox_camara
             // 
             this.picbox_camara.BackColor = System.Drawing.Color.Transparent;
             this.picbox_camara.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picbox_camara.Location = new System.Drawing.Point(12, 68);
-            this.picbox_camara.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picbox_camara.Location = new System.Drawing.Point(16, 84);
+            this.picbox_camara.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picbox_camara.Name = "picbox_camara";
-            this.picbox_camara.Size = new System.Drawing.Size(488, 309);
+            this.picbox_camara.Size = new System.Drawing.Size(649, 379);
             this.picbox_camara.TabIndex = 3;
             this.picbox_camara.TabStop = false;
             // 
@@ -168,9 +191,10 @@
             // 
             this.lbl_scanner.AutoSize = true;
             this.lbl_scanner.Font = new System.Drawing.Font("Verdana", 10.25F);
-            this.lbl_scanner.Location = new System.Drawing.Point(209, 86);
+            this.lbl_scanner.Location = new System.Drawing.Point(279, 106);
+            this.lbl_scanner.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_scanner.Name = "lbl_scanner";
-            this.lbl_scanner.Size = new System.Drawing.Size(71, 17);
+            this.lbl_scanner.Size = new System.Drawing.Size(91, 22);
             this.lbl_scanner.TabIndex = 16;
             this.lbl_scanner.Text = "Escanear";
             // 
@@ -183,34 +207,23 @@
             this.timer_hora.Interval = 1000;
             this.timer_hora.Tick += new System.EventHandler(this.Timer_hora_Tick);
             // 
-            // button1
+            // lblDato
             // 
-            this.button1.Location = new System.Drawing.Point(557, 354);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Siguiente";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(557, 411);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Regresar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.lblDato.AutoSize = true;
+            this.lblDato.Location = new System.Drawing.Point(726, 145);
+            this.lblDato.Name = "lblDato";
+            this.lblDato.Size = new System.Drawing.Size(46, 17);
+            this.lblDato.TabIndex = 13;
+            this.lblDato.Text = "label1";
             // 
             // frm_scan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 469);
+            this.ClientSize = new System.Drawing.Size(951, 577);
             this.Controls.Add(this.pn_scanner);
             this.Controls.Add(this.lbl_scanner);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_scan";
@@ -240,5 +253,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblDato;
     }
 }

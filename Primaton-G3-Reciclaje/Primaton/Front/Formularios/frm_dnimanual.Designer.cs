@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pn_dni = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.btn_0 = new System.Windows.Forms.Button();
             this.btn_9 = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             // pn_dni
             // 
             this.pn_dni.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.pn_dni.Controls.Add(this.button1);
+            this.pn_dni.Controls.Add(this.btnSiguiente);
             this.pn_dni.Controls.Add(this.lbl_hora);
             this.pn_dni.Controls.Add(this.btn_0);
             this.pn_dni.Controls.Add(this.btn_9);
@@ -65,22 +65,22 @@
             this.pn_dni.Controls.Add(this.btn_1);
             this.pn_dni.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_dni.Location = new System.Drawing.Point(0, 0);
-            this.pn_dni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pn_dni.Margin = new System.Windows.Forms.Padding(4);
             this.pn_dni.Name = "pn_dni";
             this.pn_dni.Size = new System.Drawing.Size(592, 526);
             this.pn_dni.TabIndex = 11;
             // 
-            // button1
+            // btnSiguiente
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(424, 284);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 75);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Siguiente";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiguiente.Location = new System.Drawing.Point(424, 284);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(123, 75);
+            this.btnSiguiente.TabIndex = 14;
+            this.btnSiguiente.Text = "Siguiente";
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.BtnSiguiente_Click);
             // 
             // lbl_hora
             // 
@@ -99,7 +99,7 @@
             this.btn_0.BackColor = System.Drawing.Color.Olive;
             this.btn_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_0.Location = new System.Drawing.Point(135, 417);
-            this.btn_0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_0.Margin = new System.Windows.Forms.Padding(4);
             this.btn_0.Name = "btn_0";
             this.btn_0.Size = new System.Drawing.Size(165, 86);
             this.btn_0.TabIndex = 9;
@@ -112,7 +112,7 @@
             this.btn_9.BackColor = System.Drawing.Color.Olive;
             this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_9.Location = new System.Drawing.Point(269, 331);
-            this.btn_9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_9.Margin = new System.Windows.Forms.Padding(4);
             this.btn_9.Name = "btn_9";
             this.btn_9.Size = new System.Drawing.Size(101, 89);
             this.btn_9.TabIndex = 8;
@@ -136,7 +136,7 @@
             this.btn_8.BackColor = System.Drawing.Color.Olive;
             this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_8.Location = new System.Drawing.Point(181, 331);
-            this.btn_8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_8.Margin = new System.Windows.Forms.Padding(4);
             this.btn_8.Name = "btn_8";
             this.btn_8.Size = new System.Drawing.Size(92, 89);
             this.btn_8.TabIndex = 7;
@@ -149,7 +149,7 @@
             this.btn_7.BackColor = System.Drawing.Color.Olive;
             this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_7.Location = new System.Drawing.Point(89, 331);
-            this.btn_7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_7.Margin = new System.Windows.Forms.Padding(4);
             this.btn_7.Name = "btn_7";
             this.btn_7.Size = new System.Drawing.Size(93, 89);
             this.btn_7.TabIndex = 6;
@@ -162,7 +162,7 @@
             this.txt_documento.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.txt_documento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_documento.Location = new System.Drawing.Point(113, 130);
-            this.txt_documento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_documento.Margin = new System.Windows.Forms.Padding(4);
             this.txt_documento.Name = "txt_documento";
             this.txt_documento.Size = new System.Drawing.Size(225, 22);
             this.txt_documento.TabIndex = 11;
@@ -172,7 +172,7 @@
             this.btn_3.BackColor = System.Drawing.Color.Olive;
             this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_3.Location = new System.Drawing.Point(269, 178);
-            this.btn_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_3.Margin = new System.Windows.Forms.Padding(4);
             this.btn_3.Name = "btn_3";
             this.btn_3.Size = new System.Drawing.Size(101, 73);
             this.btn_3.TabIndex = 5;
@@ -185,7 +185,7 @@
             this.btn_6.BackColor = System.Drawing.Color.Olive;
             this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_6.Location = new System.Drawing.Point(269, 251);
-            this.btn_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_6.Margin = new System.Windows.Forms.Padding(4);
             this.btn_6.Name = "btn_6";
             this.btn_6.Size = new System.Drawing.Size(101, 84);
             this.btn_6.TabIndex = 4;
@@ -198,7 +198,7 @@
             this.btn_2.BackColor = System.Drawing.Color.Olive;
             this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_2.Location = new System.Drawing.Point(181, 178);
-            this.btn_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_2.Margin = new System.Windows.Forms.Padding(4);
             this.btn_2.Name = "btn_2";
             this.btn_2.Size = new System.Drawing.Size(92, 73);
             this.btn_2.TabIndex = 3;
@@ -211,7 +211,7 @@
             this.btn_5.BackColor = System.Drawing.Color.Olive;
             this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_5.Location = new System.Drawing.Point(181, 251);
-            this.btn_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_5.Margin = new System.Windows.Forms.Padding(4);
             this.btn_5.Name = "btn_5";
             this.btn_5.Size = new System.Drawing.Size(92, 84);
             this.btn_5.TabIndex = 2;
@@ -224,7 +224,7 @@
             this.btn_4.BackColor = System.Drawing.Color.Olive;
             this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_4.Location = new System.Drawing.Point(89, 251);
-            this.btn_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_4.Margin = new System.Windows.Forms.Padding(4);
             this.btn_4.Name = "btn_4";
             this.btn_4.Size = new System.Drawing.Size(93, 81);
             this.btn_4.TabIndex = 1;
@@ -237,7 +237,7 @@
             this.btn_1.BackColor = System.Drawing.Color.Olive;
             this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_1.Location = new System.Drawing.Point(89, 178);
-            this.btn_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_1.Name = "btn_1";
             this.btn_1.Size = new System.Drawing.Size(93, 73);
             this.btn_1.TabIndex = 0;
@@ -279,6 +279,6 @@
         private System.Windows.Forms.Button btn_4;
         private System.Windows.Forms.Button btn_1;
         private System.Windows.Forms.Label lbl_hora;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSiguiente;
     }
 }
