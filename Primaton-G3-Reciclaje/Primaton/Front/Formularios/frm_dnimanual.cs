@@ -75,7 +75,8 @@ namespace Primaton.Front.Formularios
         {
             Usuarios usuario = new Usuarios();
             usuario.DNI = txt_documento.Text;
-            Registros registro = new Registros();
+            Registros registro;
+            registro.LlevarDatos();
             registro.Usuario = usuario;
 
 

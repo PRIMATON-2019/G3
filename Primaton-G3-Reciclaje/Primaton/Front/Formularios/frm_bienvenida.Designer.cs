@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_bienvenida));
             this.lblBienvenida = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btReciclar = new System.Windows.Forms.Button();
+            this.btnReciclar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,16 +58,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Tenes acumulados: xxxx puntos";
             // 
-            // btReciclar
+            // btnReciclar
             // 
-            this.btReciclar.Location = new System.Drawing.Point(525, 167);
-            this.btReciclar.Margin = new System.Windows.Forms.Padding(4);
-            this.btReciclar.Name = "btReciclar";
-            this.btReciclar.Size = new System.Drawing.Size(100, 28);
-            this.btReciclar.TabIndex = 2;
-            this.btReciclar.Text = "Reciclar";
-            this.btReciclar.UseVisualStyleBackColor = true;
-            this.btReciclar.Click += new System.EventHandler(this.Button1_Click);
+            this.btnReciclar.Location = new System.Drawing.Point(525, 167);
+            this.btnReciclar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReciclar.Name = "btnReciclar";
+            this.btnReciclar.Size = new System.Drawing.Size(100, 28);
+            this.btnReciclar.TabIndex = 2;
+            this.btnReciclar.Text = "Reciclar";
+            this.btnReciclar.UseVisualStyleBackColor = true;
+            this.btnReciclar.Click += new System.EventHandler(this.BtnReciclar_Click);
             // 
             // button2
             // 
@@ -98,7 +98,7 @@
             this.ClientSize = new System.Drawing.Size(771, 554);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btReciclar);
+            this.Controls.Add(this.btnReciclar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblBienvenida);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -118,7 +118,7 @@
 
         private System.Windows.Forms.Label lblBienvenida;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btReciclar;
+        private System.Windows.Forms.Button btnReciclar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

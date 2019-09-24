@@ -22,12 +22,6 @@ namespace Primaton.Front.Formularios
             this.registro=registro; 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            frm_tiposdereciclaje reciclaje = new frm_tiposdereciclaje();
-            reciclaje.ShowDialog();
-        }
-
         private void Button2_Click(object sender, EventArgs e)
         {
             frm_Inicial Cancel = new frm_Inicial();
@@ -39,5 +33,11 @@ namespace Primaton.Front.Formularios
             lblBienvenida.Text = "Bienvenido " + registro.Usuario.DNI + " a Ecosistema, la nueva forma de reciclar.";
 
          }
+
+        private void BtnReciclar_Click(object sender, EventArgs e)
+        {
+            frm_tiposdereciclaje reciclaje = new frm_tiposdereciclaje();
+            reciclaje.ShowDialog();
+        }
     }
 }

@@ -5,7 +5,7 @@ namespace entidades
 {
     public class Registros
     {
-        #region PROPIEDADES
+        #region PROPIEDADES / MODELO
         public int Id { get; set; }
         public System.DateTime Fecha { get; set; }
         public Usuarios Usuario { get; set; }//todo: pensar bien la idea antes de seguir con usuarios
@@ -17,10 +17,13 @@ namespace entidades
         public int Creditos { get; set; }
         #endregion
 
-            Registros registro ;
+
+        Registros registro;
+
+
         public Registros()
         {
-            //registro = new Registros();
+            registro = new Registros();
         }
 
         #region METODOS
@@ -39,8 +42,6 @@ namespace entidades
 
             Persistencia pd = new Persistencia();
 
-
-
             string[] datos = {
                 registro.Id.ToString(),
                 registro.Fecha.ToString(),
@@ -53,23 +54,30 @@ namespace entidades
             pd.CargaDatos(datos, 6, columnas);
 
 
-
-            //creo un pd que me permite acceder de base de datos
-            //Usuarios usuario = new Usuarios();
-            //usuario.Apellido = "manzanas";
-            //nuevoregistro.Usuario = usuario;
-            //nuevoregistro.Fecha = System.DateTime.Now; REVISAR ESTO.
-            //nuevoregistro.Tipo = tipo;
-            //nuevoregistro.Cantidad = Balanza.obtenerCantidad();
-            //nuevoregistro.Contenedor = Contenedor.obtenerNumero();
-            //nuevoregistro.Ticket = 1; // Generer un metodo que incremente el nro de ticket
-            //registro[1] = nuevoregistro;
-
-            //pd.LlenaRegistroTabla(nuevoregistro); //paso argumento
-            //pd.GrabarArchivo();
-            //}
             return "";
         }
+      
+        public void LeerTodos(){
+
+        }
+
+        public void BuscarUno(){
+
+        }
+
+     
+      
+        public void ArmarRegistro(Usuarios usuario)
+        {
+
+            //usuario.DNI = ;
+            Registros registro = new Registros();
+            registro.Tipo = registro.Tipo;
+        }
+
+        //Aca estoy yo
+        //
+        //Joya
         #endregion
 
 

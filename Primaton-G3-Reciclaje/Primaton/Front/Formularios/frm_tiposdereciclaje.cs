@@ -1,4 +1,5 @@
 ﻿
+using entidades;
 using System;
 using System.Windows.Forms;
 
@@ -6,10 +7,15 @@ namespace Primaton.Front.Formularios
 {
     public partial class frm_tiposdereciclaje : Form
     {
+        Registros registro;
         public frm_tiposdereciclaje()
         {
             InitializeComponent();
+            
         }
+        #region METODO
+
+        #endregion
         #region EVENTOS
 
         private void Btn_vidrio_Click(object sender, EventArgs e)
@@ -34,6 +40,10 @@ namespace Primaton.Front.Formularios
         {
             frm_pesajebiod biod = new frm_pesajebiod();
             biod.ShowDialog();
+        }
+        private void Frm_tiposdereciclaje_Load(object sender, EventArgs e)
+        {
+            lbl_informacion.Text = registro.Usuario.DNI + " Elegi el tipo de residuo.";
         }
         #endregion
 
