@@ -1,4 +1,5 @@
-﻿using System;
+﻿using entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -70,7 +71,8 @@ namespace Primaton.Front.Formularios
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Form DniManual = new frm_bienvenida();
+            Usuarios user = new Usuarios();
+            Form DniManual = new frm_bienvenida(user);
             DniManual.ShowDialog();
         }
     }

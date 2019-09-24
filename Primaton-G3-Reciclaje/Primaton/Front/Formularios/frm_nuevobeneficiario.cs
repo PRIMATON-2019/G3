@@ -1,24 +1,19 @@
 ﻿using entidades;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Primaton.Front.Formularios
 {
     public partial class frm_nuevobeneficiario : Form
     {
+        private readonly DataTable pepe;
         #region Propiedades
         public int genero { get; set; }
         #endregion
-        public frm_nuevobeneficiario()
+        public frm_nuevobeneficiario(DataTable pepe)
         {
             InitializeComponent();
+            this.pepe = pepe;
         }
         #region Registro-Usuario
 
@@ -26,14 +21,13 @@ namespace Primaton.Front.Formularios
         {
             if (true)
             {
-                user Usuario = new user();
-                beneficiario Beneficiario = new beneficiario();
+                Usuarios user = new Usuarios();
 
-                Usuario.NombreUsuario = txtCorreo.Text;
-                Usuario.Clave = txtClave.Text;
-                Beneficiario.Apellido = txtApellido.Text;
-                Beneficiario.Nombre = TxtNombre.Text;
-                Beneficiario.Dni = Convert.ToInt32(txt_dni.Text);
+                user.NombreUsuario = txtCorreo.Text;
+                user.Clave = txtClave.Text;
+                user.Apellido = txtApellido.Text;
+                user.Nombre = TxtNombre.Text;
+                user.DNI = txt_dni.Text;
                 if (rbFemenino.Checked)
                 {
                     genero = 1;
@@ -46,24 +40,21 @@ namespace Primaton.Front.Formularios
                 {
                     genero = 3;
                 }
-                Beneficiario.Genero = genero;
-                Usuario.Beneficiario = Beneficiario;
+                user.Genero = genero;
                 string[] columnas = { "usuario", "apellido", "nombre", "genero", "clave", "dni" };
 
-                Persistencia db = new Persistencia(5, columnas, "Usuarios");
+                Persistencia db = new Persistencia(6, columnas, "Usuarios");
                 string[] datos = {
-                    Usuario.NombreUsuario,
-                    Usuario.Beneficiario.Apellido,
-                    Usuario.Beneficiario.Nombre,
-                    Usuario.Beneficiario.Genero.ToString(),
-                    Usuario.Clave,
-                    Usuario.Beneficiario.Dni.ToString(),
+                    user.NombreUsuario,
+                    user.Apellido,
+                    user.Nombre,
+                    user.Genero.ToString(),
+                    user.Clave,
+                    user.DNI,
                 };
                 db.CargaDatos(datos, 6, columnas);
-
+                
                 MessageBox.Show("Usuario Creado.");
-
-
 
             }
         }

@@ -1,5 +1,6 @@
 ﻿using AForge.Video;
 using AForge.Video.DirectShow;
+using entidades;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -116,7 +117,9 @@ namespace Primaton.Front.Formularios
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Form InicioScan = new frm_bienvenida();
+            Usuarios user = new Usuarios();
+
+            Form InicioScan = new frm_bienvenida(user);
             InicioScan.Show();
         }
 

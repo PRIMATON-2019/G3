@@ -43,6 +43,12 @@ namespace Primaton.Front.Formularios
         {
             Form siguiente = new frm_SelectBenefit();
             siguiente.ShowDialog();
+            //Llamar metodo para grabar registro
+            //usuario
+            //peso
+            //tipo
+            //puntos
+            //fecha
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Primaton.Front.Formularios
 {
     public partial class frm_bienvenida : Form
     {
-        public frm_bienvenida()
+        Usuarios user;
+        public frm_bienvenida(Usuarios user)
         {
             InitializeComponent();
+            this.user = user;
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -27,6 +30,15 @@ namespace Primaton.Front.Formularios
         {
             Form Cancel = new frm_Inicial();
             Cancel.ShowDialog();
+        }
+
+        private void Frm_bienvenida_Load(object sender, EventArgs e)
+        {
+            if (user.Genero== 1)
+            {
+            lblBienvenida.Text = "Bienvenida " + user.Nombre + " a Ecosistema, la nueva forma de reciclar.";
+
+            }
         }
     }
 }

@@ -45,21 +45,29 @@
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.pnGrande = new System.Windows.Forms.Panel();
+            this.pn_perfil = new System.Windows.Forms.Panel();
+            this.pnRegistro = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_dni = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pnTop = new System.Windows.Forms.Panel();
-            this.pnIzquierda = new System.Windows.Forms.Panel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pnLogin = new System.Windows.Forms.Panel();
-            this.pnRegistro = new System.Windows.Forms.Panel();
-            this.txtDNI = new System.Windows.Forms.TextBox();
-            this.txtPass = new System.Windows.Forms.TextBox();
-            this.lblDNI = new System.Windows.Forms.Label();
-            this.lblpass = new System.Windows.Forms.Label();
-            this.btnEntrar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.linklblRegistro = new System.Windows.Forms.LinkLabel();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.lblpass = new System.Windows.Forms.Label();
+            this.lblDNI = new System.Windows.Forms.Label();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnIzquierda = new System.Windows.Forms.Panel();
+            this.btnPerfil = new System.Windows.Forms.Button();
+            this.btnPuntos = new System.Windows.Forms.Button();
+            this.btnCambiar = new System.Windows.Forms.Button();
+            this.btnRegistro = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -67,21 +75,19 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCambiar = new System.Windows.Forms.Button();
-            this.btnRegistro = new System.Windows.Forms.Button();
-            this.btnPuntos = new System.Windows.Forms.Button();
-            this.btnPerfil = new System.Windows.Forms.Button();
-            this.pn_perfil = new System.Windows.Forms.Panel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.pnGrande.SuspendLayout();
-            this.pnTop.SuspendLayout();
-            this.pnIzquierda.SuspendLayout();
-            this.pnLogin.SuspendLayout();
+            this.pn_perfil.SuspendLayout();
             this.pnRegistro.SuspendLayout();
+            this.pnLogin.SuspendLayout();
+            this.pnTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnIzquierda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -89,10 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelar
@@ -269,77 +272,13 @@
             this.pnGrande.Size = new System.Drawing.Size(951, 640);
             this.pnGrande.TabIndex = 43;
             // 
-            // label5
+            // pn_perfil
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(67, 110);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 17);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "DNI";
-            // 
-            // txt_dni
-            // 
-            this.txt_dni.Location = new System.Drawing.Point(70, 130);
-            this.txt_dni.Name = "txt_dni";
-            this.txt_dni.Size = new System.Drawing.Size(100, 22);
-            this.txt_dni.TabIndex = 44;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(304, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 17);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "NuevoBeneficiario";
-            // 
-            // pnTop
-            // 
-            this.pnTop.BackColor = System.Drawing.Color.DarkGray;
-            this.pnTop.Controls.Add(this.pictureBox4);
-            this.pnTop.Controls.Add(this.pictureBox3);
-            this.pnTop.Controls.Add(this.pictureBox2);
-            this.pnTop.Controls.Add(this.pictureBox1);
-            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTop.Location = new System.Drawing.Point(0, 0);
-            this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(951, 62);
-            this.pnTop.TabIndex = 44;
-            // 
-            // pnIzquierda
-            // 
-            this.pnIzquierda.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.pnIzquierda.Controls.Add(this.btnPerfil);
-            this.pnIzquierda.Controls.Add(this.btnPuntos);
-            this.pnIzquierda.Controls.Add(this.btnCambiar);
-            this.pnIzquierda.Controls.Add(this.btnRegistro);
-            this.pnIzquierda.Controls.Add(this.pictureBox11);
-            this.pnIzquierda.Controls.Add(this.pictureBox10);
-            this.pnIzquierda.Controls.Add(this.pictureBox9);
-            this.pnIzquierda.Controls.Add(this.pictureBox8);
-            this.pnIzquierda.Controls.Add(this.pictureBox7);
-            this.pnIzquierda.Controls.Add(this.pictureBox6);
-            this.pnIzquierda.Controls.Add(this.pictureBox5);
-            this.pnIzquierda.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnIzquierda.Location = new System.Drawing.Point(0, 62);
-            this.pnIzquierda.Name = "pnIzquierda";
-            this.pnIzquierda.Size = new System.Drawing.Size(200, 578);
-            this.pnIzquierda.TabIndex = 45;
-            // 
-            // pnLogin
-            // 
-            this.pnLogin.Controls.Add(this.linklblRegistro);
-            this.pnLogin.Controls.Add(this.btnSalir);
-            this.pnLogin.Controls.Add(this.btnEntrar);
-            this.pnLogin.Controls.Add(this.lblpass);
-            this.pnLogin.Controls.Add(this.lblDNI);
-            this.pnLogin.Controls.Add(this.txtPass);
-            this.pnLogin.Controls.Add(this.txtDNI);
-            this.pnLogin.Location = new System.Drawing.Point(456, 431);
-            this.pnLogin.Name = "pnLogin";
-            this.pnLogin.Size = new System.Drawing.Size(492, 197);
-            this.pnLogin.TabIndex = 46;
+            this.pn_perfil.Controls.Add(this.pictureBox12);
+            this.pn_perfil.Location = new System.Drawing.Point(160, 393);
+            this.pn_perfil.Name = "pn_perfil";
+            this.pn_perfil.Size = new System.Drawing.Size(295, 224);
+            this.pn_perfil.TabIndex = 48;
             // 
             // pnRegistro
             // 
@@ -364,54 +303,55 @@
             this.pnRegistro.Size = new System.Drawing.Size(684, 285);
             this.pnRegistro.TabIndex = 47;
             // 
-            // txtDNI
+            // label4
             // 
-            this.txtDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDNI.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtDNI.Location = new System.Drawing.Point(259, 41);
-            this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(207, 15);
-            this.txtDNI.TabIndex = 0;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(304, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(123, 17);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "NuevoBeneficiario";
             // 
-            // txtPass
+            // label5
             // 
-            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPass.Location = new System.Drawing.Point(259, 80);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(207, 15);
-            this.txtPass.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(67, 110);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 17);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "DNI";
             // 
-            // lblDNI
+            // txt_dni
             // 
-            this.lblDNI.AutoSize = true;
-            this.lblDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDNI.Location = new System.Drawing.Point(37, 28);
-            this.lblDNI.Name = "lblDNI";
-            this.lblDNI.Size = new System.Drawing.Size(62, 32);
-            this.lblDNI.TabIndex = 2;
-            this.lblDNI.Text = "DNI";
+            this.txt_dni.Location = new System.Drawing.Point(70, 130);
+            this.txt_dni.Name = "txt_dni";
+            this.txt_dni.Size = new System.Drawing.Size(100, 22);
+            this.txt_dni.TabIndex = 44;
             // 
-            // lblpass
+            // pnLogin
             // 
-            this.lblpass.AutoSize = true;
-            this.lblpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpass.Location = new System.Drawing.Point(33, 67);
-            this.lblpass.Name = "lblpass";
-            this.lblpass.Size = new System.Drawing.Size(162, 32);
-            this.lblpass.TabIndex = 3;
-            this.lblpass.Text = "Contraseña";
+            this.pnLogin.Controls.Add(this.linklblRegistro);
+            this.pnLogin.Controls.Add(this.btnSalir);
+            this.pnLogin.Controls.Add(this.btnEntrar);
+            this.pnLogin.Controls.Add(this.lblpass);
+            this.pnLogin.Controls.Add(this.lblDNI);
+            this.pnLogin.Controls.Add(this.txtPass);
+            this.pnLogin.Controls.Add(this.txtDNI);
+            this.pnLogin.Location = new System.Drawing.Point(456, 431);
+            this.pnLogin.Name = "pnLogin";
+            this.pnLogin.Size = new System.Drawing.Size(492, 197);
+            this.pnLogin.TabIndex = 46;
             // 
-            // btnEntrar
+            // linklblRegistro
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.Silver;
-            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEntrar.Location = new System.Drawing.Point(95, 145);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(75, 23);
-            this.btnEntrar.TabIndex = 4;
-            this.btnEntrar.Text = "Entrar";
-            this.btnEntrar.UseVisualStyleBackColor = false;
-            this.btnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
+            this.linklblRegistro.AutoSize = true;
+            this.linklblRegistro.Location = new System.Drawing.Point(257, 110);
+            this.linklblRegistro.Name = "linklblRegistro";
+            this.linklblRegistro.Size = new System.Drawing.Size(141, 17);
+            this.linklblRegistro.TabIndex = 6;
+            this.linklblRegistro.TabStop = true;
+            this.linklblRegistro.Text = "Crear Nuevo Usuario";
+            this.linklblRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinklblRegistro_LinkClicked);
             // 
             // btnSalir
             // 
@@ -425,16 +365,170 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // linklblRegistro
+            // btnEntrar
             // 
-            this.linklblRegistro.AutoSize = true;
-            this.linklblRegistro.Location = new System.Drawing.Point(257, 110);
-            this.linklblRegistro.Name = "linklblRegistro";
-            this.linklblRegistro.Size = new System.Drawing.Size(141, 17);
-            this.linklblRegistro.TabIndex = 6;
-            this.linklblRegistro.TabStop = true;
-            this.linklblRegistro.Text = "Crear Nuevo Usuario";
-            this.linklblRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinklblRegistro_LinkClicked);
+            this.btnEntrar.BackColor = System.Drawing.Color.Silver;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEntrar.Location = new System.Drawing.Point(95, 145);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(75, 23);
+            this.btnEntrar.TabIndex = 4;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
+            // 
+            // lblpass
+            // 
+            this.lblpass.AutoSize = true;
+            this.lblpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpass.Location = new System.Drawing.Point(33, 67);
+            this.lblpass.Name = "lblpass";
+            this.lblpass.Size = new System.Drawing.Size(162, 32);
+            this.lblpass.TabIndex = 3;
+            this.lblpass.Text = "Contraseña";
+            // 
+            // lblDNI
+            // 
+            this.lblDNI.AutoSize = true;
+            this.lblDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDNI.Location = new System.Drawing.Point(37, 28);
+            this.lblDNI.Name = "lblDNI";
+            this.lblDNI.Size = new System.Drawing.Size(62, 32);
+            this.lblDNI.TabIndex = 2;
+            this.lblDNI.Text = "DNI";
+            // 
+            // txtPass
+            // 
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPass.Location = new System.Drawing.Point(259, 80);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(207, 15);
+            this.txtPass.TabIndex = 1;
+            // 
+            // txtDNI
+            // 
+            this.txtDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDNI.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtDNI.Location = new System.Drawing.Point(259, 41);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(207, 15);
+            this.txtDNI.TabIndex = 0;
+            // 
+            // pnTop
+            // 
+            this.pnTop.BackColor = System.Drawing.Color.DarkGray;
+            this.pnTop.Controls.Add(this.pictureBox4);
+            this.pnTop.Controls.Add(this.pictureBox3);
+            this.pnTop.Controls.Add(this.pictureBox2);
+            this.pnTop.Controls.Add(this.pictureBox1);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTop.Location = new System.Drawing.Point(0, 0);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(951, 62);
+            this.pnTop.TabIndex = 44;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Primaton.Properties.Resources.Close_Window__2_48px;
+            this.pictureBox4.Location = new System.Drawing.Point(889, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 46;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Primaton.Properties.Resources.Maximize_Window_2_48px;
+            this.pictureBox3.Location = new System.Drawing.Point(835, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Primaton.Properties.Resources.Minimize_Window_2_48px;
+            this.pictureBox2.Location = new System.Drawing.Point(781, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Primaton.Properties.Resources.Menu_48px;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(73, 62);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pnIzquierda
+            // 
+            this.pnIzquierda.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.pnIzquierda.Controls.Add(this.btnPerfil);
+            this.pnIzquierda.Controls.Add(this.btnPuntos);
+            this.pnIzquierda.Controls.Add(this.btnCambiar);
+            this.pnIzquierda.Controls.Add(this.btnRegistro);
+            this.pnIzquierda.Controls.Add(this.pictureBox11);
+            this.pnIzquierda.Controls.Add(this.pictureBox10);
+            this.pnIzquierda.Controls.Add(this.pictureBox9);
+            this.pnIzquierda.Controls.Add(this.pictureBox8);
+            this.pnIzquierda.Controls.Add(this.pictureBox7);
+            this.pnIzquierda.Controls.Add(this.pictureBox6);
+            this.pnIzquierda.Controls.Add(this.pictureBox5);
+            this.pnIzquierda.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnIzquierda.Location = new System.Drawing.Point(0, 62);
+            this.pnIzquierda.Name = "pnIzquierda";
+            this.pnIzquierda.Size = new System.Drawing.Size(200, 578);
+            this.pnIzquierda.TabIndex = 45;
+            // 
+            // btnPerfil
+            // 
+            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPerfil.Location = new System.Drawing.Point(56, 268);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(144, 57);
+            this.btnPerfil.TabIndex = 66;
+            this.btnPerfil.Text = "Perfil";
+            this.btnPerfil.UseVisualStyleBackColor = true;
+            // 
+            // btnPuntos
+            // 
+            this.btnPuntos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPuntos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPuntos.Location = new System.Drawing.Point(56, 53);
+            this.btnPuntos.Name = "btnPuntos";
+            this.btnPuntos.Size = new System.Drawing.Size(144, 55);
+            this.btnPuntos.TabIndex = 65;
+            this.btnPuntos.Text = "Mis Puntos";
+            this.btnPuntos.UseVisualStyleBackColor = true;
+            // 
+            // btnCambiar
+            // 
+            this.btnCambiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCambiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCambiar.Location = new System.Drawing.Point(73, 128);
+            this.btnCambiar.Name = "btnCambiar";
+            this.btnCambiar.Size = new System.Drawing.Size(127, 55);
+            this.btnCambiar.TabIndex = 48;
+            this.btnCambiar.Text = "Cambiar";
+            this.btnCambiar.UseVisualStyleBackColor = true;
+            // 
+            // btnRegistro
+            // 
+            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegistro.Location = new System.Drawing.Point(73, 195);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(127, 58);
+            this.btnRegistro.TabIndex = 49;
+            this.btnRegistro.Text = "Registros";
+            this.btnRegistro.UseVisualStyleBackColor = true;
             // 
             // pictureBox11
             // 
@@ -496,95 +590,13 @@
             this.pictureBox5.TabIndex = 46;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox4
+            // pictureBox12
             // 
-            this.pictureBox4.Image = global::Primaton.Properties.Resources.Close_Window__2_48px;
-            this.pictureBox4.Location = new System.Drawing.Point(889, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 46;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Primaton.Properties.Resources.Maximize_Window_2_48px;
-            this.pictureBox3.Location = new System.Drawing.Point(835, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Primaton.Properties.Resources.Minimize_Window_2_48px;
-            this.pictureBox2.Location = new System.Drawing.Point(781, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Primaton.Properties.Resources.Menu_48px;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(73, 62);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnCambiar
-            // 
-            this.btnCambiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCambiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCambiar.Location = new System.Drawing.Point(73, 128);
-            this.btnCambiar.Name = "btnCambiar";
-            this.btnCambiar.Size = new System.Drawing.Size(127, 55);
-            this.btnCambiar.TabIndex = 48;
-            this.btnCambiar.Text = "Cambiar";
-            this.btnCambiar.UseVisualStyleBackColor = true;
-            // 
-            // btnRegistro
-            // 
-            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegistro.Location = new System.Drawing.Point(73, 195);
-            this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(127, 58);
-            this.btnRegistro.TabIndex = 49;
-            this.btnRegistro.Text = "Registros";
-            this.btnRegistro.UseVisualStyleBackColor = true;
-            // 
-            // btnPuntos
-            // 
-            this.btnPuntos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPuntos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPuntos.Location = new System.Drawing.Point(56, 53);
-            this.btnPuntos.Name = "btnPuntos";
-            this.btnPuntos.Size = new System.Drawing.Size(144, 55);
-            this.btnPuntos.TabIndex = 65;
-            this.btnPuntos.Text = "Mis Puntos";
-            this.btnPuntos.UseVisualStyleBackColor = true;
-            // 
-            // btnPerfil
-            // 
-            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPerfil.Location = new System.Drawing.Point(56, 268);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(144, 57);
-            this.btnPerfil.TabIndex = 66;
-            this.btnPerfil.Text = "Perfil";
-            this.btnPerfil.UseVisualStyleBackColor = true;
-            // 
-            // pn_perfil
-            // 
-            this.pn_perfil.Location = new System.Drawing.Point(160, 393);
-            this.pn_perfil.Name = "pn_perfil";
-            this.pn_perfil.Size = new System.Drawing.Size(295, 224);
-            this.pn_perfil.TabIndex = 48;
+            this.pictureBox12.Location = new System.Drawing.Point(56, 72);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(154, 134);
+            this.pictureBox12.TabIndex = 0;
+            this.pictureBox12.TabStop = false;
             // 
             // frm_nuevobeneficiario
             // 
@@ -603,12 +615,17 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.pnGrande.ResumeLayout(false);
-            this.pnTop.ResumeLayout(false);
-            this.pnIzquierda.ResumeLayout(false);
-            this.pnLogin.ResumeLayout(false);
-            this.pnLogin.PerformLayout();
+            this.pn_perfil.ResumeLayout(false);
             this.pnRegistro.ResumeLayout(false);
             this.pnRegistro.PerformLayout();
+            this.pnLogin.ResumeLayout(false);
+            this.pnLogin.PerformLayout();
+            this.pnTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnIzquierda.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -616,10 +633,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -674,5 +688,6 @@
         private System.Windows.Forms.Button btnCambiar;
         private System.Windows.Forms.Button btnRegistro;
         private System.Windows.Forms.Panel pn_perfil;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }

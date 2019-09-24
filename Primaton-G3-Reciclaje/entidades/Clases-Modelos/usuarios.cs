@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace entidades
 
@@ -18,6 +19,8 @@ namespace entidades
         public int Genero { get; set; }
         public Domicilio Domicilio { get; set; } //listo
         public DateTime FechadeNacimiento { get; set; }// listo
+        public string NombreUsuario { get; set; }
+        public string Clave { get; set; }
         #endregion
 
         #region Constructor
@@ -32,6 +35,15 @@ namespace entidades
 //en este metodo identifico al usiario que ha mostrado su dni a la camara con la lectora de qr
 //conectar la camara aqui.
             return "";
+        }
+
+        public string GenerarQR(string dni)
+        {
+            Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            System.Drawing.Image qr = qrcode.Draw(dni, 50);
+
+            qr.Save(dni);
+            return dni;
         }
         #endregion
     }

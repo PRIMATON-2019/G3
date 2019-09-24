@@ -24,6 +24,13 @@ namespace Primaton.Front.Formularios
         /// <param name="sender"></param>
         /// <param name="e"></param>
         #region CODIGOS GENERADOR
+
+        public void GenerarQR(string dni)
+        {
+            Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            pictureBox1.Image = qrcode.Draw(dni, 50);
+
+        }
         private void Btn_qr_Click(object sender, EventArgs e)
         {
             Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;

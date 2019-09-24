@@ -12,10 +12,12 @@ namespace Primaton.Front.Formularios
 {
     public partial class frm_Inicial : Form
     {
+
         public frm_Inicial()
         {
             InitializeComponent();
             timer_hora.Start();
+
         }
 
         private void Timer_hora_Tick(object sender, EventArgs e)
