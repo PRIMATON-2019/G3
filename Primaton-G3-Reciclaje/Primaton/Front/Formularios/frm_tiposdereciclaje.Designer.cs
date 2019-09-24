@@ -51,10 +51,10 @@
             this.btn_vidrio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_vidrio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_vidrio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_vidrio.Location = new System.Drawing.Point(9, 66);
-            this.btn_vidrio.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_vidrio.Location = new System.Drawing.Point(12, 81);
+            this.btn_vidrio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_vidrio.Name = "btn_vidrio";
-            this.btn_vidrio.Size = new System.Drawing.Size(212, 236);
+            this.btn_vidrio.Size = new System.Drawing.Size(283, 290);
             this.btn_vidrio.TabIndex = 1;
             this.btn_vidrio.Text = "Vidrio";
             this.btn_vidrio.UseVisualStyleBackColor = false;
@@ -67,10 +67,10 @@
             this.btn_plastico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_plastico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_plastico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_plastico.Location = new System.Drawing.Point(225, 66);
-            this.btn_plastico.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_plastico.Location = new System.Drawing.Point(300, 81);
+            this.btn_plastico.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_plastico.Name = "btn_plastico";
-            this.btn_plastico.Size = new System.Drawing.Size(212, 236);
+            this.btn_plastico.Size = new System.Drawing.Size(283, 290);
             this.btn_plastico.TabIndex = 2;
             this.btn_plastico.Text = "Plastico";
             this.btn_plastico.UseVisualStyleBackColor = false;
@@ -83,10 +83,10 @@
             this.btn_papel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_papel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_papel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_papel.Location = new System.Drawing.Point(9, 306);
-            this.btn_papel.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_papel.Location = new System.Drawing.Point(12, 377);
+            this.btn_papel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_papel.Name = "btn_papel";
-            this.btn_papel.Size = new System.Drawing.Size(212, 233);
+            this.btn_papel.Size = new System.Drawing.Size(283, 287);
             this.btn_papel.TabIndex = 3;
             this.btn_papel.Text = "Papel";
             this.btn_papel.UseVisualStyleBackColor = false;
@@ -99,10 +99,10 @@
             this.btn_biodegradables.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_biodegradables.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_biodegradables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_biodegradables.Location = new System.Drawing.Point(225, 306);
-            this.btn_biodegradables.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_biodegradables.Location = new System.Drawing.Point(300, 377);
+            this.btn_biodegradables.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_biodegradables.Name = "btn_biodegradables";
-            this.btn_biodegradables.Size = new System.Drawing.Size(212, 233);
+            this.btn_biodegradables.Size = new System.Drawing.Size(283, 287);
             this.btn_biodegradables.TabIndex = 4;
             this.btn_biodegradables.Text = "biodegradables";
             this.btn_biodegradables.UseVisualStyleBackColor = false;
@@ -115,10 +115,10 @@
             this.btn_basuracomun.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_basuracomun.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_basuracomun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_basuracomun.Location = new System.Drawing.Point(441, 66);
-            this.btn_basuracomun.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_basuracomun.Location = new System.Drawing.Point(588, 81);
+            this.btn_basuracomun.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_basuracomun.Name = "btn_basuracomun";
-            this.btn_basuracomun.Size = new System.Drawing.Size(212, 474);
+            this.btn_basuracomun.Size = new System.Drawing.Size(283, 583);
             this.btn_basuracomun.TabIndex = 5;
             this.btn_basuracomun.Text = "basura comun";
             this.btn_basuracomun.UseVisualStyleBackColor = false;
@@ -126,10 +126,9 @@
             // lbl_informacion
             // 
             this.lbl_informacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_informacion.Location = new System.Drawing.Point(3, 11);
-            this.lbl_informacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_informacion.Location = new System.Drawing.Point(34, 14);
             this.lbl_informacion.Name = "lbl_informacion";
-            this.lbl_informacion.Size = new System.Drawing.Size(416, 44);
+            this.lbl_informacion.Size = new System.Drawing.Size(525, 52);
             this.lbl_informacion.TabIndex = 6;
             this.lbl_informacion.Text = "SELECCIONE UNA OPCION";
             this.lbl_informacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -137,19 +136,17 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label1.Location = new System.Drawing.Point(214, 66);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(285, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 476);
+            this.label1.Size = new System.Drawing.Size(21, 586);
             this.label1.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label2.Location = new System.Drawing.Point(7, 298);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(9, 367);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(427, 14);
+            this.label2.Size = new System.Drawing.Size(569, 17);
             this.label2.TabIndex = 8;
             // 
             // lbl_hora
@@ -157,10 +154,9 @@
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hora.Location = new System.Drawing.Point(406, 7);
-            this.lbl_hora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_hora.Location = new System.Drawing.Point(632, 0);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(247, 47);
+            this.lbl_hora.Size = new System.Drawing.Size(238, 66);
             this.lbl_hora.TabIndex = 9;
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,54 +164,49 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label3.Location = new System.Drawing.Point(433, 66);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(577, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 476);
+            this.label3.Size = new System.Drawing.Size(24, 586);
             this.label3.TabIndex = 10;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label4.Location = new System.Drawing.Point(-3, 66);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(-4, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(16, 476);
+            this.label4.Size = new System.Drawing.Size(21, 586);
             this.label4.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label5.Location = new System.Drawing.Point(-3, 531);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(-4, 654);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(656, 11);
+            this.label5.Size = new System.Drawing.Size(875, 14);
             this.label5.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label6.Location = new System.Drawing.Point(-1, 54);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(-1, 66);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(653, 15);
+            this.label6.Size = new System.Drawing.Size(871, 18);
             this.label6.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label7.Location = new System.Drawing.Point(640, 54);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(853, 66);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(20, 496);
+            this.label7.Size = new System.Drawing.Size(27, 610);
             this.label7.TabIndex = 14;
             // 
             // frm_tiposdereciclaje
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(658, 544);
+            this.ClientSize = new System.Drawing.Size(877, 670);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -231,11 +222,12 @@
             this.Controls.Add(this.btn_plastico);
             this.Controls.Add(this.btn_vidrio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_tiposdereciclaje";
             this.Text = "TIPOS";
+            this.Load += new System.EventHandler(this.Frm_tiposdereciclaje_Load);
             this.ResumeLayout(false);
 
         }

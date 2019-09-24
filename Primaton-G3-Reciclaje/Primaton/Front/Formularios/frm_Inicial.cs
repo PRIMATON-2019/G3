@@ -41,12 +41,12 @@ namespace Primaton.Front.Formularios
             frm_QR QR = new frm_QR();
             QR.ShowDialog();
         }
-        #endregion
-
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frm_nuevobeneficiario nb = new frm_nuevobeneficiario();
             nb.Show();
         }
+        #endregion
+
     }
 }

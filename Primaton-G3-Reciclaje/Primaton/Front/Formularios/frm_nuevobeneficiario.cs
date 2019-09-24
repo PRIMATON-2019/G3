@@ -6,7 +6,7 @@ namespace Primaton.Front.Formularios
 {
     public partial class frm_nuevobeneficiario : Form
     {
-        private readonly DataTable pepe;
+        
         #region Propiedades
         public int genero { get; set; }
         #endregion
