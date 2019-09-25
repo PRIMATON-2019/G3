@@ -36,7 +36,7 @@
             this.btCancelar = new System.Windows.Forms.Button();
             this.btVolver = new System.Windows.Forms.Button();
             this.btSiguiente = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
             this.lblTotaldePuntos = new System.Windows.Forms.Label();
             this.lblPuntosGanados = new System.Windows.Forms.Label();
             this.btnPesar = new System.Windows.Forms.Button();
@@ -125,16 +125,16 @@
             this.btSiguiente.UseVisualStyleBackColor = true;
             this.btSiguiente.Click += new System.EventHandler(this.BtSiguiente_Click_1);
             // 
-            // label4
+            // lblUser
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(661, 23);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 25);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Usuario: xxx";
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(661, 23);
+            this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(120, 25);
+            this.lblUser.TabIndex = 29;
+            this.lblUser.Text = "Usuario: xxx";
             // 
             // lblTotaldePuntos
             // 
@@ -277,7 +277,7 @@
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btVolver);
             this.Controls.Add(this.btSiguiente);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblTotaldePuntos);
             this.Controls.Add(this.lblPuntosGanados);
             this.Controls.Add(this.btnPesar);
@@ -286,6 +286,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_Pesaje";
             this.Text = "frm_pesajevidrio";
+            this.Load += new System.EventHandler(this.Frm_Pesaje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -301,7 +302,7 @@
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.Button btVolver;
         private System.Windows.Forms.Button btSiguiente;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblTotaldePuntos;
         private System.Windows.Forms.Label lblPuntosGanados;
         private System.Windows.Forms.Button btnPesar;

@@ -126,8 +126,7 @@ namespace Primaton.Front.Formularios
             Persistencia pd = new Persistencia();
             DataSet ds = pd.BuscarDatos("Usuarios");
            
-            frm_bienvenida InicioScan = new frm_bienvenida(registro);
-            InicioScan.Show();
+            
         }
 
         private void Button2_Click(object sender, EventArgs e)

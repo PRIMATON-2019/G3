@@ -64,12 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Front\Formularios\frm_bienvenida.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_bienvenida.Designer.cs">
-      <DependentUpon>frm_bienvenida.cs</DependentUpon>
-    </Compile>
     <Compile Include="Front\Formularios\frm_dnimanual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,9 +114,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Front\Formularios\frm_bienvenida.resx">
-      <DependentUpon>frm_bienvenida.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_dnimanual.resx">
       <DependentUpon>frm_dnimanual.cs</DependentUpon>
     </EmbeddedResource>

@@ -14,7 +14,7 @@ namespace entidades
         public string Calle { get; set; }
         public string CalleNro { get; set; }
         public string Barrio { get; set; }
-        public Ciudad Ciudad { get; set; } //trabajar ciudad
+        
 
     }
 }

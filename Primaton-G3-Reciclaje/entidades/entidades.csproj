@@ -60,11 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases-Modelos\Balanza.cs" />
-    <Compile Include="Clases-Modelos\Ciudad.cs" />
     <Compile Include="Clases-Modelos\Contenedor.cs" />
     <Compile Include="Clases-Modelos\Domicilio.cs" />
-    <Compile Include="Clases-Modelos\prueba.cs" />
     <Compile Include="Clases-Modelos\Registros.cs" />
     <Compile Include="Clases-Modelos\Residuo.cs" />
     <Compile Include="Clases-Modelos\TipoResiduo.cs" />

@@ -40,7 +40,7 @@ namespace Primaton.Front.Formularios
             Volver.ShowDialog();
         }
 
-        private void BtSiguiente_Click_1(object sender, EventArgs e)
+        public void BtSiguiente_Click_1(object sender, EventArgs e)
         {
             //Form siguiente = new frm_SelectBenefit();
             //siguiente.ShowDialog();
@@ -104,6 +104,11 @@ namespace Primaton.Front.Formularios
             double peso = Convert.ToDouble(lblPeso.Text);
             peso = peso * 0.35;
             lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+        }
+
+        private void Frm_Pesaje_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
