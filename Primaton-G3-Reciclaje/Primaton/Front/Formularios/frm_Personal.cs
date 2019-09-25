@@ -4,13 +4,13 @@ using System.Data;
 using System.Windows.Forms;
 namespace Primaton.Front.Formularios
 {
-    public partial class frm_nuevobeneficiario : Form
+    public partial class frm_Personal : Form
     {
         
         #region Propiedades
         public int genero { get; set; }
         #endregion
-        public frm_nuevobeneficiario()
+        public frm_Personal()
         {
             InitializeComponent();
           

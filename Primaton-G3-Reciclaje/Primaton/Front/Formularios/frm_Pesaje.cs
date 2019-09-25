@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Primaton.Front.Formularios
 {
-    public partial class frm_pesajevidrio : Form
+    public partial class frm_Pesaje : Form
     {
-        public frm_pesajevidrio()
+        public frm_Pesaje()
         {
             InitializeComponent();
         }
@@ -36,7 +36,7 @@ namespace Primaton.Front.Formularios
 
         private void BtVolver_Click(object sender, EventArgs e)
         {
-            Form Volver = new frm_tiposdereciclaje();
+            frm_dnimanual Volver = new frm_dnimanual();
             Volver.ShowDialog();
         }
 
@@ -67,6 +67,43 @@ namespace Primaton.Front.Formularios
             //tipo
             //puntos
             //fecha
+        }
+
+        private void BtnVidrio_Click(object sender, EventArgs e)
+        {
+            lblPuntosGanados.Visible = true;
+            //lblPuntosAcumulados.Visible = true;
+            double peso = Convert.ToDouble(lblPeso.Text);
+            peso = peso * 0.5;
+            lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+        }
+
+        private void BtnPlastico_Click(object sender, EventArgs e)
+        {
+            lblPuntosGanados.Visible = true;
+            //lblPuntosAcumulados.Visible = true;
+            double peso = Convert.ToDouble(lblPeso.Text);
+            peso = peso * 0.4;
+            lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+        }
+
+        private void BtnPapel_Click(object sender, EventArgs e)
+        {
+            //Cuando se hace clic en acepatar se va a mostrar la cantidad de puntos que se estarían sumando
+            lblPuntosGanados.Visible = true;
+            //lblPuntosAcumulados.Visible = true;
+            double peso = Convert.ToDouble(lblPeso.Text);
+            peso = peso * 0.45;
+            lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+        }
+
+        private void BtnBio_Click(object sender, EventArgs e)
+        {
+            lblPuntosGanados.Visible = true;
+            //lblPuntosAcumulados.Visible = true;
+            double peso = Convert.ToDouble(lblPeso.Text);
+            peso = peso * 0.35;
+            lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
         }
     }
 }

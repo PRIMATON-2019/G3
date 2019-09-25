@@ -64,7 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Front\Formularios\Calculadora.cs" />
     <Compile Include="Front\Formularios\frm_bienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,41 +88,17 @@
     <Compile Include="Front\Formularios\frm_SelectBenefit.Designer.cs">
       <DependentUpon>frm_SelectBenefit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_nuevobeneficiario.cs">
+    <Compile Include="Front\Formularios\frm_Personal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front\Formularios\frm_nuevobeneficiario.Designer.cs">
-      <DependentUpon>frm_nuevobeneficiario.cs</DependentUpon>
+    <Compile Include="Front\Formularios\frm_Personal.Designer.cs">
+      <DependentUpon>frm_Personal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_persistenciad.cs">
+    <Compile Include="Front\Formularios\frm_Pesaje.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Front\Formularios\frm_persistenciad.Designer.cs">
-      <DependentUpon>frm_persistenciad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_pesajeplastico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_pesajeplastico.Designer.cs">
-      <DependentUpon>frm_pesajeplastico.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_pesajebiod.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_pesajebiod.Designer.cs">
-      <DependentUpon>frm_pesajebiod.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_pesajepapel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_pesajepapel.Designer.cs">
-      <DependentUpon>frm_pesajepapel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_pesajevidrio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_pesajevidrio.Designer.cs">
-      <DependentUpon>frm_pesajevidrio.cs</DependentUpon>
+    <Compile Include="Front\Formularios\frm_Pesaje.Designer.cs">
+      <DependentUpon>frm_Pesaje.cs</DependentUpon>
     </Compile>
     <Compile Include="Front\Formularios\frm_QR.cs">
       <SubType>Form</SubType>
@@ -143,12 +118,6 @@
     <Compile Include="Front\Formularios\frm_scan.Designer.cs">
       <DependentUpon>frm_scan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_tiposdereciclaje.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_tiposdereciclaje.Designer.cs">
-      <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Front\Formularios\frm_bienvenida.resx">
@@ -163,23 +132,11 @@
     <EmbeddedResource Include="Front\Formularios\frm_SelectBenefit.resx">
       <DependentUpon>frm_SelectBenefit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_nuevobeneficiario.resx">
-      <DependentUpon>frm_nuevobeneficiario.cs</DependentUpon>
+    <EmbeddedResource Include="Front\Formularios\frm_Personal.resx">
+      <DependentUpon>frm_Personal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_persistenciad.resx">
-      <DependentUpon>frm_persistenciad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_pesajeplastico.resx">
-      <DependentUpon>frm_pesajeplastico.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_pesajebiod.resx">
-      <DependentUpon>frm_pesajebiod.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_pesajepapel.resx">
-      <DependentUpon>frm_pesajepapel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_pesajevidrio.resx">
-      <DependentUpon>frm_pesajevidrio.cs</DependentUpon>
+    <EmbeddedResource Include="Front\Formularios\frm_Pesaje.resx">
+      <DependentUpon>frm_Pesaje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_QR.resx">
       <DependentUpon>frm_QR.cs</DependentUpon>
@@ -189,9 +146,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_scan.resx">
       <DependentUpon>frm_scan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_tiposdereciclaje.resx">
-      <DependentUpon>frm_tiposdereciclaje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

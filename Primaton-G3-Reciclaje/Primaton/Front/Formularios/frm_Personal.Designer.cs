@@ -1,6 +1,6 @@
 ﻿namespace Primaton.Front.Formularios
 {
-    partial class frm_nuevobeneficiario
+    partial class frm_Personal
     {
         /// <summary>
         /// Required designer variable.

@@ -64,7 +64,6 @@
     <Compile Include="Clases-Modelos\Ciudad.cs" />
     <Compile Include="Clases-Modelos\Contenedor.cs" />
     <Compile Include="Clases-Modelos\Domicilio.cs" />
-    <Compile Include="Clases-Modelos\persistenciadedatos.cs" />
     <Compile Include="Clases-Modelos\prueba.cs" />
     <Compile Include="Clases-Modelos\Registros.cs" />
     <Compile Include="Clases-Modelos\Residuo.cs" />

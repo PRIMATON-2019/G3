@@ -80,7 +80,7 @@ namespace Primaton.Front.Formularios
 
 
 
-            frm_pesajevidrio pesaje = new frm_pesajevidrio();
+            frm_Pesaje pesaje = new frm_Pesaje();
             pesaje.ShowDialog();
         }
     }
