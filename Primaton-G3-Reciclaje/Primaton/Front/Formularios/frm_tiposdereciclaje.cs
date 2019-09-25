@@ -43,7 +43,7 @@ namespace Primaton.Front.Formularios
         }
         private void Frm_tiposdereciclaje_Load(object sender, EventArgs e)
         {
-            lbl_informacion.Text = registro.Usuario.DNI + " Elegi el tipo de residuo.";
+            lbl_informacion.Text = " Elegi el tipo de residuo.";
         }
         #endregion
 

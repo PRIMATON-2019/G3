@@ -18,12 +18,12 @@ namespace entidades
         #endregion
 
 
-        Registros registro;
+        //Registros registro;
 
 
         public Registros()
         {
-            registro = new Registros();
+            //registro = new Registros();
         }
 
         #region METODOS
@@ -37,10 +37,9 @@ namespace entidades
         /// <param name="nuevoregistro"></param>
         /// <returns>Argumento de el metodo</returns>
         /// 
-        public string GrabarRegistro()
+        public string GrabarRegistro(Registros registro)
         {
 
-            Persistencia pd = new Persistencia();
 
             string[] datos = {
                 registro.Id.ToString(),
@@ -51,28 +50,29 @@ namespace entidades
                 registro.Creditos.ToString() };
             string[] columnas = { "Id", "Fecha", "Usuario", "Tipo", "Cantidad", "Creditos" };
 
-            pd.CargaDatos(datos, 6, columnas);
+            Persistencia pd = new Persistencia(6, columnas, "Registros");
 
+            pd.CargaDatos(datos, 6, columnas);
 
             return "";
         }
-      
-        public void LeerTodos(){
 
-        }
-
-        public void BuscarUno(){
-
-        }
-
-     
-      
-        public void ArmarRegistro(Usuarios usuario)
+        public void LeerTodos()
         {
 
-            //usuario.DNI = ;
-            Registros registro = new Registros();
-            registro.Tipo = registro.Tipo;
+        }
+
+        public void BuscarUno()
+        {
+
+        }
+
+
+
+        public Registros ArmarRegistro(Registros registro)
+        {
+            return registro;
+
         }
 
         //Aca estoy yo

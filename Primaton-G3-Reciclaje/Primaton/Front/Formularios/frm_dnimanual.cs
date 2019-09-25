@@ -75,13 +75,13 @@ namespace Primaton.Front.Formularios
         {
             Usuarios usuario = new Usuarios();
             usuario.DNI = txt_documento.Text;
-            Registros registro;
-            registro.LlevarDatos();
+            Registros registro = new Registros();
             registro.Usuario = usuario;
 
 
-            frm_bienvenida dnimanual = new frm_bienvenida(registro);
-            dnimanual.ShowDialog();
+
+            frm_pesajevidrio pesaje = new frm_pesajevidrio();
+            pesaje.ShowDialog();
         }
     }
 }
