@@ -71,6 +71,7 @@ namespace Primaton.Front.Formularios
 
         private void BtnVidrio_Click(object sender, EventArgs e)
         {
+            lblQuepeso.Text = "Vidrio";
             lblPuntosGanados.Visible = true;
             //lblPuntosAcumulados.Visible = true;
             double peso = Convert.ToDouble(lblPeso.Text);
