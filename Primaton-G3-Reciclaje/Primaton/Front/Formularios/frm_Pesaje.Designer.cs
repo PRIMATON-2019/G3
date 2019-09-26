@@ -48,13 +48,14 @@
             this.btnPapel = new System.Windows.Forms.Button();
             this.btnBio = new System.Windows.Forms.Button();
             this.lblQuepeso = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
-            this.btnAceptar.Location = new System.Drawing.Point(521, 288);
+            this.btnAceptar.Location = new System.Drawing.Point(592, 287);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(89, 29);
             this.btnAceptar.TabIndex = 37;
@@ -65,20 +66,22 @@
             // lblPeso
             // 
             this.lblPeso.AutoSize = true;
+            this.lblPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPeso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
-            this.lblPeso.Location = new System.Drawing.Point(394, 296);
+            this.lblPeso.Location = new System.Drawing.Point(456, 298);
             this.lblPeso.Name = "lblPeso";
-            this.lblPeso.Size = new System.Drawing.Size(42, 13);
+            this.lblPeso.Size = new System.Drawing.Size(32, 18);
             this.lblPeso.TabIndex = 36;
-            this.lblPeso.Text = "asbdak";
+            this.lblPeso.Text = "hbk";
             // 
             // lbl_cantidad
             // 
             this.lbl_cantidad.AutoSize = true;
+            this.lbl_cantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_cantidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
-            this.lbl_cantidad.Location = new System.Drawing.Point(269, 296);
+            this.lbl_cantidad.Location = new System.Drawing.Point(307, 297);
             this.lbl_cantidad.Name = "lbl_cantidad";
-            this.lbl_cantidad.Size = new System.Drawing.Size(111, 13);
+            this.lbl_cantidad.Size = new System.Drawing.Size(155, 18);
             this.lbl_cantidad.TabIndex = 35;
             this.lbl_cantidad.Text = "El peso ingresado es: ";
             // 
@@ -87,7 +90,7 @@
             this.lblinfo.AutoSize = true;
             this.lblinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
-            this.lblinfo.Location = new System.Drawing.Point(296, 165);
+            this.lblinfo.Location = new System.Drawing.Point(296, 160);
             this.lblinfo.Name = "lblinfo";
             this.lblinfo.Size = new System.Drawing.Size(128, 20);
             this.lblinfo.TabIndex = 34;
@@ -174,7 +177,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 165);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 177);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(260, 226);
@@ -259,13 +262,25 @@
             // lblQuepeso
             // 
             this.lblQuepeso.AutoSize = true;
+            this.lblQuepeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuepeso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
-            this.lblQuepeso.Location = new System.Drawing.Point(435, 171);
+            this.lblQuepeso.Location = new System.Drawing.Point(429, 160);
             this.lblQuepeso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQuepeso.Name = "lblQuepeso";
-            this.lblQuepeso.Size = new System.Drawing.Size(35, 13);
+            this.lblQuepeso.Size = new System.Drawing.Size(30, 20);
             this.lblQuepeso.TabIndex = 43;
-            this.lblQuepeso.Text = "label2";
+            this.lblQuepeso.Text = "jhb";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
+            this.label2.Location = new System.Drawing.Point(512, 298);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 17);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "Grs.";
             // 
             // frm_Pesaje
             // 
@@ -273,6 +288,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblQuepeso);
             this.Controls.Add(this.btnBio);
             this.Controls.Add(this.btnPapel);
@@ -322,5 +338,6 @@
         private System.Windows.Forms.Button btnPapel;
         private System.Windows.Forms.Button btnBio;
         private System.Windows.Forms.Label lblQuepeso;
+        private System.Windows.Forms.Label label2;
     }
 }
