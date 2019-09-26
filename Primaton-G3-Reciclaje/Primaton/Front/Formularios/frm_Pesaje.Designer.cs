@@ -66,7 +66,7 @@
             // 
             this.lblPeso.AutoSize = true;
             this.lblPeso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
-            this.lblPeso.Location = new System.Drawing.Point(371, 296);
+            this.lblPeso.Location = new System.Drawing.Point(394, 296);
             this.lblPeso.Name = "lblPeso";
             this.lblPeso.Size = new System.Drawing.Size(42, 13);
             this.lblPeso.TabIndex = 36;
@@ -76,7 +76,7 @@
             // 
             this.lbl_cantidad.AutoSize = true;
             this.lbl_cantidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
-            this.lbl_cantidad.Location = new System.Drawing.Point(530, 171);
+            this.lbl_cantidad.Location = new System.Drawing.Point(269, 296);
             this.lbl_cantidad.Name = "lbl_cantidad";
             this.lbl_cantidad.Size = new System.Drawing.Size(111, 13);
             this.lbl_cantidad.TabIndex = 35;
@@ -102,6 +102,7 @@
             this.btCancelar.TabIndex = 33;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = false;
+            this.btCancelar.Click += new System.EventHandler(this.BtCancelar_Click);
             // 
             // btVolver
             // 
@@ -174,7 +175,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1, 165);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(260, 226);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,7 +209,7 @@
             this.btnVidrio.BackColor = System.Drawing.Color.Transparent;
             this.btnVidrio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVidrio.Location = new System.Drawing.Point(92, 59);
-            this.btnVidrio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVidrio.Margin = new System.Windows.Forms.Padding(2);
             this.btnVidrio.Name = "btnVidrio";
             this.btnVidrio.Size = new System.Drawing.Size(111, 81);
             this.btnVidrio.TabIndex = 39;
@@ -221,7 +222,7 @@
             this.btnPlastico.BackColor = System.Drawing.Color.Transparent;
             this.btnPlastico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlastico.Location = new System.Drawing.Point(226, 59);
-            this.btnPlastico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlastico.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlastico.Name = "btnPlastico";
             this.btnPlastico.Size = new System.Drawing.Size(111, 81);
             this.btnPlastico.TabIndex = 40;
@@ -234,7 +235,7 @@
             this.btnPapel.BackColor = System.Drawing.Color.Transparent;
             this.btnPapel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPapel.Location = new System.Drawing.Point(362, 59);
-            this.btnPapel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPapel.Margin = new System.Windows.Forms.Padding(2);
             this.btnPapel.Name = "btnPapel";
             this.btnPapel.Size = new System.Drawing.Size(111, 81);
             this.btnPapel.TabIndex = 41;
@@ -247,7 +248,7 @@
             this.btnBio.BackColor = System.Drawing.Color.Transparent;
             this.btnBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBio.Location = new System.Drawing.Point(493, 59);
-            this.btnBio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBio.Margin = new System.Windows.Forms.Padding(2);
             this.btnBio.Name = "btnBio";
             this.btnBio.Size = new System.Drawing.Size(111, 81);
             this.btnBio.TabIndex = 42;
