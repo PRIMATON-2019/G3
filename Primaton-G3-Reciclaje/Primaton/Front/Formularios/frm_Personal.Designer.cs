@@ -67,7 +67,7 @@
             this.pnTop.Controls.Add(this.pbMenu);
             this.pnTop.Location = new System.Drawing.Point(187, 0);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(764, 61);
+            this.pnTop.Size = new System.Drawing.Size(764, 41);
             this.pnTop.TabIndex = 45;
             // 
             // pictureBox13
@@ -76,7 +76,7 @@
             this.pictureBox13.Image = global::Primaton.Properties.Resources.Restore_Window_2_48px;
             this.pictureBox13.Location = new System.Drawing.Point(655, 3);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox13.Size = new System.Drawing.Size(48, 34);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 47;
             this.pictureBox13.TabStop = false;
@@ -89,7 +89,7 @@
             this.pictureBox4.Image = global::Primaton.Properties.Resources.Close_Window__2_48px;
             this.pictureBox4.Location = new System.Drawing.Point(709, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(50, 34);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 46;
             this.pictureBox4.TabStop = false;
@@ -101,7 +101,7 @@
             this.pictureBox3.Image = global::Primaton.Properties.Resources.Maximize_Window_2_48px;
             this.pictureBox3.Location = new System.Drawing.Point(655, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 34);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -111,9 +111,9 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Primaton.Properties.Resources.Minimize_Window_2_48px;
-            this.pictureBox2.Location = new System.Drawing.Point(601, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(608, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(41, 34);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -122,9 +122,9 @@
             // pbMenu
             // 
             this.pbMenu.Image = global::Primaton.Properties.Resources.Menu_48px;
-            this.pbMenu.Location = new System.Drawing.Point(0, 0);
+            this.pbMenu.Location = new System.Drawing.Point(3, 4);
             this.pbMenu.Name = "pbMenu";
-            this.pbMenu.Size = new System.Drawing.Size(68, 53);
+            this.pbMenu.Size = new System.Drawing.Size(55, 34);
             this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMenu.TabIndex = 0;
             this.pbMenu.TabStop = false;
@@ -151,7 +151,7 @@
             this.pictureBox1.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_recuadro;
             this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 102);
+            this.pictureBox1.Size = new System.Drawing.Size(191, 186);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
@@ -163,9 +163,9 @@
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPerfil.Image = global::Primaton.Properties.Resources.Businessman_48px;
             this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPerfil.Location = new System.Drawing.Point(0, 98);
+            this.btnPerfil.Location = new System.Drawing.Point(0, 182);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(182, 57);
+            this.btnPerfil.Size = new System.Drawing.Size(191, 66);
             this.btnPerfil.TabIndex = 66;
             this.btnPerfil.Text = "Perfil";
             this.btnPerfil.UseVisualStyleBackColor = true;
@@ -178,9 +178,9 @@
             this.btnCambiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCambiar.Image = global::Primaton.Properties.Resources.Ventas_48px;
             this.btnCambiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCambiar.Location = new System.Drawing.Point(0, 161);
+            this.btnCambiar.Location = new System.Drawing.Point(0, 245);
             this.btnCambiar.Name = "btnCambiar";
-            this.btnCambiar.Size = new System.Drawing.Size(185, 55);
+            this.btnCambiar.Size = new System.Drawing.Size(191, 65);
             this.btnCambiar.TabIndex = 48;
             this.btnCambiar.Text = "Cambiar";
             this.btnCambiar.UseVisualStyleBackColor = true;
@@ -192,9 +192,9 @@
             this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegistro.Image = global::Primaton.Properties.Resources.Combo_Chart_64px;
             this.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistro.Location = new System.Drawing.Point(0, 222);
+            this.btnRegistro.Location = new System.Drawing.Point(0, 307);
             this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(185, 58);
+            this.btnRegistro.Size = new System.Drawing.Size(191, 64);
             this.btnRegistro.TabIndex = 49;
             this.btnRegistro.Text = "       Registros";
             this.btnRegistro.UseVisualStyleBackColor = true;
