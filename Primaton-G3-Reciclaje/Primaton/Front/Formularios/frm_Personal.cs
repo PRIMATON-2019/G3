@@ -1,110 +1,75 @@
-﻿using entidades;
+﻿using Primaton.Front.forms_usuario;
 using System;
-using System.Data;
 using System.Windows.Forms;
 namespace Primaton.Front.Formularios
 {
     public partial class frm_Personal : Form
     {
-        
+
         #region Propiedades
         public int genero { get; set; }
         #endregion
         public frm_Personal()
         {
             InitializeComponent();
-          
-        }
-        #region Registro-Usuario
 
-        private void BtnConfirmar_Click(object sender, EventArgs e)
+        }
+
+
+        private void BtnPerfil_Click(object sender, EventArgs e)
         {
-            if (true)
-            {
-                Usuarios user = new Usuarios();
-
-                user.NombreUsuario = txtCorreo.Text;
-                user.Clave = txtClave.Text;
-                user.Apellido = txtApellido.Text;
-                user.Nombre = TxtNombre.Text;
-                user.DNI = txt_dni.Text;
-                if (rbFemenino.Checked)
-                {
-                    genero = 1;
-                }
-                if (rbMasculino.Checked)
-                {
-                    genero = 2;
-                }
-                if (rbNoBinario.Checked)
-                {
-                    genero = 3;
-                }
-                user.Genero = genero;
-                string[] columnas = { "usuario", "apellido", "nombre", "genero", "clave", "dni" };
-
-                Persistencia db = new Persistencia(6, columnas, "Usuarios");
-                string[] datos = {
-                    user.NombreUsuario,
-                    user.Apellido,
-                    user.Nombre,
-                    user.Genero.ToString(),
-                    user.Clave,
-                    user.DNI,
-                };
-                db.CargaDatos(datos, 6, columnas);
-                
-                MessageBox.Show("Usuario Creado.");
-
-            }
+            Abrirforminpanel(new frm_perfil());
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            this.pictureBox3.Visible = false;
+            pictureBox13.Visible = true;
+        }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            this.Close();
         }
-        #endregion
-        #region LOGIN
 
-        private void BtnEntrar_Click(object sender, EventArgs e)
+        private void PictureBox2_Click(object sender, EventArgs e)
         {
-            //Verificar usuario ingresado.
-            if (txtDNI.Text != "" && txtPass.Text != "")
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void PictureBox13_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            this.pictureBox3.Visible = true;
+            pictureBox13.Visible = false;
+        }
+
+        private void PbMenu_Click(object sender, EventArgs e)
+        {
+            if (pnIzquierda.Width== 187)
             {
-                Persistencia pd = new Persistencia();
-                DataSet ds = pd.BuscarDatos("Usuarios");
-                for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
-                {
-                    string dni = ds.Tables[0].Rows[j][5].ToString();
-                    string pass = ds.Tables[0].Rows[j][4].ToString();
-                    if (txtDNI.Text.Equals(dni)
-                        && txtPass.Text.Equals(pass))
-                    {
-                        MessageBox.Show("Encontrado");
-                        //MenuInicial mi = new MenuInicial();
-                        //mi.Show();
-                    }
-                }
+                pnIzquierda.Width = 70;
             }
             else
             {
-                MessageBox.Show("Debe ingresar los datos");
+                pnIzquierda.Width = 187;
             }
         }
-
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void Abrirforminpanel(object formhijo)
         {
-            txtDNI.Text = "";
-            txtPass.Text = "";
-            txtDNI.SelectAll();
+            if (this.pnGrande.Controls.Count > 0)
+            {
+                this.pnGrande.Controls.RemoveAt(0);
+            }
+            Form fh = formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.pnGrande.Controls.Add(fh);
+            this.pnGrande.Tag = fh;
+            fh.Show();
         }
 
-        private void LinklblRegistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-           
-            pnLogin.Visible = false;
-            pnRegistro.Visible = true;
-        }
-        #endregion
     }
 }

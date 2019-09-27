@@ -93,6 +93,26 @@ namespace Primaton.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eco_sistema_fondo_blanco_recuadro {
+            get {
+                object obj = ResourceManager.GetObject("eco-sistema-fondo-blanco-recuadro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eco_sistema_fondo_transparente_recuadro {
+            get {
+                object obj = ResourceManager.GetObject("eco-sistema-fondo-transparente-recuadro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ganancias_48px {
             get {
                 object obj = ResourceManager.GetObject("Ganancias_48px", resourceCulture);
@@ -126,6 +146,16 @@ namespace Primaton.Properties {
         internal static System.Drawing.Bitmap Minimize_Window_2_48px {
             get {
                 object obj = ResourceManager.GetObject("Minimize Window_2 48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Restore_Window_2_48px {
+            get {
+                object obj = ResourceManager.GetObject("Restore Window 2_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

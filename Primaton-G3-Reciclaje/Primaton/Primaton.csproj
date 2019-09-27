@@ -64,6 +64,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Front\forms-usuario\frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\forms-usuario\frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front\forms-usuario\frm_perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\forms-usuario\frm_perfil.Designer.cs">
+      <DependentUpon>frm_perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front\forms-usuario\frm_registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\forms-usuario\frm_registro.Designer.cs">
+      <DependentUpon>frm_registro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front\Formularios\frm_dnimanual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +132,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Front\forms-usuario\frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\forms-usuario\frm_perfil.resx">
+      <DependentUpon>frm_perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\forms-usuario\frm_registro.resx">
+      <DependentUpon>frm_registro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_dnimanual.resx">
       <DependentUpon>frm_dnimanual.cs</DependentUpon>
     </EmbeddedResource>
