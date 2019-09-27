@@ -65,17 +65,16 @@
             this.pnTop.Controls.Add(this.pictureBox3);
             this.pnTop.Controls.Add(this.pictureBox2);
             this.pnTop.Controls.Add(this.pbMenu);
-            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTop.Location = new System.Drawing.Point(0, 0);
+            this.pnTop.Location = new System.Drawing.Point(187, 0);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(951, 61);
+            this.pnTop.Size = new System.Drawing.Size(764, 61);
             this.pnTop.TabIndex = 45;
             // 
             // pictureBox13
             // 
             this.pictureBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox13.Image = global::Primaton.Properties.Resources.Restore_Window_2_48px;
-            this.pictureBox13.Location = new System.Drawing.Point(842, 3);
+            this.pictureBox13.Location = new System.Drawing.Point(655, 3);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(48, 50);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -88,7 +87,7 @@
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = global::Primaton.Properties.Resources.Close_Window__2_48px;
-            this.pictureBox4.Location = new System.Drawing.Point(896, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(709, 3);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -100,7 +99,7 @@
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::Primaton.Properties.Resources.Maximize_Window_2_48px;
-            this.pictureBox3.Location = new System.Drawing.Point(842, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(655, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(48, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,7 +111,7 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Primaton.Properties.Resources.Minimize_Window_2_48px;
-            this.pictureBox2.Location = new System.Drawing.Point(788, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(601, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(48, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -142,9 +141,9 @@
             this.pnIzquierda.Controls.Add(this.pictureBox7);
             this.pnIzquierda.Controls.Add(this.pictureBox6);
             this.pnIzquierda.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnIzquierda.Location = new System.Drawing.Point(0, 61);
+            this.pnIzquierda.Location = new System.Drawing.Point(0, 0);
             this.pnIzquierda.Name = "pnIzquierda";
-            this.pnIzquierda.Size = new System.Drawing.Size(191, 579);
+            this.pnIzquierda.Size = new System.Drawing.Size(191, 640);
             this.pnIzquierda.TabIndex = 44;
             // 
             // pictureBox1
@@ -164,7 +163,7 @@
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPerfil.Image = global::Primaton.Properties.Resources.Businessman_48px;
             this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPerfil.Location = new System.Drawing.Point(3, 323);
+            this.btnPerfil.Location = new System.Drawing.Point(0, 98);
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(182, 57);
             this.btnPerfil.TabIndex = 66;
@@ -179,7 +178,7 @@
             this.btnCambiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCambiar.Image = global::Primaton.Properties.Resources.Ventas_48px;
             this.btnCambiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCambiar.Location = new System.Drawing.Point(0, 203);
+            this.btnCambiar.Location = new System.Drawing.Point(0, 161);
             this.btnCambiar.Name = "btnCambiar";
             this.btnCambiar.Size = new System.Drawing.Size(185, 55);
             this.btnCambiar.TabIndex = 48;
@@ -193,7 +192,7 @@
             this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegistro.Image = global::Primaton.Properties.Resources.Combo_Chart_64px;
             this.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistro.Location = new System.Drawing.Point(0, 259);
+            this.btnRegistro.Location = new System.Drawing.Point(0, 222);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(185, 58);
             this.btnRegistro.TabIndex = 49;

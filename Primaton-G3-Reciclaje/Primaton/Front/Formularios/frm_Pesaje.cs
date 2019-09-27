@@ -71,7 +71,7 @@ namespace Primaton.Front.Formularios
             registro.Tipo = tipo;
             registro.Cantidad = Int32.Parse(lblPeso.Text);
             registro.Contenedor = contenedor;
-
+            registro.Creditos = Int32.Parse(lblPtsGanados.Text);
             registro.GrabarRegistro(registro);
 
 
