@@ -13,6 +13,8 @@ namespace Primaton.Front.Formularios
 {
     public partial class frm_Pesaje : Form
     {
+        int suma = 0;
+        bool Select = false;    
         public frm_Pesaje()
         {
             InitializeComponent();
@@ -20,18 +22,29 @@ namespace Primaton.Front.Formularios
 
         private void BtnPesar_Click(object sender, EventArgs e)
         {
-            Random rdm = new Random();
-            int ingreso = rdm.Next(1, 10000);
-            lblPeso.Text = ingreso.ToString();
+            if (Select == false)
+            {
+                MessageBox.Show("Debe seleccionar un tipo de reciduo");
+            }
+            else
+            {
+                Random rdm = new Random();
+                int ingreso = rdm.Next(1, 10000);
+                lblPeso.Text = ingreso.ToString();
+
+                btnVidrio.Enabled = false;
+                btnPlastico.Enabled = false;
+                btnPapel.Enabled = false;
+                btnBio.Enabled = false;
+            }
         }
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
             lblPuntosGanados.Visible = true;
-            //lblPuntosAcumulados.Visible = true;
             double peso = Convert.ToDouble(lblPeso.Text);
-            peso = Math.Round (peso * 0.5);
-            lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+            peso = Math.Round(peso * 0.4);
+            lblPtsGanados.Text = Convert.ToString(peso);
         }
 
         private void BtVolver_Click(object sender, EventArgs e)
@@ -73,33 +86,29 @@ namespace Primaton.Front.Formularios
         {
             lblQuepeso.Text = "Vidrio";
             lblPuntosGanados.Visible = true;
-            //lblPuntosAcumulados.Visible = true;
-
+            Select = true;
         }
 
         private void BtnPlastico_Click(object sender, EventArgs e)
         {
             lblQuepeso.Text = "Plastico";
             lblPuntosGanados.Visible = true;
-            //lblPuntosAcumulados.Visible = true;
-
+            Select = true;
         }
 
+        //Cuando se hace clic en acepatar se va a mostrar la cantidad de puntos que se estarían sumando
         private void BtnPapel_Click(object sender, EventArgs e)
         {
             lblQuepeso.Text = "Papel";
-            //Cuando se hace clic en acepatar se va a mostrar la cantidad de puntos que se estarían sumando
             lblPuntosGanados.Visible = true;
-            //lblPuntosAcumulados.Visible = true;
-
+            Select = true;
         }
 
         private void BtnBio_Click(object sender, EventArgs e)
         {
             lblQuepeso.Text = "Bio-degradables";
             lblPuntosGanados.Visible = true;
-            //lblPuntosAcumulados.Visible = true;
-
+            Select = true;
         }
 
         private void Frm_Pesaje_Load(object sender, EventArgs e)
@@ -113,6 +122,25 @@ namespace Primaton.Front.Formularios
             MessageBox.Show("La operación a sido cancelada");
             frm_Inicial Volver = new frm_Inicial();
             Volver.ShowDialog();
+        }
+
+        private void BtSeguirRec_Click(object sender, EventArgs e)
+        {
+            int point = 0;
+
+            lblQuepeso.Text = "";
+            lblPeso.Text = "";
+
+            point = Convert.ToInt32(lblPtsGanados.Text);
+            suma = suma + point;
+
+            lblPuntosAcumulados.Text = "Puntos Acumulados: " + Convert.ToString (suma);
+            lblPtsGanados.Text = "";
+
+            btnVidrio.Enabled = true;
+            btnPlastico.Enabled = true;
+            btnPapel.Enabled = true;
+            btnBio.Enabled = true;
         }
     }
 }

@@ -37,7 +37,7 @@
             this.btVolver = new System.Windows.Forms.Button();
             this.btSiguiente = new System.Windows.Forms.Button();
             this.lblUser = new System.Windows.Forms.Label();
-            this.lblTotaldePuntos = new System.Windows.Forms.Label();
+            this.lblPuntosAcumulados = new System.Windows.Forms.Label();
             this.lblPuntosGanados = new System.Windows.Forms.Label();
             this.btnPesar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -49,6 +49,8 @@
             this.btnBio = new System.Windows.Forms.Button();
             this.lblQuepeso = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btSeguirRec = new System.Windows.Forms.Button();
+            this.lblPtsGanados = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,9 +72,8 @@
             this.lblPeso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
             this.lblPeso.Location = new System.Drawing.Point(456, 298);
             this.lblPeso.Name = "lblPeso";
-            this.lblPeso.Size = new System.Drawing.Size(32, 18);
+            this.lblPeso.Size = new System.Drawing.Size(0, 18);
             this.lblPeso.TabIndex = 36;
-            this.lblPeso.Text = "hbk";
             // 
             // lbl_cantidad
             // 
@@ -140,16 +141,16 @@
             this.lblUser.TabIndex = 29;
             this.lblUser.Text = "Usuario: xxx";
             // 
-            // lblTotaldePuntos
+            // lblPuntosAcumulados
             // 
-            this.lblTotaldePuntos.AutoSize = true;
-            this.lblTotaldePuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotaldePuntos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
-            this.lblTotaldePuntos.Location = new System.Drawing.Point(303, 370);
-            this.lblTotaldePuntos.Name = "lblTotaldePuntos";
-            this.lblTotaldePuntos.Size = new System.Drawing.Size(213, 20);
-            this.lblTotaldePuntos.TabIndex = 30;
-            this.lblTotaldePuntos.Text = "Total de puntos acumulados:";
+            this.lblPuntosAcumulados.AutoSize = true;
+            this.lblPuntosAcumulados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPuntosAcumulados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
+            this.lblPuntosAcumulados.Location = new System.Drawing.Point(303, 370);
+            this.lblPuntosAcumulados.Name = "lblPuntosAcumulados";
+            this.lblPuntosAcumulados.Size = new System.Drawing.Size(213, 20);
+            this.lblPuntosAcumulados.TabIndex = 30;
+            this.lblPuntosAcumulados.Text = "Total de puntos acumulados:";
             // 
             // lblPuntosGanados
             // 
@@ -267,9 +268,8 @@
             this.lblQuepeso.Location = new System.Drawing.Point(429, 160);
             this.lblQuepeso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQuepeso.Name = "lblQuepeso";
-            this.lblQuepeso.Size = new System.Drawing.Size(30, 20);
+            this.lblQuepeso.Size = new System.Drawing.Size(0, 20);
             this.lblQuepeso.TabIndex = 43;
-            this.lblQuepeso.Text = "jhb";
             // 
             // label2
             // 
@@ -282,12 +282,35 @@
             this.label2.TabIndex = 44;
             this.label2.Text = "Grs.";
             // 
+            // btSeguirRec
+            // 
+            this.btSeguirRec.Location = new System.Drawing.Point(665, 418);
+            this.btSeguirRec.Name = "btSeguirRec";
+            this.btSeguirRec.Size = new System.Drawing.Size(110, 29);
+            this.btSeguirRec.TabIndex = 45;
+            this.btSeguirRec.Text = "Seguir reciclando";
+            this.btSeguirRec.UseVisualStyleBackColor = true;
+            this.btSeguirRec.Click += new System.EventHandler(this.BtSeguirRec_Click);
+            // 
+            // lblPtsGanados
+            // 
+            this.lblPtsGanados.AutoSize = true;
+            this.lblPtsGanados.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPtsGanados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
+            this.lblPtsGanados.Location = new System.Drawing.Point(433, 345);
+            this.lblPtsGanados.Name = "lblPtsGanados";
+            this.lblPtsGanados.Size = new System.Drawing.Size(18, 18);
+            this.lblPtsGanados.TabIndex = 46;
+            this.lblPtsGanados.Text = "0";
+            // 
             // frm_Pesaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPtsGanados);
+            this.Controls.Add(this.btSeguirRec);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblQuepeso);
             this.Controls.Add(this.btnBio);
@@ -303,7 +326,7 @@
             this.Controls.Add(this.btVolver);
             this.Controls.Add(this.btSiguiente);
             this.Controls.Add(this.lblUser);
-            this.Controls.Add(this.lblTotaldePuntos);
+            this.Controls.Add(this.lblPuntosAcumulados);
             this.Controls.Add(this.lblPuntosGanados);
             this.Controls.Add(this.btnPesar);
             this.Controls.Add(this.pictureBox1);
@@ -327,7 +350,7 @@
         private System.Windows.Forms.Button btVolver;
         private System.Windows.Forms.Button btSiguiente;
         private System.Windows.Forms.Label lblUser;
-        private System.Windows.Forms.Label lblTotaldePuntos;
+        private System.Windows.Forms.Label lblPuntosAcumulados;
         private System.Windows.Forms.Label lblPuntosGanados;
         private System.Windows.Forms.Button btnPesar;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -339,5 +362,7 @@
         private System.Windows.Forms.Button btnBio;
         private System.Windows.Forms.Label lblQuepeso;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btSeguirRec;
+        private System.Windows.Forms.Label lblPtsGanados;
     }
 }
