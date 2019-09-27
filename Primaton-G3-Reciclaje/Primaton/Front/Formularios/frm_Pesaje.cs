@@ -14,10 +14,12 @@ namespace Primaton.Front.Formularios
     public partial class frm_Pesaje : Form
     {
         int suma = 0;
-        bool Select = false;    
+        bool Select = false;
+        Persistencia pd = new Persistencia();
         public frm_Pesaje()
         {
             InitializeComponent();
+            pd.LeerArchivo();
         }
 
         private void BtnPesar_Click(object sender, EventArgs e)
@@ -65,7 +67,8 @@ namespace Primaton.Front.Formularios
             tipo.Id = 1;
             contenedor.Id = 1;
             contenedor.tamanio = 100;
-            usuario.DNI = "30782195";
+            usuario.DNI = "123"/*pd.DevuelveIngresos(usuario.DNI)*/;
+            
             registro.Fecha = DateTime.Now;
             registro.Usuario = usuario;
             registro.Tipo = tipo;

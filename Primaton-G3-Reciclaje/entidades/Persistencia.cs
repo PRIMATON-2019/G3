@@ -82,6 +82,18 @@ namespace entidades
             ds.ReadXml(nombreArchivo + ".xml");
             return ds;
         }
+        //public string DevuelveIngresos(string dni)
+        //{
+        //    for (int i = Tabla.Rows.Count - 1; i >= 0; i--)
+        //    {
+        //        DataRow fila = Tabla.Rows[i];
+        //        if (fila["Usuario"].ToString() == dni)
+        //        {
+        //            return fila["Usuario"].ToString();
+        //        }
+        //    }
+        //    return "0";
+        //}
         #endregion
     }
 }
