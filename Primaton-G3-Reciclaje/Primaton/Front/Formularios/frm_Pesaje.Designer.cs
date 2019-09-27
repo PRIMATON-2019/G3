@@ -125,7 +125,7 @@
             this.btSiguiente.Name = "btSiguiente";
             this.btSiguiente.Size = new System.Drawing.Size(89, 29);
             this.btSiguiente.TabIndex = 31;
-            this.btSiguiente.Text = "Finalizar";
+            this.btSiguiente.Text = "Siguiente";
             this.btSiguiente.UseVisualStyleBackColor = false;
             this.btSiguiente.Click += new System.EventHandler(this.BtSiguiente_Click_1);
             // 
