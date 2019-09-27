@@ -75,7 +75,7 @@
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Location = new System.Drawing.Point(318, 231);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(115, 61);
             this.btnSiguiente.TabIndex = 14;
@@ -159,10 +159,13 @@
             // 
             this.txt_documento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.txt_documento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_documento.Location = new System.Drawing.Point(85, 106);
+            this.txt_documento.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_documento.Location = new System.Drawing.Point(67, 106);
             this.txt_documento.Name = "txt_documento";
-            this.txt_documento.Size = new System.Drawing.Size(169, 20);
+            this.txt_documento.ReadOnly = true;
+            this.txt_documento.Size = new System.Drawing.Size(211, 20);
             this.txt_documento.TabIndex = 11;
+            this.txt_documento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn_3
             // 
@@ -242,7 +245,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 427);
             this.Controls.Add(this.pn_dni);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_dnimanual";

@@ -74,9 +74,7 @@ namespace Primaton.Front.Formularios
             lblQuepeso.Text = "Vidrio";
             lblPuntosGanados.Visible = true;
             //lblPuntosAcumulados.Visible = true;
-            //double peso = Convert.ToDouble(lblPeso.Text);
-            //peso = peso * 0.5;
-            //lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+
         }
 
         private void BtnPlastico_Click(object sender, EventArgs e)
@@ -84,9 +82,7 @@ namespace Primaton.Front.Formularios
             lblQuepeso.Text = "Plastico";
             lblPuntosGanados.Visible = true;
             //lblPuntosAcumulados.Visible = true;
-            //double peso = Convert.ToDouble(lblPeso.Text);
-            //peso = peso * 0.4;
-            //lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+
         }
 
         private void BtnPapel_Click(object sender, EventArgs e)
@@ -95,9 +91,7 @@ namespace Primaton.Front.Formularios
             //Cuando se hace clic en acepatar se va a mostrar la cantidad de puntos que se estarían sumando
             lblPuntosGanados.Visible = true;
             //lblPuntosAcumulados.Visible = true;
-            //double peso = Convert.ToDouble(lblPeso.Text);
-            //peso = peso * 0.45;
-            //lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+
         }
 
         private void BtnBio_Click(object sender, EventArgs e)
@@ -105,9 +99,7 @@ namespace Primaton.Front.Formularios
             lblQuepeso.Text = "Bio-degradables";
             lblPuntosGanados.Visible = true;
             //lblPuntosAcumulados.Visible = true;
-            //double peso = Convert.ToDouble(lblPeso.Text);
-            //peso = peso * 0.35;
-            //lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
+
         }
 
         private void Frm_Pesaje_Load(object sender, EventArgs e)
