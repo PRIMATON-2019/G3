@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Primaton.Front.forms_usuario;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,7 +44,7 @@ namespace Primaton.Front.Formularios
         }
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frm_Personal nb = new frm_Personal();
+            frm_Login nb = new frm_Login();
             nb.Show();
         }
         #endregion

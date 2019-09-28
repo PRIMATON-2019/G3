@@ -11,6 +11,7 @@ namespace entidades
     {
         #region Propiedades
         public DataTable Tabla;
+        
         public string NombreArchivo;
         #endregion
 
@@ -23,12 +24,15 @@ namespace entidades
         public Persistencia()
         {
             Tabla = new DataTable();
+            
+
         }
         #region metodos
         public Persistencia(int cantColumnas, string[] columnas, string nombreArchivo)
         {
             NombreArchivo = nombreArchivo;
             Tabla = new DataTable(NombreArchivo);
+            
             ConfiguracionInicial(cantColumnas, columnas);
         }
         private void ConfiguracionInicial(int cantColumnas, string[] columnas)
@@ -37,6 +41,7 @@ namespace entidades
             for (int i = 0; i < cantColumnas; i++)
             {
                 Tabla.Columns.Add(columnas[i]);
+                
             }
         }
         /// <summary>
@@ -50,8 +55,10 @@ namespace entidades
         {
             LeerArchivo();
             Tabla.Rows.Add();
+            
             for (int i = 0; i < cantColumnas; i++)
             {
+                
                 Tabla.Rows[Tabla.Rows.Count - 1][columnas[i]] = datos[i]; //despues lo utilizamos aca
             }
             GrabarArchivo();
@@ -72,7 +79,7 @@ namespace entidades
         }
         public void GrabarArchivo()
         {
-            string NombreArchivo = "registros";
+            //string NombreArchivo = "Cuentas";
             Tabla.WriteXml(NombreArchivo + ".xml");
         }
 
@@ -82,6 +89,18 @@ namespace entidades
             ds.ReadXml(nombreArchivo + ".xml");
             return ds;
         }
+        //public string DevuelveIngresos(string dni)
+        //{
+        //    for (int i = Tabla.Rows.Count - 1; i >= 0; i--)
+        //    {
+        //        DataRow fila = Tabla.Rows[i];
+        //        if (fila["Usuario"].ToString() == dni)
+        //        {
+        //            return fila["Usuario"].ToString();
+        //        }
+        //    }
+        //    return "0";
+        //}
         #endregion
     }
 }

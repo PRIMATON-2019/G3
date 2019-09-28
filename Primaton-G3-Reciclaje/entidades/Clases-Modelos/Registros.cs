@@ -45,9 +45,11 @@ namespace entidades
                 registro.Id.ToString(),
                 registro.Fecha.ToString(),
                 registro.Usuario.DNI,
-                registro.Tipo.ToString(),
+                registro.Tipo.Id.ToString(),
                 registro.Cantidad.ToString(),
-                registro.Creditos.ToString() };
+                registro.Creditos.ToString(),
+                
+            };
             string[] columnas = { "Id", "Fecha", "Usuario", "Tipo", "Cantidad", "Creditos" };
 
             Persistencia pd = new Persistencia(6, columnas, "Registros");
