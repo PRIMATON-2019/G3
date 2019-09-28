@@ -48,7 +48,7 @@
             // 
             // pn_dni
             // 
-            this.pn_dni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(25)))));
+            this.pn_dni.BackColor = System.Drawing.Color.White;
             this.pn_dni.Controls.Add(this.btnSiguiente);
             this.pn_dni.Controls.Add(this.lbl_hora);
             this.pn_dni.Controls.Add(this.btn_0);
@@ -68,16 +68,17 @@
             this.pn_dni.Name = "pn_dni";
             this.pn_dni.Size = new System.Drawing.Size(444, 427);
             this.pn_dni.TabIndex = 11;
+            this.pn_dni.Paint += new System.Windows.Forms.PaintEventHandler(this.Pn_dni_Paint);
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
+            this.btnSiguiente.BackColor = System.Drawing.Color.Green;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(318, 231);
+            this.btnSiguiente.Location = new System.Drawing.Point(304, 211);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(115, 61);
+            this.btnSiguiente.Size = new System.Drawing.Size(115, 59);
             this.btnSiguiente.TabIndex = 14;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
@@ -100,9 +101,9 @@
             // 
             this.btn_0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_0.Location = new System.Drawing.Point(101, 339);
+            this.btn_0.Location = new System.Drawing.Point(136, 340);
             this.btn_0.Name = "btn_0";
-            this.btn_0.Size = new System.Drawing.Size(124, 70);
+            this.btn_0.Size = new System.Drawing.Size(70, 59);
             this.btn_0.TabIndex = 9;
             this.btn_0.Text = "0";
             this.btn_0.UseVisualStyleBackColor = false;
@@ -112,9 +113,9 @@
             // 
             this.btn_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_9.Location = new System.Drawing.Point(202, 269);
+            this.btn_9.Location = new System.Drawing.Point(212, 276);
             this.btn_9.Name = "btn_9";
-            this.btn_9.Size = new System.Drawing.Size(76, 72);
+            this.btn_9.Size = new System.Drawing.Size(70, 59);
             this.btn_9.TabIndex = 8;
             this.btn_9.Text = "9";
             this.btn_9.UseVisualStyleBackColor = false;
@@ -123,7 +124,7 @@
             // lbl_infomanual
             // 
             this.lbl_infomanual.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_infomanual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
+            this.lbl_infomanual.ForeColor = System.Drawing.Color.Green;
             this.lbl_infomanual.Location = new System.Drawing.Point(108, 51);
             this.lbl_infomanual.Name = "lbl_infomanual";
             this.lbl_infomanual.Size = new System.Drawing.Size(128, 52);
@@ -135,9 +136,9 @@
             // 
             this.btn_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_8.Location = new System.Drawing.Point(136, 269);
+            this.btn_8.Location = new System.Drawing.Point(136, 276);
             this.btn_8.Name = "btn_8";
-            this.btn_8.Size = new System.Drawing.Size(69, 72);
+            this.btn_8.Size = new System.Drawing.Size(70, 59);
             this.btn_8.TabIndex = 7;
             this.btn_8.Text = "8";
             this.btn_8.UseVisualStyleBackColor = false;
@@ -147,9 +148,9 @@
             // 
             this.btn_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_7.Location = new System.Drawing.Point(67, 269);
+            this.btn_7.Location = new System.Drawing.Point(60, 276);
             this.btn_7.Name = "btn_7";
-            this.btn_7.Size = new System.Drawing.Size(70, 72);
+            this.btn_7.Size = new System.Drawing.Size(70, 59);
             this.btn_7.TabIndex = 6;
             this.btn_7.Text = "7";
             this.btn_7.UseVisualStyleBackColor = false;
@@ -160,10 +161,10 @@
             this.txt_documento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.txt_documento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_documento.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_documento.Location = new System.Drawing.Point(67, 106);
+            this.txt_documento.Location = new System.Drawing.Point(60, 106);
             this.txt_documento.Name = "txt_documento";
             this.txt_documento.ReadOnly = true;
-            this.txt_documento.Size = new System.Drawing.Size(211, 20);
+            this.txt_documento.Size = new System.Drawing.Size(222, 20);
             this.txt_documento.TabIndex = 11;
             this.txt_documento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -171,9 +172,9 @@
             // 
             this.btn_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_3.Location = new System.Drawing.Point(202, 145);
+            this.btn_3.Location = new System.Drawing.Point(212, 146);
             this.btn_3.Name = "btn_3";
-            this.btn_3.Size = new System.Drawing.Size(76, 59);
+            this.btn_3.Size = new System.Drawing.Size(70, 59);
             this.btn_3.TabIndex = 5;
             this.btn_3.Text = "3";
             this.btn_3.UseVisualStyleBackColor = false;
@@ -183,9 +184,9 @@
             // 
             this.btn_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_6.Location = new System.Drawing.Point(202, 204);
+            this.btn_6.Location = new System.Drawing.Point(212, 211);
             this.btn_6.Name = "btn_6";
-            this.btn_6.Size = new System.Drawing.Size(76, 68);
+            this.btn_6.Size = new System.Drawing.Size(70, 59);
             this.btn_6.TabIndex = 4;
             this.btn_6.Text = "6";
             this.btn_6.UseVisualStyleBackColor = false;
@@ -195,9 +196,9 @@
             // 
             this.btn_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_2.Location = new System.Drawing.Point(136, 145);
+            this.btn_2.Location = new System.Drawing.Point(136, 146);
             this.btn_2.Name = "btn_2";
-            this.btn_2.Size = new System.Drawing.Size(69, 59);
+            this.btn_2.Size = new System.Drawing.Size(70, 59);
             this.btn_2.TabIndex = 3;
             this.btn_2.Text = "2";
             this.btn_2.UseVisualStyleBackColor = false;
@@ -207,9 +208,9 @@
             // 
             this.btn_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_5.Location = new System.Drawing.Point(136, 204);
+            this.btn_5.Location = new System.Drawing.Point(136, 211);
             this.btn_5.Name = "btn_5";
-            this.btn_5.Size = new System.Drawing.Size(69, 68);
+            this.btn_5.Size = new System.Drawing.Size(70, 59);
             this.btn_5.TabIndex = 2;
             this.btn_5.Text = "5";
             this.btn_5.UseVisualStyleBackColor = false;
@@ -219,9 +220,9 @@
             // 
             this.btn_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_4.Location = new System.Drawing.Point(67, 204);
+            this.btn_4.Location = new System.Drawing.Point(60, 211);
             this.btn_4.Name = "btn_4";
-            this.btn_4.Size = new System.Drawing.Size(70, 66);
+            this.btn_4.Size = new System.Drawing.Size(70, 59);
             this.btn_4.TabIndex = 1;
             this.btn_4.Text = "4";
             this.btn_4.UseVisualStyleBackColor = false;
@@ -231,7 +232,7 @@
             // 
             this.btn_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_1.Location = new System.Drawing.Point(67, 145);
+            this.btn_1.Location = new System.Drawing.Point(60, 146);
             this.btn_1.Name = "btn_1";
             this.btn_1.Size = new System.Drawing.Size(70, 59);
             this.btn_1.TabIndex = 0;

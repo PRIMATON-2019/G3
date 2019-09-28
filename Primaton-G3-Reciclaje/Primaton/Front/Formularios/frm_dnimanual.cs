@@ -83,5 +83,10 @@ namespace Primaton.Front.Formularios
             frm_Pesaje pesaje = new frm_Pesaje();
             pesaje.ShowDialog();
         }
+
+        private void Pn_dni_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
