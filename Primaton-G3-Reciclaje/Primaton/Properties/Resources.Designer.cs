@@ -113,6 +113,16 @@ namespace Primaton.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eco_sistema_fondo_transparente_sinrecuadro {
+            get {
+                object obj = ResourceManager.GetObject("eco-sistema-fondo-transparente-sinrecuadro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ganancias_48px {
             get {
                 object obj = ResourceManager.GetObject("Ganancias_48px", resourceCulture);

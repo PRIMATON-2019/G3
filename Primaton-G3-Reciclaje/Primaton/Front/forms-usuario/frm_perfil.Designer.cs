@@ -28,29 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox12);
+            this.panel1.Location = new System.Drawing.Point(266, 191);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(524, 372);
+            this.panel1.TabIndex = 2;
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_blanco_recuadro;
+            this.pictureBox12.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_sinrecuadro;
             this.pictureBox12.Location = new System.Drawing.Point(0, 3);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(154, 134);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 1;
             this.pictureBox12.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Location = new System.Drawing.Point(266, 191);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(524, 372);
-            this.panel1.TabIndex = 2;
             // 
             // frm_perfil
             // 
@@ -61,8 +62,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_perfil";
             this.Text = "frm_perfil";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }

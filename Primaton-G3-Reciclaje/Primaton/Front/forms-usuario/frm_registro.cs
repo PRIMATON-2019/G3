@@ -20,6 +20,7 @@ namespace Primaton.Front.forms_usuario
         public frm_registro()
         {
             InitializeComponent();
+            timer1.Start();
         }
 
         private void BtnConfirmar_Click(object sender, EventArgs e)
@@ -67,6 +68,11 @@ namespace Primaton.Front.forms_usuario
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            lblhora.Text = DateTime.Now.ToString();
         }
     }
 }

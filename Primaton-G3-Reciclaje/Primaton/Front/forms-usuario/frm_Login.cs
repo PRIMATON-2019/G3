@@ -11,6 +11,7 @@ namespace Primaton.Front.forms_usuario
         public frm_Login()
         {
             InitializeComponent();
+            timer1.Start();
         }
 
         private void BtnEntrar_Click(object sender, EventArgs e)
@@ -54,6 +55,11 @@ namespace Primaton.Front.forms_usuario
             frm_registro registro = new frm_registro();
             registro.ShowDialog();
 
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            lblhora.Text = DateTime.Now.ToString();
         }
     }
 }
