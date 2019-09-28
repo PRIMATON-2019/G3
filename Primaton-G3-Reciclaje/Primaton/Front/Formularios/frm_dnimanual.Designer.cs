@@ -43,12 +43,15 @@
             this.btn_5 = new System.Windows.Forms.Button();
             this.btn_4 = new System.Windows.Forms.Button();
             this.btn_1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pn_dni.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_dni
             // 
-            this.pn_dni.BackColor = System.Drawing.Color.White;
+            this.pn_dni.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.pn_dni.Controls.Add(this.pictureBox1);
             this.pn_dni.Controls.Add(this.btnSiguiente);
             this.pn_dni.Controls.Add(this.lbl_hora);
             this.pn_dni.Controls.Add(this.btn_0);
@@ -72,9 +75,9 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.BackColor = System.Drawing.Color.Green;
+            this.btnSiguiente.BackColor = System.Drawing.Color.Teal;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguiente.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Location = new System.Drawing.Point(304, 211);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
@@ -123,11 +126,11 @@
             // 
             // lbl_infomanual
             // 
-            this.lbl_infomanual.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_infomanual.ForeColor = System.Drawing.Color.Green;
-            this.lbl_infomanual.Location = new System.Drawing.Point(108, 51);
+            this.lbl_infomanual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_infomanual.ForeColor = System.Drawing.Color.Black;
+            this.lbl_infomanual.Location = new System.Drawing.Point(100, 51);
             this.lbl_infomanual.Name = "lbl_infomanual";
-            this.lbl_infomanual.Size = new System.Drawing.Size(128, 52);
+            this.lbl_infomanual.Size = new System.Drawing.Size(162, 52);
             this.lbl_infomanual.TabIndex = 12;
             this.lbl_infomanual.Text = "Digita tu DNI";
             this.lbl_infomanual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -240,6 +243,16 @@
             this.btn_1.UseVisualStyleBackColor = false;
             this.btn_1.Click += new System.EventHandler(this.Btn_1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_recuadro;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(109, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_dnimanual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,6 +267,7 @@
             this.Text = "frm_dnimanual";
             this.pn_dni.ResumeLayout(false);
             this.pn_dni.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,5 +289,6 @@
         private System.Windows.Forms.Button btn_1;
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

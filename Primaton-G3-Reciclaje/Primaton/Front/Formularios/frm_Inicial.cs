@@ -49,5 +49,9 @@ namespace Primaton.Front.Formularios
         }
         #endregion
 
+        private void Frm_Inicial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
