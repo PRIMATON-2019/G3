@@ -1,13 +1,7 @@
 ﻿using entidades;
 using Primaton.Front.Formularios;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Primaton.Front.forms_usuario
@@ -25,7 +19,7 @@ namespace Primaton.Front.forms_usuario
             if (txtDNI.Text != "" && txtPass.Text != "")
             {
                 Persistencia pd = new Persistencia();
-                DataSet ds = pd.BuscarDatos("Usuarios");
+                DataSet ds = pd.BuscarDatos("Cuentas");
                 for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
                 {
                     string dni = ds.Tables[0].Rows[j][5].ToString();
@@ -36,10 +30,10 @@ namespace Primaton.Front.forms_usuario
                         MessageBox.Show("Encontrado");
                         //MenuInicial mi = new MenuInicial();
                         //mi.Show();
+                        frm_Personal perfil = new frm_Personal();
+                        perfil.ShowDialog();
                     }
                 }
-                frm_Personal perfil = new frm_Personal();
-                perfil.ShowDialog();
             }
             else
             {

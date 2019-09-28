@@ -15,11 +15,11 @@ namespace Primaton.Front.Formularios
     {
         int suma = 0;
         bool Select = false;
-        Persistencia pd = new Persistencia();
+        
         public frm_Pesaje()
         {
             InitializeComponent();
-            pd.LeerArchivo();
+            
         }
 
         private void BtnPesar_Click(object sender, EventArgs e)
