@@ -24,6 +24,7 @@ namespace Primaton.Front.Formularios
         int PuntosAcumulados = 50000;
         private void BtSeleccionar_Click(object sender, EventArgs e)
         {
+
             if (chkCine.Checked & PuntosAcumulados >= 2000)
             {
                 PuntosAcumulados = PuntosAcumulados - 2000;
