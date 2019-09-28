@@ -79,7 +79,7 @@ namespace entidades
         }
         public void GrabarArchivo()
         {
-            string NombreArchivo = "Cuentas";
+            //string NombreArchivo = "Cuentas";
             Tabla.WriteXml(NombreArchivo + ".xml");
         }
 

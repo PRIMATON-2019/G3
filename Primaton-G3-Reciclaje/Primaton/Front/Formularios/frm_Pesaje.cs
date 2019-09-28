@@ -1,24 +1,20 @@
 ﻿using entidades;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Primaton.Front.Formularios
 {
     public partial class frm_Pesaje : Form
     {
+        //hacer variable global tipo, y or cada boton, asignar el tipo, 
         int suma = 0;
         bool Select = false;
-        
-        public frm_Pesaje()
+        public string DNI;
+        public frm_Pesaje(string DNI)
         {
             InitializeComponent();
+            this.DNI = DNI;
             
         }
 
@@ -67,8 +63,8 @@ namespace Primaton.Front.Formularios
             tipo.Id = 1;
             contenedor.Id = 1;
             contenedor.tamanio = 100;
-            usuario.DNI = "123"/*pd.DevuelveIngresos(usuario.DNI)*/;
-            
+            usuario.DNI = DNI;
+
             registro.Fecha = DateTime.Now;
             registro.Usuario = usuario;
             registro.Tipo = tipo;
@@ -78,11 +74,7 @@ namespace Primaton.Front.Formularios
             registro.GrabarRegistro(registro);
 
 
-            //usuario
-            //peso
-            //tipo
-            //puntos
-            //fecha
+
         }
 
         private void BtnVidrio_Click(object sender, EventArgs e)
@@ -117,6 +109,15 @@ namespace Primaton.Front.Formularios
         private void Frm_Pesaje_Load(object sender, EventArgs e)
         {
             
+            Persistencia pdd = new Persistencia();
+            DataSet ds = pdd.BuscarDatos("Cuentas");
+            for (int i = 0; i < ds.Tables[0].Columns.Count; i++)
+            {
+                if (ds.Tables[0].Columns[i].ToString() == DNI)
+                {
+                    lblUser.Text = ds.Tables[0].Columns[2].ToString();
+                }
+            }
         }
 
         private void BtCancelar_Click(object sender, EventArgs e)
@@ -137,7 +138,7 @@ namespace Primaton.Front.Formularios
             point = Convert.ToInt32(lblPtsGanados.Text);
             suma = suma + point;
 
-            lblPuntosAcumulados.Text = "Puntos Acumulados: " + Convert.ToString (suma);
+            lblPuntosAcumulados.Text = "Puntos Acumulados: " + Convert.ToString(suma);
             lblPtsGanados.Text = "";
 
             btnVidrio.Enabled = true;

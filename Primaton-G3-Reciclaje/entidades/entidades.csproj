@@ -67,7 +67,6 @@
     <Compile Include="Clases-Modelos\TipoResiduo.cs" />
     <Compile Include="Clases-Modelos\Usuarios.cs" />
     <Compile Include="Persistencia.cs" />
-    <Compile Include="PersistenciaBasura.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

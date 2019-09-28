@@ -73,14 +73,10 @@ namespace Primaton.Front.Formularios
 
         private void BtnSiguiente_Click(object sender, EventArgs e)
         {
-            Usuarios usuario = new Usuarios();
-            usuario.DNI = txt_documento.Text;
-            Registros registro = new Registros();
-            registro.Usuario = usuario;
+            //Usuarios usuario = new Usuarios();
+            //usuario.DNI = txt_documento.Text;
 
-
-
-            frm_Pesaje pesaje = new frm_Pesaje();
+            frm_Pesaje pesaje = new frm_Pesaje(txt_documento.Text);
             pesaje.ShowDialog();
         }
     }

@@ -48,7 +48,7 @@ namespace Primaton.Front.forms_usuario
                 user.Genero = genero;
                 string[] columnas = { "usuario", "apellido", "nombre", "genero", "clave", "dni" };
 
-                Persistencia db = new Persistencia(6, columnas, "Usuarios");
+                Persistencia db = new Persistencia(6, columnas, "Cuentas");
                 string[] datos = {
                     user.NombreUsuario,
                     user.Apellido,
