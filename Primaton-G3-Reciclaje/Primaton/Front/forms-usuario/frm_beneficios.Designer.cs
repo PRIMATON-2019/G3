@@ -210,7 +210,10 @@
             // 
             // btFinalizar
             // 
-            this.btFinalizar.BackColor = System.Drawing.Color.Teal;
+            this.btFinalizar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btFinalizar.FlatAppearance.BorderSize = 0;
+            this.btFinalizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btFinalizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btFinalizar.Location = new System.Drawing.Point(436, 565);
             this.btFinalizar.Margin = new System.Windows.Forms.Padding(4);
@@ -222,7 +225,10 @@
             // 
             // btSeleccionar
             // 
-            this.btSeleccionar.BackColor = System.Drawing.Color.Teal;
+            this.btSeleccionar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btSeleccionar.FlatAppearance.BorderSize = 0;
+            this.btSeleccionar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btSeleccionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSeleccionar.Location = new System.Drawing.Point(182, 565);
             this.btSeleccionar.Margin = new System.Windows.Forms.Padding(4);

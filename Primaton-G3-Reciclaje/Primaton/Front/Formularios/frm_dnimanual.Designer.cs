@@ -90,15 +90,16 @@
             // btnSiguiente
             // 
             this.btnSiguiente.BackColor = System.Drawing.Color.LightGreen;
-            this.btnSiguiente.FlatAppearance.BorderSize = 0;
+            this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnSiguiente.FlatAppearance.BorderSize = 5;
             this.btnSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(405, 260);
+            this.btnSiguiente.Location = new System.Drawing.Point(398, 260);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(175, 121);
+            this.btnSiguiente.Size = new System.Drawing.Size(191, 132);
             this.btnSiguiente.TabIndex = 14;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
@@ -106,7 +107,7 @@
             // 
             // lbl_hora
             // 
-            this.lbl_hora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.ForeColor = System.Drawing.Color.DarkBlue;
@@ -190,6 +191,7 @@
             this.txt_documento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.txt_documento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_documento.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_documento.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.txt_documento.Location = new System.Drawing.Point(80, 130);
             this.txt_documento.Margin = new System.Windows.Forms.Padding(4);
             this.txt_documento.Name = "txt_documento";

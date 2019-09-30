@@ -60,13 +60,13 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(15, 293);
+            this.button1.Location = new System.Drawing.Point(12, 258);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(333, 244);
@@ -78,13 +78,13 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(592, 293);
+            this.button2.Location = new System.Drawing.Point(570, 258);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(339, 244);
@@ -114,11 +114,11 @@
             // linkLabel1
             // 
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(442, 537);
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Help;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(450, 504);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(478, 43);
+            this.linkLabel1.Size = new System.Drawing.Size(478, 91);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Ya Posees una cuenta?";
@@ -130,7 +130,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(0, 293);
+            this.label1.Location = new System.Drawing.Point(-3, 260);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(27, 244);
             this.label1.TabIndex = 5;
@@ -140,7 +140,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(895, 293);
+            this.label2.Location = new System.Drawing.Point(892, 260);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 244);
             this.label2.TabIndex = 6;
@@ -150,7 +150,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(151, 234);
+            this.label3.Location = new System.Drawing.Point(150, 218);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(610, 38);
@@ -161,7 +161,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(373, 191);
+            this.label4.Location = new System.Drawing.Point(379, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 29);
             this.label4.TabIndex = 9;

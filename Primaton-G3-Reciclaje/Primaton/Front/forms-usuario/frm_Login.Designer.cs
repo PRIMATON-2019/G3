@@ -64,7 +64,7 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(304, 326);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(190, 59);
+            this.btnSalir.Size = new System.Drawing.Size(195, 68);
             this.btnSalir.TabIndex = 12;
             this.btnSalir.Text = "Cancelar";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -79,7 +79,7 @@
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.Location = new System.Drawing.Point(117, 326);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(118, 59);
+            this.btnEntrar.Size = new System.Drawing.Size(135, 68);
             this.btnEntrar.TabIndex = 11;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
@@ -138,13 +138,12 @@
             // 
             // lblhora
             // 
-            this.lblhora.AutoSize = true;
             this.lblhora.BackColor = System.Drawing.Color.Transparent;
             this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblhora.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.lblhora.Location = new System.Drawing.Point(422, 0);
+            this.lblhora.Location = new System.Drawing.Point(431, 0);
             this.lblhora.Name = "lblhora";
-            this.lblhora.Size = new System.Drawing.Size(55, 25);
+            this.lblhora.Size = new System.Drawing.Size(183, 82);
             this.lblhora.TabIndex = 17;
             this.lblhora.Text = "hora";
             // 

@@ -47,21 +47,21 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 27);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 411);
+            this.dataGridView1.Size = new System.Drawing.Size(748, 379);
             this.dataGridView1.TabIndex = 0;
             // 
-            // frm_graficos
+            // frm_registrodebasuras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_graficos";
+            this.Name = "frm_registrodebasuras";
             this.Text = "frm_graficos";
             this.Load += new System.EventHandler(this.Frm_graficos_Load);
             this.panel1.ResumeLayout(false);

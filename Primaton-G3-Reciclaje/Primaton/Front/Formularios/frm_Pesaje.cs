@@ -36,6 +36,7 @@ namespace Primaton.Front.Formularios
                 btnPapel.Enabled = false;
                 btnBio.Enabled = false;
             }
+            btnAceptar.Enabled = true;
         }
 
         private void BtnAceptar_Click(object sender, EventArgs e)
@@ -44,6 +45,8 @@ namespace Primaton.Front.Formularios
             double peso = Convert.ToDouble(lblPeso.Text);
             peso = Math.Round(peso * 0.4);
             lblPtsGanados.Text = Convert.ToString(peso);
+            btFinalizar.Enabled = true;
+            btSeguirRec.Enabled = true;
         }
 
         private void BtVolver_Click(object sender, EventArgs e)
@@ -77,7 +80,7 @@ namespace Primaton.Front.Formularios
             registro.GrabarRegistro(registro);
 
 
-
+            
         }
 
         private void BtnVidrio_Click(object sender, EventArgs e)

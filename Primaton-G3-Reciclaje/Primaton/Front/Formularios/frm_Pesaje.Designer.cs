@@ -61,6 +61,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnAceptar.Enabled = false;
             this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.btnAceptar.FlatAppearance.BorderSize = 5;
             this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -153,6 +154,7 @@
             // btFinalizar
             // 
             this.btFinalizar.BackColor = System.Drawing.Color.LightGreen;
+            this.btFinalizar.Enabled = false;
             this.btFinalizar.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btFinalizar.FlatAppearance.BorderSize = 5;
             this.btFinalizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -253,14 +255,13 @@
             // 
             // lbl_hora
             // 
-            this.lbl_hora.AutoSize = true;
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.ForeColor = System.Drawing.Color.DarkBlue;
             this.lbl_hora.Location = new System.Drawing.Point(831, 9);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(54, 25);
+            this.lbl_hora.Size = new System.Drawing.Size(185, 69);
             this.lbl_hora.TabIndex = 38;
             this.lbl_hora.Text = "Hora";
             // 
@@ -348,6 +349,7 @@
             // btSeguirRec
             // 
             this.btSeguirRec.BackColor = System.Drawing.Color.LightGreen;
+            this.btSeguirRec.Enabled = false;
             this.btSeguirRec.FlatAppearance.BorderSize = 0;
             this.btSeguirRec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btSeguirRec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
@@ -421,6 +423,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_Pesaje";
             this.Text = "frm_pesajevidrio";
             this.Load += new System.EventHandler(this.Frm_Pesaje_Load);
