@@ -11,7 +11,6 @@ namespace entidades
     {
         #region Propiedades
         public int Id { get; set; }
-        public decimal Capacidad { get; set; }
         public int tamanio { get; set; }
 
 
@@ -23,10 +22,7 @@ namespace entidades
 
         }
 
-        internal Contenedor obtenerNumero()
-        {
-            throw new NotImplementedException();
-        }
+
         #endregion
         #region Metodos
         #endregion

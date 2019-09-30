@@ -111,7 +111,7 @@ namespace Primaton.Front.Formularios
 
         private void Frm_Pesaje_Load(object sender, EventArgs e)
         {
-            
+
             Persistencia pdd = new Persistencia();
             DataSet ds = pdd.BuscarDatos("Cuentas");
             for (int i = 0; i < ds.Tables[0].Columns.Count; i++)

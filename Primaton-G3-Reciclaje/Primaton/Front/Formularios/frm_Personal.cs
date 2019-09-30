@@ -48,14 +48,8 @@ namespace Primaton.Front.Formularios
 
         private void PbMenu_Click(object sender, EventArgs e)
         {
-            if (pnIzquierda.Width== 187)
-            {
-                pnIzquierda.Width = 70;
-            }
-            else
-            {
-                pnIzquierda.Width = 187;
-            }
+
+
         }
         private void Abrirforminpanel(object formhijo)
         {
@@ -71,5 +65,9 @@ namespace Primaton.Front.Formularios
             fh.Show();
         }
 
+        private void BtBeneficio_Click(object sender, EventArgs e)
+        {
+            Abrirforminpanel(new frm_SelectBenefit());
+        }
     }
 }

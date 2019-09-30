@@ -76,7 +76,7 @@ namespace Primaton.Front.Formularios
         {
             //Usuarios usuario = new Usuarios();
             //usuario.DNI = txt_documento.Text;
-            this.Dispose();
+            //this.Dispose();
             this.Close();
             frm_Pesaje pesaje = new frm_Pesaje(txt_documento.Text);
             pesaje.ShowDialog();

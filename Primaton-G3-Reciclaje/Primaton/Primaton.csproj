@@ -76,6 +76,12 @@
     <Compile Include="Front\forms-usuario\frm_perfil.Designer.cs">
       <DependentUpon>frm_perfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Front\forms-usuario\frm_plataforma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\forms-usuario\frm_plataforma.Designer.cs">
+      <DependentUpon>frm_plataforma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front\forms-usuario\frm_registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Front\forms-usuario\frm_perfil.resx">
       <DependentUpon>frm_perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\forms-usuario\frm_plataforma.resx">
+      <DependentUpon>frm_plataforma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\forms-usuario\frm_registro.resx">
       <DependentUpon>frm_registro.cs</DependentUpon>

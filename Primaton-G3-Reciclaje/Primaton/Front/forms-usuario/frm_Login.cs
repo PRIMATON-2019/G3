@@ -33,7 +33,7 @@ namespace Primaton.Front.forms_usuario
                         //mi.Show();
                         this.Dispose();
                         this.Close();
-                        frm_Personal perfil = new frm_Personal();
+                        frm_plataforma perfil = new frm_plataforma();
                         perfil.ShowDialog();
                     }
                 }

@@ -8,35 +8,20 @@ namespace entidades
         #region PROPIEDADES / MODELO
         public int Id { get; set; }
         public System.DateTime Fecha { get; set; }
-        public Usuarios Usuario { get; set; }//todo: pensar bien la idea antes de seguir con usuarios
+        public Usuarios Usuario { get; set; }
         public TipoResiduo Tipo { get; set; }
         public int Cantidad { get; set; }
-        public Contenedor Contenedor { get; set; }// Crear clase y hacer la referencia
+        public Contenedor Contenedor { get; set; }
         public int Ticket { get; set; }
-        public int TipodeRegistro { get; set; }//si es 1 entrada, si es 2 salida (camion)
+        public int TipodeRegistro { get; set; }
         public int Creditos { get; set; }
         #endregion
-
-
-        //Registros registro;
-
-
         public Registros()
         {
-            //registro = new Registros();
+            
         }
 
         #region METODOS
-        /// <summary>
-        /// Este metodo, lo que hace es recibir, un argumento de la clase Registros, 
-        /// llamado nuevoregistro
-        /// lo que hacemos aca es instanciar un nuevo objeto "pd" de la clase Persistenciadedatos
-        /// el objeto pd, llama al metodo Llenarregistrotabla, y le pasamos el argumento.
-        /// pd llama al metodo GrabarArchivo [ nuestro xml]
-        /// </summary>
-        /// <param name="nuevoregistro"></param>
-        /// <returns>Argumento de el metodo</returns>
-        /// 
         public string GrabarRegistro(Registros registro)
         {
 
@@ -77,9 +62,6 @@ namespace entidades
 
         }
 
-        //Aca estoy yo
-        //
-        //Joya
         #endregion
 
 

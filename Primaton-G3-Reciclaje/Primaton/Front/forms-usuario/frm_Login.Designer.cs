@@ -45,7 +45,7 @@
             // linklblRegistro
             // 
             this.linklblRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linklblRegistro.LinkColor = System.Drawing.Color.FloralWhite;
+            this.linklblRegistro.LinkColor = System.Drawing.Color.DarkBlue;
             this.linklblRegistro.Location = new System.Drawing.Point(283, 278);
             this.linklblRegistro.Name = "linklblRegistro";
             this.linklblRegistro.Size = new System.Drawing.Size(287, 35);
@@ -57,7 +57,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -72,7 +72,7 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
             this.btnEntrar.FlatAppearance.BorderSize = 0;
             this.btnEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -141,7 +141,7 @@
             this.lblhora.AutoSize = true;
             this.lblhora.BackColor = System.Drawing.Color.Transparent;
             this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblhora.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblhora.ForeColor = System.Drawing.SystemColors.InfoText;
             this.lblhora.Location = new System.Drawing.Point(422, 0);
             this.lblhora.Name = "lblhora";
             this.lblhora.Size = new System.Drawing.Size(55, 25);
