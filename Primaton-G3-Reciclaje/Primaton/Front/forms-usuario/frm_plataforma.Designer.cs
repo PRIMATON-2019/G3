@@ -246,6 +246,7 @@
             this.Name = "frm_plataforma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_plataforma";
+            this.Load += new System.EventHandler(this.Frm_plataforma_Load);
             this.pnVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnMenu.ResumeLayout(false);

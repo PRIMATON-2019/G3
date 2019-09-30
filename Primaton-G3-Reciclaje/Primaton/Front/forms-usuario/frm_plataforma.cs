@@ -9,14 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Primaton.Front.Formularios;
+using entidades;
 
 namespace Primaton.Front.forms_usuario
 {
     public partial class frm_plataforma : Form
     {
+        
         public frm_plataforma()
         {
             InitializeComponent();
+            
         }
         private void Abrirforminpanel(object formhijo)
         {
@@ -71,6 +74,12 @@ namespace Primaton.Front.forms_usuario
         private void BtnRegistro_Click(object sender, EventArgs e)
         {
             Abrirforminpanel(new frm_registrodebasuras());
+        }
+
+        private void Frm_plataforma_Load(object sender, EventArgs e)
+        {
+            Abrirforminpanel(new frm_perfil());
+            
         }
     }
 }
