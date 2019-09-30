@@ -15,7 +15,8 @@ namespace Primaton.Front.Formularios
         {
             InitializeComponent();
             this.DNI = DNI;
-            
+            timer1.Start();
+
         }
 
         private void BtnPesar_Click(object sender, EventArgs e)
@@ -47,6 +48,8 @@ namespace Primaton.Front.Formularios
 
         private void BtVolver_Click(object sender, EventArgs e)
         {
+            this.Dispose();
+            this.Close();
             frm_dnimanual Volver = new frm_dnimanual();
             Volver.ShowDialog();
         }
@@ -115,7 +118,7 @@ namespace Primaton.Front.Formularios
             {
                 if (ds.Tables[0].Columns[i].ToString() == DNI)
                 {
-                    lblUser.Text = ds.Tables[0].Columns[2].ToString();
+                    lblUser.Text = ds.Tables[0].Columns[5].ToString();
                 }
             }
         }
@@ -124,6 +127,8 @@ namespace Primaton.Front.Formularios
         {
             MessageBox.Show("Al cancelar no sumarás los puntos, ¿Estás seguro de esto?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             MessageBox.Show("La operación a sido cancelada");
+            this.Dispose();
+            this.Close();
             frm_Inicial Volver = new frm_Inicial();
             Volver.ShowDialog();
         }
@@ -145,6 +150,11 @@ namespace Primaton.Front.Formularios
             btnPlastico.Enabled = true;
             btnPapel.Enabled = true;
             btnBio.Enabled = true;
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_hora.Text = DateTime.Now.ToString();
         }
     }
 }

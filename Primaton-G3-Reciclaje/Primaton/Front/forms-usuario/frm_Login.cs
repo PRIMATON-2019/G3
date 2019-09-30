@@ -28,9 +28,11 @@ namespace Primaton.Front.forms_usuario
                     if (txtDNI.Text.Equals(dni)
                         && txtPass.Text.Equals(pass))
                     {
-                        MessageBox.Show("Encontrado");
+                        MessageBox.Show("Que tengas una buena estadia.");
                         //MenuInicial mi = new MenuInicial();
                         //mi.Show();
+                        this.Dispose();
+                        this.Close();
                         frm_Personal perfil = new frm_Personal();
                         perfil.ShowDialog();
                     }
@@ -47,11 +49,14 @@ namespace Primaton.Front.forms_usuario
             txtDNI.Text = "";
             txtPass.Text = "";
             txtDNI.SelectAll();
+            this.Dispose();
             this.Close();
         }
 
         private void LinklblRegistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Dispose();
+            this.Close();
             frm_registro registro = new frm_registro();
             registro.ShowDialog();
 

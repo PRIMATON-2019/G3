@@ -15,6 +15,7 @@ namespace Primaton.Front.Formularios
         public frm_SelectBenefit()
         {
             InitializeComponent();
+            timer1.Start();
         }
 
         //ACLARACIÓN IMPORTANTE!!!!
@@ -114,6 +115,13 @@ namespace Primaton.Front.Formularios
             {
                 MessageBox.Show("Puntos insuficientes");
             }
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_hora.Text = DateTime.Now.ToString();
+            this.Dispose();
+            this.Close();
         }
     }
 }

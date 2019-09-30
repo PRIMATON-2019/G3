@@ -28,20 +28,21 @@ namespace Primaton.Front.Formularios
         #region eventos
         private void Button1_Click(object sender, EventArgs e)
         {
+            this.Dispose();
+            this.Close();
             frm_scan scaneo = new frm_scan();
             scaneo.ShowDialog();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            
             frm_dnimanual dnimanual = new frm_dnimanual();
             dnimanual.ShowDialog();
+            this.Dispose();
+            this.Close();
         }
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            frm_QR QR = new frm_QR();
-            QR.ShowDialog();
-        }
+
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frm_Login nb = new frm_Login();

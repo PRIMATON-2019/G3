@@ -61,13 +61,17 @@ namespace Primaton.Front.forms_usuario
                 db.CargaDatos(datos, 6, columnas);
 
                 MessageBox.Show("Usuario Creado.");
-
+                this.Dispose();
+                this.Close();
+                frm_Login login = new frm_Login();
+                login.ShowDialog();
             }
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            this.Close();
         }
 
         private void Timer1_Tick(object sender, EventArgs e)

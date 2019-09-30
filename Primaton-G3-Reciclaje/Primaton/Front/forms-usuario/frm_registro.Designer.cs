@@ -297,9 +297,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_recuadro;
-            this.pictureBox1.Location = new System.Drawing.Point(224, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(306, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 143);
+            this.pictureBox1.Size = new System.Drawing.Size(163, 133);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;

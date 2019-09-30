@@ -16,6 +16,7 @@ namespace Primaton.Front.Formularios
         public frm_dnimanual()
         {
             InitializeComponent();
+            timer1.Start();
         }
         #region eventos Botones
 
@@ -75,7 +76,8 @@ namespace Primaton.Front.Formularios
         {
             //Usuarios usuario = new Usuarios();
             //usuario.DNI = txt_documento.Text;
-
+            this.Dispose();
+            this.Close();
             frm_Pesaje pesaje = new frm_Pesaje(txt_documento.Text);
             pesaje.ShowDialog();
         }
@@ -83,6 +85,11 @@ namespace Primaton.Front.Formularios
         private void Pn_dni_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_hora.Text = DateTime.Now.ToString();
         }
     }
 }

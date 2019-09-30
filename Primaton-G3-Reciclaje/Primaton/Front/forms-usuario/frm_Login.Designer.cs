@@ -45,8 +45,8 @@
             // linklblRegistro
             // 
             this.linklblRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linklblRegistro.LinkColor = System.Drawing.Color.Orange;
-            this.linklblRegistro.Location = new System.Drawing.Point(233, 276);
+            this.linklblRegistro.LinkColor = System.Drawing.Color.FloralWhite;
+            this.linklblRegistro.Location = new System.Drawing.Point(283, 278);
             this.linklblRegistro.Name = "linklblRegistro";
             this.linklblRegistro.Size = new System.Drawing.Size(287, 35);
             this.linklblRegistro.TabIndex = 13;
@@ -57,7 +57,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -72,7 +72,7 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
             this.btnEntrar.FlatAppearance.BorderSize = 0;
             this.btnEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -129,9 +129,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_recuadro;
-            this.pictureBox1.Location = new System.Drawing.Point(152, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(219, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 158);
+            this.pictureBox1.Size = new System.Drawing.Size(197, 176);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -140,11 +140,11 @@
             // 
             this.lblhora.AutoSize = true;
             this.lblhora.BackColor = System.Drawing.Color.Transparent;
-            this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblhora.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblhora.Location = new System.Drawing.Point(373, 0);
+            this.lblhora.Location = new System.Drawing.Point(422, 0);
             this.lblhora.Name = "lblhora";
-            this.lblhora.Size = new System.Drawing.Size(72, 32);
+            this.lblhora.Size = new System.Drawing.Size(55, 25);
             this.lblhora.TabIndex = 17;
             this.lblhora.Text = "hora";
             // 
