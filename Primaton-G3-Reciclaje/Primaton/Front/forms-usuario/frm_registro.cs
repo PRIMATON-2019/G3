@@ -72,6 +72,8 @@ namespace Primaton.Front.forms_usuario
         {
             this.Dispose();
             this.Close();
+            frm_Login login = new frm_Login();
+            login.ShowDialog();
         }
 
         private void Timer1_Tick(object sender, EventArgs e)

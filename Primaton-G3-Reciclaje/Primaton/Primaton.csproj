@@ -44,6 +44,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +65,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Front\forms-usuario\frm_beneficios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\forms-usuario\frm_beneficios.Designer.cs">
+      <DependentUpon>frm_beneficios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front\forms-usuario\frm_registrodebasuras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\forms-usuario\frm_registrodebasuras.Designer.cs">
+      <DependentUpon>frm_registrodebasuras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front\forms-usuario\frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,24 +113,6 @@
     <Compile Include="Front\Formularios\frm_Inicial.Designer.cs">
       <DependentUpon>frm_Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Front\Formularios\frm_registros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_registros.Designer.cs">
-      <DependentUpon>frm_registros.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_SelectBenefit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_SelectBenefit.Designer.cs">
-      <DependentUpon>frm_SelectBenefit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_Personal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Front\Formularios\frm_Personal.Designer.cs">
-      <DependentUpon>frm_Personal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Front\Formularios\frm_Pesaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +139,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Front\forms-usuario\frm_beneficios.resx">
+      <DependentUpon>frm_beneficios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\forms-usuario\frm_registrodebasuras.resx">
+      <DependentUpon>frm_registrodebasuras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Front\forms-usuario\frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,15 +162,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_Inicial.resx">
       <DependentUpon>frm_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_registros.resx">
-      <DependentUpon>frm_registros.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_SelectBenefit.resx">
-      <DependentUpon>frm_SelectBenefit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Front\Formularios\frm_Personal.resx">
-      <DependentUpon>frm_Personal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\Formularios\frm_Pesaje.resx">
       <DependentUpon>frm_Pesaje.cs</DependentUpon>

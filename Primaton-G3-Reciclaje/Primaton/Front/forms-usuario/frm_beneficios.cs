@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Primaton.Front.Formularios
+namespace Primaton.Front.forms_usuario
 {
-    public partial class frm_SelectBenefit : Form
+    public partial class frm_beneficios : Form
     {
-        public frm_SelectBenefit()
+        public frm_beneficios()
         {
             InitializeComponent();
-            timer1.Start();
-        }
+            
 
+        }
         //ACLARACIÓN IMPORTANTE!!!!
 
         //Puse este valor porque no sé aún como acoplar los datos a la base xml.
@@ -25,7 +25,6 @@ namespace Primaton.Front.Formularios
         int PuntosAcumulados = 50000;
         private void BtSeleccionar_Click(object sender, EventArgs e)
         {
-
             if (chkCine.Checked & PuntosAcumulados >= 2000)
             {
                 PuntosAcumulados = PuntosAcumulados - 2000;
@@ -117,11 +116,5 @@ namespace Primaton.Front.Formularios
             }
         }
 
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-            lbl_hora.Text = DateTime.Now.ToString();
-            this.Dispose();
-            this.Close();
-        }
     }
 }

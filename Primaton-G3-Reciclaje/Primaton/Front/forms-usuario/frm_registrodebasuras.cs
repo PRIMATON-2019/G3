@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Primaton.Front.Formularios
+namespace Primaton.Front.forms_usuario
 {
-    public partial class frm_registros : Form
+    public partial class frm_registrodebasuras : Form
     {
-        public frm_registros()
+        public frm_registrodebasuras()
         {
             InitializeComponent();
+        }
+
+        private void Frm_graficos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

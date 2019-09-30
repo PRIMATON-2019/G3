@@ -28,8 +28,7 @@ namespace Primaton.Front.Formularios
         #region eventos
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            this.Close();
+            
             frm_scan scaneo = new frm_scan();
             scaneo.ShowDialog();
         }

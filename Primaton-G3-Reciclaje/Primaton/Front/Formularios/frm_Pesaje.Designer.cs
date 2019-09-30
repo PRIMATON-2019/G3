@@ -60,13 +60,17 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnAceptar.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnAceptar.FlatAppearance.BorderSize = 5;
+            this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(240, 614);
+            this.btnAceptar.Location = new System.Drawing.Point(240, 600);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(594, 108);
+            this.btnAceptar.Size = new System.Drawing.Size(594, 122);
             this.btnAceptar.TabIndex = 37;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -75,6 +79,7 @@
             // lblPeso
             // 
             this.lblPeso.AutoSize = true;
+            this.lblPeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPeso.ForeColor = System.Drawing.Color.Black;
             this.lblPeso.Location = new System.Drawing.Point(606, 478);
@@ -87,6 +92,7 @@
             // lbl_cantidad
             // 
             this.lbl_cantidad.AutoSize = true;
+            this.lbl_cantidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_cantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_cantidad.ForeColor = System.Drawing.Color.Black;
             this.lbl_cantidad.Location = new System.Drawing.Point(303, 481);
@@ -99,6 +105,7 @@
             // lblinfo
             // 
             this.lblinfo.AutoSize = true;
+            this.lblinfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblinfo.ForeColor = System.Drawing.Color.Black;
             this.lblinfo.Location = new System.Drawing.Point(431, 270);
@@ -110,16 +117,17 @@
             // 
             // btCancelar
             // 
-            this.btCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btCancelar.FlatAppearance.BorderSize = 0;
+            this.btCancelar.BackColor = System.Drawing.Color.IndianRed;
+            this.btCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btCancelar.FlatAppearance.BorderSize = 4;
             this.btCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.btCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCancelar.Location = new System.Drawing.Point(13, 319);
+            this.btCancelar.Location = new System.Drawing.Point(13, 301);
             this.btCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(172, 93);
+            this.btCancelar.Size = new System.Drawing.Size(214, 118);
             this.btCancelar.TabIndex = 33;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = false;
@@ -128,15 +136,15 @@
             // btVolver
             // 
             this.btVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btVolver.FlatAppearance.BorderSize = 0;
+            this.btVolver.FlatAppearance.BorderSize = 2;
             this.btVolver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVolver.Location = new System.Drawing.Point(13, 480);
+            this.btVolver.Location = new System.Drawing.Point(13, 481);
             this.btVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btVolver.Name = "btVolver";
-            this.btVolver.Size = new System.Drawing.Size(172, 98);
+            this.btVolver.Size = new System.Drawing.Size(214, 98);
             this.btVolver.TabIndex = 32;
             this.btVolver.Text = "Volver";
             this.btVolver.UseVisualStyleBackColor = false;
@@ -144,16 +152,17 @@
             // 
             // btFinalizar
             // 
-            this.btFinalizar.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.btFinalizar.FlatAppearance.BorderSize = 0;
+            this.btFinalizar.BackColor = System.Drawing.Color.LightGreen;
+            this.btFinalizar.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.btFinalizar.FlatAppearance.BorderSize = 5;
             this.btFinalizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btFinalizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btFinalizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LawnGreen;
             this.btFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btFinalizar.Location = new System.Drawing.Point(873, 463);
+            this.btFinalizar.Location = new System.Drawing.Point(861, 463);
             this.btFinalizar.Margin = new System.Windows.Forms.Padding(4);
             this.btFinalizar.Name = "btFinalizar";
-            this.btFinalizar.Size = new System.Drawing.Size(181, 115);
+            this.btFinalizar.Size = new System.Drawing.Size(203, 115);
             this.btFinalizar.TabIndex = 31;
             this.btFinalizar.Text = "Finalizar";
             this.btFinalizar.UseVisualStyleBackColor = false;
@@ -162,6 +171,7 @@
             // lblUser
             // 
             this.lblUser.AutoSize = true;
+            this.lblUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.Black;
             this.lblUser.Location = new System.Drawing.Point(668, 45);
@@ -174,6 +184,7 @@
             // lblPuntosAcumulados
             // 
             this.lblPuntosAcumulados.AutoSize = true;
+            this.lblPuntosAcumulados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPuntosAcumulados.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuntosAcumulados.ForeColor = System.Drawing.Color.Black;
             this.lblPuntosAcumulados.Location = new System.Drawing.Point(303, 560);
@@ -186,6 +197,7 @@
             // lblPuntosGanados
             // 
             this.lblPuntosGanados.AutoSize = true;
+            this.lblPuntosGanados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPuntosGanados.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuntosGanados.ForeColor = System.Drawing.Color.Black;
             this.lblPuntosGanados.Location = new System.Drawing.Point(303, 518);
@@ -197,15 +209,17 @@
             // 
             // btnPesar
             // 
-            this.btnPesar.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnPesar.FlatAppearance.BorderSize = 0;
+            this.btnPesar.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnPesar.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnPesar.FlatAppearance.BorderSize = 5;
+            this.btnPesar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnPesar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.btnPesar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesar.Location = new System.Drawing.Point(479, 325);
+            this.btnPesar.Location = new System.Drawing.Point(507, 330);
             this.btnPesar.Margin = new System.Windows.Forms.Padding(4);
             this.btnPesar.Name = "btnPesar";
-            this.btnPesar.Size = new System.Drawing.Size(309, 110);
+            this.btnPesar.Size = new System.Drawing.Size(263, 131);
             this.btnPesar.TabIndex = 27;
             this.btnPesar.Text = "Pesar";
             this.btnPesar.UseVisualStyleBackColor = false;
@@ -226,6 +240,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(246, 9);
@@ -239,7 +254,8 @@
             // lbl_hora
             // 
             this.lbl_hora.AutoSize = true;
-            this.lbl_hora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.ForeColor = System.Drawing.Color.DarkBlue;
             this.lbl_hora.Location = new System.Drawing.Point(831, 9);
@@ -253,7 +269,7 @@
             this.btnVidrio.BackColor = System.Drawing.Color.Teal;
             this.btnVidrio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVidrio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVidrio.Location = new System.Drawing.Point(140, 82);
+            this.btnVidrio.Location = new System.Drawing.Point(195, 80);
             this.btnVidrio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVidrio.Name = "btnVidrio";
             this.btnVidrio.Size = new System.Drawing.Size(189, 145);
@@ -267,10 +283,10 @@
             this.btnPlastico.BackColor = System.Drawing.Color.Teal;
             this.btnPlastico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlastico.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlastico.Location = new System.Drawing.Point(346, 82);
+            this.btnPlastico.Location = new System.Drawing.Point(390, 80);
             this.btnPlastico.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPlastico.Name = "btnPlastico";
-            this.btnPlastico.Size = new System.Drawing.Size(178, 145);
+            this.btnPlastico.Size = new System.Drawing.Size(178, 147);
             this.btnPlastico.TabIndex = 40;
             this.btnPlastico.Text = "Plastico";
             this.btnPlastico.UseVisualStyleBackColor = false;
@@ -281,10 +297,10 @@
             this.btnPapel.BackColor = System.Drawing.Color.Teal;
             this.btnPapel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPapel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPapel.Location = new System.Drawing.Point(540, 82);
+            this.btnPapel.Location = new System.Drawing.Point(574, 80);
             this.btnPapel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPapel.Name = "btnPapel";
-            this.btnPapel.Size = new System.Drawing.Size(180, 145);
+            this.btnPapel.Size = new System.Drawing.Size(180, 147);
             this.btnPapel.TabIndex = 41;
             this.btnPapel.Text = "Papel";
             this.btnPapel.UseVisualStyleBackColor = false;
@@ -295,10 +311,10 @@
             this.btnBio.BackColor = System.Drawing.Color.Teal;
             this.btnBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBio.Location = new System.Drawing.Point(737, 82);
+            this.btnBio.Location = new System.Drawing.Point(760, 80);
             this.btnBio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBio.Name = "btnBio";
-            this.btnBio.Size = new System.Drawing.Size(178, 145);
+            this.btnBio.Size = new System.Drawing.Size(178, 147);
             this.btnBio.TabIndex = 42;
             this.btnBio.Text = "Biodegradables";
             this.btnBio.UseVisualStyleBackColor = false;
@@ -307,6 +323,7 @@
             // lblQuepeso
             // 
             this.lblQuepeso.AutoSize = true;
+            this.lblQuepeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblQuepeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuepeso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblQuepeso.Location = new System.Drawing.Point(695, 270);
@@ -318,6 +335,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(702, 481);
@@ -329,16 +347,16 @@
             // 
             // btSeguirRec
             // 
-            this.btSeguirRec.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.btSeguirRec.BackColor = System.Drawing.Color.LightGreen;
             this.btSeguirRec.FlatAppearance.BorderSize = 0;
             this.btSeguirRec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btSeguirRec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btSeguirRec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btSeguirRec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSeguirRec.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSeguirRec.Location = new System.Drawing.Point(873, 309);
+            this.btSeguirRec.Location = new System.Drawing.Point(861, 309);
             this.btSeguirRec.Margin = new System.Windows.Forms.Padding(4);
             this.btSeguirRec.Name = "btSeguirRec";
-            this.btSeguirRec.Size = new System.Drawing.Size(181, 103);
+            this.btSeguirRec.Size = new System.Drawing.Size(203, 103);
             this.btSeguirRec.TabIndex = 45;
             this.btSeguirRec.Text = "Seguir reciclando";
             this.btSeguirRec.UseVisualStyleBackColor = false;
@@ -347,6 +365,7 @@
             // lblPtsGanados
             // 
             this.lblPtsGanados.AutoSize = true;
+            this.lblPtsGanados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPtsGanados.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPtsGanados.ForeColor = System.Drawing.Color.Black;
             this.lblPtsGanados.Location = new System.Drawing.Point(540, 515);
@@ -359,10 +378,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_recuadro;
-            this.pictureBox2.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(-4, -1);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(139, 119);
+            this.pictureBox2.Size = new System.Drawing.Size(196, 170);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 47;
             this.pictureBox2.TabStop = false;

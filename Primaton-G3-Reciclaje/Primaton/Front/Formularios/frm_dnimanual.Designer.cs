@@ -89,13 +89,16 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.BackColor = System.Drawing.Color.Teal;
+            this.btnSiguiente.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSiguiente.FlatAppearance.BorderSize = 0;
+            this.btnSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Location = new System.Drawing.Point(405, 260);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(175, 90);
+            this.btnSiguiente.Size = new System.Drawing.Size(175, 121);
             this.btnSiguiente.TabIndex = 14;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
@@ -117,6 +120,7 @@
             // btn_0
             // 
             this.btn_0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_0.FlatAppearance.BorderSize = 0;
             this.btn_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_0.Location = new System.Drawing.Point(181, 418);
             this.btn_0.Margin = new System.Windows.Forms.Padding(4);
@@ -130,6 +134,7 @@
             // btn_9
             // 
             this.btn_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_9.FlatAppearance.BorderSize = 0;
             this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_9.Location = new System.Drawing.Point(283, 340);
             this.btn_9.Margin = new System.Windows.Forms.Padding(4);
@@ -155,6 +160,7 @@
             // btn_8
             // 
             this.btn_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_8.FlatAppearance.BorderSize = 0;
             this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_8.Location = new System.Drawing.Point(181, 340);
             this.btn_8.Margin = new System.Windows.Forms.Padding(4);
@@ -168,6 +174,7 @@
             // btn_7
             // 
             this.btn_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_7.FlatAppearance.BorderSize = 0;
             this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_7.Location = new System.Drawing.Point(80, 340);
             this.btn_7.Margin = new System.Windows.Forms.Padding(4);
@@ -194,6 +201,7 @@
             // btn_3
             // 
             this.btn_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_3.FlatAppearance.BorderSize = 0;
             this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_3.Location = new System.Drawing.Point(283, 180);
             this.btn_3.Margin = new System.Windows.Forms.Padding(4);
@@ -207,6 +215,7 @@
             // btn_6
             // 
             this.btn_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_6.FlatAppearance.BorderSize = 0;
             this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_6.Location = new System.Drawing.Point(283, 260);
             this.btn_6.Margin = new System.Windows.Forms.Padding(4);
@@ -220,6 +229,7 @@
             // btn_2
             // 
             this.btn_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_2.FlatAppearance.BorderSize = 0;
             this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_2.Location = new System.Drawing.Point(181, 180);
             this.btn_2.Margin = new System.Windows.Forms.Padding(4);
@@ -233,6 +243,7 @@
             // btn_5
             // 
             this.btn_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_5.FlatAppearance.BorderSize = 0;
             this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_5.Location = new System.Drawing.Point(181, 260);
             this.btn_5.Margin = new System.Windows.Forms.Padding(4);
@@ -246,6 +257,7 @@
             // btn_4
             // 
             this.btn_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_4.FlatAppearance.BorderSize = 0;
             this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_4.Location = new System.Drawing.Point(80, 260);
             this.btn_4.Margin = new System.Windows.Forms.Padding(4);
@@ -259,6 +271,7 @@
             // btn_1
             // 
             this.btn_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(224)))));
+            this.btn_1.FlatAppearance.BorderSize = 0;
             this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_1.Location = new System.Drawing.Point(80, 180);
             this.btn_1.Margin = new System.Windows.Forms.Padding(4);

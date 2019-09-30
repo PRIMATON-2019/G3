@@ -57,21 +57,20 @@ namespace Primaton.Front.forms_usuario
             this.Close();
         }
 
-        private void PbMenu_Click(object sender, EventArgs e)
-        {
-            if (pnVertical.Width==250)
-            {
-                pnVertical.Width = 85;
-            }
-            else
-            {
-                pnVertical.Width = 250;
-            }
-        }
 
         private void BtBeneficio_Click(object sender, EventArgs e)
         {
-            Abrirforminpanel(new frm_SelectBenefit());
+            Abrirforminpanel(new frm_beneficios());
+        }
+
+        private void BtnPerfil_Click(object sender, EventArgs e)
+        {
+            Abrirforminpanel(new frm_perfil());
+        }
+
+        private void BtnRegistro_Click(object sender, EventArgs e)
+        {
+            Abrirforminpanel(new frm_registrodebasuras());
         }
     }
 }
