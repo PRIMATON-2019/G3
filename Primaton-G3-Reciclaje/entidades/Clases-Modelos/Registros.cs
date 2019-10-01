@@ -30,7 +30,7 @@ namespace entidades
                 registro.Id.ToString(),
                 registro.Fecha.ToString(),
                 registro.Usuario.DNI,
-                registro.Tipo.Id.ToString(),
+                registro.Tipo.Nombre,
                 registro.Cantidad.ToString(),
                 registro.Creditos.ToString(),
                 

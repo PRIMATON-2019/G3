@@ -11,6 +11,7 @@ namespace Primaton.Front.Formularios
         int suma = 0;
         bool Select = false;
         public string DNI;
+        private string tipobasura;
         public frm_Pesaje(string DNI)
         {
             InitializeComponent();
@@ -66,7 +67,7 @@ namespace Primaton.Front.Formularios
             Contenedor contenedor = new Contenedor();
             TipoResiduo tipo = new TipoResiduo();
             Registros registro = new Registros();
-            tipo.Id = 1;
+            tipo.Nombre = tipobasura;
             contenedor.Id = 1;
             contenedor.tamanio = 100;
             usuario.DNI = DNI;
@@ -88,6 +89,7 @@ namespace Primaton.Front.Formularios
             lblQuepeso.Text = "Vidrio";
             lblPuntosGanados.Visible = true;
             Select = true;
+            tipobasura = "vidrio";
         }
 
         private void BtnPlastico_Click(object sender, EventArgs e)
@@ -95,6 +97,7 @@ namespace Primaton.Front.Formularios
             lblQuepeso.Text = "Plastico";
             lblPuntosGanados.Visible = true;
             Select = true;
+            tipobasura = "plastico";
         }
 
         //Cuando se hace clic en acepatar se va a mostrar la cantidad de puntos que se estarían sumando
@@ -103,6 +106,7 @@ namespace Primaton.Front.Formularios
             lblQuepeso.Text = "Papel";
             lblPuntosGanados.Visible = true;
             Select = true;
+            tipobasura = "plastico";
         }
 
         private void BtnBio_Click(object sender, EventArgs e)
@@ -110,6 +114,7 @@ namespace Primaton.Front.Formularios
             lblQuepeso.Text = "Bio-degradables";
             lblPuntosGanados.Visible = true;
             Select = true;
+            tipobasura = "bio";
         }
 
         private void Frm_Pesaje_Load(object sender, EventArgs e)

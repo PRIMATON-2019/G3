@@ -13,6 +13,7 @@ namespace entidades
         public DataTable Tabla;
         
         public string NombreArchivo;
+        public DataSet ds;
         #endregion
 
         /// <summary>
@@ -35,7 +36,7 @@ namespace entidades
             
             ConfiguracionInicial(cantColumnas, columnas);
         }
-        private void ConfiguracionInicial(int cantColumnas, string[] columnas)
+        public void ConfiguracionInicial(int cantColumnas, string[] columnas)
         {
             // Diseñamos la Tabla 
             for (int i = 0; i < cantColumnas; i++)
@@ -63,7 +64,16 @@ namespace entidades
             }
             GrabarArchivo();
         }
-
+        public DataSet SoloLeer(string nombreArch)
+        {
+                ds = new DataSet();
+            if (System.IO.File.Exists(nombreArch + ".xml"))
+            {
+                ds.ReadXml(@"registros.xml");
+                //Tabla.ReadXml(@"Registros.xml");
+            }
+                return ds;
+        }
         public void LeerArchivo()
         {
             if (System.IO.File.Exists(NombreArchivo + ".xml"))
@@ -77,7 +87,7 @@ namespace entidades
                 GrabarArchivo();
             }
         }
-        public void GrabarArchivo()
+        public void GrabarArchivo() 
         {
             //string NombreArchivo = "Cuentas";
             Tabla.WriteXml(NombreArchivo + ".xml");
