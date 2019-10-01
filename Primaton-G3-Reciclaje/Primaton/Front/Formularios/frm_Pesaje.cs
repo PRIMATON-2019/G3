@@ -82,7 +82,7 @@ namespace Primaton.Front.Formularios
             registro.GrabarRegistro(registro);
 
 
-            frm_beneficios beneficios = new frm_beneficios(lblPuntosAcumulados.ToString());
+            frm_beneficios beneficios = new frm_beneficios();
             beneficios.ShowDialog();
            
         }
