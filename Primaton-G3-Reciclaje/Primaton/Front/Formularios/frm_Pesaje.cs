@@ -129,7 +129,7 @@ namespace Primaton.Front.Formularios
             {
                 if (ds.Tables[0].Columns[i].ToString() == DNI)
                 {
-                    lblUser.Text = ds.Tables[0].Columns[5].ToString();
+                    //lblUser.Text = ds.Tables[0].Columns[5].ToString();
                 }
             }
         }
