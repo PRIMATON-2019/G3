@@ -1,4 +1,5 @@
 ﻿using entidades;
+using Primaton.Front.forms_usuario;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -80,7 +81,9 @@ namespace Primaton.Front.Formularios
             registro.GrabarRegistro(registro);
 
 
-            
+            frm_beneficios beneficios = new frm_beneficios(lblPuntosAcumulados.ToString());
+            beneficios.ShowDialog();
+           
         }
 
         private void BtnVidrio_Click(object sender, EventArgs e)

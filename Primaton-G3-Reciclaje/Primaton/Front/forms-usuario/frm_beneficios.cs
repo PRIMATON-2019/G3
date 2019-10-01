@@ -12,105 +12,112 @@ namespace Primaton.Front.forms_usuario
 {
     public partial class frm_beneficios : Form
     {
-        public frm_beneficios()
+        private readonly int puntosLocal;
+
+        public frm_beneficios(string puntos)
         {
             InitializeComponent();
-            
-
+            this.puntosLocal = System.Convert.ToInt32(puntos);
         }
+
+
+
         //ACLARACIÓN IMPORTANTE!!!!
 
         //Puse este valor porque no sé aún como acoplar los datos a la base xml.
         //Ahora estoy viendo bien el programa y apenas sepa como llamarla lo arreglo
-        int PuntosAcumulados = 50000;
+
+
+
+
         private void BtSeleccionar_Click(object sender, EventArgs e)
         {
-            if (chkCine.Checked & PuntosAcumulados >= 2000)
+            if (chkCine.Checked & puntosLocal >= 2000)
             {
-                PuntosAcumulados = PuntosAcumulados - 2000;
+                lblSaldo.Text = Convert.ToString(puntosLocal - 2000);
                 MessageBox.Show("¡Felicitaciones! El canje se realizó correctamente");
             }
-            else if (chkCine.Checked & PuntosAcumulados < 2000)
+            else if (chkCine.Checked & puntosLocal < 2000)
             {
                 MessageBox.Show("Puntos insuficientes");
             }
 
-            if (chkDisco.Checked & PuntosAcumulados >= 7500)
+            if (chkDisco.Checked & puntosLocal >= 7500)
             {
-                PuntosAcumulados = PuntosAcumulados - 7500;
+                lblSaldo.Text = Convert.ToString(puntosLocal - 7500);
                 MessageBox.Show("¡Felicitaciones! El canje se realizó correctamente");
             }
-            else if (chkDisco.Checked & PuntosAcumulados < 7500)
+            else if (chkDisco.Checked & puntosLocal < 7500)
             {
                 MessageBox.Show("Puntos insuficientes");
             }
 
-            if (chkMc.Checked & PuntosAcumulados >= 3000)
+            if (chkMc.Checked & puntosLocal >= 3000)
             {
-                PuntosAcumulados = PuntosAcumulados - 3000;
+                lblSaldo.Text = Convert.ToString(puntosLocal - 3000);
                 MessageBox.Show("¡Felicitaciones! El canje se realizó correctamente");
             }
-            else if (chkMc.Checked & PuntosAcumulados < 3000)
+            else if (chkMc.Checked & puntosLocal < 3000)
             {
                 MessageBox.Show("Puntos insuficientes");
             }
 
-            if (chkVaq.Checked & PuntosAcumulados >= 5000)
+            if (chkVaq.Checked & puntosLocal >= 5000)
             {
-                PuntosAcumulados = PuntosAcumulados - 5000;
+                lblSaldo.Text = Convert.ToString(puntosLocal - 5000);
                 MessageBox.Show("¡Felicitaciones! El canje se realizó correctamente");
             }
-            else if (chkVaq.Checked & PuntosAcumulados < 5000)
+            else if (chkVaq.Checked & puntosLocal < 5000)
             {
                 MessageBox.Show("Puntos insuficientes");
             }
 
-            if (chkVenex.Checked & PuntosAcumulados >= 10000)
+            if (chkVenex.Checked & puntosLocal >= 10000)
             {
-                PuntosAcumulados = PuntosAcumulados - 10000;
+                lblSaldo.Text = Convert.ToString(puntosLocal - 10000);
                 MessageBox.Show("¡Felicitaciones! El canje se realizó correctamente");
             }
-            else if (chkVenex.Checked & PuntosAcumulados < 10000)
+            else if (chkVenex.Checked & puntosLocal < 10000)
             {
                 MessageBox.Show("Puntos insuficientes");
             }
 
-            if (chkDexter.Checked & PuntosAcumulados >= 9000)
+            if (chkDexter.Checked & puntosLocal >= 9000)
             {
-                PuntosAcumulados = PuntosAcumulados - 9000;
+                lblSaldo.Text = Convert.ToString(puntosLocal - 9000);
                 MessageBox.Show("¡Felicitaciones! El canje se realizó correctamente");
             }
-            else if (chkDexter.Checked & PuntosAcumulados < 9000)
+            else if (chkDexter.Checked & puntosLocal < 9000)
             {
                 MessageBox.Show("Puntos insuficientes");
             }
 
-            if (chkBalcon.Checked & PuntosAcumulados >= 8000)
+            if (chkBalcon.Checked & puntosLocal >= 8000)
             {
-                PuntosAcumulados = PuntosAcumulados - 8000;
+                lblSaldo.Text = Convert.ToString(puntosLocal - 8000);
                 MessageBox.Show("¡Felicitaciones! El canje se realizó correctamente");
             }
-            else if (chkBalcon.Checked & PuntosAcumulados < 8000)
+            else if (chkBalcon.Checked & puntosLocal < 8000)
             {
                 MessageBox.Show("Puntos insuficientes");
             }
 
-            if (chkGarba.Checked & PuntosAcumulados >= 15000)
+            if (chkGarba.Checked & puntosLocal >= 15000)
             {
-                PuntosAcumulados = PuntosAcumulados - 15000;
+                lblSaldo.Text = Convert.ToString (puntosLocal - 15000);
                 MessageBox.Show("¡Felicitaciones! El canje se realizó correctamente");
             }
-            else if (chkGarba.Checked & PuntosAcumulados < 15000)
+            else if (chkGarba.Checked & puntosLocal < 15000)
             {
                 MessageBox.Show("Puntos insuficientes");
             }
 
-            if (chkCarre.Checked & PuntosAcumulados >= 7500)
+            if (chkCarre.Checked & puntosLocal >= 7500)
             {
-                PuntosAcumulados = PuntosAcumulados - 7500;
+                lblSaldo.Text = Convert.ToString(puntosLocal - 7500);
                 MessageBox.Show("¡Felicitaciones! El canje se realizó correctamente");
             }
-            else if (chkCarre.Checked & PuntosAcumulados < 7500)
+            else if (chkCarre.Checked & puntosLocal < 7500)
             {
                 MessageBox.Show("Puntos insuficientes");
             }

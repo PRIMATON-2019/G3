@@ -63,7 +63,7 @@ namespace Primaton.Front.forms_usuario
 
         private void BtBeneficio_Click(object sender, EventArgs e)
         {
-            Abrirforminpanel(new frm_beneficios());
+            Abrirforminpanel(new frm_beneficios(lblPuntosAcumulados()));
         }
 
         private void BtnPerfil_Click(object sender, EventArgs e)
