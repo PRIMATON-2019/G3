@@ -30,7 +30,7 @@ namespace Primaton.Front.Formularios
             else
             {
                 Random rdm = new Random();
-                int ingreso = rdm.Next(1, 10000);
+                int ingreso = rdm.Next(1, 5000);
                 lblPeso.Text = ingreso.ToString();
 
                 btnVidrio.Enabled = false;
