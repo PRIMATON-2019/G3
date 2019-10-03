@@ -12,9 +12,14 @@ namespace Primaton.Front.Formularios
 {
     public partial class frm_QR : Form
     {
-        public frm_QR()
+        private readonly string creditosenqr;
+
+        public frm_QR(string creditos)
         {
             InitializeComponent();
+            this.creditosenqr = creditos;
+            txt_qr.Text = creditos;
+            timer1.Start();
         }
 
         /// <summary>
@@ -24,7 +29,7 @@ namespace Primaton.Front.Formularios
         /// <param name="sender"></param>
         /// <param name="e"></param>
         #region CODIGOS GENERADOR
-
+        
         public void GenerarQR(string dni)
         {
             Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
@@ -46,12 +51,22 @@ namespace Primaton.Front.Formularios
 
         private void Btn_barcode_Click(object sender, EventArgs e)
         {
-            Zen.Barcode.Code128BarcodeDraw barcode = Zen.Barcode.BarcodeDrawFactory.Code128WithChecksum;
-            pictureBox1.Image = barcode.Draw(txt_barcode.Text, 50);
+            //Zen.Barcode.Code128BarcodeDraw barcode = Zen.Barcode.BarcodeDrawFactory.Code128WithChecksum;
+            //pictureBox1.Image = barcode.Draw(txt_barcode.Text, 50);
             //Codigo de barras solamente usando zXING
             //BarcodeWriter codigo = new BarcodeWriter() { Format = BarcodeFormat.CODE_128 };
             //pictureBox1.Image = codigo.Write(txt_encode.Text);
         }
         #endregion
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_hora.Text = DateTime.Now.ToString();
+        }
+
+        private void BtCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -83,6 +83,26 @@ namespace Primaton.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Close_Window__2_48px1 {
+            get {
+                object obj = ResourceManager.GetObject("Close Window_ 2 48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Close_Window__2_48px2 {
+            get {
+                object obj = ResourceManager.GetObject("Close Window_ 2 48px2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Combo_Chart_64px {
             get {
                 object obj = ResourceManager.GetObject("Combo Chart_64px", resourceCulture);

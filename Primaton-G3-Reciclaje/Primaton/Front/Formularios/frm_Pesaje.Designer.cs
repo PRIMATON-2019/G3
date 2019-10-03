@@ -48,11 +48,12 @@
             this.btnBio = new System.Windows.Forms.Button();
             this.lblQuepeso = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btSeguirRec = new System.Windows.Forms.Button();
             this.lblPtsGanados = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -64,11 +65,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lbldni = new System.Windows.Forms.Label();
+            this.btCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAceptar
@@ -177,10 +181,10 @@
             this.btFinalizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btFinalizar.Location = new System.Drawing.Point(810, 337);
+            this.btFinalizar.Location = new System.Drawing.Point(810, 506);
             this.btFinalizar.Margin = new System.Windows.Forms.Padding(4);
             this.btFinalizar.Name = "btFinalizar";
-            this.btFinalizar.Size = new System.Drawing.Size(237, 135);
+            this.btFinalizar.Size = new System.Drawing.Size(251, 210);
             this.btFinalizar.TabIndex = 31;
             this.btFinalizar.Text = "Finalizar";
             this.btFinalizar.UseVisualStyleBackColor = false;
@@ -238,7 +242,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(-5, -1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(380, 322);
+            this.pictureBox1.Size = new System.Drawing.Size(359, 322);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
@@ -265,10 +269,10 @@
             this.btnVidrio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnVidrio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVidrio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVidrio.Location = new System.Drawing.Point(381, 161);
+            this.btnVidrio.Location = new System.Drawing.Point(360, 161);
             this.btnVidrio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVidrio.Name = "btnVidrio";
-            this.btnVidrio.Size = new System.Drawing.Size(190, 160);
+            this.btnVidrio.Size = new System.Drawing.Size(199, 160);
             this.btnVidrio.TabIndex = 39;
             this.btnVidrio.Text = "Vidrio";
             this.btnVidrio.UseVisualStyleBackColor = false;
@@ -283,10 +287,10 @@
             this.btnPlastico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnPlastico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlastico.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlastico.Location = new System.Drawing.Point(381, -1);
+            this.btnPlastico.Location = new System.Drawing.Point(360, -1);
             this.btnPlastico.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPlastico.Name = "btnPlastico";
-            this.btnPlastico.Size = new System.Drawing.Size(190, 160);
+            this.btnPlastico.Size = new System.Drawing.Size(199, 160);
             this.btnPlastico.TabIndex = 40;
             this.btnPlastico.Text = "Plastico";
             this.btnPlastico.UseVisualStyleBackColor = false;
@@ -301,10 +305,10 @@
             this.btnPapel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnPapel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPapel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPapel.Location = new System.Drawing.Point(577, -1);
+            this.btnPapel.Location = new System.Drawing.Point(565, -1);
             this.btnPapel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPapel.Name = "btnPapel";
-            this.btnPapel.Size = new System.Drawing.Size(190, 160);
+            this.btnPapel.Size = new System.Drawing.Size(209, 160);
             this.btnPapel.TabIndex = 41;
             this.btnPapel.Text = "Papel";
             this.btnPapel.UseVisualStyleBackColor = false;
@@ -319,10 +323,10 @@
             this.btnBio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBio.Location = new System.Drawing.Point(577, 161);
+            this.btnBio.Location = new System.Drawing.Point(565, 161);
             this.btnBio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBio.Name = "btnBio";
-            this.btnBio.Size = new System.Drawing.Size(190, 160);
+            this.btnBio.Size = new System.Drawing.Size(209, 160);
             this.btnBio.TabIndex = 42;
             this.btnBio.Text = "Bio - Deg.";
             this.btnBio.UseVisualStyleBackColor = false;
@@ -352,26 +356,6 @@
             this.label2.Size = new System.Drawing.Size(68, 38);
             this.label2.TabIndex = 44;
             this.label2.Text = "Grs.";
-            // 
-            // btSeguirRec
-            // 
-            this.btSeguirRec.BackColor = System.Drawing.Color.Gray;
-            this.btSeguirRec.Enabled = false;
-            this.btSeguirRec.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btSeguirRec.FlatAppearance.BorderSize = 0;
-            this.btSeguirRec.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btSeguirRec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btSeguirRec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btSeguirRec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSeguirRec.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSeguirRec.Location = new System.Drawing.Point(810, 566);
-            this.btSeguirRec.Margin = new System.Windows.Forms.Padding(4);
-            this.btSeguirRec.Name = "btSeguirRec";
-            this.btSeguirRec.Size = new System.Drawing.Size(237, 136);
-            this.btSeguirRec.TabIndex = 45;
-            this.btSeguirRec.Text = "Seguir reciclando";
-            this.btSeguirRec.UseVisualStyleBackColor = false;
-            this.btSeguirRec.Click += new System.EventHandler(this.BtSeguirRec_Click);
             // 
             // lblPtsGanados
             // 
@@ -422,26 +406,42 @@
             this.panel1.Size = new System.Drawing.Size(505, 387);
             this.panel1.TabIndex = 48;
             // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label14.Location = new System.Drawing.Point(495, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(10, 393);
+            this.label14.TabIndex = 60;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.label13.Location = new System.Drawing.Point(-3, 377);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(515, 10);
+            this.label13.TabIndex = 60;
+            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.GrayText;
-            this.label1.Location = new System.Drawing.Point(375, 317);
+            this.label1.Location = new System.Drawing.Point(360, 313);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(399, 10);
+            this.label1.Size = new System.Drawing.Size(414, 14);
             this.label1.TabIndex = 49;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label3.Location = new System.Drawing.Point(377, 154);
+            this.label3.Location = new System.Drawing.Point(360, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(397, 10);
+            this.label3.Size = new System.Drawing.Size(402, 10);
             this.label3.TabIndex = 50;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label4.Location = new System.Drawing.Point(375, -1);
+            this.label4.Location = new System.Drawing.Point(353, -1);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(10, 328);
             this.label4.TabIndex = 51;
@@ -457,17 +457,17 @@
             // label6
             // 
             this.label6.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label6.Location = new System.Drawing.Point(375, -1);
+            this.label6.Location = new System.Drawing.Point(356, -1);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(399, 10);
+            this.label6.Size = new System.Drawing.Size(418, 10);
             this.label6.TabIndex = 53;
             // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label7.Location = new System.Drawing.Point(566, 6);
+            this.label7.Location = new System.Drawing.Point(558, 6);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(15, 321);
+            this.label7.Size = new System.Drawing.Size(10, 321);
             this.label7.TabIndex = 54;
             // 
             // label8
@@ -510,21 +510,48 @@
             this.label12.Size = new System.Drawing.Size(12, 387);
             this.label12.TabIndex = 59;
             // 
-            // label13
+            // panel2
             // 
-            this.label13.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label13.Location = new System.Drawing.Point(-3, 377);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(515, 10);
-            this.label13.TabIndex = 60;
+            this.panel2.BackColor = System.Drawing.Color.DimGray;
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.lbldni);
+            this.panel2.Location = new System.Drawing.Point(809, 333);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(246, 156);
+            this.panel2.TabIndex = 60;
             // 
-            // label14
+            // label15
             // 
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label14.Location = new System.Drawing.Point(495, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(10, 393);
-            this.label14.TabIndex = 60;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(26, 7);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(90, 25);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Usuario: ";
+            // 
+            // lbldni
+            // 
+            this.lbldni.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldni.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbldni.Location = new System.Drawing.Point(3, 54);
+            this.lbldni.Name = "lbldni";
+            this.lbldni.Size = new System.Drawing.Size(236, 101);
+            this.lbldni.TabIndex = 0;
+            this.lbldni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btCerrar
+            // 
+            this.btCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCerrar.Image = global::Primaton.Properties.Resources.Close_Window__2_48px2;
+            this.btCerrar.Location = new System.Drawing.Point(1010, 6);
+            this.btCerrar.Name = "btCerrar";
+            this.btCerrar.Size = new System.Drawing.Size(51, 51);
+            this.btCerrar.TabIndex = 61;
+            this.btCerrar.UseVisualStyleBackColor = true;
+            this.btCerrar.Click += new System.EventHandler(this.BtCerrar_Click);
             // 
             // frm_Pesaje
             // 
@@ -532,6 +559,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1067, 725);
+            this.Controls.Add(this.btCerrar);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -546,7 +575,6 @@
             this.Controls.Add(this.btFinalizar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btSeguirRec);
             this.Controls.Add(this.btnBio);
             this.Controls.Add(this.btnPapel);
             this.Controls.Add(this.btnPlastico);
@@ -555,16 +583,18 @@
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btVolver);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Pesaje";
-            this.Text = "frm_pesajevidrio";
             this.Load += new System.EventHandler(this.Frm_Pesaje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -589,7 +619,6 @@
         private System.Windows.Forms.Button btnBio;
         private System.Windows.Forms.Label lblQuepeso;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btSeguirRec;
         private System.Windows.Forms.Label lblPtsGanados;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Timer timer1;
@@ -607,5 +636,9 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lbldni;
+        private System.Windows.Forms.Button btCerrar;
     }
 }

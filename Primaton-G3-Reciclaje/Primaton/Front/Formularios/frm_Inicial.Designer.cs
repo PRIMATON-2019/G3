@@ -188,7 +188,6 @@
             this.MinimizeBox = false;
             this.Name = "frm_Inicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_Inicial";
             this.Load += new System.EventHandler(this.Frm_Inicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

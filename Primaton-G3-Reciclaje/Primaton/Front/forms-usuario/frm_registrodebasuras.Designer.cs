@@ -62,7 +62,7 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(40, 28);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 32);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;

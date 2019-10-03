@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_hora = new System.Windows.Forms.Label();
+            this.btCerrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -40,13 +41,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.panel1.Controls.Add(this.btCerrar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lbl_hora);
-            this.panel1.Location = new System.Drawing.Point(3, -2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(565, 548);
+            this.panel1.Size = new System.Drawing.Size(565, 543);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -86,17 +89,30 @@
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btCerrar
+            // 
+            this.btCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCerrar.Image = global::Primaton.Properties.Resources.Close_Window__2_48px2;
+            this.btCerrar.Location = new System.Drawing.Point(511, 3);
+            this.btCerrar.Name = "btCerrar";
+            this.btCerrar.Size = new System.Drawing.Size(51, 51);
+            this.btCerrar.TabIndex = 17;
+            this.btCerrar.UseVisualStyleBackColor = true;
+            this.btCerrar.Click += new System.EventHandler(this.BtCerrar_Click);
+            // 
             // frm_quienessomos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 543);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_quienessomos";
-            this.Text = "frm_quienessomos";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -110,5 +126,6 @@
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btCerrar;
     }
 }

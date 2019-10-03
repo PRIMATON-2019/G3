@@ -48,7 +48,7 @@ namespace Primaton.Front.Formularios
             peso = Math.Round(peso * 0.4);
             lblPtsGanados.Text = Convert.ToString(peso);
             btFinalizar.Enabled = true;
-            btSeguirRec.Enabled = true;
+            
         }
 
         private void BtVolver_Click(object sender, EventArgs e)
@@ -82,8 +82,8 @@ namespace Primaton.Front.Formularios
             registro.GrabarRegistro(registro);
 
 
-            frm_beneficios beneficios = new frm_beneficios();
-            beneficios.ShowDialog();
+            frm_QR Qr = new frm_QR(registro.Creditos.ToString());
+            Qr.ShowDialog();
            
         }
 
@@ -122,16 +122,16 @@ namespace Primaton.Front.Formularios
 
         private void Frm_Pesaje_Load(object sender, EventArgs e)
         {
-
-            Persistencia pdd = new Persistencia();
-            DataSet ds = pdd.BuscarDatos("Cuentas");
-            for (int i = 0; i < ds.Tables[0].Columns.Count; i++)
-            {
-                if (ds.Tables[0].Columns[i].ToString() == DNI)
-                {
-                    //lblUser.Text = ds.Tables[0].Columns[5].ToString();
-                }
-            }
+            lbldni.Text = DNI;
+            //Persistencia pdd = new Persistencia();
+            //DataSet ds = pdd.BuscarDatos("Cuentas");
+            //for (int i = 0; i < ds.Tables[0].Columns.Count; i++)
+            //{
+            //    if (ds.Tables[0].Columns[i].ToString() == DNI)
+            //    {
+            //        //lblUser.Text = ds.Tables[0].Columns[5].ToString();
+            //    }
+            //}
         }
 
         private void BtCancelar_Click(object sender, EventArgs e)
@@ -146,26 +146,31 @@ namespace Primaton.Front.Formularios
 
         private void BtSeguirRec_Click(object sender, EventArgs e)
         {
-            int point = 0;
+            //int point = 0;
 
-            lblQuepeso.Text = "";
-            lblPeso.Text = "";
+            //lblQuepeso.Text = "";
+            //lblPeso.Text = "";
 
-            point = Convert.ToInt32(lblPtsGanados.Text);
-            suma = suma + point;
+            //point = Convert.ToInt32(lblPtsGanados.Text);
+            //suma = suma + point;
 
-            lblPuntosAcumulados.Text = "Puntos Acumulados: " + Convert.ToString(suma);
-            lblPtsGanados.Text = "";
+            //lblPuntosAcumulados.Text = "Puntos Acumulados: " + Convert.ToString(suma);
+            //lblPtsGanados.Text = "";
 
-            btnVidrio.Enabled = true;
-            btnPlastico.Enabled = true;
-            btnPapel.Enabled = true;
-            btnBio.Enabled = true;
+            //btnVidrio.Enabled = true;
+            //btnPlastico.Enabled = true;
+            //btnPapel.Enabled = true;
+            //btnBio.Enabled = true;
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
             lbl_hora.Text = DateTime.Now.ToString();
+        }
+
+        private void BtCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
