@@ -130,9 +130,9 @@
             this.label1.BackColor = System.Drawing.Color.CadetBlue;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(-6, 268);
+            this.label1.Location = new System.Drawing.Point(-12, 268);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 244);
+            this.label1.Size = new System.Drawing.Size(33, 244);
             this.label1.TabIndex = 5;
             // 
             // label2

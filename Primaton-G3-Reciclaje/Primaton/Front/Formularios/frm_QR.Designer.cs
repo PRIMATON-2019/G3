@@ -38,7 +38,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btCerrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -111,7 +110,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.Controls.Add(this.btCerrar);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.lbl_hora);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -146,19 +144,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // btCerrar
-            // 
-            this.btCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCerrar.Image = global::Primaton.Properties.Resources.Close_Window__2_48px2;
-            this.btCerrar.Location = new System.Drawing.Point(574, 3);
-            this.btCerrar.Name = "btCerrar";
-            this.btCerrar.Size = new System.Drawing.Size(51, 51);
-            this.btCerrar.TabIndex = 17;
-            this.btCerrar.UseVisualStyleBackColor = true;
-            this.btCerrar.Click += new System.EventHandler(this.BtCerrar_Click);
-            // 
             // frm_QR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -166,7 +151,6 @@
             this.ClientSize = new System.Drawing.Size(628, 528);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -191,6 +175,5 @@
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button btCerrar;
     }
 }

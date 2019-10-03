@@ -68,7 +68,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.lbldni = new System.Windows.Forms.Label();
-            this.btCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -100,7 +99,7 @@
             this.lblPeso.AutoSize = true;
             this.lblPeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPeso.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPeso.ForeColor = System.Drawing.Color.Lime;
+            this.lblPeso.ForeColor = System.Drawing.Color.Yellow;
             this.lblPeso.Location = new System.Drawing.Point(320, 141);
             this.lblPeso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPeso.Name = "lblPeso";
@@ -540,26 +539,12 @@
             this.lbldni.TabIndex = 0;
             this.lbldni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btCerrar
-            // 
-            this.btCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCerrar.Image = global::Primaton.Properties.Resources.Close_Window__2_48px2;
-            this.btCerrar.Location = new System.Drawing.Point(1010, 6);
-            this.btCerrar.Name = "btCerrar";
-            this.btCerrar.Size = new System.Drawing.Size(51, 51);
-            this.btCerrar.TabIndex = 61;
-            this.btCerrar.UseVisualStyleBackColor = true;
-            this.btCerrar.Click += new System.EventHandler(this.BtCerrar_Click);
-            // 
             // frm_Pesaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1067, 725);
-            this.Controls.Add(this.btCerrar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -583,7 +568,6 @@
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btVolver);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -639,6 +623,5 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lbldni;
-        private System.Windows.Forms.Button btCerrar;
     }
 }

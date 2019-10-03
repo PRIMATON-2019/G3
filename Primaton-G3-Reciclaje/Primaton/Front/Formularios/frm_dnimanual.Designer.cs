@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pn_dni = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.btn_0 = new System.Windows.Forms.Button();
@@ -45,8 +46,6 @@
             this.btn_4 = new System.Windows.Forms.Button();
             this.btn_1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btCerrar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pn_dni.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +53,6 @@
             // pn_dni
             // 
             this.pn_dni.BackColor = System.Drawing.Color.DarkGray;
-            this.pn_dni.Controls.Add(this.btCerrar);
             this.pn_dni.Controls.Add(this.pictureBox1);
             this.pn_dni.Controls.Add(this.btnSiguiente);
             this.pn_dni.Controls.Add(this.lbl_hora);
@@ -78,6 +76,17 @@
             this.pn_dni.TabIndex = 11;
             this.pn_dni.Paint += new System.Windows.Forms.PaintEventHandler(this.Pn_dni_Paint);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_recuadro;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnSiguiente
             // 
             this.btnSiguiente.BackColor = System.Drawing.SystemColors.ButtonShadow;
@@ -87,7 +96,7 @@
             this.btnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(397, 260);
+            this.btnSiguiente.Location = new System.Drawing.Point(389, 259);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(191, 132);
@@ -279,43 +288,17 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // btCerrar
-            // 
-            this.btCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCerrar.Image = global::Primaton.Properties.Resources.Close_Window__2_48px2;
-            this.btCerrar.Location = new System.Drawing.Point(541, 0);
-            this.btCerrar.Name = "btCerrar";
-            this.btCerrar.Size = new System.Drawing.Size(51, 51);
-            this.btCerrar.TabIndex = 16;
-            this.btCerrar.UseVisualStyleBackColor = true;
-            this.btCerrar.Click += new System.EventHandler(this.BtCerrar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_recuadro;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 127);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
             // frm_dnimanual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 526);
             this.Controls.Add(this.pn_dni);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_dnimanual";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_dnimanual";
             this.pn_dni.ResumeLayout(false);
             this.pn_dni.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -342,6 +325,5 @@
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button btCerrar;
     }
 }

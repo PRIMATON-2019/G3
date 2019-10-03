@@ -77,7 +77,7 @@ namespace Primaton.Front.Formularios
             //Usuarios usuario = new Usuarios();
             //usuario.DNI = txt_documento.Text;
             //this.Dispose();
-            this.Close();
+            
             frm_Pesaje pesaje = new frm_Pesaje(txt_documento.Text);
             pesaje.ShowDialog();
         }
@@ -92,9 +92,6 @@ namespace Primaton.Front.Formularios
             lbl_hora.Text = DateTime.Now.ToString();
         }
 
-        private void BtCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+
     }
 }

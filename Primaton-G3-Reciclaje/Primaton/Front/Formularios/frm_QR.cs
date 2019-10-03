@@ -64,9 +64,6 @@ namespace Primaton.Front.Formularios
             lbl_hora.Text = DateTime.Now.ToString();
         }
 
-        private void BtCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+
     }
 }

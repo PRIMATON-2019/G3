@@ -38,8 +38,7 @@ namespace Primaton.Front.Formularios
             
             frm_dnimanual dnimanual = new frm_dnimanual();
             dnimanual.ShowDialog();
-            this.Dispose();
-            this.Close();
+
         }
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
