@@ -533,7 +533,7 @@
             // 
             this.lbldni.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldni.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbldni.Location = new System.Drawing.Point(3, 54);
+            this.lbldni.Location = new System.Drawing.Point(7, 47);
             this.lbldni.Name = "lbldni";
             this.lbldni.Size = new System.Drawing.Size(236, 101);
             this.lbldni.TabIndex = 0;
@@ -568,6 +568,7 @@
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btVolver);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

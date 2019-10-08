@@ -81,11 +81,9 @@ namespace Primaton.Front.Formularios
                 if (decoded != "")
                 {
                     timer_scan.Stop();
-                    if (!listBox1.Items.Contains(decoded))
-                    {
-                        listBox1.Items.Insert(0, decoded);
-                    }
-                    MessageBox.Show(decoded);
+                    label1.Text = decoded;
+                    
+                    
                     //Form2 form = new Form2();
                     //form.Show();
                     //this.Hide();
@@ -121,12 +119,10 @@ namespace Primaton.Front.Formularios
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Registros registro = new Registros();
-            registro.Usuario.DNI = "aca va el textbox o label con el dato del usuaario";
-            Persistencia pd = new Persistencia();
-            DataSet ds = pd.BuscarDatos("Usuarios");
-           
-            
+            frm_Pesaje pesaje = new frm_Pesaje(label1.Text);
+            pesaje.ShowDialog();
+
+
         }
 
         private void Button2_Click(object sender, EventArgs e)
