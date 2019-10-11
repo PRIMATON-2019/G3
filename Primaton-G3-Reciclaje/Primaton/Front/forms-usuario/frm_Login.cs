@@ -28,12 +28,11 @@ namespace Primaton.Front.forms_usuario
                     if (txtDNI.Text.Equals(dni)
                         && txtPass.Text.Equals(pass))
                     {
-                        MessageBox.Show("Que tengas una buena estadia.");
-                        //MenuInicial mi = new MenuInicial();
-                        //mi.Show();
+                       
+                        
                         this.Dispose();
                         this.Close();
-                        frm_plataforma perfil = new frm_plataforma();
+                        frm_plataforma perfil = new frm_plataforma(dni);
                         perfil.ShowDialog();
                     }
                 }

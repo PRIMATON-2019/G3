@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_scan));
             this.lbl_info = new System.Windows.Forms.Label();
             this.pn_scanner = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblDato = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.btn_detenercamara = new System.Windows.Forms.Button();
             this.btn_show = new System.Windows.Forms.Button();
@@ -53,21 +53,21 @@
             // lbl_info
             // 
             this.lbl_info.AutoSize = true;
+            this.lbl_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_info.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_info.Location = new System.Drawing.Point(195, 43);
             this.lbl_info.Name = "lbl_info";
-            this.lbl_info.Size = new System.Drawing.Size(164, 17);
+            this.lbl_info.Size = new System.Drawing.Size(221, 20);
             this.lbl_info.TabIndex = 4;
             this.lbl_info.Text = "Camara de el Dispositivo";
             // 
             // pn_scanner
             // 
-            this.pn_scanner.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.pn_scanner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pn_scanner.Controls.Add(this.label1);
             this.pn_scanner.Controls.Add(this.pictureBox1);
             this.pn_scanner.Controls.Add(this.lblDato);
-            this.pn_scanner.Controls.Add(this.button2);
             this.pn_scanner.Controls.Add(this.button1);
-            this.pn_scanner.Controls.Add(this.listBox1);
             this.pn_scanner.Controls.Add(this.lbl_hora);
             this.pn_scanner.Controls.Add(this.btn_detenercamara);
             this.pn_scanner.Controls.Add(this.btn_show);
@@ -79,16 +79,25 @@
             this.pn_scanner.Location = new System.Drawing.Point(0, 0);
             this.pn_scanner.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn_scanner.Name = "pn_scanner";
-            this.pn_scanner.Size = new System.Drawing.Size(951, 577);
+            this.pn_scanner.Size = new System.Drawing.Size(951, 596);
             this.pn_scanner.TabIndex = 17;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(739, 310);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "label1";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_recuadro;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -96,66 +105,54 @@
             // lblDato
             // 
             this.lblDato.AutoSize = true;
-            this.lblDato.Location = new System.Drawing.Point(725, 145);
+            this.lblDato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDato.Location = new System.Drawing.Point(663, 160);
             this.lblDato.Name = "lblDato";
-            this.lblDato.Size = new System.Drawing.Size(46, 17);
+            this.lblDato.Size = new System.Drawing.Size(82, 25);
             this.lblDato.TabIndex = 13;
-            this.lblDato.Text = "label1";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.Location = new System.Drawing.Point(743, 506);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Regresar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.lblDato.Text = "usuario:";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.Location = new System.Drawing.Point(743, 436);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(682, 367);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(257, 216);
             this.button1.TabIndex = 11;
             this.button1.Text = "Siguiente";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(731, 197);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(143, 164);
-            this.listBox1.TabIndex = 10;
-            // 
             // lbl_hora
             // 
-            this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.Location = new System.Drawing.Point(717, 9);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(221, 84);
+            this.lbl_hora.Size = new System.Drawing.Size(222, 119);
             this.lbl_hora.TabIndex = 9;
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_detenercamara
             // 
-            this.btn_detenercamara.BackColor = System.Drawing.Color.Teal;
+            this.btn_detenercamara.BackColor = System.Drawing.Color.LightGray;
             this.btn_detenercamara.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_detenercamara.FlatAppearance.BorderSize = 0;
+            this.btn_detenercamara.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_detenercamara.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_detenercamara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_detenercamara.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_detenercamara.Location = new System.Drawing.Point(221, 469);
             this.btn_detenercamara.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_detenercamara.Name = "btn_detenercamara";
-            this.btn_detenercamara.Size = new System.Drawing.Size(156, 102);
+            this.btn_detenercamara.Size = new System.Drawing.Size(168, 125);
             this.btn_detenercamara.TabIndex = 8;
             this.btn_detenercamara.Text = "Detener Camara";
             this.btn_detenercamara.UseVisualStyleBackColor = false;
@@ -163,13 +160,17 @@
             // 
             // btn_show
             // 
-            this.btn_show.BackColor = System.Drawing.Color.Teal;
+            this.btn_show.BackColor = System.Drawing.Color.LightGray;
             this.btn_show.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_show.FlatAppearance.BorderSize = 0;
+            this.btn_show.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_show.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_show.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_show.Location = new System.Drawing.Point(421, 469);
             this.btn_show.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_show.Name = "btn_show";
-            this.btn_show.Size = new System.Drawing.Size(219, 102);
+            this.btn_show.Size = new System.Drawing.Size(230, 125);
             this.btn_show.TabIndex = 7;
             this.btn_show.Text = "Mostrar Codigo";
             this.btn_show.UseVisualStyleBackColor = false;
@@ -177,13 +178,17 @@
             // 
             // btn_inicio
             // 
-            this.btn_inicio.BackColor = System.Drawing.Color.Teal;
+            this.btn_inicio.BackColor = System.Drawing.Color.LightGray;
             this.btn_inicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_inicio.FlatAppearance.BorderSize = 0;
+            this.btn_inicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_inicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_inicio.Location = new System.Drawing.Point(16, 469);
+            this.btn_inicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inicio.Location = new System.Drawing.Point(12, 469);
             this.btn_inicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_inicio.Name = "btn_inicio";
-            this.btn_inicio.Size = new System.Drawing.Size(173, 102);
+            this.btn_inicio.Size = new System.Drawing.Size(177, 125);
             this.btn_inicio.TabIndex = 6;
             this.btn_inicio.Text = "Iniciar";
             this.btn_inicio.UseVisualStyleBackColor = false;
@@ -191,24 +196,25 @@
             // 
             // combobox_camara
             // 
-            this.combobox_camara.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.combobox_camara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.combobox_camara.Cursor = System.Windows.Forms.Cursors.No;
             this.combobox_camara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combobox_camara.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.combobox_camara.FormattingEnabled = true;
-            this.combobox_camara.Location = new System.Drawing.Point(397, 39);
+            this.combobox_camara.Location = new System.Drawing.Point(468, 43);
             this.combobox_camara.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.combobox_camara.Name = "combobox_camara";
-            this.combobox_camara.Size = new System.Drawing.Size(255, 24);
+            this.combobox_camara.Size = new System.Drawing.Size(198, 24);
             this.combobox_camara.TabIndex = 5;
             // 
             // picbox_camara
             // 
             this.picbox_camara.BackColor = System.Drawing.Color.Transparent;
             this.picbox_camara.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picbox_camara.Location = new System.Drawing.Point(16, 106);
+            this.picbox_camara.Location = new System.Drawing.Point(16, 130);
             this.picbox_camara.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picbox_camara.Name = "picbox_camara";
-            this.picbox_camara.Size = new System.Drawing.Size(623, 357);
+            this.picbox_camara.Size = new System.Drawing.Size(623, 333);
             this.picbox_camara.TabIndex = 3;
             this.picbox_camara.TabStop = false;
             // 
@@ -236,9 +242,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 577);
+            this.ClientSize = new System.Drawing.Size(951, 596);
             this.Controls.Add(this.pn_scanner);
             this.Controls.Add(this.lbl_scanner);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -266,10 +273,9 @@
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.Timer timer_scan;
         private System.Windows.Forms.Timer timer_hora;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblDato;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

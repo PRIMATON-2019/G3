@@ -49,6 +49,8 @@
             this.lblPtsGanados = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -61,18 +63,15 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lbl_hora = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAceptar
@@ -85,7 +84,7 @@
             this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.btnAceptar.Location = new System.Drawing.Point(13, 12);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(141, 44);
@@ -100,7 +99,7 @@
             this.lblPeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPeso.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPeso.ForeColor = System.Drawing.Color.Yellow;
-            this.lblPeso.Location = new System.Drawing.Point(252, 123);
+            this.lblPeso.Location = new System.Drawing.Point(240, 125);
             this.lblPeso.Name = "lblPeso";
             this.lblPeso.Size = new System.Drawing.Size(26, 30);
             this.lblPeso.TabIndex = 36;
@@ -138,7 +137,7 @@
             this.btCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.btCancelar.Location = new System.Drawing.Point(14, 14);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(131, 83);
@@ -155,7 +154,7 @@
             this.btVolver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.btVolver.Location = new System.Drawing.Point(14, 114);
             this.btVolver.Name = "btVolver";
             this.btVolver.Size = new System.Drawing.Size(131, 83);
@@ -174,7 +173,7 @@
             this.btFinalizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btFinalizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.btFinalizar.Location = new System.Drawing.Point(16, 15);
             this.btFinalizar.Name = "btFinalizar";
             this.btFinalizar.Size = new System.Drawing.Size(139, 40);
@@ -215,7 +214,7 @@
             this.btnPesar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btnPesar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnPesar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesar.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.btnPesar.Location = new System.Drawing.Point(13, 12);
             this.btnPesar.Name = "btnPesar";
             this.btnPesar.Size = new System.Drawing.Size(139, 44);
@@ -352,6 +351,24 @@
             this.panel1.Size = new System.Drawing.Size(388, 319);
             this.panel1.TabIndex = 48;
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.LightGreen;
+            this.panel7.Controls.Add(this.btnPesar);
+            this.panel7.Location = new System.Drawing.Point(112, 47);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(169, 67);
+            this.panel7.TabIndex = 64;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.LightGreen;
+            this.panel6.Controls.Add(this.btnAceptar);
+            this.panel6.Location = new System.Drawing.Point(112, 247);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(169, 67);
+            this.panel6.TabIndex = 64;
+            // 
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.White;
@@ -381,9 +398,8 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DimGray;
+            this.panel2.BackColor = System.Drawing.Color.LightGreen;
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lbldni);
             this.panel2.Location = new System.Drawing.Point(607, 271);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -394,11 +410,11 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(20, 0);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(13, 11);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(72, 20);
+            this.label15.Size = new System.Drawing.Size(108, 26);
             this.label15.TabIndex = 1;
             this.label15.Text = "Usuario: ";
             // 
@@ -407,10 +423,10 @@
             this.lbldni.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.lbldni.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldni.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbldni.Location = new System.Drawing.Point(2, 44);
+            this.lbldni.Location = new System.Drawing.Point(12, 56);
             this.lbldni.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbldni.Name = "lbldni";
-            this.lbldni.Size = new System.Drawing.Size(177, 82);
+            this.lbldni.Size = new System.Drawing.Size(160, 63);
             this.lbldni.TabIndex = 0;
             this.lbldni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -477,7 +493,7 @@
             // 
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.lbl_hora.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_hora.Location = new System.Drawing.Point(592, 197);
             this.lbl_hora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -486,36 +502,6 @@
             this.lbl_hora.TabIndex = 38;
             this.lbl_hora.Text = "Hora";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(2, 45);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 82);
-            this.label1.TabIndex = 0;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.LightGreen;
-            this.panel6.Controls.Add(this.btnAceptar);
-            this.panel6.Location = new System.Drawing.Point(112, 247);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(169, 67);
-            this.panel6.TabIndex = 64;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.LightGreen;
-            this.panel7.Controls.Add(this.btnPesar);
-            this.panel7.Location = new System.Drawing.Point(112, 47);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(169, 67);
-            this.panel7.TabIndex = 64;
             // 
             // frm_Pesaje
             // 
@@ -533,6 +519,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lbl_hora);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Pesaje";
@@ -540,14 +528,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -585,7 +573,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lbl_hora;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
     }
