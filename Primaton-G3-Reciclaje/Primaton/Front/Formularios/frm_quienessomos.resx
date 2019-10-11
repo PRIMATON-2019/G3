@@ -117,6 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Este programa fué diseñado por alumnos 
+de 1° Año de la Tecnicatura Superior
+en desarrollo de Software. Nuestro principal
+objetivo es concientizar a los ciudadanos sobre la 
+importancia del cuidado del medio ambiente a traves 
+del reciclaje diario. 
+Para ellos desarrollamos este sistema que permite reciclar
+a cambio de premios. 
+
+EL CUIDADO DEL MEDIO AMBIENTE ES 
+RESPONSABILIDAD DE TODOS</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

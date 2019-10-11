@@ -53,13 +53,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(101, 232);
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(2, 172);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 20);
+            this.label1.Size = new System.Drawing.Size(393, 209);
             this.label1.TabIndex = 6;
-            this.label1.Text = "informacion acerca de el grupoo";
+            this.label1.Text = resources.GetString("label1.Text");
             // 
             // pictureBox1
             // 
@@ -80,6 +80,7 @@
             this.lbl_hora.BackColor = System.Drawing.Color.White;
             this.lbl_hora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.ForeColor = System.Drawing.Color.Black;
             this.lbl_hora.Location = new System.Drawing.Point(262, 0);
             this.lbl_hora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);

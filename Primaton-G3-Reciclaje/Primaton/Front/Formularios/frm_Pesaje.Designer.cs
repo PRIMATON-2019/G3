@@ -98,7 +98,7 @@
             this.lblPeso.AutoSize = true;
             this.lblPeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPeso.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPeso.ForeColor = System.Drawing.Color.Yellow;
+            this.lblPeso.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.lblPeso.Location = new System.Drawing.Point(240, 125);
             this.lblPeso.Name = "lblPeso";
             this.lblPeso.Size = new System.Drawing.Size(26, 30);
@@ -319,7 +319,7 @@
             this.lblPtsGanados.AutoSize = true;
             this.lblPtsGanados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPtsGanados.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPtsGanados.ForeColor = System.Drawing.Color.Lime;
+            this.lblPtsGanados.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.lblPtsGanados.Location = new System.Drawing.Point(192, 169);
             this.lblPtsGanados.Name = "lblPtsGanados";
             this.lblPtsGanados.Size = new System.Drawing.Size(26, 30);
