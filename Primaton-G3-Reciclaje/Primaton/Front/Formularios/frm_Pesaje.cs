@@ -167,5 +167,6 @@ namespace Primaton.Front.Formularios
         {
             lbl_hora.Text = DateTime.Now.ToString();
         }
+
     }
 }
