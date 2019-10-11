@@ -90,13 +90,12 @@
             // 
             this.btnSiguiente.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btnSiguiente.FlatAppearance.BorderSize = 0;
             this.btnSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Location = new System.Drawing.Point(338, 204);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(134, 107);
             this.btnSiguiente.TabIndex = 14;
@@ -109,7 +108,7 @@
             this.lbl_hora.BackColor = System.Drawing.Color.Transparent;
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hora.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbl_hora.ForeColor = System.Drawing.Color.Black;
             this.lbl_hora.Location = new System.Drawing.Point(347, 19);
             this.lbl_hora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_hora.Name = "lbl_hora";
@@ -122,7 +121,6 @@
             // 
             this.btn_0.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_0.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_0.FlatAppearance.BorderSize = 0;
             this.btn_0.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -138,7 +136,6 @@
             // 
             this.btn_9.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_9.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_9.FlatAppearance.BorderSize = 0;
             this.btn_9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -165,7 +162,6 @@
             // 
             this.btn_8.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_8.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_8.FlatAppearance.BorderSize = 0;
             this.btn_8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -181,7 +177,6 @@
             // 
             this.btn_7.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_7.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_7.FlatAppearance.BorderSize = 0;
             this.btn_7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -209,7 +204,6 @@
             // 
             this.btn_3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_3.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_3.FlatAppearance.BorderSize = 0;
             this.btn_3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -225,7 +219,6 @@
             // 
             this.btn_6.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_6.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_6.FlatAppearance.BorderSize = 0;
             this.btn_6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -241,7 +234,6 @@
             // 
             this.btn_2.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_2.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_2.FlatAppearance.BorderSize = 0;
             this.btn_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -257,7 +249,6 @@
             // 
             this.btn_5.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_5.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_5.FlatAppearance.BorderSize = 0;
             this.btn_5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -273,7 +264,6 @@
             // 
             this.btn_4.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_4.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_4.FlatAppearance.BorderSize = 0;
             this.btn_4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -289,7 +279,6 @@
             // 
             this.btn_1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_1.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btn_1.FlatAppearance.BorderSize = 0;
             this.btn_1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -312,12 +301,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 441);
             this.Controls.Add(this.pn_dni);
-
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_dnimanual";

@@ -49,10 +49,10 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-9, -6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-7, -5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(940, 178);
+            this.pictureBox1.Size = new System.Drawing.Size(659, 145);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -66,10 +66,10 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(127, 268);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(95, 218);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(258, 244);
+            this.button1.Size = new System.Drawing.Size(194, 198);
             this.button1.TabIndex = 1;
             this.button1.Text = "Scan";
             this.button1.UseVisualStyleBackColor = false;
@@ -84,10 +84,10 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(470, 268);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(352, 218);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(258, 244);
+            this.button2.Size = new System.Drawing.Size(194, 198);
             this.button2.TabIndex = 2;
             this.button2.Text = "Manual";
             this.button2.UseVisualStyleBackColor = false;
@@ -99,9 +99,10 @@
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.ForeColor = System.Drawing.Color.Black;
-            this.lbl_hora.Location = new System.Drawing.Point(657, 9);
+            this.lbl_hora.Location = new System.Drawing.Point(493, 7);
+            this.lbl_hora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(228, 135);
+            this.lbl_hora.Size = new System.Drawing.Size(171, 110);
             this.lbl_hora.TabIndex = 3;
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -116,12 +117,13 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Help;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(202, 514);
+            this.linkLabel1.Location = new System.Drawing.Point(96, 418);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(478, 91);
+            this.linkLabel1.Size = new System.Drawing.Size(462, 54);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Ya Posees una cuenta?";
+            this.linkLabel1.Text = "¿No posees una cuenta? Regístrate";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
@@ -130,9 +132,10 @@
             this.label1.BackColor = System.Drawing.Color.LimeGreen;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(124, 268);
+            this.label1.Location = new System.Drawing.Point(93, 218);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 244);
+            this.label1.Size = new System.Drawing.Size(22, 198);
             this.label1.TabIndex = 5;
             // 
             // label2
@@ -140,9 +143,10 @@
             this.label2.BackColor = System.Drawing.Color.LimeGreen;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(714, 268);
+            this.label2.Location = new System.Drawing.Point(536, 218);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 244);
+            this.label2.Size = new System.Drawing.Size(22, 198);
             this.label2.TabIndex = 6;
             // 
             // label3
@@ -150,10 +154,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(118, 217);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(88, 176);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(610, 38);
+            this.label3.Size = new System.Drawing.Size(506, 31);
             this.label3.TabIndex = 8;
             this.label3.Text = "Selecciona como quieres ingresar tu DNI";
             // 
@@ -161,18 +164,19 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(381, 174);
+            this.label4.Location = new System.Drawing.Point(284, 142);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 29);
+            this.label4.Size = new System.Drawing.Size(105, 24);
             this.label4.TabIndex = 9;
             this.label4.Text = "Bienvenido";
             // 
             // frm_Inicial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(871, 582);
+            this.ClientSize = new System.Drawing.Size(653, 473);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -184,7 +188,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Inicial";

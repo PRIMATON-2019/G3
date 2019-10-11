@@ -422,8 +422,8 @@
             // 
             this.lbldni.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.lbldni.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldni.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbldni.Location = new System.Drawing.Point(12, 56);
+            this.lbldni.ForeColor = System.Drawing.Color.Black;
+            this.lbldni.Location = new System.Drawing.Point(13, 55);
             this.lbldni.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbldni.Name = "lbldni";
             this.lbldni.Size = new System.Drawing.Size(160, 63);
@@ -484,9 +484,9 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.LightGreen;
             this.panel5.Controls.Add(this.btFinalizar);
-            this.panel5.Location = new System.Drawing.Point(608, 416);
+            this.panel5.Location = new System.Drawing.Point(607, 416);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(171, 70);
+            this.panel5.Size = new System.Drawing.Size(184, 70);
             this.panel5.TabIndex = 63;
             // 
             // lbl_hora
