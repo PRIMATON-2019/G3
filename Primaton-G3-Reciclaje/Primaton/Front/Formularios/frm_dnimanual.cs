@@ -92,6 +92,11 @@ namespace Primaton.Front.Formularios
             lbl_hora.Text = DateTime.Now.ToString();
         }
 
-
+        private void BtBorrar_Click(object sender, EventArgs e)
+        {
+            int hasta = txt_documento.Text.Length - 1;
+            string resultado = txt_documento.Text.Substring(0, hasta);
+            txt_documento.Text = resultado;
+        }
     }
 }

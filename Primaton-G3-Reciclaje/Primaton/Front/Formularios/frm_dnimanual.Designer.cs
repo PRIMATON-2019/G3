@@ -47,6 +47,7 @@
             this.btn_4 = new System.Windows.Forms.Button();
             this.btn_1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btBorrar = new System.Windows.Forms.Button();
             this.pn_dni.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             // pn_dni
             // 
             this.pn_dni.BackColor = System.Drawing.Color.White;
+            this.pn_dni.Controls.Add(this.btBorrar);
             this.pn_dni.Controls.Add(this.pictureBox1);
             this.pn_dni.Controls.Add(this.btnSiguiente);
             this.pn_dni.Controls.Add(this.lbl_hora);
@@ -71,8 +73,9 @@
             this.pn_dni.Controls.Add(this.btn_1);
             this.pn_dni.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_dni.Location = new System.Drawing.Point(0, 0);
+            this.pn_dni.Margin = new System.Windows.Forms.Padding(4);
             this.pn_dni.Name = "pn_dni";
-            this.pn_dni.Size = new System.Drawing.Size(557, 441);
+            this.pn_dni.Size = new System.Drawing.Size(743, 543);
             this.pn_dni.TabIndex = 11;
             this.pn_dni.Paint += new System.Windows.Forms.PaintEventHandler(this.Pn_dni_Paint);
             // 
@@ -80,8 +83,9 @@
             // 
             this.pictureBox1.Image = global::Primaton.Properties.Resources.eco_sistema_fondo_transparente_recuadro;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 103);
+            this.pictureBox1.Size = new System.Drawing.Size(153, 127);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -94,10 +98,10 @@
             this.btnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(338, 204);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSiguiente.Location = new System.Drawing.Point(451, 284);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(134, 107);
+            this.btnSiguiente.Size = new System.Drawing.Size(179, 44);
             this.btnSiguiente.TabIndex = 14;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
@@ -109,10 +113,9 @@
             this.lbl_hora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.ForeColor = System.Drawing.Color.Black;
-            this.lbl_hora.Location = new System.Drawing.Point(347, 19);
-            this.lbl_hora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_hora.Location = new System.Drawing.Point(463, 23);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(131, 103);
+            this.lbl_hora.Size = new System.Drawing.Size(175, 127);
             this.lbl_hora.TabIndex = 13;
             this.lbl_hora.Text = "12:32:25";
             this.lbl_hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,9 +127,10 @@
             this.btn_0.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_0.Location = new System.Drawing.Point(176, 360);
+            this.btn_0.Location = new System.Drawing.Point(235, 443);
+            this.btn_0.Margin = new System.Windows.Forms.Padding(4);
             this.btn_0.Name = "btn_0";
-            this.btn_0.Size = new System.Drawing.Size(61, 59);
+            this.btn_0.Size = new System.Drawing.Size(81, 73);
             this.btn_0.TabIndex = 9;
             this.btn_0.Text = "0";
             this.btn_0.UseVisualStyleBackColor = false;
@@ -139,9 +143,10 @@
             this.btn_9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_9.Location = new System.Drawing.Point(252, 296);
+            this.btn_9.Location = new System.Drawing.Point(336, 364);
+            this.btn_9.Margin = new System.Windows.Forms.Padding(4);
             this.btn_9.Name = "btn_9";
-            this.btn_9.Size = new System.Drawing.Size(61, 59);
+            this.btn_9.Size = new System.Drawing.Size(81, 73);
             this.btn_9.TabIndex = 8;
             this.btn_9.Text = "9";
             this.btn_9.UseVisualStyleBackColor = false;
@@ -151,9 +156,10 @@
             // 
             this.lbl_infomanual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_infomanual.ForeColor = System.Drawing.Color.Black;
-            this.lbl_infomanual.Location = new System.Drawing.Point(146, 70);
+            this.lbl_infomanual.Location = new System.Drawing.Point(195, 86);
+            this.lbl_infomanual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_infomanual.Name = "lbl_infomanual";
-            this.lbl_infomanual.Size = new System.Drawing.Size(153, 52);
+            this.lbl_infomanual.Size = new System.Drawing.Size(204, 64);
             this.lbl_infomanual.TabIndex = 12;
             this.lbl_infomanual.Text = "Digita tu DNI";
             this.lbl_infomanual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -165,9 +171,10 @@
             this.btn_8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_8.Location = new System.Drawing.Point(176, 296);
+            this.btn_8.Location = new System.Drawing.Point(235, 364);
+            this.btn_8.Margin = new System.Windows.Forms.Padding(4);
             this.btn_8.Name = "btn_8";
-            this.btn_8.Size = new System.Drawing.Size(61, 59);
+            this.btn_8.Size = new System.Drawing.Size(81, 73);
             this.btn_8.TabIndex = 7;
             this.btn_8.Text = "8";
             this.btn_8.UseVisualStyleBackColor = false;
@@ -180,9 +187,10 @@
             this.btn_7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_7.Location = new System.Drawing.Point(100, 296);
+            this.btn_7.Location = new System.Drawing.Point(133, 364);
+            this.btn_7.Margin = new System.Windows.Forms.Padding(4);
             this.btn_7.Name = "btn_7";
-            this.btn_7.Size = new System.Drawing.Size(61, 59);
+            this.btn_7.Size = new System.Drawing.Size(81, 73);
             this.btn_7.TabIndex = 6;
             this.btn_7.Text = "7";
             this.btn_7.UseVisualStyleBackColor = false;
@@ -194,9 +202,10 @@
             this.txt_documento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_documento.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_documento.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txt_documento.Location = new System.Drawing.Point(100, 126);
+            this.txt_documento.Location = new System.Drawing.Point(133, 155);
+            this.txt_documento.Margin = new System.Windows.Forms.Padding(4);
             this.txt_documento.Name = "txt_documento";
-            this.txt_documento.Size = new System.Drawing.Size(213, 37);
+            this.txt_documento.Size = new System.Drawing.Size(283, 45);
             this.txt_documento.TabIndex = 11;
             this.txt_documento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -207,9 +216,10 @@
             this.btn_3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_3.Location = new System.Drawing.Point(252, 166);
+            this.btn_3.Location = new System.Drawing.Point(336, 204);
+            this.btn_3.Margin = new System.Windows.Forms.Padding(4);
             this.btn_3.Name = "btn_3";
-            this.btn_3.Size = new System.Drawing.Size(61, 59);
+            this.btn_3.Size = new System.Drawing.Size(81, 73);
             this.btn_3.TabIndex = 5;
             this.btn_3.Text = "3";
             this.btn_3.UseVisualStyleBackColor = false;
@@ -222,9 +232,10 @@
             this.btn_6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_6.Location = new System.Drawing.Point(252, 231);
+            this.btn_6.Location = new System.Drawing.Point(336, 284);
+            this.btn_6.Margin = new System.Windows.Forms.Padding(4);
             this.btn_6.Name = "btn_6";
-            this.btn_6.Size = new System.Drawing.Size(61, 59);
+            this.btn_6.Size = new System.Drawing.Size(81, 73);
             this.btn_6.TabIndex = 4;
             this.btn_6.Text = "6";
             this.btn_6.UseVisualStyleBackColor = false;
@@ -237,9 +248,10 @@
             this.btn_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_2.Location = new System.Drawing.Point(176, 166);
+            this.btn_2.Location = new System.Drawing.Point(235, 204);
+            this.btn_2.Margin = new System.Windows.Forms.Padding(4);
             this.btn_2.Name = "btn_2";
-            this.btn_2.Size = new System.Drawing.Size(61, 59);
+            this.btn_2.Size = new System.Drawing.Size(81, 73);
             this.btn_2.TabIndex = 3;
             this.btn_2.Text = "2";
             this.btn_2.UseVisualStyleBackColor = false;
@@ -252,9 +264,10 @@
             this.btn_5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_5.Location = new System.Drawing.Point(176, 231);
+            this.btn_5.Location = new System.Drawing.Point(235, 284);
+            this.btn_5.Margin = new System.Windows.Forms.Padding(4);
             this.btn_5.Name = "btn_5";
-            this.btn_5.Size = new System.Drawing.Size(61, 59);
+            this.btn_5.Size = new System.Drawing.Size(81, 73);
             this.btn_5.TabIndex = 2;
             this.btn_5.Text = "5";
             this.btn_5.UseVisualStyleBackColor = false;
@@ -267,9 +280,10 @@
             this.btn_4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_4.Location = new System.Drawing.Point(100, 231);
+            this.btn_4.Location = new System.Drawing.Point(133, 284);
+            this.btn_4.Margin = new System.Windows.Forms.Padding(4);
             this.btn_4.Name = "btn_4";
-            this.btn_4.Size = new System.Drawing.Size(61, 59);
+            this.btn_4.Size = new System.Drawing.Size(81, 73);
             this.btn_4.TabIndex = 1;
             this.btn_4.Text = "4";
             this.btn_4.UseVisualStyleBackColor = false;
@@ -282,9 +296,10 @@
             this.btn_1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.btn_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_1.Location = new System.Drawing.Point(100, 166);
+            this.btn_1.Location = new System.Drawing.Point(133, 204);
+            this.btn_1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_1.Name = "btn_1";
-            this.btn_1.Size = new System.Drawing.Size(61, 59);
+            this.btn_1.Size = new System.Drawing.Size(81, 73);
             this.btn_1.TabIndex = 0;
             this.btn_1.Text = "1";
             this.btn_1.UseVisualStyleBackColor = false;
@@ -295,14 +310,31 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
+            // btBorrar
+            // 
+            this.btBorrar.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btBorrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.btBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btBorrar.ForeColor = System.Drawing.Color.Black;
+            this.btBorrar.Location = new System.Drawing.Point(451, 204);
+            this.btBorrar.Name = "btBorrar";
+            this.btBorrar.Size = new System.Drawing.Size(179, 45);
+            this.btBorrar.TabIndex = 16;
+            this.btBorrar.Text = "Borrar";
+            this.btBorrar.UseVisualStyleBackColor = false;
+            this.btBorrar.Click += new System.EventHandler(this.BtBorrar_Click);
+            // 
             // frm_dnimanual
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 441);
+            this.ClientSize = new System.Drawing.Size(743, 543);
             this.Controls.Add(this.pn_dni);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_dnimanual";
@@ -333,5 +365,6 @@
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btBorrar;
     }
 }
