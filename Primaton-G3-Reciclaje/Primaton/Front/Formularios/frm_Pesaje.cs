@@ -137,7 +137,7 @@ namespace Primaton.Front.Formularios
         private void BtCancelar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Al cancelar no sumarás los puntos, ¿Estás seguro de esto?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            MessageBox.Show("La operación a sido cancelada");
+            
             this.Dispose();
             this.Close();
             frm_Inicial Volver = new frm_Inicial();

@@ -64,7 +64,7 @@ namespace Primaton.Front.forms_usuario
 
         private void BtBeneficio_Click(object sender, EventArgs e)
         {
-            Abrirforminpanel(new frm_beneficios());
+            
         }
 
         private void BtnPerfil_Click(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace Primaton.Front.forms_usuario
 
         private void BtnRegistro_Click(object sender, EventArgs e)
         {
-            Abrirforminpanel(new frm_registrodebasuras());
+            
         }
 
         private void Frm_plataforma_Load(object sender, EventArgs e)

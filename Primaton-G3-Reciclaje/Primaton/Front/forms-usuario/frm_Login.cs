@@ -1,5 +1,4 @@
 ﻿using entidades;
-using Primaton.Front.Formularios;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -16,7 +15,6 @@ namespace Primaton.Front.forms_usuario
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-            //Verificar usuario ingresado.
             if (txtDNI.Text != "" && txtPass.Text != "")
             {
                 Persistencia pd = new Persistencia();
@@ -28,8 +26,6 @@ namespace Primaton.Front.forms_usuario
                     if (txtDNI.Text.Equals(dni)
                         && txtPass.Text.Equals(pass))
                     {
-                       
-                        
                         this.Dispose();
                         this.Close();
                         frm_plataforma perfil = new frm_plataforma(dni);

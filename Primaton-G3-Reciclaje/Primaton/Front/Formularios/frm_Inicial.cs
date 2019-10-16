@@ -52,5 +52,11 @@ namespace Primaton.Front.Formularios
         {
 
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            frm_quienessomos frm = new frm_quienessomos();
+            frm.ShowDialog();
+        }
     }
 }

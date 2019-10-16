@@ -15,7 +15,13 @@ namespace Primaton.Front.Formularios
         public frm_quienessomos()
         {
             InitializeComponent();
+            timer1.Start();
         }
 
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+
+            lbl_hora.Text = DateTime.Now.ToString();
+        }
     }
 }

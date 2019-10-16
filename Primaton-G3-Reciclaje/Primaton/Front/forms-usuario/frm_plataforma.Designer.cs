@@ -81,7 +81,6 @@
             this.btBeneficio.TabIndex = 71;
             this.btBeneficio.Text = "    Cambiar Puntos";
             this.btBeneficio.UseVisualStyleBackColor = true;
-            this.btBeneficio.Click += new System.EventHandler(this.BtBeneficio_Click);
             // 
             // btnPerfil
             // 
@@ -134,7 +133,6 @@
             this.btnRegistro.TabIndex = 69;
             this.btnRegistro.Text = "       Registros";
             this.btnRegistro.UseVisualStyleBackColor = true;
-            this.btnRegistro.Click += new System.EventHandler(this.BtnRegistro_Click);
             // 
             // pictureBox1
             // 

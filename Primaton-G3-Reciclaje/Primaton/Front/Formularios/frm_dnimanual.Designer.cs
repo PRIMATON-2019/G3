@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_dnimanual));
             this.pn_dni = new System.Windows.Forms.Panel();
+            this.btBorrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.lbl_hora = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.btn_4 = new System.Windows.Forms.Button();
             this.btn_1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btBorrar = new System.Windows.Forms.Button();
             this.pn_dni.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -75,9 +75,26 @@
             this.pn_dni.Location = new System.Drawing.Point(0, 0);
             this.pn_dni.Margin = new System.Windows.Forms.Padding(4);
             this.pn_dni.Name = "pn_dni";
-            this.pn_dni.Size = new System.Drawing.Size(743, 543);
+            this.pn_dni.Size = new System.Drawing.Size(737, 543);
             this.pn_dni.TabIndex = 11;
             this.pn_dni.Paint += new System.Windows.Forms.PaintEventHandler(this.Pn_dni_Paint);
+            // 
+            // btBorrar
+            // 
+            this.btBorrar.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btBorrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.btBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btBorrar.ForeColor = System.Drawing.Color.Black;
+            this.btBorrar.Location = new System.Drawing.Point(451, 204);
+            this.btBorrar.Name = "btBorrar";
+            this.btBorrar.Size = new System.Drawing.Size(179, 73);
+            this.btBorrar.TabIndex = 16;
+            this.btBorrar.Text = "Borrar";
+            this.btBorrar.UseVisualStyleBackColor = false;
+            this.btBorrar.Click += new System.EventHandler(this.BtBorrar_Click);
             // 
             // pictureBox1
             // 
@@ -98,10 +115,10 @@
             this.btnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(451, 284);
+            this.btnSiguiente.Location = new System.Drawing.Point(451, 330);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(179, 44);
+            this.btnSiguiente.Size = new System.Drawing.Size(179, 73);
             this.btnSiguiente.TabIndex = 14;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
@@ -310,28 +327,11 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // btBorrar
-            // 
-            this.btBorrar.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btBorrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-            this.btBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btBorrar.ForeColor = System.Drawing.Color.Black;
-            this.btBorrar.Location = new System.Drawing.Point(451, 204);
-            this.btBorrar.Name = "btBorrar";
-            this.btBorrar.Size = new System.Drawing.Size(179, 45);
-            this.btBorrar.TabIndex = 16;
-            this.btBorrar.Text = "Borrar";
-            this.btBorrar.UseVisualStyleBackColor = false;
-            this.btBorrar.Click += new System.EventHandler(this.BtBorrar_Click);
-            // 
             // frm_dnimanual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 543);
+            this.ClientSize = new System.Drawing.Size(737, 543);
             this.Controls.Add(this.pn_dni);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);

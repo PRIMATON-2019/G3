@@ -73,7 +73,7 @@
             // btnEntrar
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnEntrar.FlatAppearance.BorderSize = 5;
+            this.btnEntrar.FlatAppearance.BorderSize = 2;
             this.btnEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -89,7 +89,7 @@
             // 
             this.lblpass.AutoSize = true;
             this.lblpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpass.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblpass.ForeColor = System.Drawing.Color.Green;
             this.lblpass.Location = new System.Drawing.Point(105, 225);
             this.lblpass.Name = "lblpass";
             this.lblpass.Size = new System.Drawing.Size(162, 32);
@@ -100,7 +100,7 @@
             // 
             this.lblDNI.AutoSize = true;
             this.lblDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDNI.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblDNI.ForeColor = System.Drawing.Color.Green;
             this.lblDNI.Location = new System.Drawing.Point(111, 182);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.Size = new System.Drawing.Size(62, 32);
@@ -146,6 +146,7 @@
             this.lblhora.Size = new System.Drawing.Size(183, 82);
             this.lblhora.TabIndex = 17;
             this.lblhora.Text = "hora";
+            this.lblhora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
@@ -156,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(639, 397);
             this.Controls.Add(this.lblhora);
             this.Controls.Add(this.pictureBox1);
