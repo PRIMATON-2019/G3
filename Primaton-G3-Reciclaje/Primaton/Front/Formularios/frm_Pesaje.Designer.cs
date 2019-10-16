@@ -37,7 +37,6 @@
             this.btCancelar = new System.Windows.Forms.Button();
             this.btVolver = new System.Windows.Forms.Button();
             this.btFinalizar = new System.Windows.Forms.Button();
-            this.lblPuntosAcumulados = new System.Windows.Forms.Label();
             this.lblPuntosGanados = new System.Windows.Forms.Label();
             this.btnPesar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -85,10 +84,10 @@
             this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.btnAceptar.Location = new System.Drawing.Point(17, 15);
+            this.btnAceptar.Location = new System.Drawing.Point(52, 13);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(188, 54);
+            this.btnAceptar.Size = new System.Drawing.Size(188, 99);
             this.btnAceptar.TabIndex = 37;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -139,7 +138,7 @@
             this.btCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.btCancelar.FlatAppearance.BorderSize = 0;
             this.btCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.btCancelar.Location = new System.Drawing.Point(19, 26);
@@ -188,19 +187,6 @@
             this.btFinalizar.Text = "Finalizar";
             this.btFinalizar.UseVisualStyleBackColor = false;
             this.btFinalizar.Click += new System.EventHandler(this.BtSiguiente_Click_1);
-            // 
-            // lblPuntosAcumulados
-            // 
-            this.lblPuntosAcumulados.AutoSize = true;
-            this.lblPuntosAcumulados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblPuntosAcumulados.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPuntosAcumulados.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPuntosAcumulados.Location = new System.Drawing.Point(11, 263);
-            this.lblPuntosAcumulados.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPuntosAcumulados.Name = "lblPuntosAcumulados";
-            this.lblPuntosAcumulados.Size = new System.Drawing.Size(401, 38);
-            this.lblPuntosAcumulados.TabIndex = 30;
-            this.lblPuntosAcumulados.Text = "Total de puntos acumulados:";
             // 
             // lblPuntosGanados
             // 
@@ -317,7 +303,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(419, 142);
+            this.label2.Location = new System.Drawing.Point(409, 150);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 38);
@@ -351,7 +337,6 @@
             this.panel1.Controls.Add(this.lblinfo);
             this.panel1.Controls.Add(this.lblPuntosGanados);
             this.panel1.Controls.Add(this.lblPtsGanados);
-            this.panel1.Controls.Add(this.lblPuntosAcumulados);
             this.panel1.Controls.Add(this.lbl_cantidad);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblPeso);
@@ -359,7 +344,7 @@
             this.panel1.Location = new System.Drawing.Point(287, 302);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(517, 393);
+            this.panel1.Size = new System.Drawing.Size(517, 412);
             this.panel1.TabIndex = 48;
             // 
             // panel7
@@ -376,10 +361,10 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.LightGreen;
             this.panel6.Controls.Add(this.btnAceptar);
-            this.panel6.Location = new System.Drawing.Point(149, 304);
+            this.panel6.Location = new System.Drawing.Point(86, 285);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(225, 82);
+            this.panel6.Size = new System.Drawing.Size(288, 123);
             this.panel6.TabIndex = 64;
             // 
             // label13
@@ -560,7 +545,6 @@
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.Button btVolver;
         private System.Windows.Forms.Button btFinalizar;
-        private System.Windows.Forms.Label lblPuntosAcumulados;
         private System.Windows.Forms.Label lblPuntosGanados;
         private System.Windows.Forms.Button btnPesar;
         private System.Windows.Forms.PictureBox pictureBox1;

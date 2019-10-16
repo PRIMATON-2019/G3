@@ -94,9 +94,18 @@ namespace Primaton.Front.Formularios
 
         private void BtBorrar_Click(object sender, EventArgs e)
         {
+            try
+            {
             int hasta = txt_documento.Text.Length - 1;
             string resultado = txt_documento.Text.Substring(0, hasta);
             txt_documento.Text = resultado;
+
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+
+                MessageBox.Show("no ingreso valores");
+            }
         }
     }
 }
